@@ -22,7 +22,8 @@ pylib_DATA = webbasket.py \
              webbasket_dblayer.py \
              webbasket_templates.py \
              webbasket_webinterface.py \
-             webbasket_regression_tests.py
+             webbasket_regression_tests.py \
+             webbasket_templates_epfl.py
 
 noinst_DATA = webbasket_migration_kit.py
 

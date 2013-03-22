@@ -35,7 +35,8 @@ pylib_DATA = bibrecord_config.py \
              bibedit_webinterface.py \
              bibeditmulti_templates.py \
              bibeditmulti_webinterface.py \
-             bibeditmulti_engine.py
+             bibeditmulti_engine.py \
+             bibedit_templates_epfl.py
 
 jsdir=$(localstatedir)/www/js
 
