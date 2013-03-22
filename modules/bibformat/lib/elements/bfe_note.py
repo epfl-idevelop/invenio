@@ -18,16 +18,17 @@
 ## You should have received a copy of the GNU General Public License
 ## along with CDS Invenio; if not, write to the Free Software Foundation, Inc.,
 ## 59 Temple Place, Suite 330, Boston, MA 02111-1307, USA.
-"""BibFormat element - Prints ISBN"""
+"""BibFormat element - Prints note"""
 
 
 def format(bfo):
     """
-    Print ISBN.
+    Print note.
 
     """
     output = ''    
-    if bfo.field('020__a') and bfo.field('020__a').strip():
-        output = bfo.field('020__a').strip()            
+    if bfo.field('500__a') and bfo.field('500__a').strip():
+        output = bfo.field('500__a').strip()            
     return output
         
+

@@ -18,16 +18,32 @@
 ## You should have received a copy of the GNU General Public License
 ## along with CDS Invenio; if not, write to the Free Software Foundation, Inc.,
 ## 59 Temple Place, Suite 330, Boston, MA 02111-1307, USA.
-"""BibFormat element - Prints ISBN"""
+"""BibFormat element - Prints editor information"""
 
+from invenio.messages import gettext_set_language
 
-def format(bfo):
+def emphasize(text):
+    return '<em>%s</em>' % text
+
+def format(bfo, style_status='', style_text='', separator=', '):
     """
-    Print ISBN.
+    Print host (Order: Name of publisher, place of publication and date of publication).
 
     """
-    output = ''    
-    if bfo.field('020__a') and bfo.field('020__a').strip():
-        output = bfo.field('020__a').strip()            
-    return output
+    output = []    
+    if bfo.field('260__b') and bfo.field('260__b').strip():
+        output.append(bfo.field('260__b'))
+    if bfo.field('260__a') and bfo.field('260__a').strip():
+        output.append(bfo.field('260__a'))
+#    if bfo.field('260__c') and bfo.field('260__c').strip():
+#        output.append(bfo.field('260__c'))                
+    return separator.join(output)
         
+
+def escape_values(bfo):
+    """
+    Called by BibFormat in order to check if output of this element
+    should be escaped.
+    """
+    return 0
+

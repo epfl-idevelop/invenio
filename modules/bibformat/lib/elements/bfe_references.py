@@ -1,98 +1,58 @@
 # -*- coding: utf-8 -*-
-##
-## This file is part of Invenio.
-## Copyright (C) 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010 CERN.
-##
-## Invenio is free software; you can redistribute it and/or
-## modify it under the terms of the GNU General Public License as
-## published by the Free Software Foundation; either version 2 of the
-## License, or (at your option) any later version.
-##
-## Invenio is distributed in the hope that it will be useful, but
-## WITHOUT ANY WARRANTY; without even the implied warranty of
-## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-## General Public License for more details.
-##
-## You should have received a copy of the GNU General Public License
-## along with Invenio; if not, write to the Free Software Foundation, Inc.,
-## 59 Temple Place, Suite 330, Boston, MA 02111-1307, USA.
-"""BibFormat element - Prints references
-"""
-__revision__ = "$Id$"
+"""BibFormat element - Prints references"""
+import re
 
-def format_element(bfo, reference_prefix, reference_suffix):
+from invenio.messages import gettext_set_language
+
+
+def format(bfo):
     """
-    Prints the references of this record
+    Print host (Order: Name of publisher, place of publication and date of publication).
 
-    @param reference_prefix a prefix displayed before each reference
-    @param reference_suffix a suffix displayed after each reference
     """
-    from invenio.config import CFG_SITE_URL, CFG_ADS_SITE
-    from invenio.search_engine import get_mysql_recid_from_aleph_sysno, \
-         print_record
-
-    if CFG_ADS_SITE:
-        ## FIXME: store external sysno into 999 $e, not into 999 $r
-        # do not escape field values for now because of things like A&A in
-        # 999 $r that are going to be resolved further down:
-        references = bfo.fields("999C5", escape=0)
-    else:
-        references = bfo.fields("999C5", escape=1)
-    out = ""
-
-    for reference in references:
-        ref_out = ''
-
-        if reference.has_key('o'):
-            if out != "":
-                ref_out = '</li>'
-            ref_out += "<li><small>"+ reference['o']+ "</small> "
-
-        if reference.has_key('m'):
-            ref_out += "<small>"+ reference['m']+ "</small> "
-
-        if reference.has_key('r'):
-            if CFG_ADS_SITE:
-                # 999 $r contains external sysno to be resolved:
-                recid_to_display = get_mysql_recid_from_aleph_sysno(reference['r'])
-                if recid_to_display:
-                    ref_out += print_record(recid_to_display, 'hs')
-                else:
-                    ref_out += '<small>' + reference['r'] + ' (not in ADS)</small>'
+    _ = gettext_set_language(bfo.lang)
+    output = []
+    epflid = bfo.field('037__a').strip()
+    if epflid:
+        output.append(epflid)
+    
+    doi = bfo.field('0247_a').strip()
+    if doi:
+        doi_re = re.compile(r'(10.(\d)+/(\S)+)')
+        if doi_re.search(doi):
+            output.append('<a href="http://dx.doi.org/%s">doi:%s</a>' % (doi, doi))
+    
+    external = bfo.fields('035__a')
+    control_nb_re = re.compile(r'(?P<id>[\w:_,.\-_/]+)\s*\((?P<cataloger>[a-z\s]+)\)', re.I)
+    for ext in external:
+        match = control_nb_re.match(ext)
+        if match:
+            extra_id = match.group('id')
+            cataloger = match.group('cataloger')
+        if cataloger == 'ISI':
+            url = 'http://ws.isiknowledge.com/cps/openurl/service?url_ver=Z39.88-2004&amp;rft_id=info:ut/%s' % extra_id
+            output.append('<a href="%s">%s</a>' % (url, _("View record in Web of Science")))
+        elif cataloger == 'Scopus':
+            url = 'http://www.scopus.com/scopus/openurl/link.url?ctx_ver=Z39.88-2004&amp;rfr_id=http://infoscience.epfl.ch&amp;rft_id=info:eid/%s' % extra_id
+            output.append('<a href="%s">%s</a>' % (url, _("View record in Scopus")))
+        elif cataloger == 'PMID':
+            url = 'http://www.ncbi.nlm.nih.gov/sites/entrez?cmd=Retrieve&db=PubMed&list_uids=%s&dopt=Abstract' % extra_id
+            output.append('<a href="%s">%s</a>' % (url, _("View record in PubMed")))
+        elif cataloger == 'arXiv':
+            url = 'http://www.arxiv.org/openurl-resolver?rft_id=%s&amp;url_ver=Z39.88-2004' % extra_id
+            output.append('<a href="%s">%s</a>' % (url, _("View record in arXiv")))
+        elif cataloger == 'EV':
+            pass
+        elif cataloger == 'SzZuIDS NEBIS':
+            if bfo.lang == 'fr':
+                url = 'http://library.epfl.ch/nebis-redir/?record=%s' % extra_id
             else:
-                ref_out += '<small> [<a href="'+CFG_SITE_URL+'/search?f=reportnumber&amp;p='+ \
-                       reference['r']+ \
-                       '&amp;ln=' + bfo.lang + \
-                       '">'+ reference['r']+ "</a>] </small> <br />"
-
-        if reference.has_key('t'):
-            ejournal = bfo.kb("ejournals", reference.get('t', ""))
-            if ejournal != "":
-                ref_out += ' <small> <a href="https://cdsweb.cern.ch/ejournals.py?publication='\
-                      + reference['t'].replace(" ", "+") \
-                +"&amp;volume="+reference.get('v', "")+"&amp;year="+\
-                reference.get('y', "")+"&amp;page="+\
-                reference.get('p',"").split("-")[0]+'">'
-                ref_out += reference['t']+": "+reference.get('v', "")+\
-                       " ("+reference.get('y', "")+") "
-                ref_out += reference.get('p', "")+"</a> </small> <br />"
-            else:
-                ref_out += " <small> "+reference['t']+ reference.get('v', "")+\
-                       reference.get('y',"")+ reference.get('p',"")+ \
-                       " </small> <br />"
-
-
-        if reference_prefix is not None and ref_out != '':
-            ref_out = reference_prefix + ref_out
-        if reference_suffix is not None and ref_out != '':
-            ref_out += reference_suffix
-
-        out += ref_out
-
-    if out != '':
-        out += '</li>'
-
-    return out
+                url = 'http://library.epfl.ch/en/nebis-redir/?record=%s' % extra_id
+            
+            output.append('<a href="%s">%s</a>' % (url, _("Print copy in library catalog")))
+        
+        
+    return ''.join(['<li>%s</li>' % elem for elem in output])
 
 def escape_values(bfo):
     """
