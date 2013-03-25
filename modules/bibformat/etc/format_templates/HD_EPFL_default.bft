@@ -77,7 +77,8 @@
               <li><a href="/search?ln=<lang><en>en</en><fr>fr</fr></lang>&amp;p=recid%3A<BFE_RECID />&amp;rm=wrd">
                   <lang><en>Similar EPFL publications</en><fr>Publications EPFL similaires</fr></lang></span></a>
               </li>
-              <li><img src="/media/img/logothem.png" style="vertical-align:-5px; margin-top:5px;" /> <a href="http://ellearn.com/?id=<BFE_RECORD_ID />&type=pub&source=EPFL" target="_new"> <lang><en>Similar courses, documents and services</en><fr>Cours, documents et services similaires</fr></lang></a>
+              <!--<li><img src="/media/img/logothem.png" style="vertical-align:-5px; margin-top:5px;" /> <a href="http://ellearn.com/?id=<BFE_RECORD_ID />&type=pub&source=EPFL" target="_new"> <lang><en>Similar courses, documents and services</en><fr>Cours, documents et services similaires</fr></lang></a>
+            -->
             </ul>
           </div>
 
