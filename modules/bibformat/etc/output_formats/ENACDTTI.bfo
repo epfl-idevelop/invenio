@@ -1,0 +1,13 @@
+tag 980__a:
+ARTICLE   --- ExportdetailedTIENAC.bft
+REVIEW   --- ExportdetailedTIENAC.bft
+CHAPTER  --- ExportdetailedTIENAC.bft
+BOOK --- ExportdetailedbookTIENAC.bft
+PROC --- ExportdetailedbookTIENAC.bft
+STUDENT --- ExportdetailedbookTIENAC.bft
+THESIS --- ExportdetailedbookTIENAC.bft
+CONF --- ExportdetailedconferenceTIENAC.bft
+POSTER --- ExportdetailedconferenceTIENAC.bft
+TALK --- ExportdetailedconferenceTIENAC.bft
+
+default: ExportdetailedTIENAC.bft

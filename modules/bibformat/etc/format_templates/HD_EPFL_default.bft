@@ -1,0 +1,82 @@
+<name>EPFL HTML detailed - default</name>
+<description>Detailed format for article, review</description>
+        <div id="tools">
+          <!--<div class="button copy" stye="display: none;">
+            <a href="/search?ln=<lang><en>en</en><fr>fr</fr></lang>&amp;p=recid%3A<BFE_RECID />&amp;rm=wrd">
+              <button class="icon"></button>
+              <span class="label"><lang><en>Similar records</en><fr>Notices similaires</fr></lang></span>
+            </a>
+          </div>-->
+          
+          <div class="button file" style="display: none">
+            <div id="tooltip_trigger">
+              <a href="" id="convert_records">
+                <button class="icon"></button>
+                <span class="label"><lang><en>Export</en><fr>Exporter</fr></span>
+              </a>
+            </div>
+            <div class="tooltip bottom">
+              <ul id="convert_formats">
+                <li><a href="/curator/convert/bibtex">BibTeX</a></li>
+                <li><a href="/curator/convert/dublincore">Dublin Core XML</a></li>
+                <li><a href="/curator/convert/ris">RIS (RefMan, EndNote)</a></li>
+                <li><a href="/curator/convert/marcxml">MARC XML</a></li>
+              </ul>
+            </div>
+            <div class="clear"></div>
+            <form id="infoscience-searchform" action="/curator/convert/marcxml" style="display: none">
+              <input type="hidden" name="p" value="recid:<BFE_RECORD_ID />" />
+              <input type="hidden" name="filename" value="<BFE_FIELD tag='037__a' />" />
+            </form>
+          </div>
+          
+        </div>
+        <div id="content" class="content">
+          <div class="left-col">
+            <div class="doctype local-color"><BFE_DOCTYPE /></div>
+            <BFE_EPFL_ICON />
+          </div>
+          <div class="record-container" id="record-container-<BFE_RECORD_ID />">
+            <h1 class="h2"><BFE_TITLE prefix='' suffix="" latex_to_html="yes" /></h1>
+            <div class="authors"><BFE_AUTHORS print_links="yes" limit="10" interactive="yes" extension="et al." separator="; "/></div>
+            <ul class="record-metadata">
+              <BFE_CONFERENCE prefix='<li><span class="field-label"><lang><en>Presented at:</en><fr>Présenté à:</fr></lang></span> ' suffix="</li>"/>
+              <BFE_HOST prefix="<li>" display_label="yes" display_identifiers="yes" label_with_span="yes" />
+              <BFE_SERIES_INTEXT prefix='<li><span class="field-label"><lang><en>Series:</en><fr>Série:</fr></lang></span> ' suffix="</li>" />
+              <BFE_PATENT prefix='<li><span class="field-label"><lang><en>Patent number:</en><fr>Numéro de brevet:</fr></lang></span> ' suffix="</li>"/>
+              <BFE_IMPRINT prefix='<li>' suffix="</li>" />
+
+            </ul>
+            <BFE_ABSTRACT prefix="<p>" suffix="</p>" latex_to_html="yes"  print_lang="en" />
+            
+            <BFE_KEYWORDS prefix='<p><span class="field-label"><lang><en>Keywords:</en><fr>Mots-clefs:</fr></lang></span> ' suffix="</p>" keyword_prefix="" keyword_suffix="" />
+            <BFE_THESIS_INFO />
+            <BFE_DEFENSE prefix='<p><lang><en>Public defense:</en><fr>Soutenance:</fr></lang> ' suffix="</p>" />
+
+            <BFE_AWARD prefix='<p>' suffix="</p>" />
+            <BFE_NOTE prefix='<p><span class="field-label">Note:</span> ' suffix="</p>" />
+            
+            <h4><lang><en>Reference</en><fr>Référence</fr></lang></h4>
+            <ul>
+              <BFE_REFERENCES />
+            </ul>
+            <BFE_EPFL_FULLTEXT style="url_list" display_fulltext="no" display_url="yes" display_replacement_text="no" />
+            
+            <p class="notice_date"><BFE_UPDATED_DATE /></p>
+            <BFE_EDIT_RECORD />
+          </div>
+        </div>
+        <div class="right-col">
+          <div class="box overhead">
+            <h3><lang><en>Fulltext</en><fr>Fulltext</fr></lang><a href="http://s16270117.onlinehome-server.info/reporter_V2.html?id=<BFE_RECORD_ID />&amp;type=pub" target="_new"><img src="/media/img/white.png" style="float:right"/></a></h3>
+            <BFE_EPFL_FULLTEXT style="fulltext_list" />
+          </div>
+
+          <div class="box">
+            <h3><lang><en>Contacts</en><fr>Contacts</fr></lang></h3>
+            <ul class="link-list" style="margin-bottom: 20px;"><BFE_CONTACT_LAB kb_name="lab_name" kb_url="lab_url" /></ul>
+            <BFE_CONTACT_AUTHORS prefix='<h4><lang><en>EPFL authors</en><fr>Auteurs EPFL</fr></lang></h4><ul class="link-list">' suffix='</ul>'  />
+          </div>
+        </div>
+        <div class="clear"></div>
+

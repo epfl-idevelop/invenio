@@ -1,0 +1,13 @@
+tag 980__a:
+ARTICLE   --- ENACExportfull.bft
+REVIEW   --- ENACExportfull.bft
+CHAPTER  --- ENACExportfull.bft
+BOOK --- ENACExportfullbook.bft
+PROC --- ENACExportfullbook.bft
+STUDENT --- ENACExportfullbook.bft
+THESIS --- ENACExportfullbook.bft
+CONF --- ENACExportfullconference.bft
+POSTER --- ENACExportfullconference.bft
+TALK --- ENACExportfullconference.bft
+
+default: ENACExportfull.bft

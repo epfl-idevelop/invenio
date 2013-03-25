@@ -1,0 +1,14 @@
+<name>EPFL HTML result detailed  - default</name>
+<description>Detailed format, for result list, for article, review</description>
+        <div class="html-detailed-record">
+          <div class="left-col">
+            <div class="doctype local-color"><BFE_DOCTYPE /></div>
+            <BFE_EPFL_ICON />
+          </div>
+          <div class="record-container">
+            <lang><en>This record has been hidden by its author.</en><fr>Cette publication a été masquée par son auteur.</fr></lang>
+            <a href="/record/<BFE_RECID />"><lang><en>Detailed record</en><fr>Notice détaillée</fr></lang></a>
+            <BFE_EDIT_RECORD />
+          </div>
+        </div>
+        <div class="clear"></div>

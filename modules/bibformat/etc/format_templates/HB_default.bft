@@ -1,0 +1,4 @@
+<name>EPFL HTML brief - default</name>
+<description>Brief format for article, review</description>
+<div class="record_data"><BFE_AUTHORS_SHORT prefix='<span class="infoscience_authors">' suffix=".</span> "  print_links="no" /><BFE_TITLE prefix='<span class="infoscience_title">' suffix=",</span> " latex_to_html="no" /><BFE_HOST prefix='<span class="infoscience_host">' suffix=",</span> "/><BFE_SERIES_INTEXT css_class="infoscience_series" suffix=", " /><BFE_PATENT prefix='<span class="infoscience-patent">' suffix="</span>, "/><BFE_YEAR suffix=". "/></div>
+<span class="infoscience_links"><BFE_BRIEF_LINKS /></span>

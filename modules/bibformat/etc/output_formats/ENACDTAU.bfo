@@ -1,0 +1,13 @@
+tag 980__a:
+ARTICLE   --- ExportdetailedAUENAC.bft
+REVIEW   --- ExportdetailedAUENAC.bft
+CHAPTER  --- ExportdetailedAUENAC.bft
+BOOK --- ExportdetailedbookAUENAC.bft
+PROC --- ExportdetailedbookAUENAC.bft
+STUDENT --- ExportdetailedbookAUENAC.bft
+THESIS --- ExportdetailedbookAUENAC.bft
+CONF --- ExportdetailedconferenceAUENAC.bft
+POSTER --- ExportdetailedconferenceAUENAC.bft
+TALK --- ExportdetailedconferenceAUENAC.bft
+
+default: ExportdetailedAUENAC.bft

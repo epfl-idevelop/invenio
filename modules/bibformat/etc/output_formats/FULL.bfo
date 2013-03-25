@@ -1,0 +1,13 @@
+tag 980__a:
+ARTICLE   --- Exportfull.bft
+REVIEW   --- Exportfull.bft
+CHAPTER  --- Exportfull.bft
+BOOK --- Exportfullbook.bft
+PROC --- Exportfullbook.bft
+STUDENT --- Exportfullbook.bft
+THESIS --- Exportfullbook.bft
+CONF --- Exportfullconference.bft
+POSTER --- Exportfullconference.bft
+TALK --- Exportfullconference.bft
+
+default: Exportfull.bft

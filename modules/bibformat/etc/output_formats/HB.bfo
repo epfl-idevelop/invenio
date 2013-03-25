@@ -1,8 +1,16 @@
-tag 980.a:
-PICTURE --- Picture_HTML_brief.bft
-POETRY --- Poetry_HTML_brief.bft
+tag 980__c:
+HIDDEN --- HB_hidden.bft
 
-tag 773.t :
-Atlantis Times --- Journal_HTML_brief.bft
+tag 980__a:
+ARTICLE   --- HB_default.bft
+REVIEW   --- HB_default.bft
+CHAPTER  --- HB_default.bft
+BOOK --- HB_book.bft
+PROC --- HB_book.bft
+STUDENT --- HB_book.bft
+THESIS --- HB_thesis.bft
+CONF --- HB_conf.bft
+POSTER --- HB_conf.bft
+TALK --- HB_conf.bft
 
-default: Default_HTML_brief.bft
+default: HB_default.bft
