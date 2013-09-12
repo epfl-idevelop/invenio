@@ -133,11 +133,11 @@ class Template(websession_templates.Template):
               <li><a href="%(secure_domain)s/curator/my_account/profile/?ln=%(ln)s">%(my_infoscience_label)s</a></li>              
               <li><a href="%(secure_domain)s/yourbaskets/display?category=P&amp;topic=default&amp;ln=%(ln)s">%(collections_label)s</a></li>
               <li><a href="%(secure_domain)s/youralerts/list?ln=%(ln)s">%(alerts_label)s</a></li>
-              <li><a href="/curator/my_account/profile/?ln=en">Publications</a>
+              <li><a href="%(secure_domain)s/curator/my_account/profile/?ln=en">Publications</a>
                   <ul>
-                      <li><a href="/curator/submit/validate?ln=en">%(publications_validation_label)s</a></li>
-                      <li><a href="/curator/getter/validate_imports?ln=en">%(publications_import_label)s</a></li>
-                      <li><a href="/curator/getter/manual_match/?ln=en">%(publications_manual_match_label)s</a></li>
+                      <li><a href="%(secure_domain)s/curator/submit/validate?ln=en">%(publications_validation_label)s</a></li>
+                      <li><a href="%(secure_domain)s/curator/getter/validate_imports?ln=en">%(publications_import_label)s</a></li>
+                      <li><a href="%(secure_domain)s/curator/getter/manual_match/?ln=en">%(publications_manual_match_label)s</a></li>
                   </ul>
               </li>              
             </ul>""" % {'secure_domain': CFG_SITE_SECURE_URL,
