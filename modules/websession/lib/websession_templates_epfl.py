@@ -130,26 +130,15 @@ class Template(websession_templates.Template):
             return out
         out = """
             <ul class="menu hidden">
+              <li><a href="%(secure_domain)s/curator/my_account/profile/?ln=%(ln)s">%(my_infoscience_label)s</a></li>              
               <li><a href="%(secure_domain)s/yourbaskets/display?category=P&amp;topic=default&amp;ln=%(ln)s">%(collections_label)s</a></li>
               <li><a href="%(secure_domain)s/youralerts/list?ln=%(ln)s">%(alerts_label)s</a></li>
-              <li><a href="%(secure_domain)s/curator/my_account?ln=%(ln)s">%(publications_label)s</a>
-                  <ul>
-                    <li><a href="/search?p=author:%(sciper)s&amp;ln=%(ln)s">%(author_label)s</a></li>
-                    <li><a href="%(secure_domain)s/curator/submit/list?ln=%(ln)s">%(submitter_label)s</a></li>
-                    <li><a href="%(secure_domain)s/curator/submit/validate?ln=%(ln)s">%(referee_label)s</a></li>
-                    <li><a href="%(secure_domain)s/curator/getter/validate_imports?ln=%(ln)s">%(import_label)s</a></li>
-                  </ul>
-              </li>  
             </ul>""" % {'secure_domain': CFG_SITE_SECURE_URL,
                         'ln': ln,
                         'sciper': user_info.get('external_uniqueidentifier', [None])[0] or user_info.get('external_cn', [None])[-1] or '',
+                        'my_infoscience_label': _("My profile"),
                         'collections_label': _("My collections"),
-                        'alerts_label': _("My alerts"),
-                        'publications_label': _("Publications"),
-                        'author_label': _("I'm author of"),
-                        'submitter_label': _("I've deposited / published"),
-                        'referee_label': _("to be validated"),
-                        'import_label': _("to be imported"),
+                        'alerts_label': _("My alerts")
                        }
         junk = _("XX-Translate-test") 
         return out
