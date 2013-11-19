@@ -226,18 +226,37 @@ class Template(invenio.websearch_templates.Template):
 %(focuson)s
           </ul>""" % {'narrowsearch': narrowsearch, 'focuson': focuson,}
         else:
-            right_col = """
+            right_col = """        
         <div class="box box-flat-panel home-navpanel local-color">
           <h3>%(title)s</h3>
           <ul>
             <li><a href="%(guidelines_url)s">%(guidelines_label)s</a></li>
-            <li><a href="%(fns_url)s">%(fns_label)s</a></li>
+            <li><a href="%(fns1_url)s">%(fns1_label)s</a></li>
+            <li><a href="%(fns2_url)s">%(fns2_label)s</a></li>
+            <li><a href="%(erc_url)s">%(erc_label)s</a></li>
           </ul>
-        </div>""" % { 'title': _("Infoscience, EPFL's scientific publications"),
-                      'guidelines_url': ln=='fr' and 'http://commission-recherche.epfl.ch/integrite' or 'http://commission-recherche.epfl.ch/integrity',
-                      'guidelines_label': _("Directive for Research Integrity"),
-                      'fns_url': ln == 'en' and 'http://www.snf.ch/E/current/Dossiers/Pages/open-access.aspx' or 'http://www.snf.ch/SiteCollectionDocuments/dos_OA_Weisung_f.pdf',
-                      'fns_label': _("SNSF's Directive for open access publications"),}
+        </div>
+      </div>""" % { 
+    'title': _("Infoscience, EPFL's scientific publications"),
+                       
+    'guidelines_url': ln == 'en' and 'http://polylex.epfl.ch/files/content/sites/polylex/files/recueil_pdf/ENG/3.3.2_principe_integrite_recherche_an.pdf' or 
+                                     'http://polylex.epfl.ch/files/content/sites/polylex/files/recueil_pdf/3.3.2_principe_integrite_recherche_fr.pdf',
+    'guidelines_label': _("EPFL Directive for Research Integrity"),
+                       
+    'fns1_url': ln == 'en' and 'http://www.snf.ch/SiteCollectionDocuments/allg_reglement_valorisierung_e.pdf' or 
+                               'http://www.snf.ch/SiteCollectionDocuments/dos_OA_Weisung_f.pdf',
+    'fns1_label': _("SNSF regulations on information, valorisation and rights to research results"),
+                       
+                       
+    'fns2_url': ln == 'en' and 'http://www.snf.ch/SiteCollectionDocuments/Dossiers/dos_OA_regelung_auf_einen_blick_e.pdf' or 
+                               'http://www.snf.ch/SiteCollectionDocuments/Dossiers/dos_OA_regelung_auf_einen_blick_f.pdf',
+    'fns2_label': _("Overview of SNSF Guidelines on Open Access"),             
+
+
+    'erc_url': 'http://erc.europa.eu/sites/default/files/press_release/files/open_access_policy_researchers_funded_ERC.pdf',
+    'erc_label': _("Open Access Guidelines for researchers funded by the ERC"),             
+
+}
         body = """
         <div id="tools">
           <div class="button feed">
@@ -349,16 +368,35 @@ class Template(invenio.websearch_templates.Template):
           <h3>%(title)s</h3>
           <ul>
             <li><a href="%(guidelines_url)s">%(guidelines_label)s</a></li>
-            <li><a href="%(fns_url)s">%(fns_label)s</a></li>
+            <li><a href="%(fns1_url)s">%(fns1_label)s</a></li>
+            <li><a href="%(fns2_url)s">%(fns2_label)s</a></li>
+            <li><a href="%(erc_url)s">%(erc_label)s</a></li>
+
           </ul>
         </div>
       </div>
       <div class="clear"></div>"""
-        return out % { 'title': _("Infoscience, EPFL's scientific publications"),
-                       'guidelines_url': 'http://vpaa.epfl.ch/webdav/site/vpaa/shared/Whistleblowing/GUIDELINES%20FOR%20RESEARCH%20INTEGRITY%20AND%20GOOD%20SCIENTIFIC%20PRACTICE%20AT%20EPFL.pdf',
-                       'guidelines_label': _("Directive for Research Integrity"),
-                       'fns_url': ln == 'en' and 'http://www.snf.ch/E/current/Dossiers/Pages/open-access.aspx' or 'http://www.snf.ch/SiteCollectionDocuments/dos_OA_Weisung_f.pdf',
-                       'fns_label': _("SNSF's Directive for open access publications"),}
+        return out % { 
+    'title': _("Infoscience, EPFL's scientific publications"),
+                       
+    'guidelines_url': ln == 'en' and 'http://polylex.epfl.ch/files/content/sites/polylex/files/recueil_pdf/ENG/3.3.2_principe_integrite_recherche_an.pdf' or 
+                                     'http://polylex.epfl.ch/files/content/sites/polylex/files/recueil_pdf/3.3.2_principe_integrite_recherche_fr.pdf',
+    'guidelines_label': _("EPFL Directive for Research Integrity"),
+                       
+    'fns1_url': ln == 'en' and 'http://www.snf.ch/SiteCollectionDocuments/allg_reglement_valorisierung_e.pdf' or 
+                               'http://www.snf.ch/SiteCollectionDocuments/dos_OA_Weisung_f.pdf',
+    'fns1_label': _("SNSF regulations on information, valorisation and rights to research results"),
+                       
+                       
+    'fns2_url': ln == 'en' and 'http://www.snf.ch/SiteCollectionDocuments/Dossiers/dos_OA_regelung_auf_einen_blick_e.pdf' or 
+                               'http://www.snf.ch/SiteCollectionDocuments/Dossiers/dos_OA_regelung_auf_einen_blick_f.pdf',
+    'fns2_label': _("Overview of SNSF Guidelines on Open Access"),             
+
+
+    'erc_url': 'http://erc.europa.eu/sites/default/files/press_release/files/open_access_policy_researchers_funded_ERC.pdf',
+    'erc_label': _("Open Access Guidelines for researchers funded by the ERC"),             
+
+}
       
               
         

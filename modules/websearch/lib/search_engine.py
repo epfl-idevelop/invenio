@@ -67,7 +67,8 @@ from invenio.config import \
      CFG_BIBFORMAT_HIDDEN_TAGS, \
      CFG_SITE_URL, \
      CFG_ACCESS_CONTROL_LEVEL_ACCOUNTS, \
-     CFG_BIBRANK_SHOW_CITATION_LINKS
+     CFG_BIBRANK_SHOW_CITATION_LINKS, \
+     CFG_WEBSEARCH_DETAILED_META_FORMAT
 from invenio.search_engine_config import InvenioWebSearchUnknownCollectionError
 from invenio.bibrecord import create_record, record_get_field_instances
 from invenio.bibrank_record_sorter import get_bibrank_methods, rank_records, is_method_valid
@@ -809,10 +810,17 @@ def page_start(req, of, cc, aas, ln, uid, title_message=None,
         ## eventual better place to this code)
         if of.lower() in CFG_WEBSEARCH_USE_MATHJAX_FOR_FORMATS:
             metaheaderadd = """
-  <script src='/MathJax/MathJax.js' type='text/javascript'></script>
+    <script src='/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML' type='text/javascript'></script>
 """
         else:
             metaheaderadd = ''
+        # Add metadata in meta tags for Google scholar-esque harvesting...
+        # only if we have a detailed meta format and we are looking at a
+        # single record
+        if (recID != -1 and CFG_WEBSEARCH_DETAILED_META_FORMAT):
+            metaheaderadd += format_record(recID,\
+                                           CFG_WEBSEARCH_DETAILED_META_FORMAT,\
+                                            ln = ln)
 
         ## generate navtrail:
         navtrail = create_navtrail_links(cc, aas, ln)
