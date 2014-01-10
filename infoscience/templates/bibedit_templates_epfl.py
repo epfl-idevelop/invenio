@@ -1,0 +1,1 @@
+../../modules/bibedit/lib/bibedit_templates_epfl.py
