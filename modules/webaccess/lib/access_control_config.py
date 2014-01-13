@@ -124,7 +124,6 @@ else:
     "ZRobot": ExternalAuthRobot(enforce_external_nicknames=True, use_zlib=True)
     }
 
-
 # default data for the add_default_settings function
 # Note: by default the definition is set to deny any. This won't be a problem
 # because userid directly connected with roles will still be allowed.
@@ -323,4 +322,3 @@ CFG_WEBACCESS_WARNING_MSGS = {
                                19: """The site is having troubles in sending you an email for confirming your email address. The error has been logged and will be taken care of as soon as possible.""",
                                20: """No roles are authorized to perform action %s with the given parameters."""
         }
-

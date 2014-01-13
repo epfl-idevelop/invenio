@@ -103,6 +103,9 @@ def format_element(bfo, limit, separator='; ',
     
     return '<br />'.join(output)
 
+
+
+
 def render_authors(bfo, authors_list, limit, separator='; ', extension='[...]',
                    print_links="yes", print_affiliations='no',
                    affiliation_prefix = ' (', affiliation_suffix = ')',
@@ -146,7 +149,95 @@ def render_corporates(bfo, corporate_list, separator, print_links):
             out.append(coporate)
     return separator.join(out)
 
+"""
 
+    authors = []
+    for author in all_authors:
+        if author.has_key('a'):
+            
+        if is_part_of_something and author.has_key('e') and author['e'].strip():
+            # AB 2011-11-04 check for editors of the containing work, which should not appear among authors
+            if 'ed' in author['e'].lower():
+                role = 'editor'
+                continue
+            else:
+                authors.append(author)
+        else:
+            authors.append(author)
+
+    nb_authors = len(authors)    
+
+    # Process authors to add link, highlight and format affiliation
+    for author in authors:
+        if author.has_key('a'):
+            if highlight == 'yes':
+                
+                author['a'] = bibformat_utils.highlight(author['a'],
+                                                        bfo.search_pattern)
+
+            if print_links.lower() == "yes":
+                author['a'] = '<a href="' + CFG_SITE_URL + \
+                              '/search?f=author&amp;p='+ quote(author['a']) + \
+                              '&amp;ln='+ bfo.lang + \
+                              '">'+escape(author['a'])+'</a>'
+
+        if author.has_key('u'):
+            if print_affiliations == "yes":
+                author['u'] = affiliation_prefix + author['u'] + \
+                              affiliation_suffix
+
+    # Flatten author instances
+    if print_affiliations == 'yes':
+        authors = [author.get('a', '') + author.get('u', '')
+                   for author in authors]
+    else:
+        authors = [author.get('a', '')
+                   for author in authors]
+
+    if limit.isdigit() and  nb_authors > int(limit) and interactive != "yes":
+        return separator.join(authors[:int(limit)]) + extension
+
+    elif limit.isdigit() and nb_authors > int(limit) and interactive == "yes":
+        out = '''
+        <script type="text/javascript">
+        function toggle_authors_visibility(){
+            var more = document.getElementById('more');
+            var link = document.getElementById('link');
+            var extension = document.getElementById('extension');
+            if (more.style.display=='none'){
+                more.style.display = '';
+                extension.style.display = 'none';
+                link.innerHTML = "%(show_less)s"
+            } else {
+                more.style.display = 'none';
+                extension.style.display = '';
+                link.innerHTML = "%(show_more)s"
+            }
+            link.style.color = "rgb(204,0,0);"
+        }
+
+        function set_up(){
+            var extension = document.getElementById('extension');
+            extension.innerHTML = "%(extension)s";
+            toggle_authors_visibility();
+        }
+
+        </script>
+        '''%{'show_less':_("Hide"),
+             'show_more':_("Show all %i authors") % nb_authors,
+             'extension':extension}
+
+        out += '<a name="show_hide" />'
+        out += separator.join(authors[:int(limit)])
+        out += '<span id="more" style="">' + separator + \
+               separator.join(authors[int(limit):]) + '</span>'
+        out += ' <span id="extension"></span>'
+        out += ' <small><i><a id="link" href="#" onclick="toggle_authors_visibility()" style="color:rgb(204,0,0);"></a></i></small>'
+        out += '<script type="text/javascript">set_up()</script>'
+        return out
+    elif nb_authors > 0:
+        return separator.join(authors)
+"""
 def escape_values(bfo):
     """
     Called by BibFormat in order to check if output of this element

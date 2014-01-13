@@ -3907,7 +3907,7 @@ def print_record(recID, format='hb', ot='', ln=CFG_SITE_LANG, decompress=zlib.de
         else:
             # record 'recID' is not formatted in 'format' -- they are not in "bibfmt" table; so fetch all the data from "bibXXx" tables:
             if format == "marcxml":
-                out += """    <record xmlns="http://www.loc.gov/MARC21/slim">\n"""
+                out += """    <record xmlns="http://ead.nb.admin.ch/web/standards/slb/MARC21/MARC21slim.xsd">\n"""
                 out += "        <controlfield tag=\"001\">%d</controlfield>\n" % int(recID)
             elif format.startswith("xm"):
                 out += """    <record>\n"""

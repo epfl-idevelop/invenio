@@ -191,7 +191,7 @@ def get_files(bfo):
                                 descr = name
                             if is_thesis:
                                 if restriction == 'RESTRICTED':
-                                    descr = _("EPFL intranet only: Fulltext")
+                                    descr = _("EPFL intranet: Fulltext")
                                 else:
                                     descr = "Texte intégral / Full text"
                             if not url in [m_url for (m_url, m_descr, m_format, m_size) in main_documents]:
@@ -201,7 +201,7 @@ def get_files(bfo):
                             if not descr or descr.lower() == 'n/a':
                                 descr = name
                             if is_thesis and restriction == 'RESTRICTED':
-                                descr = _("EPFL intranet only: %s") % descr
+                                descr = _("EPFL intranet: %s") % descr
                             if not url in [m_url for (m_url, junk, junk, junk) in additional_documents]:
                                 additional_documents.append((url, descr, format, size))    
     if is_thesis and not main_documents and is_published:

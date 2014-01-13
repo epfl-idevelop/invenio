@@ -15,11 +15,9 @@ def format(bfo, brief="no"):
     """
     _ = gettext_set_language(bfo.lang)
     output = []
-    is_thesis = bfo.field("980__a") == 'THESIS' and bfo.field("973__a") == 'EPFL'
-    if not is_thesis:
-        if is_brief=="yes":
-            return '(%s)' % bfo.field('260__c')
-        return
+    is_epfl_thesis = bfo.field("980__a") == 'THESIS' and bfo.field("973__a") == 'EPFL'
+    if not is_epfl_thesis:
+        return '(%s)' % bfo.field('260__c')
     
     thesis_number = bfo.field('088__a')
     if brief != "yes":
@@ -27,7 +25,8 @@ def format(bfo, brief="no"):
         output %= {'number': thesis_number,
                    'year': bfo.field('920__b')}
     else:
-        return "Thèse EPFL, n° %s" % thesis_number
+        return "Thèse EPFL, n° %(number)s (%(year)s)" % {'number': thesis_number,
+                                                         'year': bfo.field('920__b')}
         
     output += '<br />'
     hierarchy = []

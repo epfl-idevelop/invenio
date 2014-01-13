@@ -31,3 +31,4 @@ def escape_values(bfo):
     should be escaped.
     """
     return 0
+

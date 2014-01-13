@@ -203,7 +203,7 @@ class WebInterfaceYourAccountPages(WebInterfaceDirectory):
             navmenuid='youraccount', secure_page_p=1)
 
     def display(self, req, form):
-        return redirect_to_url(req, '%s/curator/my_account' % CFG_SITE_SECURE_URL)
+        return redirect_to_url(req, '%s' % CFG_SITE_SECURE_URL)
         args = wash_urlargd(form, {})
         uid = webuser.getUid(req)
 
