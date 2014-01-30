@@ -25,7 +25,7 @@ from invenio.bibformat_utils import parse_tag
 from invenio.htmlutils import create_html_tag
 from invenio.bibindex_engine import get_field_tags
 
-def format_element(bfo, name, tag_name='', tag = '', respect_file_visiblity=False, escape=4):
+def format_element(bfo, name, tag_name='', tag = '', respect_file_visiblity=False, author_only=True, escape=4):
     """Prints a custom field in a way suitable to be used in HTML META
     tags.  In particular conforms to Google Scholar harvesting protocol as
     defined http://scholar.google.com/intl/en/scholar/inclusion.html
@@ -37,6 +37,8 @@ def format_element(bfo, name, tag_name='', tag = '', respect_file_visiblity=Fals
     @param tag: the MARC tag to be exported (only if not defined by tag_name)
     @param name: name to be displayed in the meta headers, labelling this value
     @param respect_file_visiblity: check the 8564_z if we are allowed to show a file
+    @param author_only: as google scholar, the author field is for authors only, 
+                        not editor nor director
     """
     
     # for files case, make different rule
@@ -65,8 +67,22 @@ def format_element(bfo, name, tag_name='', tag = '', respect_file_visiblity=Fals
             tags = [tag]
         if not tags:
             return ''
-
-        values = [bfo.fields(marctag,escape=escape) for marctag in tags]
+        
+        if author_only:
+            # author special case :
+            # no editor or director
+            values = []
+            for marctag in tags:
+                if marctag == '700__a':
+                    # get full data
+                    authors_info = bfo.fields('700',escape=escape)
+                    for author_info in authors_info:
+                        if not author_info.has_key('e'):
+                            values.append(author_info['a'])
+                else:
+                    values.append(bfo.fields(marctag,escape=escape))
+        else:
+            values = [bfo.fields(marctag,escape=escape) for marctag in tags]
     
     
     out = []
