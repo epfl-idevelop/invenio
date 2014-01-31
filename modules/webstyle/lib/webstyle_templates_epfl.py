@@ -615,7 +615,7 @@ def epfl_header(ln):
                 <li class="group-2-cols">
                   <h3><a href="http://futuretudiant.epfl.ch/fr">Portail Futurs Étudiants</a></h3>
                   <ul>
-                    <li><a href="http://www.epfl.ch/epfl-virtual-tour/virtual-tour.html">EPFL en images</a></li>
+                    <li><a href="http://bachelor.epfl.ch/etudes">Bachelor</a>, <a href="http://master.epfl.ch/fr">Master</a>, <a href="http://phd.epfl.ch/accueil">Doctorat</a></li>
                     <li><a href="http://sae.epfl.ch/venir-en-echange">Étudiants en échange</a></li>
                   </ul>
                 </li>
@@ -627,24 +627,24 @@ def epfl_header(ln):
                   </ul>
                 </li>
                 <li class="group-2-cols last">
-                  <h3><a href="http://research-office.epfl.ch/portail-chercheurs">Portail Chercheurs</a></h3>
+                  <h3><a href="http://research-office.epfl.ch/page-97749-fr.html">Portail Chercheurs</a></h3>
                   <ul>
-                    <li><a href="http://research-office.epfl.ch/financements">Financement de la recherche</a></li>
-                    <li><a href="http://phd.epfl.ch/candidatures">Doctorat à l'EPFL</a></li>
+                    <li><a href="http://research-office.epfl.ch/financements">Sources de financement</a></li>
+                    <li><a href="http://actu.epfl.ch/search/research_awards/">Prix et distinctions</a></li>
                   </ul>
                 </li>
                 <li class="group-2-cols">
                   <h3><a href="http://working.epfl.ch/portail-collaborateurs">Portail Collaborateurs</a></h3>
                   <ul>
                     <li><a href="http://rh.epfl.ch">Ressources humaines</a></li>
-                    <li><a href="http://help.epfl.ch/aide">Aide</a></li>
+                    <li><a href="http://help.epfl.ch/aide">(Help)</a></li>
                   </ul>
                 </li>
                 <li class="group-2-cols">
                   <h3><a href="http://entreprises.epfl.ch/fr">Portail Entreprises</a></h3>
                   <ul>
                     <li><a href="http://vpiv.epfl.ch/fr">Innovation &amp; valorisation</a></li>
-                    <li><a href="http://vpiv.epfl.ch/quartierinnovation">Quartier de l'innovation</a></li>
+                    <li><a href="http://vpiv.epfl.ch/innovationpark">EPFL Innovation Park</a></li>
                   </ul>
                 </li>
                 <li class="group-2-cols last">
@@ -657,8 +657,8 @@ def epfl_header(ln):
                 <li class="group-2-cols">
                   <h3><a href="http://teaching.epfl.ch/fr">Portail Enseignants</a></h3>
                   <ul>
-                    <li><a href="http://teaching.epfl.ch/mes_cours">Gestion des cours</a></li>
-                    <li><a href="http://teaching.epfl.ch/mes-etudiants">Gestion des étudiants</a></li>
+                    <li>Gestion des <a href="http://teaching.epfl.ch/page-53543-fr.html">cours</a> et des <a href="http://teaching.epfl.ch/page-16697-fr.html">étudiants</a></li>
+                    <li><a href="http://gymnases.epfl.ch/page-92859-fr.html">Interface Gymnases</a></li>
                   </ul>
                 </li>
                 <li class="group-2-cols">
@@ -724,6 +724,7 @@ def epfl_header(ln):
                   <h3><a href="http://cdm.epfl.ch/accueil" class="cdm">Collège du Management de la Technologie <acronym title="Collège du Management de la Technologie">CDM</acronym></a></h3>
                   <ul>
                     <li><a href="http://mtei.epfl.ch">Management de la Technologie</a></li>
+                    <li><a href="http://itpp.epfl.ch">Technologie et politiques publiques</a></li>
                     <li><a href="http://sfi.epfl.ch">Ingénierie financière</a></li>
                   </ul>
                 </li>
@@ -731,8 +732,7 @@ def epfl_header(ln):
                   <h3><a href="http://cdh.epfl.ch/fr" class="cdh">Collège des Humanités <acronym title="Collège des Humanités">CDH</acronym></a></h3>
                   <ul>
                     <li><a href="http://cdh.epfl.ch/shs">Sciences humaines et sociales</a></li>
-                    <li><a href="http://cdh.epfl.ch/fr/area-and-cultural-studies">Area &amp; cultural studies</a></li>
-                    <li><a href="http://cdh.epfl.ch/ontologie">Centre d'ontologie sociale</a></li>
+                    <li><a href="http://cdh.epfl.ch/fr/area-and-cultural-studies">Area and Cultural Studies</a></li>
                   </ul>
                 </li>
               </ul>
@@ -766,10 +766,10 @@ def epfl_header(ln):
                 <li class="group-2-cols last">
                   <h3><a href="http://research-office.epfl.ch/fr">Recherche</a></h3>
                   <ul>
-                    <li><a href="http://research-office.epfl.ch/centres-de-recherche">Centres interdisciplinaires</a></li>
+                    <li><a href="http://research-office.epfl.ch/centres-de-recherche">Centres de recherche</a></li>
                     <li><a href="http://commission-recherche.epfl.ch/fr">Commission de la recherche</a></li>
-                    <li><a href="http://research-office.epfl.ch/grantsDB">Grants</a></li>
-                    <li><a href="http://infoscience.epfl.ch/?ln=fr">Publications <acronym title="École Polytechnique Fédérale de Lausanne">EPFL</acronym></a></li>
+                    <li><a href="http://research-office.epfl.ch/grantsDB">Grants DB (subventions)</a></li>
+                    <li><a href="http://infoscience.epfl.ch/?ln=fr">Publications <acronym title="École polytechnique fédérale de Lausanne">EPFL</acronym></a></li>
                   </ul>
                 </li>
                 <li class="group-2-cols" style="clear: left;">
@@ -781,7 +781,7 @@ def epfl_header(ln):
                     <li><a href="http://tto.epfl.ch/homepage">Transfert de technologies, brevets</a></li>
                   </ul>
                 </li>
-                <li class="group-2-cols" >
+                <li class="group-2-cols">
                   <h3><a href="http://international.epfl.ch/accueil">Portail international</a></h3>
                   <ul>
                     <li><a href="http://ri.epfl.ch/fr">Relations internationales</a></li>
@@ -799,7 +799,7 @@ def epfl_header(ln):
       <div id="nav-search">
         <div id="search-box">
           <a name="search"></a>
-          <form name="search" action="//search.epfl.ch/process_web2010" class="searchform" id="header_searchform">
+          <form name="search" action="http://search.epfl.ch/process_web2010" class="searchform" id="header_searchform">
             <input type="hidden" name="lang" value="fr" />
             <input type="hidden" name="as_site_search" value="" id="header_local_site" />
             <input type="text" class="search" name="q" value="" id="header_searchfield" />
@@ -817,6 +817,10 @@ def epfl_header(ln):
                 <li>
                   <input class="hidden" type="radio" name="engine" id="search-engine-place" value="place" title="Chercher un lieu"/>
                   <label for="search-engine-place" title="Chercher un lieu">Lieu</label>
+                </li>
+                <li>
+                  <input class="hidden" type="radio" name="engine" id="search-engine-local" value="local"  title="Chercher sur ce site"/>
+                  <label for="search-engine-local" title="Chercher sur ce site">Ce site</label>
                 </li>
                 <li>
                   <input class="hidden" type="radio" name="engine" id="search-engine-eduweb" value="eduweb" title="Chercher des cours"/>
@@ -846,7 +850,7 @@ def epfl_header(ln):
     """
     else:
         return """
-     <a name="top"></a>
+    <a name="top"></a>
     <div id="accessibility" class="hidden" title="École Polytechnique Fédérale de Lausanne - Quick access">
       <ul>
         <li><a href="http://www.epfl.ch/accessibility.en.shtml" title="Specific informations for persons with disabilities" accesskey="0">Accessibility</a></li>
@@ -874,7 +878,7 @@ def epfl_header(ln):
                 <li class="group-2-cols">
                   <h3><a href="http://futuretudiant.epfl.ch/en">Prospective students portal</a></h3>
                   <ul>
-                    <li><a href="http://www.epfl.ch/epfl-virtual-tour/virtual-tour.html">EPFL Virtual tour</a></li>
+                    <li><a href="http://bachelor.epfl.ch/studies">Bachelor</a>, <a href="http://master.epfl.ch/page-94489-en.html">Master</a>, <a href="http://phd.epfl.ch/home">Phd</a></li>
                     <li><a href="http://sae.epfl.ch/exchange-incoming">Exchange student</a></li>
                   </ul>
                 </li>
@@ -889,21 +893,21 @@ def epfl_header(ln):
                   <h3><a href="http://research-office.epfl.ch/researchers-portal">Researchers portal</a></h3>
                   <ul>
                     <li><a href="http://research-office.epfl.ch/funding">Research funding</a></li>
-                    <li><a href="http://phd.epfl.ch/applicants">Doctorate at EPFL</a></li>
+                    <li><a href="http://actu.epfl.ch/search/research_awards/">Prizes and Awards</a></li>
                   </ul>
                 </li>
                 <li class="group-2-cols">
                   <h3><a href="http://working.epfl.ch/staff-portal">Staff portal</a></h3>
                   <ul>
                     <li><a href="http://rh.epfl.ch">Human resources</a></li>
-                    <li><a href="http://help.epfl.ch/help">Help</a></li>
+                    <li><a href="http://help.epfl.ch/help">(Help)</a></li>
                   </ul>
                 </li>
                 <li class="group-2-cols">
                   <h3><a href="http://entreprises.epfl.ch/business">Business portal</a></h3>
                   <ul>
                     <li><a href="http://vpiv.epfl.ch/en">Innovation &amp; Tech Transfer</a></li>
-                    <li><a href="http://vpiv.epfl.ch/inno-square">Innovation Square</a></li>
+                    <li><a href="http://vpiv.epfl.ch/innovationparkengl">EPFL Innovation Park</a></li>
                   </ul>
                 </li>
                 <li class="group-2-cols last">
@@ -912,7 +916,8 @@ def epfl_header(ln):
                     <li><a href="http://medias.epfl.ch/press-releases">Press releases</a>, <a href="http://medias.epfl.ch/reflex-en">Reflex</a>, <a href="http://medias.epfl.ch/flash-newspaper">Flash</a></li>
                     <li><a href="http://mediatheque.epfl.ch/">Image library</a></li>
                   </ul>
-                </li><li class="group-2-cols">
+                </li>
+                <li class="group-2-cols">
                   <h3><a href="http://teaching.epfl.ch/en">Teaching portal</a></h3>
                   <ul>
                     <li><a href="http://teaching.epfl.ch/my_courses">Courses management</a></li>
@@ -963,7 +968,7 @@ def epfl_header(ln):
                   </ul>
                 </li>
                 <li class="group-2-cols">
-                  <h3><a href="http://ic.epfl.ch/en" class="ic">Computer and Communication Sciences <acronym title="Informatique et Communications">IC</acronym></a></h3>
+                  <h3><a href="http://ic.epfl.ch/en" class="ic">Computer and Communication Sciences <acronym title="Computer &amp; Communication Sciences">IC</acronym></a></h3>
                   <ul>
                     <li><a href="http://ic.epfl.ch/computer-science">Computer Science</a></li>
                     <li><a href="http://ic.epfl.ch/communication-systems">Communication Systems</a></li>
@@ -982,6 +987,7 @@ def epfl_header(ln):
                   <h3><a href="http://cdm.epfl.ch/homepage" class="cdm">Management of Technology <acronym title="Collège du Management de la Technologie">CDM</acronym></a></h3>
                   <ul>
                     <li><a href="http://mtei.epfl.ch">Management of Technology</a></li>
+                    <li><a href="http://itpp.epfl.ch">Technology and Public Policy</a></li>
                     <li><a href="http://sfi.epfl.ch">Financial Engineering</a></li>
                   </ul>
                 </li>
@@ -989,8 +995,7 @@ def epfl_header(ln):
                   <h3><a href="http://cdh.epfl.ch/en" class="cdh">College of Humanities <acronym title="Collège des Humanités">CDH</acronym></a></h3>
                   <ul>
                     <li><a href="http://cdh.epfl.ch/humanities-and-social-sciences">Human and Social Science</a></li>
-                    <li><a href="http://cdh.epfl.ch/cacs">Area &amp; Cultural Studies</a></li>
-                    <li><a href="http://cdh.epfl.ch/ontology">Center for Social Ontology</a></li>
+                    <li><a href="http://cdh.epfl.ch/cacs">Area and Cultural Studies</a></li>
                   </ul>
                 </li>
               </ul>
@@ -1003,7 +1008,7 @@ def epfl_header(ln):
             <div class="navigation-panel hidden" id="brief-panel">
               <ul>
                 <li class="group-2-cols">
-                  <h3><a href="http://information.epfl.ch/introduction"><acronym title="École Polytechnique Fédérale de Lausanne">EPFL</acronym></a></h3>
+                  <h3><a href="http://information.epfl.ch/introduction"><acronym title="École polytechnique fédérale de Lausanne">EPFL</acronym></a></h3>
                   <ul>
                     <li><a href="http://direction.epfl.ch/en/presentation">Direction</a></li>
                     <li><a href="http://information.epfl.ch/introduction">General information</a></li>
@@ -1024,10 +1029,10 @@ def epfl_header(ln):
                 <li class="group-2-cols last">
                   <h3><a href="http://research-office.epfl.ch/en">Research</a></h3>
                   <ul>
-                    <li><a href="http://research-office.epfl.ch/research-centers">Transdisciplinary Centers</a></li>
+                    <li><a href="http://research-office.epfl.ch/research-centers">Research Centers</a></li>
                     <li><a href="http://commission-recherche.epfl.ch/en">Research Commission</a></li>
-                    <li><a href="http://research-office.epfl.ch/GrantsDB">Grants</a></li>
-                    <li><a href="http://infoscience.epfl.ch/?ln=en"><acronym title="École Polytechnique Fédérale de Lausanne">EPFL</acronym> Publications</a></li>
+                    <li><a href="http://research-office.epfl.ch/GrantsDB">Grants Database</a></li>
+                    <li><a href="http://infoscience.epfl.ch/?ln=en"><acronym title="École polytechnique fédérale de Lausanne">EPFL</acronym> Publications</a></li>
                   </ul>
                 </li>
                 <li class="group-2-cols" style="clear: left;">
@@ -1057,8 +1062,8 @@ def epfl_header(ln):
       <div id="nav-search">
         <div id="search-box">
           <a name="search"></a>
-          <form name="search" action="//search.epfl.ch/process_web2010" class="searchform" id="header_searchform">
-            <input type="hidden" name="lang" value="fr" />
+          <form name="search" action="http://search.epfl.ch/process_web2010" class="searchform" id="header_searchform">
+            <input type="hidden" name="lang" value="en" />
             <input type="hidden" name="as_site_search" value="" id="header_local_site" />
             <input type="text" class="search" name="q" value="" id="header_searchfield" />
             <div class="search-filter">
@@ -1075,6 +1080,10 @@ def epfl_header(ln):
                 <li>
                   <input class="hidden" type="radio" name="engine" id="search-engine-place" value="place" title="Find a place"/>
                   <label for="search-engine-place" title="Find a place">Place</label>
+                </li>
+                <li>
+                  <input class="hidden" type="radio" name="engine" id="search-engine-local" value="local"  title="Search within this site"/>
+                  <label for="search-engine-local" title="Search within this site">This website</label>
                 </li>
                 <li>
                   <input class="hidden" type="radio" name="engine" id="search-engine-eduweb" value="eduweb" title="Find courses"/>
@@ -1106,8 +1115,8 @@ def epfl_header(ln):
     
 def epfl_header_version():
     return """
-    <meta name="headerversion" content="2.1"/>
-    <meta name="headerdate" content="2013-09-11"/>
+    <meta name="headerversion" content="2.2.0"/>
+    <meta name="headerdate" content="2014-01-17"/>
     <link rel="shortcut icon" href="//www.epfl.ch/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="//www.epfl.ch/css/print.css" type="text/css" media="print" />
 """
