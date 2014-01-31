@@ -68,23 +68,33 @@ def format_element(bfo, name, tag_name='', tag = '', respect_file_visiblity=Fals
         if not tags:
             return ''
         
-        if author_only:
-            # author special case :
-            # no editor or director
-            values = []
-            for marctag in tags:
-                if marctag == '700__a':
-                    # get full data
-                    authors_info = bfo.fields('700',escape=escape)
-                    for author_info in authors_info:
-                        if not author_info.has_key('e'):
-                            values.append(author_info['a'])
-                else:
-                    values.append(bfo.fields(marctag,escape=escape))
-        else:
-            values = [bfo.fields(marctag,escape=escape) for marctag in tags]
-    
-    
+        # load values to be printed
+        values = []
+        
+        for marctag in tags:
+            ######################################
+            # Special cases
+            if marctag == '700__a' and author_only:
+                # authors
+                # no editor or director
+                authors_info = bfo.fields('700',escape=escape)
+                for author_info in authors_info:
+                    if not author_info.has_key('e'):
+                        values.append(author_info['a'])
+            # doi                        
+            elif marctag == '0247_a':
+                # dont show anything that is not an doi
+                doi_infos =  bfo.fields('0247_',escape=escape)
+                for doi_info in doi_infos:
+                    if doi_info.has_key('2'):
+                        if doi_info['2'] == 'doi':
+                            values.append(doi_info['a'])
+                    else:
+                        values.append(doi_info['a'])
+            ####
+            else:
+                values.append(bfo.fields(marctag,escape=escape))
+
     out = []
     for value in values:
         if isinstance(value, list):
