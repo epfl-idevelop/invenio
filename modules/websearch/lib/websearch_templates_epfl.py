@@ -97,7 +97,13 @@ class Template(invenio.websearch_templates.Template):
         'aas': (int, CFG_WEBSEARCH_DEFAULT_SEARCH_INTERFACE),
         'as': (int, CFG_WEBSEARCH_DEFAULT_SEARCH_INTERFACE),
         'verbose': (int, 0)}
+    
+    def tmpl_xml_marc_prologue(self):
+        """Creates XML MARC prologue."""
+        out = """<collection xmlns="http://ead.nb.admin.ch/web/standards/slb/MARC21/MARC21slim.xsd">\n"""
+        return out
 
+    
     def build_search_url(self, known_parameters={}, **kargs):
         """ Helper for generating a canonical search
         url. 'known_parameters' is the list of query parameters you
@@ -887,7 +893,9 @@ class Template(invenio.websearch_templates.Template):
                 subsubcollections = []
                 for grandson in grandsons[son_index]:
                     try:
-                        (subacronym, subname) = grandson.get_name(ln).split(' - ')
+                        splitted_name = grandson.get_name(ln).split(' - ')
+                        subacronym = splitted_name[0]
+                        subname = ' - '.join(splitted_name[1:])
                         grand_tmpl = grandson_accro_tmpl
                     except ValueError:
                         (subacronym, subname) = ('', grandson.get_name(ln))
