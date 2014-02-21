@@ -877,7 +877,9 @@ class Template(invenio.websearch_templates.Template):
         subcollections = []
         for son_index, son in enumerate(sons):
             try:
-                (acronym, name) = son.get_name(ln).split(' - ')
+                splitted_name = son.get_name(ln).split(' - ')
+                acronym = splitted_name[0]
+                name = ' - '.join(splitted_name[1:])
                 tmpl = son_accro_tmpl
             except ValueError:
                 acronym = ''
