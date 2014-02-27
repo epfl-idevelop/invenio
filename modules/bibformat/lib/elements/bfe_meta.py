@@ -107,9 +107,14 @@ def format_element(bfo, name, tag_name='', tag = '', respect_file_visiblity=Fals
             out.extend(value.values())
         else:
             out.append(value)
-    out = dict(zip(out, len(out)*[''])).keys()
+    
+    # out = dict(zip(out, len(out)*[''])).keys()
+    
+    # uniquify
+    noDupes = []
+    [noDupes.append(i) for i in out if not noDupes.count(i)]
 
-    return '\n'.join([create_html_tag('meta', name=name, content=value) for value in out])
+    return '\n'.join([create_html_tag('meta', name=name, content=value) for value in noDupes])
 
 def escape_values(bfo):
     """
