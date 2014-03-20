@@ -17,7 +17,8 @@ def format(bfo, brief="no"):
     output = []
     is_epfl_thesis = bfo.field("980__a") == 'THESIS' and bfo.field("973__a") == 'EPFL'
     if not is_epfl_thesis:
-        return '(%s)' % bfo.field('260__c')
+        #return '(%s)' % bfo.field('260__c')
+        return ''
     
     thesis_number = bfo.field('088__a')
     if brief != "yes":
