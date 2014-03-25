@@ -124,7 +124,16 @@ def render_authors(bfo, authors_list, limit, separator='; ', extension='[...]',
             author['u'] = affiliation_prefix + author['u'] + affiliation_suffix
             author['a'] = author.get('a', '') + author.get('u', '')
     
-    authors = [author['a'] for author in authors_list]
+    authors = []
+    
+    for author in authors_list:
+        if author.has_key('q'):
+            authors.append(author['a'] + " (" + author['q'] + ")")
+        else:
+            authors.append(author['a'])
+    
+    #authors = [author['a'] for author in authors_list] #James: have to put a condition to know if a q argument exist
+            
     if limit.isdigit() and  nb_authors > int(limit) and interactive != "yes":
         return prefix + separator.join(authors[:int(limit)]) + extension
     
