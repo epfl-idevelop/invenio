@@ -662,10 +662,10 @@ def epfl_header(ln):
                   </ul>
                 </li>
                 <li class="group-2-cols">
-                  <h3><a href="http://epflalumni.ch/">Portail Alumni A3-EPFL</a></h3>
+                  <h3><a href="http://www.epflalumni.ch/">Portail EPFL Alumni</a></h3>
                   <ul>
-                    <li><a href="http://www.epflalumni.ch/page/devenir-membre">Devenir membre</a></li>
-                    <li><a href="http://epflalumni.ch/nos-evenements/">Agenda A3</a></li>
+                    <li><a href="https://www.epflalumni.ch/avantages/formulaire-de-demande/">Rejoindre la communauté</a></li>
+                    <li><a href="http://www.epflalumni.ch/nos-evenements/">Evénements Alumni</a></li>
                   </ul>
                 </li>
               </ul>
@@ -768,7 +768,6 @@ def epfl_header(ln):
                   <ul>
                     <li><a href="http://research-office.epfl.ch/centres-de-recherche">Centres de recherche</a></li>
                     <li><a href="http://commission-recherche.epfl.ch/fr">Commission de la recherche</a></li>
-                    <li><a href="http://research-office.epfl.ch/grantsDB">Grants DB (subventions)</a></li>
                     <li><a href="http://infoscience.epfl.ch/?ln=fr">Publications <acronym title="École polytechnique fédérale de Lausanne">EPFL</acronym></a></li>
                   </ul>
                 </li>
@@ -925,10 +924,10 @@ def epfl_header(ln):
                   </ul>
                 </li>
                 <li class="group-2-cols">
-                  <h3><a href="http://epflalumni.ch/">Alumni Portal</a></h3>
+                  <h3><a href="http://epflalumni.ch/">EPFL Alumni Portal</a></h3>
                   <ul>
-                    <li><a href="http://www.epflalumni.ch/page/devenir-membre">Become a member</a></li>
-                    <li><a href="http://epflalumni.ch/nos-evenements/">A3 agenda</a></li>
+                    <li><a href="https://www.epflalumni.ch/avantages/formulaire-de-demande/">Join the community</a></li>
+                    <li><a href="http://www.epflalumni.ch/nos-evenements/">Alumni events</a></li>
                   </ul>
                 </li>
               </ul>
@@ -1031,7 +1030,6 @@ def epfl_header(ln):
                   <ul>
                     <li><a href="http://research-office.epfl.ch/research-centers">Research Centers</a></li>
                     <li><a href="http://commission-recherche.epfl.ch/en">Research Commission</a></li>
-                    <li><a href="http://research-office.epfl.ch/GrantsDB">Grants Database</a></li>
                     <li><a href="http://infoscience.epfl.ch/?ln=en"><acronym title="École polytechnique fédérale de Lausanne">EPFL</acronym> Publications</a></li>
                   </ul>
                 </li>
