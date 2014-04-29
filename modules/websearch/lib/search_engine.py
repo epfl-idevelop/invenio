@@ -810,6 +810,14 @@ def page_start(req, of, cc, aas, ln, uid, title_message=None,
         ## eventual better place to this code)
         if of.lower() in CFG_WEBSEARCH_USE_MATHJAX_FOR_FORMATS:
             metaheaderadd = """
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$']],
+            processEscapes: true},
+  showProcessingMessages: false,
+  messageStyle: "none"
+});
+</script>          
     <script src='/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML' type='text/javascript'></script>
 """
         else:

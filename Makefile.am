@@ -26,8 +26,8 @@ EXTRA_DIST = UNINSTALL THANKS RELEASE-NOTES configure-tests.py config.nice.in \
 
 # current MathJax version and packages
 
-MJV = 1.0.1a
-MATHJAX = http://invenio-software.org/download/mathjax/MathJax-v$(MJV).zip
+MJV = 2.3
+MATHJAX = https://github.com/mathjax/MathJax/archive/v$(MJV).zip
 
 # current FCKeditor version
 FCKV = 2.6.6
