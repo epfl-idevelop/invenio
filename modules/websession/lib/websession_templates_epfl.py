@@ -194,6 +194,7 @@ class Template(websession_templates.Template):
                      tmpl % ('/curator/dropbox', _("Dropbox")),
                      tmpl % ('/curator/delete', _("Delete by reference")),
                      tmpl % ('/curator/laboratories', _("Laboratories management")),
+                     tmpl % ('/curator/stats/query', _("Laboratories stats")),
                      tmpl % ('/curator/authors', _("Authors management")),
                      tmpl % ('/curator/users/create', _("Create user")),
                      tmpl % ('/curator/metrics', _("Publication statistics / bibliometrics")),
