@@ -22,7 +22,11 @@ def format(bfo, separator=', ', hostname_class="", display_label="no", display_y
         else:
             output = '%s, %s' % (publisher, year)
     else:
-        output = '<span class="field-label">%s:</span> %s' % (_("Publication date"), year)
+        # if patent, set label to Priority Date
+        if bfo.field('980__a') == 'PATENT':
+            output = '<span class="field-label">%s:</span> %s' % (_("Priority date"), year)
+        else:
+            output = '<span class="field-label">%s:</span> %s' % (_("Publication date"), year)
     return output        
 
 def escape_values(bfo):

@@ -43,9 +43,7 @@
               <BFE_CONFERENCE prefix='<li><span class="field-label"><lang><en>Presented at:</en><fr>Présenté à:</fr></lang></span> ' suffix="</li>"/>
               <BFE_HOST prefix="<li>" display_label="yes" display_identifiers="yes" label_with_span="yes" />
               <BFE_SERIES_INTEXT prefix='<li><span class="field-label"><lang><en>Series:</en><fr>Série:</fr></lang></span> ' suffix="</li>" />
-              <BFE_PATENT prefix='<li><span class="field-label"><lang><en>Patent number:</en><fr>Numéro de brevet:</fr></lang></span> ' suffix="</li>"/>
               <BFE_IMPRINT prefix='<li>' suffix="</li>" />
-
             </ul>
             <BFE_ABSTRACT prefix="<p>" suffix="</p>" latex_to_html="yes"  print_lang="en" />
             
@@ -55,7 +53,9 @@
 
             <BFE_AWARD prefix='<p>' suffix="</p>" />
             <BFE_NOTE prefix='<p><span class="field-label">Note:</span> ' suffix="</p>" />
-            
+            <ul class="record-metadata">
+            	<BFE_PATENT />
+            </ul>
             <h4><lang><en>Reference</en><fr>Référence</fr></lang></h4>
             <ul>
               <BFE_REFERENCES />

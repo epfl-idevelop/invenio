@@ -17,9 +17,14 @@ def format(bfo, kb_name, kb_url):
         lab_name = bfo.kb(kb_name, lab)
         lab_url = bfo.kb(kb_url, lab)
         if lab_url:
-            out.append('<a href="%s">%s</a>' % (lab_url, lab_name))
+	        out.append('<a href="%s">%s</a>' % (lab_url, lab_name))
         else:
             out.append('%s' % lab_name)
+
+    # Add the TTO if we have a patent
+    if bfo.field('980__a') == 'PATENT':
+        out.append('<a href="http://tto.epfl.ch/">Technology Transfer Office</a>')
+
     return ''.join(['<li>%s</li>' % elem for elem in out])
 
 def escape_values(bfo):
