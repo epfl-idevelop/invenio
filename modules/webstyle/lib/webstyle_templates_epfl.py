@@ -627,7 +627,7 @@ def epfl_header(ln):
                   </ul>
                 </li>
                 <li class="group-2-cols last">
-                  <h3><a href="http://research-office.epfl.ch/page-97749-fr.html">Portail Chercheurs</a></h3>
+                  <h3><a href="http://recherche.epfl.ch/">Portail Chercheurs</a></h3>
                   <ul>
                     <li><a href="http://research-office.epfl.ch/financements">Sources de financement</a></li>
                     <li><a href="http://actu.epfl.ch/search/research_awards/">Prix et distinctions</a></li>
@@ -818,10 +818,6 @@ def epfl_header(ln):
                   <label for="search-engine-place" title="Chercher un lieu">Lieu</label>
                 </li>
                 <li>
-                  <input class="hidden" type="radio" name="engine" id="search-engine-local" value="local"  title="Chercher sur ce site"/>
-                  <label for="search-engine-local" title="Chercher sur ce site">Ce site</label>
-                </li>
-                <li>
                   <input class="hidden" type="radio" name="engine" id="search-engine-eduweb" value="eduweb" title="Chercher des cours"/>
                   <label for="search-engine-eduweb" title="Chercher des cours">Cours</label>
                 </li>
@@ -845,8 +841,8 @@ def epfl_header(ln):
         </div>
       </div>
       <div class="clear"></div>
-    </div>
-    """
+    </div>    
+"""
     else:
         return """
     <a name="top"></a>
@@ -889,7 +885,7 @@ def epfl_header(ln):
                   </ul>
                 </li>
                 <li class="group-2-cols last">
-                  <h3><a href="http://research-office.epfl.ch/researchers-portal">Researchers portal</a></h3>
+                  <h3><a href="http://recherche.epfl.ch/en">Researchers portal</a></h3>
                   <ul>
                     <li><a href="http://research-office.epfl.ch/funding">Research funding</a></li>
                     <li><a href="http://actu.epfl.ch/search/research_awards/">Prizes and Awards</a></li>
@@ -1080,10 +1076,6 @@ def epfl_header(ln):
                   <label for="search-engine-place" title="Find a place">Place</label>
                 </li>
                 <li>
-                  <input class="hidden" type="radio" name="engine" id="search-engine-local" value="local"  title="Search within this site"/>
-                  <label for="search-engine-local" title="Search within this site">This website</label>
-                </li>
-                <li>
                   <input class="hidden" type="radio" name="engine" id="search-engine-eduweb" value="eduweb" title="Find courses"/>
                   <label for="search-engine-eduweb" title="Find courses">Courses</label>
                 </li>
@@ -1113,8 +1105,8 @@ def epfl_header(ln):
     
 def epfl_header_version():
     return """
-    <meta name="headerversion" content="2.2.0"/>
-    <meta name="headerdate" content="2014-01-17"/>
+    <meta name="headerversion" content="2.3"/>
+    <meta name="headerdate" content="2014-08-08"/>
     <link rel="shortcut icon" href="//www.epfl.ch/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="//www.epfl.ch/css/print.css" type="text/css" media="print" />
-"""
+    """

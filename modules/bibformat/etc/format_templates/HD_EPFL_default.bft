@@ -68,8 +68,17 @@
         </div>
         <div class="right-col">
           <div class="box overhead">
-            <h3><lang><en>Fulltext</en><fr>Fulltext</fr></lang><a href="http://s16270117.onlinehome-server.info/reporter_V2.html?id=<BFE_RECORD_ID />&amp;type=pub" target="_new"><img src="/media/img/white.png" style="float:right"/></a></h3>
+            <h3><lang><en>Fulltext</en><fr>Fulltext</fr></lang></h3>
             <BFE_EPFL_FULLTEXT style="fulltext_list" />
+          </div>
+           <div class="box">
+            <h3><lang><en>Related material</en><fr>Documents pertinents</fr></lang></h3>
+            <ul class="link-list" style="margin-bottom: 20px;">
+              <li><a href="/search?ln=<lang><en>en</en><fr>fr</fr></lang>&amp;p=recid%3A<BFE_RECID />&amp;rm=wrd">
+                  <lang><en>Similar EPFL publications</en><fr>Publications EPFL similaires</fr></lang></span></a>
+              </li>
+              <li><img src="/media/img/logothem.png" style="vertical-align:-5px; margin-top:5px;" /> <a href="http://ellearn.com/?id=<BFE_RECORD_ID />&type=pub&source=EPFL" target="_new"> <lang><en>Similar courses, documents and services</en><fr>Cours, documents et services similaires</fr></lang></a>
+            </ul>
           </div>
 
           <div class="box">
