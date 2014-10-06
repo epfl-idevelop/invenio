@@ -18,7 +18,7 @@ def format(bfo, short="no"):
     
     patents = bfo.fields('013')
     
-    template_output_patent_nr = '<li><span class="field-label">Patent :</span><ul>%s</ul></li>'
+    template_output_patent_nr = '<li><span class="field-label">Patent :</span><ul class="record-metadata">%s</ul></li>'
     
     output = []
     # get number with data linked
@@ -30,15 +30,17 @@ def format(bfo, short="no"):
         outer_list = "<ul>%s</u>"
         for patent in patents:
             if patent.has_key('a'):
-                patent_output = patent['a'] 
+                patent_output = ''
+                
+                # add country
+                if patent.has_key('b'):
+                    patent_output += patent['b']
+                
+                patent_output += patent['a'] 
                 
                 # add type of number
                 if patent.has_key('c'):
                     patent_output += ' (' + patent['c'] + ')'
-                    
-                # add country
-                if patent.has_key('b'):
-                    patent_output += ' (' + patent['b'] + ')'
                     
                 patents_nr.append(patent_output)
                 

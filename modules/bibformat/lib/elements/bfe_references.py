@@ -23,9 +23,11 @@ def format(bfo):
             output.append('<a href="http://dx.doi.org/%s">doi:%s</a>' % (doi, doi))
             
     # show patent search ?
-    if bfo.field('013__a') and bfo.field('013__b'):
+    if bfo.field('013__a'):
+        bfo.field('013__b')
+        patent_to_search = bfo.field('013__a')
         url = "http://worldwide.espacenet.com/searchResults?compact=false&PN=%s&ST=advanced&locale=en_EP&DB=EPODOC" % (str(bfo.field('013__b')) + str(bfo.field('013__a')))
-        output.append('<a href="%s">%s</a>' % (url, _("Search this record in European Patent Office")))
+        output.append('<a href="%s" target="_blank">%s</a>' % (url, _("Search this record in European Patent Office")))
     
     external = bfo.fields('035__a')
     control_nb_re = re.compile(r'(?P<id>[\w:_,.\-_/]+)\s*\((?P<cataloger>[a-z\s]+)\)', re.I)

@@ -53,9 +53,7 @@
 
             <BFE_AWARD prefix='<p>' suffix="</p>" />
             <BFE_NOTE prefix='<p><span class="field-label">Note:</span> ' suffix="</p>" />
-            <ul class="record-metadata">
-            	<BFE_PATENT />
-            </ul>
+            
             <h4><lang><en>Reference</en><fr>Référence</fr></lang></h4>
             <ul>
               <BFE_REFERENCES />
