@@ -38,7 +38,7 @@ def add_link_to_fulltext(bfo, text):
     else:
         return '<a href ="%s/record/%s/files">%s</a>' % (CFG_SITE_URL, bfo.recID, text)
 
-def format_element(bfo, separator=" ", highlight='no', latex_to_html='no', link_to_fulltext='no'):
+def format_element(bfo, separator=" ", highlight='no', latex_to_html='no', link_to_fulltext='no', punctuation = ''):
     """
     Prints the titles of a record.
 
@@ -46,6 +46,7 @@ def format_element(bfo, separator=" ", highlight='no', latex_to_html='no', link_
     @param highlight: highlights the words corresponding to search query if set to 'yes'
     @param latex_to_html: if 'yes', interpret as LaTeX title
     @param link_to_fulltext: if 'yes', link title to fulltext if available.
+    @param punctuation: add this char if the title don't already end with one
     """
     titles = []
 
@@ -98,6 +99,11 @@ def format_element(bfo, separator=" ", highlight='no', latex_to_html='no', link_
     
     if link_to_fulltext == 'yes':
         out = add_link_to_fulltext(bfo, out) 
+        
+    # add a , at the  end if not already
+    if out and punctuation:
+        if out[-1] not in [',', '.', '!', '?', ';']:
+            out.append(punctuation)
     
     return out
 
