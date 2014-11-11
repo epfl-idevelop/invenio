@@ -103,7 +103,7 @@ def format_element(bfo, separator=" ", highlight='no', latex_to_html='no', link_
     # add a , at the  end if not already
     if out and punctuation:
         if out[-1] not in [',', '.', '!', '?', ';']:
-            out.append(punctuation)
+            out += punctuation
     
     return out
 

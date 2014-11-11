@@ -1,5 +1,5 @@
 <name>Export detailed - conferences, links on authors</name>
 <description>Detailed format for conf, poster, talk, with links on authors</description>
-<h3 class="infoscience_title"><BFE_TITLE suffix=". " latex_to_html="no" link_to_fulltext="no"/></h3>
+<h3 class="infoscience_title"><BFE_TITLE punctuation=". " latex_to_html="no" link_to_fulltext="no"/></h3>
 <p class="infoscience_authors"><BFE_AUTHORS_DETAILED suffix=". "  print_links="yes" author_class="infoscience_author" /></p>
 <p class="infoscience_host"><BFE_CONFERENCE separator=", " suffix="."/><BFE_SERIES_INTEXT prefix=', ' css_class="infoscience_series" suffix="." /></p>
