@@ -683,7 +683,6 @@ def epfl_header(ln):
                     <li><a href="http://enac.epfl.ch/architecture">Architecture</a></li>
                     <li><a href="http://enac.epfl.ch/ingenierie-civile">Ingénierie civile</a></li>
                     <li><a href="http://enac.epfl.ch/ingenierie-de-l-environnement">Ingénierie de l'environnement</a></li>
-                    <li><a href="http://enac.epfl.ch/ville-et-territoire">Ville et Territoire</a></li>
                   </ul>
                 </li>
                 <li class="group-2-cols">
@@ -941,7 +940,6 @@ def epfl_header(ln):
                     <li><a href="http://enac.epfl.ch/en/architecture">Architecture</a></li>
                     <li><a href="http://enac.epfl.ch/civil-engineering">Civil Engineering</a></li>
                     <li><a href="http://enac.epfl.ch/environmental-engineering">Environmental Engineering</a></li>
-                    <li><a href="http://enac.epfl.ch/urban-planning">Urban Planning</a></li>
                   </ul>
                 </li>
                 <li class="group-2-cols">
