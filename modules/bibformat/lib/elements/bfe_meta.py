@@ -44,16 +44,17 @@ def format_element(bfo, name, tag_name='', tag = '', respect_file_visiblity=Fals
     # for files case, make different rule
     if respect_file_visiblity:
         values = []
-        visiblities = bfo.fields('8564_x', escape)
-        files = bfo.fields('8564_u', escape)
-        
-        for i, file in enumerate(files):
+
+        files = bfo.fields('8564_')
+
+        for file_dict in files:
             # show only public
-            try:
-                if visiblities[i] == 'PUBLIC':
-                    values.append(file)
-            except KeyError:
-                continue
+            if file_dict.get('x'):
+                try:
+                    if file_dict['x'] == 'PUBLIC':
+                        values.append(file_dict['u'])
+                except KeyError:
+                    continue
     else:
         tags = []
         if tag_name:
