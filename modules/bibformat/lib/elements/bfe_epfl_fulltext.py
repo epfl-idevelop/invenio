@@ -279,8 +279,7 @@ def format_element(bfo, style, display_fulltext="yes", display_url="no", display
             if bfo.field("973__s") != 'PUBLISHED':
                 formatted.append("<li>%s</li>" % _("Thesis submitted - Forthcoming publication"))
         elif doi and doi.lower() != 'n/a':
-            formatted.append('<li><a href="http://dx.doi.org/%s"><div class="file-icon pdf"></div>%s</a></li>' % (doi, _("Official version")))
-
+            formatted.append('<li><img style="margin-right:6px;margin-left:4px;" src="/media/img/external.png"><a href="http://dx.doi.org/%s">%s</a></li>' % (doi, _("Official version")))
 
     if display_url.lower() == 'yes':
         for (url, description, format, size) in external_documents:
