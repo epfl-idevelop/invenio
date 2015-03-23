@@ -16,7 +16,10 @@ def format(bfo, kb_name, kb_url):
     for lab in lab_identifiers:
         lab_name = bfo.kb(kb_name, lab)
         lab_url = bfo.kb(kb_url, lab)
-        out.append('<a href="%s">%s</a>' % (lab_url, lab_name))
+        if lab_url:
+            out.append('<a href="%s">%s</a>' % (lab_url, lab_name))
+        else:
+            out.append('%s' % lab_name)
     return ''.join(['<li>%s</li>' % elem for elem in out])
 
 def escape_values(bfo):
