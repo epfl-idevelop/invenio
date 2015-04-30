@@ -394,6 +394,7 @@ class Template(webstyle_templates.Template):
                   <li><a href="/collection/Infoscience/Research/SV?ln=%(ln)s">%(SV)s</a></li>
                   <li><a href="/collection/Infoscience/Research/CDM?ln=%(ln)s">%(CDM)s</a></li>
                   <li><a href="/collection/Infoscience/Research/CDH?ln=%(ln)s">%(CDH)s</a></li>
+                  <li><a href="/collection/Infoscience/Research/ENT?ln=%(ln)s">%(ENT)s</a></li>
                   </ul>
               
               </li>
@@ -465,6 +466,7 @@ class Template(webstyle_templates.Template):
                        'SV': _("SV - Life Sciences"),
                        'CDM': _("CDM - Management of Technology"),
                        'CDH': _("CDH - College of Humanities"),
+                       'ENT': _("ENT - Transdisciplinary Entities"),
                        'by_doctype': _("Publications by document type"),
                        'ARTICLE': _("Journal Articles"),
                        'CONF': _("Conference Papers"),
@@ -688,7 +690,7 @@ def epfl_header(ln):
                 <li class="group-2-cols">
                   <h3><a href="http://sb.epfl.ch/fr" class="sb">Sciences de Base <acronym title="Sciences de Base">SB</acronym></a></h3>
                   <ul>
-                    <li><a href="http://sb.epfl.ch/chimie">Chimie</a></li>
+                    <li><a href="http://sb.epfl.ch/chimie">Chimie et génie chimique</a></li>
                     <li><a href="http://sb.epfl.ch/mathematiques">Mathématiques</a></li>
                     <li><a href="http://sb.epfl.ch/physique">Physique</a></li>
                   </ul>
@@ -946,7 +948,7 @@ def epfl_header(ln):
                 <li class="group-2-cols">
                   <h3><a href="http://sb.epfl.ch/en" class="sb">Basic Sciences <acronym title="Sciences de Base">SB</acronym></a></h3>
                   <ul>
-                    <li><a href="http://sb.epfl.ch/chemistry">Chemistry</a></li>
+                    <li><a href="http://sb.epfl.ch/chemistry">Chemistry and Chemical Engineering</a></li>
                     <li><a href="http://sb.epfl.ch/mathematics">Mathematics</a></li>
                     <li><a href="http://sb.epfl.ch/physics">Physics</a></li>
                   </ul>
