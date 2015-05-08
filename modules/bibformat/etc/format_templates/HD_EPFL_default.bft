@@ -45,7 +45,12 @@
               <BFE_SERIES_INTEXT prefix='<li><span class="field-label"><lang><en>Series:</en><fr>Série:</fr></lang></span> ' suffix="</li>" />
               <BFE_IMPRINT prefix='<li>' suffix="</li>" />
             </ul>
+
             <BFE_ABSTRACT prefix="<p>" suffix="</p>" latex_to_html="yes"  print_lang="en" />
+
+            <ul class="record-metadata">
+                <BFE_PATENT prefix='<li><span class="field-label"><lang><en>Patent number:</en><fr>Numéro de brevet:</fr></lang></span> ' suffix="</li>"/>
+            </ul>
             
             <BFE_KEYWORDS prefix='<p><span class="field-label"><lang><en>Keywords:</en><fr>Mots-clefs:</fr></lang></span> ' suffix="</p>" keyword_prefix="" keyword_suffix="" />
             <BFE_THESIS_INFO />
