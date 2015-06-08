@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """BibFormat element - Prints Patent Number"""
 
-
 def format(bfo, short="no"):
     """
     Print Patent information.
@@ -14,29 +13,37 @@ def format(bfo, short="no"):
     # if a1:
     #  return "Pending patent"
     if short != "no":
-        return ""
+        patents = bfo.fields('013')
+        if patents:
+            # TODO: order by date
+            # return only the latest
+            for patent in patents:
+                if patent.has_key('a'):
+                    return patent['a']
+        return
     
     patents = bfo.fields('013')
-    
-    template_output_patent_nr = '<li><span class="field-label">Patent :</span><ul class="record-metadata">%s</ul></li>'
+
+    if bfo.lang != 'en':
+        patent_text = 'Numéro de brevet'
+        patents_text = 'Numéros de brevet'
+    else:
+        patent_text = 'Patent number'
+        patents_text = 'Patent numbers'
+
+    template_output_patent_nr = '<li style="list-style-image:none;"><span class="field-label">%s: <ul style="font-weight:normal;margin-left:10px;">%s</ul></span></li>'
     
     output = []
     # get number with data linked
     patents_nr = []
     patent_priority_dates = []
-    
+    outer_list = '<ul class="record-metadata">%s</u>'
+
     # parse
     if patents:
-        outer_list = "<ul>%s</u>"
         for patent in patents:
             if patent.has_key('a'):
-                patent_output = ''
-                
-                # add country
-                if patent.has_key('b'):
-                    patent_output += patent['b']
-                
-                patent_output += patent['a'] 
+                patent_output = patent['a']
                 
                 # add type of number
                 if patent.has_key('c'):
@@ -44,7 +51,7 @@ def format(bfo, short="no"):
                     
                 patents_nr.append(patent_output)
                 
-                # prority_dates are not shown, but are the same year as the publication date
+                # priority_dates are not shown, but are the same year as the publication date
                 # if patent.has_key('d'):
                 #    patent_priority_dates.append(patent['d'])
     
@@ -54,7 +61,12 @@ def format(bfo, short="no"):
         for patent_nr in patents_nr:
             output_patent_nr.append("<li>%s</li>" % patent_nr)
 
-        output.append(template_output_patent_nr % "".join(output_patent_nr))
+        if len(output_patent_nr) > 1:
+            patent_title = patents_text
+        else:
+            patent_title = patent_text
+
+        output.append(template_output_patent_nr % (patent_title, "".join(output_patent_nr)))
         
     return outer_list % "".join(output)
     
