@@ -222,6 +222,9 @@ class Template(websession_templates.Template):
         admin_action_list['invenio_functions'] =  '\n'.join([tmpl % (url, label) for (label, url) in activities])
         out = """
             <ul class="menu hidden">
+                <li>
+                    <a href="/curator/admin_librarian/?ln=en">Librarian</a>
+                </li>
                 <li><a href="/curator/admin">Curator</a>
                 <ul>
                     %(curator_functions)s
