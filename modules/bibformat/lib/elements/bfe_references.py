@@ -24,9 +24,7 @@ def format(bfo):
             
     # show patent search ?
     if bfo.field('013__a'):
-        bfo.field('013__b')
-        patent_to_search = bfo.field('013__a')
-        url = "http://worldwide.espacenet.com/searchResults?compact=false&PN=%s&ST=advanced&locale=en_EP&DB=EPODOC" % (str(bfo.field('013__b')) + str(bfo.field('013__a')))
+        url = "http://worldwide.espacenet.com/searchResults?compact=false&PN=%s&ST=advanced&locale=en_EP&DB=EPODOC" % str(bfo.field('013__a'))
         output.append('<a href="%s" target="_blank">%s</a>' % (url, _("Search this record in European Patent Office")))
     
     external = bfo.fields('035__a')
