@@ -16,7 +16,7 @@
             </ul>
             <BFE_ABSTRACT prefix="<p>" suffix="</p>" latex_to_html="yes"  print_lang="en" />
             
-            <ul class="record-metadata">
+            <ul>
                 <BFE_PATENT />
             </ul>
                         
