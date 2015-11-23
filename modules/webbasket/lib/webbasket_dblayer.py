@@ -1141,7 +1141,11 @@ def get_all_group_basket_ids_and_names_by_group_for_add_to_list(uid):
     basket tuples have to evaluated to be converted to actual
     tuples."""
 
-    query = """ SELECT      ug.name,
+    # Infoscience modification
+    # group by id, return the id
+
+    query = """ SELECT      ug.id,
+                            ug.name,
                             GROUP_CONCAT('(', ugbsk.id_bskBASKET, ', \"', bsk.name, '\")'
                                         ORDER BY bsk.name)
                 FROM        usergroup AS ug
@@ -1156,8 +1160,8 @@ def get_all_group_basket_ids_and_names_by_group_for_add_to_list(uid):
                 JOIN        user_usergroup AS uug
                     ON      ug.id=uug.id_usergroup
                     AND     uug.id_user=%s
-                GROUP BY    ug.name
-                ORDER BY    ug.name"""
+                GROUP BY    ug.id
+                ORDER BY    ug.id"""
     params = (uid,)
     res = run_sql(query, params)
 
