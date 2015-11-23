@@ -295,7 +295,10 @@ class Collection:
 
         ## precalculate latest additions for non-aggregate
         ## collections (the info is ln and as independent)
-        if self.dbquery and not CFG_WEBSEARCH_I18N_LATEST_ADDITIONS:
+
+        # Infoscience modification
+        # removed self.dbquery
+        if not CFG_WEBSEARCH_I18N_LATEST_ADDITIONS:
             self.create_latest_additions_info()
 
         ## do this for each language:
@@ -304,7 +307,9 @@ class Collection:
             # but only if some concrete language was not chosen only:
             if lang in task_get_option("language", [lang]):
 
-                if self.dbquery and CFG_WEBSEARCH_I18N_LATEST_ADDITIONS:
+                # Infoscience modification
+                # removed self.dbquery
+                if CFG_WEBSEARCH_I18N_LATEST_ADDITIONS:
                     self.create_latest_additions_info(ln=lang)
 
                 # load the right message language
