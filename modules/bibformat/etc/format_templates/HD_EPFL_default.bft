@@ -84,12 +84,5 @@
             -->
             </ul>
           </div>
-
-          <div class="box">
-            <h3><lang><en>Contacts</en><fr>Contacts</fr></lang></h3>
-            <ul class="link-list" style="margin-bottom: 20px;"><BFE_CONTACT_LAB kb_name="lab_name" kb_url="lab_url" /></ul>
-            <BFE_CONTACT_AUTHORS prefix='<h4><lang><en>EPFL authors</en><fr>Auteurs EPFL</fr></lang></h4><ul class="link-list">' suffix='</ul>'  />
-          </div>
-        </div>
+          <BFE_CONTACT_BOX kb_name="lab_name" kb_url="lab_url" />
         <div class="clear"></div>
-
