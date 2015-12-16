@@ -17,8 +17,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Invenio 1.0.9\n"
-"Report-Msgid-Bugs-To: info@invenio-software.org\n"
-"POT-Creation-Date: 2014-08-31 21:44+0200\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-12-16 16:21+0100\n"
 "PO-Revision-Date: 2006-10-12 17:50+0200\n"
 "Last-Translator: Tibor Simko <tibor.simko@cern.ch>\n"
 "Language-Team: EN <info@invenio-software.org>\n"
@@ -28,1371 +28,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: pygettext.py 1.5\n"
 
-#: modules/websearch/doc/search-guide.webdoc:361
-#: modules/websearch/doc/search-guide.webdoc:396
-#: modules/websearch/doc/search-guide.webdoc:493
-#: modules/websearch/doc/search-guide.webdoc:528
-#: modules/websearch/doc/search-guide.webdoc:630
-#: modules/websearch/doc/search-guide.webdoc:665
-#: modules/websearch/doc/search-guide.webdoc:768
-#: modules/websearch/doc/search-guide.webdoc:803
-#: modules/websearch/lib/search_engine.py:1116
-#: modules/websearch/lib/websearch_templates.py:1163
-msgid "AND NOT"
-msgstr ""
-
-#: modules/webhelp/web/admin/admin.webdoc:18
-#: modules/websearch/doc/admin/websearch-admin-guide.webdoc:21
-#: modules/websubmit/doc/admin/websubmit-admin-guide.webdoc:21
-#: modules/bibedit/doc/admin/bibedit-admin-guide.webdoc:21
-#: modules/bibupload/doc/admin/bibupload-admin-guide.webdoc:21
-#: modules/bibformat/doc/admin/bibformat-admin-guide.webdoc:21
-#: modules/bibharvest/doc/admin/bibharvest-admin-guide.webdoc:21
-#: modules/webmessage/doc/admin/webmessage-admin-guide.webdoc:21
-#: modules/webalert/doc/admin/webalert-admin-guide.webdoc:21
-#: modules/bibclassify/doc/admin/bibclassify-admin-guide.webdoc:22
-#: modules/bibmatch/doc/admin/bibmatch-admin-guide.webdoc:21
-#: modules/bibconvert/doc/admin/bibconvert-admin-guide.webdoc:21
-#: modules/bibsched/doc/admin/bibsched-admin-guide.webdoc:21
-#: modules/bibrank/doc/admin/bibrank-admin-guide.webdoc:21
-#: modules/webstat/doc/admin/webstat-admin-guide.webdoc:21
-#: modules/bibindex/doc/admin/bibindex-admin-guide.webdoc:21
-#: modules/webbasket/doc/admin/webbasket-admin-guide.webdoc:21
-#: modules/webcomment/doc/admin/webcomment-admin-guide.webdoc:21
-#: modules/websession/doc/admin/websession-admin-guide.webdoc:21
-#: modules/webstyle/doc/admin/webstyle-admin-guide.webdoc:21
-#: modules/elmsubmit/doc/admin/elmsubmit-admin-guide.webdoc:21
-#: modules/bibformat/lib/bibformatadminlib.py:55
-#: modules/bibformat/web/admin/bibformatadmin.py:68
-#: modules/webcomment/lib/webcommentadminlib.py:43
-#: modules/webstyle/lib/webdoc_webinterface.py:153
-#: modules/bibcheck/web/admin/bibcheckadmin.py:57
-#: modules/bibcheck/web/admin/bibcheckadmin.py:159
-#: modules/bibcheck/web/admin/bibcheckadmin.py:203
-#: modules/bibcheck/web/admin/bibcheckadmin.py:263
-#: modules/bibcheck/web/admin/bibcheckadmin.py:303
-#: modules/bibknowledge/lib/bibknowledgeadmin.py:78
-msgid "Admin Area"
-msgstr ""
-
-#: modules/websearch/doc/search-guide.webdoc:427
-#: modules/websearch/doc/search-guide.webdoc:559
-#: modules/websearch/doc/search-guide.webdoc:696
-#: modules/websearch/doc/search-guide.webdoc:834
-#: modules/websearch/lib/search_engine.py:4510
-#: modules/websearch/lib/websearch_templates.py:804
-#: modules/websearch/lib/websearch_templates.py:882
-#: modules/websearch/lib/websearch_templates.py:1005
-#: modules/websearch/lib/websearch_templates.py:1963
-#: modules/websearch/lib/websearch_templates.py:2054
-#: modules/websearch/lib/websearch_templates.py:2111
-#: modules/websearch/lib/websearch_templates.py:2168
-#: modules/websearch/lib/websearch_templates.py:2207
-#: modules/websearch/lib/websearch_templates.py:2230
-#: modules/websearch/lib/websearch_templates.py:2261
-msgid "Browse"
-msgstr ""
-
-#: modules/webhelp/web/help-central.webdoc:50
-#: modules/websearch/doc/search-tips.webdoc:20
-#: modules/websearch/lib/websearch_templates.py:805
-#: modules/websearch/lib/websearch_templates.py:883
-#: modules/websearch/lib/websearch_templates.py:1006
-#: modules/websearch/lib/websearch_templates.py:2058
-#: modules/websearch/lib/websearch_templates.py:2115
-#: modules/websearch/lib/websearch_templates.py:2172
-msgid "Search Tips"
-msgstr ""
-
-#: modules/websearch/doc/search-guide.webdoc:343
-#: modules/websearch/doc/search-guide.webdoc:378
-#: modules/websearch/doc/search-guide.webdoc:413
-#: modules/websearch/doc/search-guide.webdoc:475
-#: modules/websearch/doc/search-guide.webdoc:510
-#: modules/websearch/doc/search-guide.webdoc:545
-#: modules/websearch/doc/search-guide.webdoc:612
-#: modules/websearch/doc/search-guide.webdoc:647
-#: modules/websearch/doc/search-guide.webdoc:682
-#: modules/websearch/doc/search-guide.webdoc:750
-#: modules/websearch/doc/search-guide.webdoc:785
-#: modules/websearch/doc/search-guide.webdoc:820
-#: modules/miscutil/lib/inveniocfg.py:456
-msgid "abstract"
-msgstr ""
-
-#: modules/websearch/doc/search-guide.webdoc:348
-#: modules/websearch/doc/search-guide.webdoc:383
-#: modules/websearch/doc/search-guide.webdoc:418
-#: modules/websearch/doc/search-guide.webdoc:480
-#: modules/websearch/doc/search-guide.webdoc:515
-#: modules/websearch/doc/search-guide.webdoc:550
-#: modules/websearch/doc/search-guide.webdoc:617
-#: modules/websearch/doc/search-guide.webdoc:652
-#: modules/websearch/doc/search-guide.webdoc:687
-#: modules/websearch/doc/search-guide.webdoc:755
-#: modules/websearch/doc/search-guide.webdoc:790
-#: modules/websearch/doc/search-guide.webdoc:825
-#: modules/miscutil/lib/inveniocfg.py:461
-msgid "fulltext"
-msgstr ""
-
-#: modules/websearch/doc/search-guide.webdoc:337
-#: modules/websearch/doc/search-guide.webdoc:373
-#: modules/websearch/doc/search-guide.webdoc:408
-#: modules/websearch/doc/search-guide.webdoc:469
-#: modules/websearch/doc/search-guide.webdoc:505
-#: modules/websearch/doc/search-guide.webdoc:540
-#: modules/websearch/doc/search-guide.webdoc:606
-#: modules/websearch/doc/search-guide.webdoc:642
-#: modules/websearch/doc/search-guide.webdoc:677
-#: modules/websearch/doc/search-guide.webdoc:744
-#: modules/websearch/doc/search-guide.webdoc:780
-#: modules/websearch/doc/search-guide.webdoc:815
-#: modules/websearch/lib/search_engine.py:1138
-#: modules/websearch/lib/websearch_templates.py:1119
-msgid "Regular expression:"
-msgstr ""
-
-#: modules/websearch/doc/search-guide.webdoc:333
-#: modules/websearch/doc/search-guide.webdoc:369
-#: modules/websearch/doc/search-guide.webdoc:404
-#: modules/websearch/doc/search-guide.webdoc:465
-#: modules/websearch/doc/search-guide.webdoc:501
-#: modules/websearch/doc/search-guide.webdoc:536
-#: modules/websearch/doc/search-guide.webdoc:602
-#: modules/websearch/doc/search-guide.webdoc:638
-#: modules/websearch/doc/search-guide.webdoc:673
-#: modules/websearch/doc/search-guide.webdoc:740
-#: modules/websearch/doc/search-guide.webdoc:776
-#: modules/websearch/doc/search-guide.webdoc:811
-#: modules/websearch/lib/search_engine.py:1134
-#: modules/websearch/lib/websearch_templates.py:1111
-msgid "All of the words:"
-msgstr ""
-
-#: modules/websearch/doc/search-guide.webdoc:351
-#: modules/websearch/doc/search-guide.webdoc:386
-#: modules/websearch/doc/search-guide.webdoc:421
-#: modules/websearch/doc/search-guide.webdoc:483
-#: modules/websearch/doc/search-guide.webdoc:518
-#: modules/websearch/doc/search-guide.webdoc:553
-#: modules/websearch/doc/search-guide.webdoc:620
-#: modules/websearch/doc/search-guide.webdoc:655
-#: modules/websearch/doc/search-guide.webdoc:690
-#: modules/websearch/doc/search-guide.webdoc:758
-#: modules/websearch/doc/search-guide.webdoc:793
-#: modules/websearch/doc/search-guide.webdoc:828
-#: modules/miscutil/lib/inveniocfg.py:458
-msgid "report number"
-msgstr ""
-
-#: modules/websearch/doc/search-tips.webdoc:470
-#: modules/websearch/doc/search-tips.webdoc:477
-#: modules/websearch/doc/search-tips.webdoc:478
-#: modules/websearch/doc/search-tips.webdoc:479
-#: modules/websearch/doc/search-tips.webdoc:480
-#: modules/websearch/doc/search-tips.webdoc:481
-#: modules/websearch/doc/search-tips.webdoc:499
-#: modules/websearch/doc/search-tips.webdoc:500
-#: modules/websearch/doc/search-tips.webdoc:501
-#: modules/websearch/doc/search-tips.webdoc:502
-#: modules/websearch/doc/search-tips.webdoc:503
-#: modules/websearch/doc/search-guide.webdoc:354
-#: modules/websearch/doc/search-guide.webdoc:389
-#: modules/websearch/doc/search-guide.webdoc:424
-#: modules/websearch/doc/search-guide.webdoc:486
-#: modules/websearch/doc/search-guide.webdoc:521
-#: modules/websearch/doc/search-guide.webdoc:556
-#: modules/websearch/doc/search-guide.webdoc:623
-#: modules/websearch/doc/search-guide.webdoc:658
-#: modules/websearch/doc/search-guide.webdoc:693
-#: modules/websearch/doc/search-guide.webdoc:761
-#: modules/websearch/doc/search-guide.webdoc:796
-#: modules/websearch/doc/search-guide.webdoc:831
-#: modules/miscutil/lib/inveniocfg.py:464
-msgid "year"
-msgstr ""
-
-#: modules/websearch/doc/search-guide.webdoc:352
-#: modules/websearch/doc/search-guide.webdoc:387
-#: modules/websearch/doc/search-guide.webdoc:422
-#: modules/websearch/doc/search-guide.webdoc:484
-#: modules/websearch/doc/search-guide.webdoc:519
-#: modules/websearch/doc/search-guide.webdoc:554
-#: modules/websearch/doc/search-guide.webdoc:621
-#: modules/websearch/doc/search-guide.webdoc:656
-#: modules/websearch/doc/search-guide.webdoc:691
-#: modules/websearch/doc/search-guide.webdoc:759
-#: modules/websearch/doc/search-guide.webdoc:794
-#: modules/websearch/doc/search-guide.webdoc:829
-#: modules/miscutil/lib/inveniocfg.py:459
-msgid "subject"
-msgstr ""
-
-#: modules/websearch/doc/search-guide.webdoc:336
-#: modules/websearch/doc/search-guide.webdoc:372
-#: modules/websearch/doc/search-guide.webdoc:407
-#: modules/websearch/doc/search-guide.webdoc:468
-#: modules/websearch/doc/search-guide.webdoc:504
-#: modules/websearch/doc/search-guide.webdoc:539
-#: modules/websearch/doc/search-guide.webdoc:605
-#: modules/websearch/doc/search-guide.webdoc:641
-#: modules/websearch/doc/search-guide.webdoc:676
-#: modules/websearch/doc/search-guide.webdoc:743
-#: modules/websearch/doc/search-guide.webdoc:779
-#: modules/websearch/doc/search-guide.webdoc:814
-#: modules/websearch/lib/search_engine.py:1137
-#: modules/websearch/lib/websearch_templates.py:1117
-msgid "Partial phrase:"
-msgstr ""
-
-#: modules/websearch/doc/search-guide.webdoc:350
-#: modules/websearch/doc/search-guide.webdoc:385
-#: modules/websearch/doc/search-guide.webdoc:420
-#: modules/websearch/doc/search-guide.webdoc:482
-#: modules/websearch/doc/search-guide.webdoc:517
-#: modules/websearch/doc/search-guide.webdoc:552
-#: modules/websearch/doc/search-guide.webdoc:619
-#: modules/websearch/doc/search-guide.webdoc:654
-#: modules/websearch/doc/search-guide.webdoc:689
-#: modules/websearch/doc/search-guide.webdoc:757
-#: modules/websearch/doc/search-guide.webdoc:792
-#: modules/websearch/doc/search-guide.webdoc:827
-#: modules/miscutil/lib/inveniocfg.py:460
-msgid "reference"
-msgstr ""
-
-#: modules/websearch/doc/search-tips.webdoc:39
-#: modules/websearch/doc/search-tips.webdoc:75
-#: modules/websearch/doc/search-tips.webdoc:121
-#: modules/websearch/doc/search-tips.webdoc:178
-#: modules/websearch/doc/search-tips.webdoc:205
-#: modules/websearch/doc/search-tips.webdoc:233
-#: modules/websearch/doc/search-tips.webdoc:288
-#: modules/websearch/doc/search-tips.webdoc:336
-#: modules/websearch/doc/search-tips.webdoc:347
-#: modules/websearch/doc/search-tips.webdoc:371
-#: modules/websearch/doc/search-tips.webdoc:395
-#: modules/websearch/doc/search-tips.webdoc:433
-#: modules/websearch/doc/search-tips.webdoc:469
-#: modules/websearch/doc/search-tips.webdoc:492
-#: modules/websearch/doc/search-tips.webdoc:514
-#: modules/websearch/doc/search-tips.webdoc:550
-#: modules/websearch/doc/search-tips.webdoc:568
-#: modules/websearch/doc/search-tips.webdoc:587
-#: modules/websearch/doc/search-tips.webdoc:622
-#: modules/websearch/doc/search-tips.webdoc:651
-#: modules/websearch/doc/search-tips.webdoc:659
-#: modules/websearch/doc/search-tips.webdoc:662
-#: modules/websearch/doc/search-tips.webdoc:664
-#: modules/websearch/doc/search-tips.webdoc:666
-#: modules/websearch/doc/search-tips.webdoc:668
-#: modules/websearch/doc/search-tips.webdoc:679
-#: modules/websearch/doc/search-tips.webdoc:702
-#: modules/websearch/doc/search-guide.webdoc:226
-#: modules/websearch/doc/search-guide.webdoc:250
-#: modules/websearch/doc/search-guide.webdoc:276
-#: modules/websearch/doc/search-guide.webdoc:301
-#: modules/websearch/doc/search-guide.webdoc:344
-#: modules/websearch/doc/search-guide.webdoc:379
-#: modules/websearch/doc/search-guide.webdoc:414
-#: modules/websearch/doc/search-guide.webdoc:476
-#: modules/websearch/doc/search-guide.webdoc:511
-#: modules/websearch/doc/search-guide.webdoc:546
-#: modules/websearch/doc/search-guide.webdoc:613
-#: modules/websearch/doc/search-guide.webdoc:648
-#: modules/websearch/doc/search-guide.webdoc:683
-#: modules/websearch/doc/search-guide.webdoc:751
-#: modules/websearch/doc/search-guide.webdoc:786
-#: modules/websearch/doc/search-guide.webdoc:821
-#: modules/websearch/doc/search-guide.webdoc:881
-#: modules/websearch/doc/search-guide.webdoc:912
-#: modules/websearch/doc/search-guide.webdoc:952
-#: modules/websearch/doc/search-guide.webdoc:986
-#: modules/websearch/doc/search-guide.webdoc:1026
-#: modules/websearch/doc/search-guide.webdoc:1048
-#: modules/websearch/doc/search-guide.webdoc:1068
-#: modules/websearch/doc/search-guide.webdoc:1084
-#: modules/websearch/doc/search-guide.webdoc:1124
-#: modules/websearch/doc/search-guide.webdoc:1147
-#: modules/websearch/doc/search-guide.webdoc:1168
-#: modules/websearch/doc/search-guide.webdoc:1183
-#: modules/websearch/doc/search-guide.webdoc:1227
-#: modules/websearch/doc/search-guide.webdoc:1252
-#: modules/websearch/doc/search-guide.webdoc:1273
-#: modules/websearch/doc/search-guide.webdoc:1289
-#: modules/websearch/doc/search-guide.webdoc:1334
-#: modules/websearch/doc/search-guide.webdoc:1357
-#: modules/websearch/doc/search-guide.webdoc:1379
-#: modules/websearch/doc/search-guide.webdoc:1395
-#: modules/websearch/doc/search-guide.webdoc:1765
-#: modules/websearch/doc/search-guide.webdoc:1779
-#: modules/websearch/doc/search-guide.webdoc:1797
-#: modules/websearch/doc/search-guide.webdoc:1816
-#: modules/websearch/doc/search-guide.webdoc:1829
-#: modules/websearch/doc/search-guide.webdoc:1847
-#: modules/websearch/doc/search-guide.webdoc:1867
-#: modules/websearch/doc/search-guide.webdoc:1882
-#: modules/websearch/doc/search-guide.webdoc:1901
-#: modules/websearch/doc/search-guide.webdoc:1924
-#: modules/websearch/doc/search-guide.webdoc:1939
-#: modules/websearch/doc/search-guide.webdoc:1958
-#: modules/websearch/doc/search-guide.webdoc:1986
-#: modules/websearch/doc/search-guide.webdoc:2024
-#: modules/websearch/doc/search-guide.webdoc:2035
-#: modules/websearch/doc/search-guide.webdoc:2049
-#: modules/websearch/doc/search-guide.webdoc:2063
-#: modules/websearch/doc/search-guide.webdoc:2076
-#: modules/websearch/doc/search-guide.webdoc:2092
-#: modules/websearch/doc/search-guide.webdoc:2103
-#: modules/websearch/doc/search-guide.webdoc:2117
-#: modules/websearch/doc/search-guide.webdoc:2131
-#: modules/websearch/doc/search-guide.webdoc:2144
-#: modules/websearch/doc/search-guide.webdoc:2160
-#: modules/websearch/doc/search-guide.webdoc:2171
-#: modules/websearch/doc/search-guide.webdoc:2185
-#: modules/websearch/doc/search-guide.webdoc:2199
-#: modules/websearch/doc/search-guide.webdoc:2212
-#: modules/websearch/doc/search-guide.webdoc:2230
-#: modules/websearch/doc/search-guide.webdoc:2241
-#: modules/websearch/doc/search-guide.webdoc:2255
-#: modules/websearch/doc/search-guide.webdoc:2269
-#: modules/websearch/doc/search-guide.webdoc:2282
-#: modules/websearch/doc/search-guide.webdoc:2311
-#: modules/websearch/doc/search-guide.webdoc:2325
-#: modules/websearch/doc/search-guide.webdoc:2342
-#: modules/websearch/doc/search-guide.webdoc:2355
-#: modules/websearch/doc/search-guide.webdoc:2372
-#: modules/websearch/doc/search-guide.webdoc:2386
-#: modules/websearch/doc/search-guide.webdoc:2404
-#: modules/websearch/doc/search-guide.webdoc:2418
-#: modules/websearch/doc/search-guide.webdoc:2449
-#: modules/websearch/doc/search-guide.webdoc:2464
-#: modules/websearch/doc/search-guide.webdoc:2478
-#: modules/websearch/doc/search-guide.webdoc:2493
-#: modules/websearch/doc/search-guide.webdoc:2521
-#: modules/websearch/doc/search-guide.webdoc:2536
-#: modules/websearch/doc/search-guide.webdoc:2550
-#: modules/websearch/doc/search-guide.webdoc:2566
-#: modules/websearch/doc/search-guide.webdoc:2598
-#: modules/websearch/doc/search-guide.webdoc:2614
-#: modules/websearch/doc/search-guide.webdoc:2628
-#: modules/websearch/doc/search-guide.webdoc:2643
-#: modules/websearch/doc/search-guide.webdoc:2674
-#: modules/websearch/doc/search-guide.webdoc:2690
-#: modules/websearch/doc/search-guide.webdoc:2704
-#: modules/websearch/doc/search-guide.webdoc:2719
-#: modules/websearch/doc/search-guide.webdoc:2761
-#: modules/websearch/doc/search-guide.webdoc:2776
-#: modules/websearch/doc/search-guide.webdoc:2790
-#: modules/websearch/doc/search-guide.webdoc:2815
-#: modules/websearch/doc/search-guide.webdoc:2830
-#: modules/websearch/doc/search-guide.webdoc:2844
-#: modules/websearch/doc/search-guide.webdoc:2873
-#: modules/websearch/doc/search-guide.webdoc:2888
-#: modules/websearch/doc/search-guide.webdoc:2902
-#: modules/websearch/doc/search-guide.webdoc:2930
-#: modules/websearch/doc/search-guide.webdoc:2945
-#: modules/websearch/doc/search-guide.webdoc:2958
-#: modules/websearch/doc/search-guide.webdoc:2993
-#: modules/websearch/doc/search-guide.webdoc:3015
-#: modules/websearch/doc/search-guide.webdoc:3039
-#: modules/websearch/doc/search-guide.webdoc:3063
-#: modules/websearch/doc/search-guide.webdoc:3087
-#: modules/websearch/doc/search-guide.webdoc:3102
-#: modules/websearch/doc/search-guide.webdoc:3118
-#: modules/websearch/doc/search-guide.webdoc:3135
-#: modules/websearch/doc/search-guide.webdoc:3155
-#: modules/websearch/doc/search-guide.webdoc:3173
-#: modules/websearch/doc/search-guide.webdoc:3191
-#: modules/websearch/doc/search-guide.webdoc:3210
-#: modules/websearch/doc/search-guide.webdoc:3231
-#: modules/websearch/doc/search-guide.webdoc:3245
-#: modules/websearch/doc/search-guide.webdoc:3265
-#: modules/websearch/doc/search-guide.webdoc:3280
-#: modules/websearch/doc/search-guide.webdoc:3299
-#: modules/websearch/doc/search-guide.webdoc:3314
-#: modules/websearch/doc/search-guide.webdoc:3334
-#: modules/websearch/doc/search-guide.webdoc:3349
-#: modules/websearch/doc/search-guide.webdoc:3411
-#: modules/websearch/doc/search-guide.webdoc:3425
-#: modules/websearch/doc/search-guide.webdoc:3442
-#: modules/websearch/doc/search-guide.webdoc:3455
-#: modules/websearch/doc/search-guide.webdoc:3473
-#: modules/websearch/doc/search-guide.webdoc:3488
-#: modules/websearch/doc/search-guide.webdoc:3506
-#: modules/websearch/doc/search-guide.webdoc:3521
-#: modules/websearch/doc/search-guide.webdoc:3546
-#: modules/websearch/doc/search-guide.webdoc:3559
-#: modules/websearch/doc/search-guide.webdoc:3572
-#: modules/websearch/doc/search-guide.webdoc:3588
-#: modules/websearch/doc/search-guide.webdoc:3604
-#: modules/websearch/doc/search-guide.webdoc:3621
-#: modules/websearch/doc/search-guide.webdoc:3654
-#: modules/websearch/doc/search-guide.webdoc:3670
-#: modules/websearch/doc/search-guide.webdoc:3687
-#: modules/websearch/doc/search-guide.webdoc:3707
-#: modules/websearch/doc/search-guide.webdoc:3721
-#: modules/websearch/doc/search-guide.webdoc:3739
-#: modules/websearch/doc/search-guide.webdoc:3760
-#: modules/websearch/doc/search-guide.webdoc:3779
-#: modules/websearch/doc/search-guide.webdoc:3797
-#: modules/websearch/doc/search-guide.webdoc:3819
-#: modules/websearch/doc/search-guide.webdoc:3838
-#: modules/websearch/doc/search-guide.webdoc:3855
-#: modules/websearch/doc/search-guide.webdoc:3976
-#: modules/websearch/doc/search-guide.webdoc:4001
-#: modules/websearch/doc/search-guide.webdoc:4024
-#: modules/websearch/doc/search-guide.webdoc:4050
-#: modules/websearch/doc/search-guide.webdoc:4074
-#: modules/websearch/doc/search-guide.webdoc:4101
-#: modules/websearch/doc/search-guide.webdoc:4126
-#: modules/websearch/doc/search-guide.webdoc:4152
-#: modules/websearch/doc/search-guide.webdoc:4181
-#: modules/websearch/doc/search-guide.webdoc:4201
-#: modules/websearch/doc/search-guide.webdoc:4225
-#: modules/websearch/doc/search-guide.webdoc:4252
-#: modules/websearch/doc/search-guide.webdoc:4292
-#: modules/websearch/doc/search-guide.webdoc:4313
-#: modules/websearch/doc/search-guide.webdoc:4337
-#: modules/websearch/doc/search-guide.webdoc:4367
-#: modules/websearch/doc/search-guide.webdoc:4411
-#: modules/websearch/doc/search-guide.webdoc:4433
-#: modules/websearch/doc/search-guide.webdoc:4458
-#: modules/websearch/doc/search-guide.webdoc:4488
-#: modules/websearch/doc/search-guide.webdoc:4533
-#: modules/websearch/doc/search-guide.webdoc:4554
-#: modules/websearch/doc/search-guide.webdoc:4579
-#: modules/websearch/doc/search-guide.webdoc:4609
-#: modules/websearch/doc/search-guide.webdoc:4901
-#: modules/websearch/doc/search-guide.webdoc:4917
-#: modules/websearch/doc/search-guide.webdoc:4937
-#: modules/websearch/doc/search-guide.webdoc:4956
-#: modules/websearch/doc/search-guide.webdoc:4977
-#: modules/websearch/doc/search-guide.webdoc:4995
-#: modules/websearch/doc/search-guide.webdoc:5016
-#: modules/websearch/doc/search-guide.webdoc:5034
-#: modules/websearch/doc/search-guide.webdoc:5067
-#: modules/websearch/doc/search-guide.webdoc:5081
-#: modules/websearch/doc/search-guide.webdoc:5096
-#: modules/websearch/doc/search-guide.webdoc:5112
-#: modules/websearch/doc/search-guide.webdoc:5131
-#: modules/websearch/doc/search-guide.webdoc:5145
-#: modules/websearch/doc/search-guide.webdoc:5161
-#: modules/websearch/doc/search-guide.webdoc:5179
-#: modules/websearch/doc/search-guide.webdoc:5198
-#: modules/websearch/doc/search-guide.webdoc:5213
-#: modules/websearch/doc/search-guide.webdoc:5228
-#: modules/websearch/doc/search-guide.webdoc:5246
-#: modules/websearch/doc/search-guide.webdoc:5266
-#: modules/websearch/doc/search-guide.webdoc:5281
-#: modules/websearch/doc/search-guide.webdoc:5296
-#: modules/websearch/doc/search-guide.webdoc:5316
-#: modules/webstyle/doc/hacking/webstyle-webdoc-syntax.webdoc:131
-#: modules/miscutil/lib/inveniocfg.py:455
-msgid "author"
-msgstr ""
-
-#: modules/webhelp/web/help-central.webdoc:98
-#: modules/websearch/doc/search-guide.webdoc:20
-msgid "Search Guide"
-msgstr ""
-
-#: modules/websearch/doc/search-guide.webdoc:347
-#: modules/websearch/doc/search-guide.webdoc:382
-#: modules/websearch/doc/search-guide.webdoc:417
-#: modules/websearch/doc/search-guide.webdoc:479
-#: modules/websearch/doc/search-guide.webdoc:514
-#: modules/websearch/doc/search-guide.webdoc:549
-#: modules/websearch/doc/search-guide.webdoc:616
-#: modules/websearch/doc/search-guide.webdoc:651
-#: modules/websearch/doc/search-guide.webdoc:686
-#: modules/websearch/doc/search-guide.webdoc:754
-#: modules/websearch/doc/search-guide.webdoc:789
-#: modules/websearch/doc/search-guide.webdoc:824
-#: modules/miscutil/lib/inveniocfg.py:466
-msgid "experiment"
-msgstr ""
-
-#: modules/websearch/doc/search-guide.webdoc:334
-#: modules/websearch/doc/search-guide.webdoc:370
-#: modules/websearch/doc/search-guide.webdoc:405
-#: modules/websearch/doc/search-guide.webdoc:466
-#: modules/websearch/doc/search-guide.webdoc:502
-#: modules/websearch/doc/search-guide.webdoc:537
-#: modules/websearch/doc/search-guide.webdoc:603
-#: modules/websearch/doc/search-guide.webdoc:639
-#: modules/websearch/doc/search-guide.webdoc:674
-#: modules/websearch/doc/search-guide.webdoc:741
-#: modules/websearch/doc/search-guide.webdoc:777
-#: modules/websearch/doc/search-guide.webdoc:812
-#: modules/websearch/lib/search_engine.py:1135
-#: modules/websearch/lib/websearch_templates.py:1113
-msgid "Any of the words:"
-msgstr ""
-
-#: modules/websearch/doc/search-guide.webdoc:346
-#: modules/websearch/doc/search-guide.webdoc:381
-#: modules/websearch/doc/search-guide.webdoc:416
-#: modules/websearch/doc/search-guide.webdoc:478
-#: modules/websearch/doc/search-guide.webdoc:513
-#: modules/websearch/doc/search-guide.webdoc:548
-#: modules/websearch/doc/search-guide.webdoc:615
-#: modules/websearch/doc/search-guide.webdoc:650
-#: modules/websearch/doc/search-guide.webdoc:685
-#: modules/websearch/doc/search-guide.webdoc:753
-#: modules/websearch/doc/search-guide.webdoc:788
-#: modules/websearch/doc/search-guide.webdoc:823
-#: modules/miscutil/lib/inveniocfg.py:463
-msgid "division"
-msgstr ""
-
-#: modules/websearch/doc/search-tips.webdoc:41
-#: modules/websearch/doc/search-tips.webdoc:77
-#: modules/websearch/doc/search-tips.webdoc:123
-#: modules/websearch/doc/search-tips.webdoc:180
-#: modules/websearch/doc/search-tips.webdoc:207
-#: modules/websearch/doc/search-tips.webdoc:235
-#: modules/websearch/doc/search-tips.webdoc:290
-#: modules/websearch/doc/search-tips.webdoc:338
-#: modules/websearch/doc/search-tips.webdoc:349
-#: modules/websearch/doc/search-tips.webdoc:373
-#: modules/websearch/doc/search-tips.webdoc:397
-#: modules/websearch/doc/search-tips.webdoc:435
-#: modules/websearch/doc/search-tips.webdoc:472
-#: modules/websearch/doc/search-tips.webdoc:494
-#: modules/websearch/doc/search-tips.webdoc:516
-#: modules/websearch/doc/search-tips.webdoc:552
-#: modules/websearch/doc/search-tips.webdoc:570
-#: modules/websearch/doc/search-tips.webdoc:589
-#: modules/websearch/doc/search-tips.webdoc:624
-#: modules/websearch/doc/search-tips.webdoc:653
-#: modules/websearch/doc/search-tips.webdoc:681
-#: modules/websearch/doc/search-tips.webdoc:704
-#: modules/websearch/doc/search-guide.webdoc:227
-#: modules/websearch/doc/search-guide.webdoc:251
-#: modules/websearch/doc/search-guide.webdoc:277
-#: modules/websearch/doc/search-guide.webdoc:302
-#: modules/websearch/doc/search-guide.webdoc:427
-#: modules/websearch/doc/search-guide.webdoc:559
-#: modules/websearch/doc/search-guide.webdoc:696
-#: modules/websearch/doc/search-guide.webdoc:834
-#: modules/websearch/doc/search-guide.webdoc:882
-#: modules/websearch/doc/search-guide.webdoc:913
-#: modules/websearch/doc/search-guide.webdoc:953
-#: modules/websearch/doc/search-guide.webdoc:987
-#: modules/websearch/doc/search-guide.webdoc:1027
-#: modules/websearch/doc/search-guide.webdoc:1049
-#: modules/websearch/doc/search-guide.webdoc:1069
-#: modules/websearch/doc/search-guide.webdoc:1085
-#: modules/websearch/doc/search-guide.webdoc:1125
-#: modules/websearch/doc/search-guide.webdoc:1148
-#: modules/websearch/doc/search-guide.webdoc:1169
-#: modules/websearch/doc/search-guide.webdoc:1184
-#: modules/websearch/doc/search-guide.webdoc:1228
-#: modules/websearch/doc/search-guide.webdoc:1253
-#: modules/websearch/doc/search-guide.webdoc:1274
-#: modules/websearch/doc/search-guide.webdoc:1290
-#: modules/websearch/doc/search-guide.webdoc:1335
-#: modules/websearch/doc/search-guide.webdoc:1358
-#: modules/websearch/doc/search-guide.webdoc:1380
-#: modules/websearch/doc/search-guide.webdoc:1396
-#: modules/websearch/doc/search-guide.webdoc:1766
-#: modules/websearch/doc/search-guide.webdoc:1780
-#: modules/websearch/doc/search-guide.webdoc:1798
-#: modules/websearch/doc/search-guide.webdoc:1817
-#: modules/websearch/doc/search-guide.webdoc:1830
-#: modules/websearch/doc/search-guide.webdoc:1848
-#: modules/websearch/doc/search-guide.webdoc:1868
-#: modules/websearch/doc/search-guide.webdoc:1883
-#: modules/websearch/doc/search-guide.webdoc:1902
-#: modules/websearch/doc/search-guide.webdoc:1925
-#: modules/websearch/doc/search-guide.webdoc:1940
-#: modules/websearch/doc/search-guide.webdoc:1959
-#: modules/websearch/doc/search-guide.webdoc:1988
-#: modules/websearch/doc/search-guide.webdoc:2025
-#: modules/websearch/doc/search-guide.webdoc:2036
-#: modules/websearch/doc/search-guide.webdoc:2050
-#: modules/websearch/doc/search-guide.webdoc:2064
-#: modules/websearch/doc/search-guide.webdoc:2077
-#: modules/websearch/doc/search-guide.webdoc:2093
-#: modules/websearch/doc/search-guide.webdoc:2104
-#: modules/websearch/doc/search-guide.webdoc:2118
-#: modules/websearch/doc/search-guide.webdoc:2132
-#: modules/websearch/doc/search-guide.webdoc:2145
-#: modules/websearch/doc/search-guide.webdoc:2161
-#: modules/websearch/doc/search-guide.webdoc:2172
-#: modules/websearch/doc/search-guide.webdoc:2186
-#: modules/websearch/doc/search-guide.webdoc:2200
-#: modules/websearch/doc/search-guide.webdoc:2213
-#: modules/websearch/doc/search-guide.webdoc:2231
-#: modules/websearch/doc/search-guide.webdoc:2242
-#: modules/websearch/doc/search-guide.webdoc:2256
-#: modules/websearch/doc/search-guide.webdoc:2270
-#: modules/websearch/doc/search-guide.webdoc:2283
-#: modules/websearch/doc/search-guide.webdoc:2312
-#: modules/websearch/doc/search-guide.webdoc:2326
-#: modules/websearch/doc/search-guide.webdoc:2343
-#: modules/websearch/doc/search-guide.webdoc:2356
-#: modules/websearch/doc/search-guide.webdoc:2373
-#: modules/websearch/doc/search-guide.webdoc:2387
-#: modules/websearch/doc/search-guide.webdoc:2405
-#: modules/websearch/doc/search-guide.webdoc:2419
-#: modules/websearch/doc/search-guide.webdoc:2450
-#: modules/websearch/doc/search-guide.webdoc:2465
-#: modules/websearch/doc/search-guide.webdoc:2479
-#: modules/websearch/doc/search-guide.webdoc:2494
-#: modules/websearch/doc/search-guide.webdoc:2522
-#: modules/websearch/doc/search-guide.webdoc:2537
-#: modules/websearch/doc/search-guide.webdoc:2551
-#: modules/websearch/doc/search-guide.webdoc:2567
-#: modules/websearch/doc/search-guide.webdoc:2599
-#: modules/websearch/doc/search-guide.webdoc:2615
-#: modules/websearch/doc/search-guide.webdoc:2629
-#: modules/websearch/doc/search-guide.webdoc:2644
-#: modules/websearch/doc/search-guide.webdoc:2675
-#: modules/websearch/doc/search-guide.webdoc:2691
-#: modules/websearch/doc/search-guide.webdoc:2705
-#: modules/websearch/doc/search-guide.webdoc:2720
-#: modules/websearch/doc/search-guide.webdoc:2762
-#: modules/websearch/doc/search-guide.webdoc:2777
-#: modules/websearch/doc/search-guide.webdoc:2791
-#: modules/websearch/doc/search-guide.webdoc:2816
-#: modules/websearch/doc/search-guide.webdoc:2831
-#: modules/websearch/doc/search-guide.webdoc:2845
-#: modules/websearch/doc/search-guide.webdoc:2874
-#: modules/websearch/doc/search-guide.webdoc:2889
-#: modules/websearch/doc/search-guide.webdoc:2903
-#: modules/websearch/doc/search-guide.webdoc:2931
-#: modules/websearch/doc/search-guide.webdoc:2946
-#: modules/websearch/doc/search-guide.webdoc:2959
-#: modules/websearch/doc/search-guide.webdoc:2994
-#: modules/websearch/doc/search-guide.webdoc:3016
-#: modules/websearch/doc/search-guide.webdoc:3040
-#: modules/websearch/doc/search-guide.webdoc:3064
-#: modules/websearch/doc/search-guide.webdoc:3088
-#: modules/websearch/doc/search-guide.webdoc:3103
-#: modules/websearch/doc/search-guide.webdoc:3119
-#: modules/websearch/doc/search-guide.webdoc:3136
-#: modules/websearch/doc/search-guide.webdoc:3156
-#: modules/websearch/doc/search-guide.webdoc:3174
-#: modules/websearch/doc/search-guide.webdoc:3192
-#: modules/websearch/doc/search-guide.webdoc:3211
-#: modules/websearch/doc/search-guide.webdoc:3232
-#: modules/websearch/doc/search-guide.webdoc:3246
-#: modules/websearch/doc/search-guide.webdoc:3266
-#: modules/websearch/doc/search-guide.webdoc:3281
-#: modules/websearch/doc/search-guide.webdoc:3300
-#: modules/websearch/doc/search-guide.webdoc:3315
-#: modules/websearch/doc/search-guide.webdoc:3335
-#: modules/websearch/doc/search-guide.webdoc:3350
-#: modules/websearch/doc/search-guide.webdoc:3412
-#: modules/websearch/doc/search-guide.webdoc:3426
-#: modules/websearch/doc/search-guide.webdoc:3443
-#: modules/websearch/doc/search-guide.webdoc:3456
-#: modules/websearch/doc/search-guide.webdoc:3474
-#: modules/websearch/doc/search-guide.webdoc:3489
-#: modules/websearch/doc/search-guide.webdoc:3507
-#: modules/websearch/doc/search-guide.webdoc:3522
-#: modules/websearch/doc/search-guide.webdoc:3547
-#: modules/websearch/doc/search-guide.webdoc:3560
-#: modules/websearch/doc/search-guide.webdoc:3573
-#: modules/websearch/doc/search-guide.webdoc:3589
-#: modules/websearch/doc/search-guide.webdoc:3605
-#: modules/websearch/doc/search-guide.webdoc:3622
-#: modules/websearch/doc/search-guide.webdoc:3655
-#: modules/websearch/doc/search-guide.webdoc:3671
-#: modules/websearch/doc/search-guide.webdoc:3688
-#: modules/websearch/doc/search-guide.webdoc:3708
-#: modules/websearch/doc/search-guide.webdoc:3722
-#: modules/websearch/doc/search-guide.webdoc:3740
-#: modules/websearch/doc/search-guide.webdoc:3761
-#: modules/websearch/doc/search-guide.webdoc:3780
-#: modules/websearch/doc/search-guide.webdoc:3798
-#: modules/websearch/doc/search-guide.webdoc:3820
-#: modules/websearch/doc/search-guide.webdoc:3839
-#: modules/websearch/doc/search-guide.webdoc:3856
-#: modules/websearch/doc/search-guide.webdoc:3977
-#: modules/websearch/doc/search-guide.webdoc:4002
-#: modules/websearch/doc/search-guide.webdoc:4025
-#: modules/websearch/doc/search-guide.webdoc:4051
-#: modules/websearch/doc/search-guide.webdoc:4075
-#: modules/websearch/doc/search-guide.webdoc:4102
-#: modules/websearch/doc/search-guide.webdoc:4127
-#: modules/websearch/doc/search-guide.webdoc:4153
-#: modules/websearch/doc/search-guide.webdoc:4182
-#: modules/websearch/doc/search-guide.webdoc:4202
-#: modules/websearch/doc/search-guide.webdoc:4226
-#: modules/websearch/doc/search-guide.webdoc:4253
-#: modules/websearch/doc/search-guide.webdoc:4293
-#: modules/websearch/doc/search-guide.webdoc:4314
-#: modules/websearch/doc/search-guide.webdoc:4338
-#: modules/websearch/doc/search-guide.webdoc:4368
-#: modules/websearch/doc/search-guide.webdoc:4412
-#: modules/websearch/doc/search-guide.webdoc:4434
-#: modules/websearch/doc/search-guide.webdoc:4459
-#: modules/websearch/doc/search-guide.webdoc:4489
-#: modules/websearch/doc/search-guide.webdoc:4534
-#: modules/websearch/doc/search-guide.webdoc:4555
-#: modules/websearch/doc/search-guide.webdoc:4580
-#: modules/websearch/doc/search-guide.webdoc:4610
-#: modules/websearch/doc/search-guide.webdoc:4902
-#: modules/websearch/doc/search-guide.webdoc:4918
-#: modules/websearch/doc/search-guide.webdoc:4938
-#: modules/websearch/doc/search-guide.webdoc:4957
-#: modules/websearch/doc/search-guide.webdoc:4978
-#: modules/websearch/doc/search-guide.webdoc:4996
-#: modules/websearch/doc/search-guide.webdoc:5017
-#: modules/websearch/doc/search-guide.webdoc:5035
-#: modules/websearch/doc/search-guide.webdoc:5068
-#: modules/websearch/doc/search-guide.webdoc:5082
-#: modules/websearch/doc/search-guide.webdoc:5097
-#: modules/websearch/doc/search-guide.webdoc:5113
-#: modules/websearch/doc/search-guide.webdoc:5132
-#: modules/websearch/doc/search-guide.webdoc:5146
-#: modules/websearch/doc/search-guide.webdoc:5162
-#: modules/websearch/doc/search-guide.webdoc:5180
-#: modules/websearch/doc/search-guide.webdoc:5199
-#: modules/websearch/doc/search-guide.webdoc:5214
-#: modules/websearch/doc/search-guide.webdoc:5229
-#: modules/websearch/doc/search-guide.webdoc:5247
-#: modules/websearch/doc/search-guide.webdoc:5267
-#: modules/websearch/doc/search-guide.webdoc:5282
-#: modules/websearch/doc/search-guide.webdoc:5297
-#: modules/websearch/doc/search-guide.webdoc:5317
-#: modules/webstyle/doc/hacking/webstyle-webdoc-syntax.webdoc:133
-#: modules/websearch/lib/websearch_templates.py:803
-#: modules/websearch/lib/websearch_templates.py:881
-#: modules/websearch/lib/websearch_templates.py:1004
-#: modules/websearch/lib/websearch_templates.py:1960
-#: modules/websearch/lib/websearch_templates.py:2053
-#: modules/websearch/lib/websearch_templates.py:2110
-#: modules/websearch/lib/websearch_templates.py:2167
-#: modules/webstyle/lib/webstyle_templates.py:431
-#: modules/webstyle/lib/webstyle_templates.py:499
-#: modules/webstyle/lib/webdoc_tests.py:86
-#: modules/bibedit/lib/bibeditmulti_templates.py:296
-#: modules/bibcirculation/lib/bibcirculation_templates.py:1819
-#: modules/bibcirculation/lib/bibcirculation_templates.py:1877
-#: modules/bibcirculation/lib/bibcirculation_templates.py:7673
-#: modules/bibcirculation/lib/bibcirculation_templates.py:8240
-#: modules/bibcirculation/lib/bibcirculation_templates.py:14050
-#: modules/bibcirculation/lib/bibcirculation_templates.py:15528
-#: modules/bibcirculation/lib/bibcirculation_templates.py:15686
-#: modules/bibcirculation/lib/bibcirculation_templates.py:16648
-#: modules/bibknowledge/lib/bibknowledge_templates.py:394
-msgid "Search"
-msgstr ""
-
-#: modules/webhelp/web/help-central.webdoc:133
-msgid "Citation Metrics"
-msgstr ""
-
-#: modules/websearch/doc/search-tips.webdoc:37
-#: modules/websearch/doc/search-tips.webdoc:73
-#: modules/websearch/doc/search-tips.webdoc:119
-#: modules/websearch/doc/search-tips.webdoc:176
-#: modules/websearch/doc/search-tips.webdoc:203
-#: modules/websearch/doc/search-tips.webdoc:231
-#: modules/websearch/doc/search-tips.webdoc:286
-#: modules/websearch/doc/search-tips.webdoc:334
-#: modules/websearch/doc/search-tips.webdoc:345
-#: modules/websearch/doc/search-tips.webdoc:369
-#: modules/websearch/doc/search-tips.webdoc:393
-#: modules/websearch/doc/search-tips.webdoc:431
-#: modules/websearch/doc/search-tips.webdoc:467
-#: modules/websearch/doc/search-tips.webdoc:490
-#: modules/websearch/doc/search-tips.webdoc:512
-#: modules/websearch/doc/search-tips.webdoc:548
-#: modules/websearch/doc/search-tips.webdoc:566
-#: modules/websearch/doc/search-tips.webdoc:585
-#: modules/websearch/doc/search-tips.webdoc:620
-#: modules/websearch/doc/search-tips.webdoc:631
-#: modules/websearch/doc/search-tips.webdoc:633
-#: modules/websearch/doc/search-tips.webdoc:636
-#: modules/websearch/doc/search-tips.webdoc:638
-#: modules/websearch/doc/search-tips.webdoc:640
-#: modules/websearch/doc/search-tips.webdoc:649
-#: modules/websearch/doc/search-tips.webdoc:677
-#: modules/websearch/doc/search-tips.webdoc:700
-#: modules/websearch/doc/search-guide.webdoc:224
-#: modules/websearch/doc/search-guide.webdoc:248
-#: modules/websearch/doc/search-guide.webdoc:274
-#: modules/websearch/doc/search-guide.webdoc:299
-#: modules/websearch/doc/search-guide.webdoc:342
-#: modules/websearch/doc/search-guide.webdoc:377
-#: modules/websearch/doc/search-guide.webdoc:412
-#: modules/websearch/doc/search-guide.webdoc:474
-#: modules/websearch/doc/search-guide.webdoc:509
-#: modules/websearch/doc/search-guide.webdoc:544
-#: modules/websearch/doc/search-guide.webdoc:611
-#: modules/websearch/doc/search-guide.webdoc:646
-#: modules/websearch/doc/search-guide.webdoc:681
-#: modules/websearch/doc/search-guide.webdoc:749
-#: modules/websearch/doc/search-guide.webdoc:784
-#: modules/websearch/doc/search-guide.webdoc:819
-#: modules/websearch/doc/search-guide.webdoc:879
-#: modules/websearch/doc/search-guide.webdoc:910
-#: modules/websearch/doc/search-guide.webdoc:950
-#: modules/websearch/doc/search-guide.webdoc:984
-#: modules/websearch/doc/search-guide.webdoc:1024
-#: modules/websearch/doc/search-guide.webdoc:1046
-#: modules/websearch/doc/search-guide.webdoc:1066
-#: modules/websearch/doc/search-guide.webdoc:1082
-#: modules/websearch/doc/search-guide.webdoc:1122
-#: modules/websearch/doc/search-guide.webdoc:1145
-#: modules/websearch/doc/search-guide.webdoc:1166
-#: modules/websearch/doc/search-guide.webdoc:1181
-#: modules/websearch/doc/search-guide.webdoc:1225
-#: modules/websearch/doc/search-guide.webdoc:1250
-#: modules/websearch/doc/search-guide.webdoc:1271
-#: modules/websearch/doc/search-guide.webdoc:1287
-#: modules/websearch/doc/search-guide.webdoc:1332
-#: modules/websearch/doc/search-guide.webdoc:1355
-#: modules/websearch/doc/search-guide.webdoc:1377
-#: modules/websearch/doc/search-guide.webdoc:1393
-#: modules/websearch/doc/search-guide.webdoc:1763
-#: modules/websearch/doc/search-guide.webdoc:1777
-#: modules/websearch/doc/search-guide.webdoc:1795
-#: modules/websearch/doc/search-guide.webdoc:1814
-#: modules/websearch/doc/search-guide.webdoc:1827
-#: modules/websearch/doc/search-guide.webdoc:1845
-#: modules/websearch/doc/search-guide.webdoc:1865
-#: modules/websearch/doc/search-guide.webdoc:1880
-#: modules/websearch/doc/search-guide.webdoc:1899
-#: modules/websearch/doc/search-guide.webdoc:1922
-#: modules/websearch/doc/search-guide.webdoc:1937
-#: modules/websearch/doc/search-guide.webdoc:1956
-#: modules/websearch/doc/search-guide.webdoc:1984
-#: modules/websearch/doc/search-guide.webdoc:2022
-#: modules/websearch/doc/search-guide.webdoc:2033
-#: modules/websearch/doc/search-guide.webdoc:2047
-#: modules/websearch/doc/search-guide.webdoc:2061
-#: modules/websearch/doc/search-guide.webdoc:2074
-#: modules/websearch/doc/search-guide.webdoc:2090
-#: modules/websearch/doc/search-guide.webdoc:2101
-#: modules/websearch/doc/search-guide.webdoc:2115
-#: modules/websearch/doc/search-guide.webdoc:2129
-#: modules/websearch/doc/search-guide.webdoc:2142
-#: modules/websearch/doc/search-guide.webdoc:2158
-#: modules/websearch/doc/search-guide.webdoc:2169
-#: modules/websearch/doc/search-guide.webdoc:2183
-#: modules/websearch/doc/search-guide.webdoc:2197
-#: modules/websearch/doc/search-guide.webdoc:2210
-#: modules/websearch/doc/search-guide.webdoc:2228
-#: modules/websearch/doc/search-guide.webdoc:2239
-#: modules/websearch/doc/search-guide.webdoc:2253
-#: modules/websearch/doc/search-guide.webdoc:2267
-#: modules/websearch/doc/search-guide.webdoc:2280
-#: modules/websearch/doc/search-guide.webdoc:2309
-#: modules/websearch/doc/search-guide.webdoc:2323
-#: modules/websearch/doc/search-guide.webdoc:2340
-#: modules/websearch/doc/search-guide.webdoc:2353
-#: modules/websearch/doc/search-guide.webdoc:2370
-#: modules/websearch/doc/search-guide.webdoc:2384
-#: modules/websearch/doc/search-guide.webdoc:2402
-#: modules/websearch/doc/search-guide.webdoc:2416
-#: modules/websearch/doc/search-guide.webdoc:2447
-#: modules/websearch/doc/search-guide.webdoc:2462
-#: modules/websearch/doc/search-guide.webdoc:2476
-#: modules/websearch/doc/search-guide.webdoc:2491
-#: modules/websearch/doc/search-guide.webdoc:2519
-#: modules/websearch/doc/search-guide.webdoc:2534
-#: modules/websearch/doc/search-guide.webdoc:2548
-#: modules/websearch/doc/search-guide.webdoc:2564
-#: modules/websearch/doc/search-guide.webdoc:2596
-#: modules/websearch/doc/search-guide.webdoc:2612
-#: modules/websearch/doc/search-guide.webdoc:2626
-#: modules/websearch/doc/search-guide.webdoc:2641
-#: modules/websearch/doc/search-guide.webdoc:2672
-#: modules/websearch/doc/search-guide.webdoc:2688
-#: modules/websearch/doc/search-guide.webdoc:2702
-#: modules/websearch/doc/search-guide.webdoc:2717
-#: modules/websearch/doc/search-guide.webdoc:2759
-#: modules/websearch/doc/search-guide.webdoc:2774
-#: modules/websearch/doc/search-guide.webdoc:2788
-#: modules/websearch/doc/search-guide.webdoc:2813
-#: modules/websearch/doc/search-guide.webdoc:2828
-#: modules/websearch/doc/search-guide.webdoc:2842
-#: modules/websearch/doc/search-guide.webdoc:2871
-#: modules/websearch/doc/search-guide.webdoc:2886
-#: modules/websearch/doc/search-guide.webdoc:2900
-#: modules/websearch/doc/search-guide.webdoc:2928
-#: modules/websearch/doc/search-guide.webdoc:2943
-#: modules/websearch/doc/search-guide.webdoc:2956
-#: modules/websearch/doc/search-guide.webdoc:2991
-#: modules/websearch/doc/search-guide.webdoc:3013
-#: modules/websearch/doc/search-guide.webdoc:3037
-#: modules/websearch/doc/search-guide.webdoc:3061
-#: modules/websearch/doc/search-guide.webdoc:3085
-#: modules/websearch/doc/search-guide.webdoc:3100
-#: modules/websearch/doc/search-guide.webdoc:3116
-#: modules/websearch/doc/search-guide.webdoc:3133
-#: modules/websearch/doc/search-guide.webdoc:3153
-#: modules/websearch/doc/search-guide.webdoc:3171
-#: modules/websearch/doc/search-guide.webdoc:3189
-#: modules/websearch/doc/search-guide.webdoc:3208
-#: modules/websearch/doc/search-guide.webdoc:3229
-#: modules/websearch/doc/search-guide.webdoc:3243
-#: modules/websearch/doc/search-guide.webdoc:3263
-#: modules/websearch/doc/search-guide.webdoc:3278
-#: modules/websearch/doc/search-guide.webdoc:3297
-#: modules/websearch/doc/search-guide.webdoc:3312
-#: modules/websearch/doc/search-guide.webdoc:3332
-#: modules/websearch/doc/search-guide.webdoc:3347
-#: modules/websearch/doc/search-guide.webdoc:3409
-#: modules/websearch/doc/search-guide.webdoc:3423
-#: modules/websearch/doc/search-guide.webdoc:3440
-#: modules/websearch/doc/search-guide.webdoc:3453
-#: modules/websearch/doc/search-guide.webdoc:3471
-#: modules/websearch/doc/search-guide.webdoc:3486
-#: modules/websearch/doc/search-guide.webdoc:3504
-#: modules/websearch/doc/search-guide.webdoc:3519
-#: modules/websearch/doc/search-guide.webdoc:3544
-#: modules/websearch/doc/search-guide.webdoc:3557
-#: modules/websearch/doc/search-guide.webdoc:3570
-#: modules/websearch/doc/search-guide.webdoc:3586
-#: modules/websearch/doc/search-guide.webdoc:3602
-#: modules/websearch/doc/search-guide.webdoc:3619
-#: modules/websearch/doc/search-guide.webdoc:3652
-#: modules/websearch/doc/search-guide.webdoc:3668
-#: modules/websearch/doc/search-guide.webdoc:3685
-#: modules/websearch/doc/search-guide.webdoc:3705
-#: modules/websearch/doc/search-guide.webdoc:3719
-#: modules/websearch/doc/search-guide.webdoc:3737
-#: modules/websearch/doc/search-guide.webdoc:3758
-#: modules/websearch/doc/search-guide.webdoc:3777
-#: modules/websearch/doc/search-guide.webdoc:3795
-#: modules/websearch/doc/search-guide.webdoc:3817
-#: modules/websearch/doc/search-guide.webdoc:3836
-#: modules/websearch/doc/search-guide.webdoc:3853
-#: modules/websearch/doc/search-guide.webdoc:3974
-#: modules/websearch/doc/search-guide.webdoc:3999
-#: modules/websearch/doc/search-guide.webdoc:4022
-#: modules/websearch/doc/search-guide.webdoc:4048
-#: modules/websearch/doc/search-guide.webdoc:4072
-#: modules/websearch/doc/search-guide.webdoc:4099
-#: modules/websearch/doc/search-guide.webdoc:4124
-#: modules/websearch/doc/search-guide.webdoc:4150
-#: modules/websearch/doc/search-guide.webdoc:4179
-#: modules/websearch/doc/search-guide.webdoc:4199
-#: modules/websearch/doc/search-guide.webdoc:4223
-#: modules/websearch/doc/search-guide.webdoc:4250
-#: modules/websearch/doc/search-guide.webdoc:4290
-#: modules/websearch/doc/search-guide.webdoc:4311
-#: modules/websearch/doc/search-guide.webdoc:4335
-#: modules/websearch/doc/search-guide.webdoc:4365
-#: modules/websearch/doc/search-guide.webdoc:4409
-#: modules/websearch/doc/search-guide.webdoc:4431
-#: modules/websearch/doc/search-guide.webdoc:4456
-#: modules/websearch/doc/search-guide.webdoc:4486
-#: modules/websearch/doc/search-guide.webdoc:4531
-#: modules/websearch/doc/search-guide.webdoc:4552
-#: modules/websearch/doc/search-guide.webdoc:4577
-#: modules/websearch/doc/search-guide.webdoc:4607
-#: modules/websearch/doc/search-guide.webdoc:4899
-#: modules/websearch/doc/search-guide.webdoc:4915
-#: modules/websearch/doc/search-guide.webdoc:4935
-#: modules/websearch/doc/search-guide.webdoc:4954
-#: modules/websearch/doc/search-guide.webdoc:4975
-#: modules/websearch/doc/search-guide.webdoc:4993
-#: modules/websearch/doc/search-guide.webdoc:5014
-#: modules/websearch/doc/search-guide.webdoc:5032
-#: modules/websearch/doc/search-guide.webdoc:5065
-#: modules/websearch/doc/search-guide.webdoc:5079
-#: modules/websearch/doc/search-guide.webdoc:5094
-#: modules/websearch/doc/search-guide.webdoc:5110
-#: modules/websearch/doc/search-guide.webdoc:5129
-#: modules/websearch/doc/search-guide.webdoc:5143
-#: modules/websearch/doc/search-guide.webdoc:5159
-#: modules/websearch/doc/search-guide.webdoc:5177
-#: modules/websearch/doc/search-guide.webdoc:5196
-#: modules/websearch/doc/search-guide.webdoc:5211
-#: modules/websearch/doc/search-guide.webdoc:5226
-#: modules/websearch/doc/search-guide.webdoc:5244
-#: modules/websearch/doc/search-guide.webdoc:5264
-#: modules/websearch/doc/search-guide.webdoc:5279
-#: modules/websearch/doc/search-guide.webdoc:5294
-#: modules/websearch/doc/search-guide.webdoc:5314
-#: modules/webstyle/doc/hacking/webstyle-webdoc-syntax.webdoc:129
-#: modules/miscutil/lib/inveniocfg.py:453
-msgid "any field"
-msgstr ""
-
-#: modules/webhelp/web/help-central.webdoc:20
-#: modules/webhelp/web/help-central.webdoc:25
-#: modules/webhelp/web/help-central.webdoc:26
-#: modules/webhelp/web/help-central.webdoc:27
-#: modules/webhelp/web/help-central.webdoc:28
-#: modules/webhelp/web/help-central.webdoc:29
-#: modules/webhelp/web/help-central.webdoc:30
-#: modules/webhelp/web/help-central.webdoc:31
-#: modules/webhelp/web/help-central.webdoc:32
-#: modules/webhelp/web/help-central.webdoc:33
-#: modules/webhelp/web/help-central.webdoc:34
-#: modules/webhelp/web/help-central.webdoc:35
-#: modules/webhelp/web/help-central.webdoc:36
-#: modules/webhelp/web/help-central.webdoc:37
-#: modules/webhelp/web/help-central.webdoc:38
-#: modules/webhelp/web/help-central.webdoc:39
-#: modules/webhelp/web/help-central.webdoc:40
-#: modules/webhelp/web/help-central.webdoc:41
-#: modules/webhelp/web/help-central.webdoc:42
-#: modules/webhelp/web/help-central.webdoc:43
-#: modules/webhelp/web/help-central.webdoc:44
-#: modules/webhelp/web/help-central.webdoc:45
-#: modules/websearch/doc/search-tips.webdoc:21
-#: modules/websearch/doc/search-guide.webdoc:21
-#: modules/websubmit/doc/submit-guide.webdoc:21
-#: modules/webstyle/lib/webdoc_tests.py:105
-#: modules/webstyle/lib/webdoc_webinterface.py:155
-msgid "Help Central"
-msgstr ""
-
-#: modules/bibformat/etc/format_templates/Default_HTML_actions.bft:6
-msgid "Export as"
-msgstr ""
-
-#: modules/websearch/doc/search-guide.webdoc:345
-#: modules/websearch/doc/search-guide.webdoc:380
-#: modules/websearch/doc/search-guide.webdoc:415
-#: modules/websearch/doc/search-guide.webdoc:477
-#: modules/websearch/doc/search-guide.webdoc:512
-#: modules/websearch/doc/search-guide.webdoc:547
-#: modules/websearch/doc/search-guide.webdoc:614
-#: modules/websearch/doc/search-guide.webdoc:649
-#: modules/websearch/doc/search-guide.webdoc:684
-#: modules/websearch/doc/search-guide.webdoc:752
-#: modules/websearch/doc/search-guide.webdoc:787
-#: modules/websearch/doc/search-guide.webdoc:822
-#: modules/miscutil/lib/inveniocfg.py:462
-msgid "collection"
-msgstr ""
-
-#: modules/websearch/doc/admin/websearch-admin-guide.webdoc:20
-msgid "WebSearch Admin Guide"
-msgstr ""
-
-#: modules/websearch/doc/search-guide.webdoc:335
-#: modules/websearch/doc/search-guide.webdoc:371
-#: modules/websearch/doc/search-guide.webdoc:406
-#: modules/websearch/doc/search-guide.webdoc:467
-#: modules/websearch/doc/search-guide.webdoc:503
-#: modules/websearch/doc/search-guide.webdoc:538
-#: modules/websearch/doc/search-guide.webdoc:604
-#: modules/websearch/doc/search-guide.webdoc:640
-#: modules/websearch/doc/search-guide.webdoc:675
-#: modules/websearch/doc/search-guide.webdoc:742
-#: modules/websearch/doc/search-guide.webdoc:778
-#: modules/websearch/doc/search-guide.webdoc:813
-#: modules/websearch/lib/search_engine.py:1136
-#: modules/websearch/lib/websearch_templates.py:1115
-msgid "Exact phrase:"
-msgstr ""
-
-#: modules/webhelp/web/help-central.webdoc:108
-#: modules/websubmit/doc/submit-guide.webdoc:20
-msgid "Submit Guide"
-msgstr ""
-
-#: modules/websearch/doc/search-guide.webdoc:360
-#: modules/websearch/doc/search-guide.webdoc:395
-#: modules/websearch/doc/search-guide.webdoc:492
-#: modules/websearch/doc/search-guide.webdoc:527
-#: modules/websearch/doc/search-guide.webdoc:629
-#: modules/websearch/doc/search-guide.webdoc:664
-#: modules/websearch/doc/search-guide.webdoc:767
-#: modules/websearch/doc/search-guide.webdoc:802
-#: modules/websearch/lib/search_engine.py:960
-#: modules/websearch/lib/search_engine.py:1115
-#: modules/websearch/lib/websearch_templates.py:1162
-#: modules/websearch/lib/websearch_webcoll.py:591
-msgid "OR"
-msgstr ""
-
-#: modules/websearch/doc/search-guide.webdoc:359
-#: modules/websearch/doc/search-guide.webdoc:394
-#: modules/websearch/doc/search-guide.webdoc:491
-#: modules/websearch/doc/search-guide.webdoc:526
-#: modules/websearch/doc/search-guide.webdoc:628
-#: modules/websearch/doc/search-guide.webdoc:663
-#: modules/websearch/doc/search-guide.webdoc:766
-#: modules/websearch/doc/search-guide.webdoc:801
-#: modules/websearch/lib/search_engine.py:1114
-#: modules/websearch/lib/websearch_templates.py:1161
-msgid "AND"
-msgstr ""
-
-#: modules/websearch/doc/search-guide.webdoc:349
-#: modules/websearch/doc/search-guide.webdoc:384
-#: modules/websearch/doc/search-guide.webdoc:419
-#: modules/websearch/doc/search-guide.webdoc:481
-#: modules/websearch/doc/search-guide.webdoc:516
-#: modules/websearch/doc/search-guide.webdoc:551
-#: modules/websearch/doc/search-guide.webdoc:618
-#: modules/websearch/doc/search-guide.webdoc:653
-#: modules/websearch/doc/search-guide.webdoc:688
-#: modules/websearch/doc/search-guide.webdoc:756
-#: modules/websearch/doc/search-guide.webdoc:791
-#: modules/websearch/doc/search-guide.webdoc:826
-#: modules/miscutil/lib/inveniocfg.py:457
-msgid "keyword"
-msgstr ""
-
-#: modules/websearch/doc/search-tips.webdoc:38
-#: modules/websearch/doc/search-tips.webdoc:74
-#: modules/websearch/doc/search-tips.webdoc:120
-#: modules/websearch/doc/search-tips.webdoc:177
-#: modules/websearch/doc/search-tips.webdoc:204
-#: modules/websearch/doc/search-tips.webdoc:232
-#: modules/websearch/doc/search-tips.webdoc:287
-#: modules/websearch/doc/search-tips.webdoc:335
-#: modules/websearch/doc/search-tips.webdoc:346
-#: modules/websearch/doc/search-tips.webdoc:370
-#: modules/websearch/doc/search-tips.webdoc:394
-#: modules/websearch/doc/search-tips.webdoc:432
-#: modules/websearch/doc/search-tips.webdoc:468
-#: modules/websearch/doc/search-tips.webdoc:491
-#: modules/websearch/doc/search-tips.webdoc:513
-#: modules/websearch/doc/search-tips.webdoc:549
-#: modules/websearch/doc/search-tips.webdoc:567
-#: modules/websearch/doc/search-tips.webdoc:586
-#: modules/websearch/doc/search-tips.webdoc:621
-#: modules/websearch/doc/search-tips.webdoc:650
-#: modules/websearch/doc/search-tips.webdoc:678
-#: modules/websearch/doc/search-tips.webdoc:701
-#: modules/websearch/doc/search-guide.webdoc:225
-#: modules/websearch/doc/search-guide.webdoc:249
-#: modules/websearch/doc/search-guide.webdoc:275
-#: modules/websearch/doc/search-guide.webdoc:300
-#: modules/websearch/doc/search-guide.webdoc:353
-#: modules/websearch/doc/search-guide.webdoc:388
-#: modules/websearch/doc/search-guide.webdoc:423
-#: modules/websearch/doc/search-guide.webdoc:485
-#: modules/websearch/doc/search-guide.webdoc:520
-#: modules/websearch/doc/search-guide.webdoc:555
-#: modules/websearch/doc/search-guide.webdoc:622
-#: modules/websearch/doc/search-guide.webdoc:657
-#: modules/websearch/doc/search-guide.webdoc:692
-#: modules/websearch/doc/search-guide.webdoc:760
-#: modules/websearch/doc/search-guide.webdoc:795
-#: modules/websearch/doc/search-guide.webdoc:830
-#: modules/websearch/doc/search-guide.webdoc:880
-#: modules/websearch/doc/search-guide.webdoc:911
-#: modules/websearch/doc/search-guide.webdoc:951
-#: modules/websearch/doc/search-guide.webdoc:985
-#: modules/websearch/doc/search-guide.webdoc:1025
-#: modules/websearch/doc/search-guide.webdoc:1047
-#: modules/websearch/doc/search-guide.webdoc:1067
-#: modules/websearch/doc/search-guide.webdoc:1083
-#: modules/websearch/doc/search-guide.webdoc:1123
-#: modules/websearch/doc/search-guide.webdoc:1146
-#: modules/websearch/doc/search-guide.webdoc:1167
-#: modules/websearch/doc/search-guide.webdoc:1182
-#: modules/websearch/doc/search-guide.webdoc:1226
-#: modules/websearch/doc/search-guide.webdoc:1251
-#: modules/websearch/doc/search-guide.webdoc:1272
-#: modules/websearch/doc/search-guide.webdoc:1288
-#: modules/websearch/doc/search-guide.webdoc:1333
-#: modules/websearch/doc/search-guide.webdoc:1356
-#: modules/websearch/doc/search-guide.webdoc:1378
-#: modules/websearch/doc/search-guide.webdoc:1394
-#: modules/websearch/doc/search-guide.webdoc:1764
-#: modules/websearch/doc/search-guide.webdoc:1778
-#: modules/websearch/doc/search-guide.webdoc:1796
-#: modules/websearch/doc/search-guide.webdoc:1815
-#: modules/websearch/doc/search-guide.webdoc:1828
-#: modules/websearch/doc/search-guide.webdoc:1846
-#: modules/websearch/doc/search-guide.webdoc:1866
-#: modules/websearch/doc/search-guide.webdoc:1881
-#: modules/websearch/doc/search-guide.webdoc:1900
-#: modules/websearch/doc/search-guide.webdoc:1923
-#: modules/websearch/doc/search-guide.webdoc:1938
-#: modules/websearch/doc/search-guide.webdoc:1957
-#: modules/websearch/doc/search-guide.webdoc:1985
-#: modules/websearch/doc/search-guide.webdoc:2023
-#: modules/websearch/doc/search-guide.webdoc:2034
-#: modules/websearch/doc/search-guide.webdoc:2048
-#: modules/websearch/doc/search-guide.webdoc:2062
-#: modules/websearch/doc/search-guide.webdoc:2075
-#: modules/websearch/doc/search-guide.webdoc:2091
-#: modules/websearch/doc/search-guide.webdoc:2102
-#: modules/websearch/doc/search-guide.webdoc:2116
-#: modules/websearch/doc/search-guide.webdoc:2130
-#: modules/websearch/doc/search-guide.webdoc:2143
-#: modules/websearch/doc/search-guide.webdoc:2159
-#: modules/websearch/doc/search-guide.webdoc:2170
-#: modules/websearch/doc/search-guide.webdoc:2184
-#: modules/websearch/doc/search-guide.webdoc:2198
-#: modules/websearch/doc/search-guide.webdoc:2211
-#: modules/websearch/doc/search-guide.webdoc:2229
-#: modules/websearch/doc/search-guide.webdoc:2240
-#: modules/websearch/doc/search-guide.webdoc:2254
-#: modules/websearch/doc/search-guide.webdoc:2268
-#: modules/websearch/doc/search-guide.webdoc:2281
-#: modules/websearch/doc/search-guide.webdoc:2310
-#: modules/websearch/doc/search-guide.webdoc:2324
-#: modules/websearch/doc/search-guide.webdoc:2341
-#: modules/websearch/doc/search-guide.webdoc:2354
-#: modules/websearch/doc/search-guide.webdoc:2371
-#: modules/websearch/doc/search-guide.webdoc:2385
-#: modules/websearch/doc/search-guide.webdoc:2403
-#: modules/websearch/doc/search-guide.webdoc:2417
-#: modules/websearch/doc/search-guide.webdoc:2448
-#: modules/websearch/doc/search-guide.webdoc:2463
-#: modules/websearch/doc/search-guide.webdoc:2477
-#: modules/websearch/doc/search-guide.webdoc:2492
-#: modules/websearch/doc/search-guide.webdoc:2520
-#: modules/websearch/doc/search-guide.webdoc:2535
-#: modules/websearch/doc/search-guide.webdoc:2549
-#: modules/websearch/doc/search-guide.webdoc:2565
-#: modules/websearch/doc/search-guide.webdoc:2597
-#: modules/websearch/doc/search-guide.webdoc:2613
-#: modules/websearch/doc/search-guide.webdoc:2627
-#: modules/websearch/doc/search-guide.webdoc:2642
-#: modules/websearch/doc/search-guide.webdoc:2673
-#: modules/websearch/doc/search-guide.webdoc:2689
-#: modules/websearch/doc/search-guide.webdoc:2703
-#: modules/websearch/doc/search-guide.webdoc:2718
-#: modules/websearch/doc/search-guide.webdoc:2760
-#: modules/websearch/doc/search-guide.webdoc:2775
-#: modules/websearch/doc/search-guide.webdoc:2789
-#: modules/websearch/doc/search-guide.webdoc:2814
-#: modules/websearch/doc/search-guide.webdoc:2829
-#: modules/websearch/doc/search-guide.webdoc:2843
-#: modules/websearch/doc/search-guide.webdoc:2872
-#: modules/websearch/doc/search-guide.webdoc:2887
-#: modules/websearch/doc/search-guide.webdoc:2901
-#: modules/websearch/doc/search-guide.webdoc:2929
-#: modules/websearch/doc/search-guide.webdoc:2944
-#: modules/websearch/doc/search-guide.webdoc:2957
-#: modules/websearch/doc/search-guide.webdoc:2992
-#: modules/websearch/doc/search-guide.webdoc:3014
-#: modules/websearch/doc/search-guide.webdoc:3038
-#: modules/websearch/doc/search-guide.webdoc:3062
-#: modules/websearch/doc/search-guide.webdoc:3086
-#: modules/websearch/doc/search-guide.webdoc:3101
-#: modules/websearch/doc/search-guide.webdoc:3117
-#: modules/websearch/doc/search-guide.webdoc:3134
-#: modules/websearch/doc/search-guide.webdoc:3154
-#: modules/websearch/doc/search-guide.webdoc:3172
-#: modules/websearch/doc/search-guide.webdoc:3190
-#: modules/websearch/doc/search-guide.webdoc:3209
-#: modules/websearch/doc/search-guide.webdoc:3230
-#: modules/websearch/doc/search-guide.webdoc:3244
-#: modules/websearch/doc/search-guide.webdoc:3264
-#: modules/websearch/doc/search-guide.webdoc:3279
-#: modules/websearch/doc/search-guide.webdoc:3298
-#: modules/websearch/doc/search-guide.webdoc:3313
-#: modules/websearch/doc/search-guide.webdoc:3333
-#: modules/websearch/doc/search-guide.webdoc:3348
-#: modules/websearch/doc/search-guide.webdoc:3410
-#: modules/websearch/doc/search-guide.webdoc:3424
-#: modules/websearch/doc/search-guide.webdoc:3441
-#: modules/websearch/doc/search-guide.webdoc:3454
-#: modules/websearch/doc/search-guide.webdoc:3472
-#: modules/websearch/doc/search-guide.webdoc:3487
-#: modules/websearch/doc/search-guide.webdoc:3505
-#: modules/websearch/doc/search-guide.webdoc:3520
-#: modules/websearch/doc/search-guide.webdoc:3545
-#: modules/websearch/doc/search-guide.webdoc:3558
-#: modules/websearch/doc/search-guide.webdoc:3571
-#: modules/websearch/doc/search-guide.webdoc:3587
-#: modules/websearch/doc/search-guide.webdoc:3603
-#: modules/websearch/doc/search-guide.webdoc:3620
-#: modules/websearch/doc/search-guide.webdoc:3653
-#: modules/websearch/doc/search-guide.webdoc:3669
-#: modules/websearch/doc/search-guide.webdoc:3686
-#: modules/websearch/doc/search-guide.webdoc:3706
-#: modules/websearch/doc/search-guide.webdoc:3720
-#: modules/websearch/doc/search-guide.webdoc:3738
-#: modules/websearch/doc/search-guide.webdoc:3759
-#: modules/websearch/doc/search-guide.webdoc:3778
-#: modules/websearch/doc/search-guide.webdoc:3796
-#: modules/websearch/doc/search-guide.webdoc:3818
-#: modules/websearch/doc/search-guide.webdoc:3837
-#: modules/websearch/doc/search-guide.webdoc:3854
-#: modules/websearch/doc/search-guide.webdoc:3975
-#: modules/websearch/doc/search-guide.webdoc:4000
-#: modules/websearch/doc/search-guide.webdoc:4023
-#: modules/websearch/doc/search-guide.webdoc:4049
-#: modules/websearch/doc/search-guide.webdoc:4073
-#: modules/websearch/doc/search-guide.webdoc:4100
-#: modules/websearch/doc/search-guide.webdoc:4125
-#: modules/websearch/doc/search-guide.webdoc:4151
-#: modules/websearch/doc/search-guide.webdoc:4180
-#: modules/websearch/doc/search-guide.webdoc:4200
-#: modules/websearch/doc/search-guide.webdoc:4224
-#: modules/websearch/doc/search-guide.webdoc:4251
-#: modules/websearch/doc/search-guide.webdoc:4291
-#: modules/websearch/doc/search-guide.webdoc:4312
-#: modules/websearch/doc/search-guide.webdoc:4336
-#: modules/websearch/doc/search-guide.webdoc:4366
-#: modules/websearch/doc/search-guide.webdoc:4410
-#: modules/websearch/doc/search-guide.webdoc:4432
-#: modules/websearch/doc/search-guide.webdoc:4457
-#: modules/websearch/doc/search-guide.webdoc:4487
-#: modules/websearch/doc/search-guide.webdoc:4532
-#: modules/websearch/doc/search-guide.webdoc:4553
-#: modules/websearch/doc/search-guide.webdoc:4578
-#: modules/websearch/doc/search-guide.webdoc:4608
-#: modules/websearch/doc/search-guide.webdoc:4900
-#: modules/websearch/doc/search-guide.webdoc:4916
-#: modules/websearch/doc/search-guide.webdoc:4936
-#: modules/websearch/doc/search-guide.webdoc:4955
-#: modules/websearch/doc/search-guide.webdoc:4976
-#: modules/websearch/doc/search-guide.webdoc:4994
-#: modules/websearch/doc/search-guide.webdoc:5015
-#: modules/websearch/doc/search-guide.webdoc:5033
-#: modules/websearch/doc/search-guide.webdoc:5066
-#: modules/websearch/doc/search-guide.webdoc:5080
-#: modules/websearch/doc/search-guide.webdoc:5095
-#: modules/websearch/doc/search-guide.webdoc:5111
-#: modules/websearch/doc/search-guide.webdoc:5130
-#: modules/websearch/doc/search-guide.webdoc:5144
-#: modules/websearch/doc/search-guide.webdoc:5160
-#: modules/websearch/doc/search-guide.webdoc:5178
-#: modules/websearch/doc/search-guide.webdoc:5197
-#: modules/websearch/doc/search-guide.webdoc:5212
-#: modules/websearch/doc/search-guide.webdoc:5227
-#: modules/websearch/doc/search-guide.webdoc:5245
-#: modules/websearch/doc/search-guide.webdoc:5265
-#: modules/websearch/doc/search-guide.webdoc:5280
-#: modules/websearch/doc/search-guide.webdoc:5295
-#: modules/websearch/doc/search-guide.webdoc:5315
-#: modules/webstyle/doc/hacking/webstyle-webdoc-syntax.webdoc:130
-#: modules/miscutil/lib/inveniocfg.py:454
-msgid "title"
-msgstr ""
-
-#: modules/websearch/doc/search-tips.webdoc:79
-#: modules/websearch/doc/search-tips.webdoc:125
-#: modules/websearch/lib/websearch_templates.py:1275
-msgid "Narrow by collection:"
-msgstr ""
-
-#: modules/bibformat/etc/format_templates/Default_HTML_actions.bft:5
-msgid "Add to personal basket"
-msgstr ""
-
-#: modules/websubmit/doc/admin/websubmit-admin-guide.webdoc:20
-msgid "WebSubmit Admin Guide"
-msgstr ""
-
-#: modules/websearch/doc/search-tips.webdoc:340
-#: modules/websubmit/lib/websubmit_templates.py:1118
-#: modules/bibharvest/lib/oai_harvest_admin.py:409
-#: modules/bibharvest/lib/oai_harvest_admin.py:417
-#: modules/bibharvest/lib/oai_harvest_admin.py:431
-#: modules/bibharvest/lib/oai_harvest_admin.py:446
-msgid "or"
-msgstr ""
-
 #: modules/bibedit/lib/bibedit_templates.py:266
+#: modules/bibedit/lib/bibedit_templates_epfl.py:105
 msgid "Comparison of:"
 msgstr ""
 
 #: modules/bibedit/lib/bibedit_templates.py:267
+#: modules/bibedit/lib/bibedit_templates_epfl.py:106
 msgid "Revision"
 msgstr ""
 
@@ -1523,6 +165,7 @@ msgstr ""
 #: modules/bibcirculation/lib/bibcirculation_templates.py:16088
 #: modules/bibcirculation/lib/bibcirculation_templates.py:16101
 #: modules/websubmit/lib/functions/Create_Upload_Files_Interface.py:447
+#: modules/webalert/lib/webalert_templates_epfl.py:302
 msgid "Name"
 msgstr ""
 
@@ -1624,6 +267,8 @@ msgstr ""
 #: modules/webalert/lib/webalert_templates.py:462
 #: modules/webmessage/lib/webmessage_templates.py:89
 #: modules/websubmit/lib/websubmit_templates.py:1483
+#: modules/webalert/lib/webalert_templates_epfl.py:309
+#: modules/webalert/lib/webalert_templates_epfl.py:453
 msgid "Action"
 msgstr ""
 
@@ -1748,6 +393,19 @@ msgid "The following errors have been found"
 msgstr ""
 
 #: modules/bibformat/lib/bibformatadminlib.py:55
+#: modules/bibformat/web/admin/bibformatadmin.py:68
+#: modules/webcomment/lib/webcommentadminlib.py:43
+#: modules/webstyle/lib/webdoc_webinterface.py:153
+#: modules/bibcheck/web/admin/bibcheckadmin.py:57
+#: modules/bibcheck/web/admin/bibcheckadmin.py:159
+#: modules/bibcheck/web/admin/bibcheckadmin.py:203
+#: modules/bibcheck/web/admin/bibcheckadmin.py:263
+#: modules/bibcheck/web/admin/bibcheckadmin.py:303
+#: modules/bibknowledge/lib/bibknowledgeadmin.py:78
+msgid "Admin Area"
+msgstr ""
+
+#: modules/bibformat/lib/bibformatadminlib.py:55
 #: modules/bibformat/web/admin/bibformatadmin.py:70
 msgid "BibFormat Admin"
 msgstr ""
@@ -1762,11 +420,32 @@ msgstr ""
 msgid "Enter a search query here."
 msgstr ""
 
-#: modules/bibformat/lib/elements/bfe_authors.py:117
-msgid "Hide"
+#: modules/bibformat/lib/elements/bfe_authors.py:73
+msgid "Editors"
 msgstr ""
 
-#: modules/bibformat/lib/elements/bfe_authors.py:118
+#: modules/bibformat/lib/elements/bfe_authors.py:75
+#: modules/bibcirculation/lib/bibcirculation_utils.py:321
+msgid "Editor"
+msgstr ""
+
+#: modules/bibformat/lib/elements/bfe_authors.py:89
+msgid "Translators: "
+msgstr ""
+
+#: modules/bibformat/lib/elements/bfe_authors.py:89
+msgid "Translator: "
+msgstr ""
+
+#: modules/bibformat/lib/elements/bfe_authors.py:97
+msgid "Advisor: "
+msgstr ""
+
+#: modules/bibformat/lib/elements/bfe_authors.py:97
+msgid "Advisors: "
+msgstr ""
+
+#: modules/bibformat/lib/elements/bfe_authors.py:145
 #, python-format
 msgid "Show all %i authors"
 msgstr ""
@@ -1809,6 +488,10 @@ msgid "external links"
 msgstr ""
 
 #: modules/bibformat/lib/elements/bfe_fulltext.py:272
+#: modules/bibformat/lib/elements/bfe_brief_links.py:64
+#: modules/bibformat/lib/elements/bfe_brief_links.py:66
+#: modules/bibformat/lib/elements/bfe_epfl_fulltext.py:136
+#: modules/bibformat/lib/elements/bfe_epfl_fulltext.py:173
 msgid "Fulltext"
 msgstr ""
 
@@ -1816,8 +499,79 @@ msgstr ""
 msgid "Manage Files of This Record"
 msgstr ""
 
-#: modules/bibformat/lib/elements/bfe_edit_record.py:51
-msgid "Edit This Record"
+#: modules/bibformat/lib/elements/bfe_edit_record.py:59
+#: modules/websearch/lib/websearch_templates_epfl.py:1484
+msgid "This field is required"
+msgstr ""
+
+#: modules/bibformat/lib/elements/bfe_edit_record.py:60
+msgid "Please wait while your message is being sent"
+msgstr ""
+
+#: modules/bibformat/lib/elements/bfe_edit_record.py:61
+msgid "Your request has been successfully sent."
+msgstr ""
+
+#: modules/bibformat/lib/elements/bfe_edit_record.py:103
+msgid "Ask for removal"
+msgstr ""
+
+#: modules/bibformat/lib/elements/bfe_edit_record.py:105
+msgid "Removal request"
+msgstr ""
+
+#: modules/bibformat/lib/elements/bfe_edit_record.py:106
+msgid "Please tell us the reason you want to remove it"
+msgstr ""
+
+#: modules/bibformat/lib/elements/bfe_edit_record.py:108
+msgid "Send request"
+msgstr ""
+
+#: modules/bibformat/lib/elements/bfe_edit_record.py:109
+#: modules/bibformat/web/admin/bibformatadmin.py:388
+#: modules/bibformat/web/admin/bibformatadmin.py:676
+#: modules/webbasket/lib/webbasket_templates.py:1413
+#: modules/webbasket/lib/webbasket_templates.py:1481
+#: modules/webbasket/lib/webbasket_templates.py:1588
+#: modules/webbasket/lib/webbasket_templates.py:1643
+#: modules/webbasket/lib/webbasket_templates.py:1733
+#: modules/webbasket/lib/webbasket_templates.py:2803
+#: modules/webbasket/lib/webbasket_templates.py:3607
+#: modules/websession/lib/websession_templates.py:1802
+#: modules/websession/lib/websession_templates.py:1910
+#: modules/websession/lib/websession_templates.py:2112
+#: modules/websession/lib/websession_templates.py:2195
+#: modules/websubmit/lib/websubmit_managedocfiles.py:846
+#: modules/websubmit/lib/websubmit_templates.py:2526
+#: modules/websubmit/lib/websubmit_templates.py:2589
+#: modules/websubmit/lib/websubmit_templates.py:2609
+#: modules/websubmit/web/publiline.py:1225
+#: modules/webjournal/lib/webjournaladminlib.py:114
+#: modules/webjournal/lib/webjournaladminlib.py:224
+#: modules/bibedit/lib/bibeditmulti_templates.py:517
+#: modules/bibexport/lib/bibexport_method_fieldexporter_templates.py:261
+#: modules/bibexport/lib/bibexport_method_fieldexporter_templates.py:403
+#: modules/bibcirculation/lib/bibcirculation_templates.py:641
+#: modules/bibcirculation/lib/bibcirculation_templates.py:1319
+#: modules/bibcirculation/lib/bibcirculation_templates.py:1455
+#: modules/bibcirculation/lib/bibcirculation_templates.py:3866
+#: modules/bibknowledge/lib/bibknowledgeadmin.py:740
+#: modules/webbasket/lib/webbasket_templates_epfl.py:528
+#: modules/webbasket/lib/webbasket_templates_epfl.py:600
+#: modules/webbasket/lib/webbasket_templates_epfl.py:689
+#: modules/webbasket/lib/webbasket_templates_epfl.py:766
+#: modules/websearch/lib/websearch_templates_epfl.py:1486
+msgid "Cancel"
+msgstr ""
+
+#: modules/bibformat/lib/elements/bfe_edit_record.py:146
+#: modules/bibcirculation/lib/bibcirculation_templates.py:2830
+msgid "Edit this record"
+msgstr ""
+
+#: modules/bibformat/lib/elements/bfe_edit_record.py:157
+msgid "Edit this record (BibEdit)"
 msgstr ""
 
 #: modules/bibformat/web/admin/bibformatadmin.py:175
@@ -1850,37 +604,6 @@ msgstr ""
 
 #: modules/bibformat/web/admin/bibformatadmin.py:367
 msgid "Delete Output Format"
-msgstr ""
-
-#: modules/bibformat/web/admin/bibformatadmin.py:388
-#: modules/bibformat/web/admin/bibformatadmin.py:676
-#: modules/webbasket/lib/webbasket_templates.py:1413
-#: modules/webbasket/lib/webbasket_templates.py:1481
-#: modules/webbasket/lib/webbasket_templates.py:1588
-#: modules/webbasket/lib/webbasket_templates.py:1643
-#: modules/webbasket/lib/webbasket_templates.py:1733
-#: modules/webbasket/lib/webbasket_templates.py:2803
-#: modules/webbasket/lib/webbasket_templates.py:3607
-#: modules/websession/lib/websession_templates.py:1802
-#: modules/websession/lib/websession_templates.py:1910
-#: modules/websession/lib/websession_templates.py:2112
-#: modules/websession/lib/websession_templates.py:2195
-#: modules/websubmit/lib/websubmit_managedocfiles.py:846
-#: modules/websubmit/lib/websubmit_templates.py:2526
-#: modules/websubmit/lib/websubmit_templates.py:2589
-#: modules/websubmit/lib/websubmit_templates.py:2609
-#: modules/websubmit/web/publiline.py:1225
-#: modules/webjournal/lib/webjournaladminlib.py:114
-#: modules/webjournal/lib/webjournaladminlib.py:224
-#: modules/bibedit/lib/bibeditmulti_templates.py:517
-#: modules/bibexport/lib/bibexport_method_fieldexporter_templates.py:261
-#: modules/bibexport/lib/bibexport_method_fieldexporter_templates.py:403
-#: modules/bibcirculation/lib/bibcirculation_templates.py:641
-#: modules/bibcirculation/lib/bibcirculation_templates.py:1319
-#: modules/bibcirculation/lib/bibcirculation_templates.py:1455
-#: modules/bibcirculation/lib/bibcirculation_templates.py:3866
-#: modules/bibknowledge/lib/bibknowledgeadmin.py:740
-msgid "Cancel"
 msgstr ""
 
 #: modules/bibformat/web/admin/bibformatadmin.py:413
@@ -2244,10 +967,10 @@ msgid "Batch Uploader: Daemon monitor"
 msgstr ""
 
 #: modules/miscutil/lib/dateutils.py:82 modules/miscutil/lib/dateutils.py:109
-#: modules/webbasket/lib/webbasket.py:181
-#: modules/webbasket/lib/webbasket.py:784
-#: modules/webbasket/lib/webbasket.py:879
-#: modules/websession/lib/webuser.py:306
+#: modules/webbasket/lib/webbasket.py:182
+#: modules/webbasket/lib/webbasket.py:787
+#: modules/webbasket/lib/webbasket.py:882
+#: modules/websession/lib/webuser.py:329
 #: modules/webstyle/lib/webstyle_templates.py:577
 msgid "N/A"
 msgstr ""
@@ -2331,7 +1054,7 @@ msgid "Apr"
 msgstr ""
 
 #: modules/miscutil/lib/dateutils.py:205 modules/miscutil/lib/dateutils.py:219
-#: modules/websearch/lib/search_engine.py:888
+#: modules/websearch/lib/search_engine.py:928
 #: modules/websearch/lib/websearch_templates.py:1201
 msgid "May"
 msgstr ""
@@ -2365,67 +1088,67 @@ msgid "Dec"
 msgstr ""
 
 #: modules/miscutil/lib/dateutils.py:215
-#: modules/websearch/lib/search_engine.py:887
+#: modules/websearch/lib/search_engine.py:927
 #: modules/websearch/lib/websearch_templates.py:1200
 msgid "January"
 msgstr ""
 
 #: modules/miscutil/lib/dateutils.py:216
-#: modules/websearch/lib/search_engine.py:887
+#: modules/websearch/lib/search_engine.py:927
 #: modules/websearch/lib/websearch_templates.py:1200
 msgid "February"
 msgstr ""
 
 #: modules/miscutil/lib/dateutils.py:217
-#: modules/websearch/lib/search_engine.py:887
+#: modules/websearch/lib/search_engine.py:927
 #: modules/websearch/lib/websearch_templates.py:1200
 msgid "March"
 msgstr ""
 
 #: modules/miscutil/lib/dateutils.py:218
-#: modules/websearch/lib/search_engine.py:887
+#: modules/websearch/lib/search_engine.py:927
 #: modules/websearch/lib/websearch_templates.py:1200
 msgid "April"
 msgstr ""
 
 #: modules/miscutil/lib/dateutils.py:220
-#: modules/websearch/lib/search_engine.py:888
+#: modules/websearch/lib/search_engine.py:928
 #: modules/websearch/lib/websearch_templates.py:1201
 msgid "June"
 msgstr ""
 
 #: modules/miscutil/lib/dateutils.py:221
-#: modules/websearch/lib/search_engine.py:888
+#: modules/websearch/lib/search_engine.py:928
 #: modules/websearch/lib/websearch_templates.py:1201
 msgid "July"
 msgstr ""
 
 #: modules/miscutil/lib/dateutils.py:222
-#: modules/websearch/lib/search_engine.py:888
+#: modules/websearch/lib/search_engine.py:928
 #: modules/websearch/lib/websearch_templates.py:1201
 msgid "August"
 msgstr ""
 
 #: modules/miscutil/lib/dateutils.py:223
-#: modules/websearch/lib/search_engine.py:889
+#: modules/websearch/lib/search_engine.py:929
 #: modules/websearch/lib/websearch_templates.py:1202
 msgid "September"
 msgstr ""
 
 #: modules/miscutil/lib/dateutils.py:224
-#: modules/websearch/lib/search_engine.py:889
+#: modules/websearch/lib/search_engine.py:929
 #: modules/websearch/lib/websearch_templates.py:1202
 msgid "October"
 msgstr ""
 
 #: modules/miscutil/lib/dateutils.py:225
-#: modules/websearch/lib/search_engine.py:889
+#: modules/websearch/lib/search_engine.py:929
 #: modules/websearch/lib/websearch_templates.py:1202
 msgid "November"
 msgstr ""
 
 #: modules/miscutil/lib/dateutils.py:226
-#: modules/websearch/lib/search_engine.py:889
+#: modules/websearch/lib/search_engine.py:929
 #: modules/websearch/lib/websearch_templates.py:1202
 msgid "December"
 msgstr ""
@@ -2472,6 +1195,7 @@ msgstr ""
 #: modules/bibcirculation/lib/bibcirculation_templates.py:16091
 #: modules/bibcirculation/lib/bibcirculation_templates.py:16224
 #: modules/bibcirculation/lib/bibcirculation_templates.py:16411
+#: modules/websearch/lib/websearch_templates_epfl.py:984
 msgid "Year"
 msgstr ""
 
@@ -2506,8 +1230,60 @@ msgstr ""
 msgid "Thank you!"
 msgstr ""
 
+#: modules/miscutil/lib/inveniocfg.py:453
+msgid "any field"
+msgstr ""
+
+#: modules/miscutil/lib/inveniocfg.py:454
+msgid "title"
+msgstr ""
+
+#: modules/miscutil/lib/inveniocfg.py:455
+msgid "author"
+msgstr ""
+
+#: modules/miscutil/lib/inveniocfg.py:456
+msgid "abstract"
+msgstr ""
+
+#: modules/miscutil/lib/inveniocfg.py:457
+msgid "keyword"
+msgstr ""
+
+#: modules/miscutil/lib/inveniocfg.py:458
+msgid "report number"
+msgstr ""
+
+#: modules/miscutil/lib/inveniocfg.py:459
+msgid "subject"
+msgstr ""
+
+#: modules/miscutil/lib/inveniocfg.py:460
+msgid "reference"
+msgstr ""
+
+#: modules/miscutil/lib/inveniocfg.py:461
+msgid "fulltext"
+msgstr ""
+
+#: modules/miscutil/lib/inveniocfg.py:462
+msgid "collection"
+msgstr ""
+
+#: modules/miscutil/lib/inveniocfg.py:463
+msgid "division"
+msgstr ""
+
+#: modules/miscutil/lib/inveniocfg.py:464
+msgid "year"
+msgstr ""
+
 #: modules/miscutil/lib/inveniocfg.py:465
 msgid "journal"
+msgstr ""
+
+#: modules/miscutil/lib/inveniocfg.py:466
+msgid "experiment"
 msgstr ""
 
 #: modules/miscutil/lib/inveniocfg.py:467
@@ -2551,94 +1327,110 @@ msgstr ""
 msgid "Need human intervention?  Contact"
 msgstr ""
 
-#: modules/webaccess/lib/access_control_config.py:262
+#: modules/webaccess/lib/access_control_config.py:270
 #: modules/websession/lib/websession_templates.py:1102
-#: modules/websession/lib/webuser.py:891 modules/websession/lib/webuser.py:900
-#: modules/websession/lib/webuser.py:901
+#: modules/websession/lib/webuser.py:914 modules/websession/lib/webuser.py:923
+#: modules/websession/lib/webuser.py:924
+#: modules/websession/lib/websession_templates_epfl.py:49
 msgid "Run Record Editor"
 msgstr ""
 
-#: modules/webaccess/lib/access_control_config.py:263
+#: modules/webaccess/lib/access_control_config.py:271
 #: modules/websession/lib/websession_templates.py:1104
+#: modules/websession/lib/websession_templates_epfl.py:51
 msgid "Run Multi-Record Editor"
 msgstr ""
 
-#: modules/webaccess/lib/access_control_config.py:264
-#: modules/websession/lib/webuser.py:892
+#: modules/webaccess/lib/access_control_config.py:272
+#: modules/websession/lib/webuser.py:915
 msgid "Run Document File Manager"
 msgstr ""
 
-#: modules/webaccess/lib/access_control_config.py:265
+#: modules/webaccess/lib/access_control_config.py:273
 #: modules/websession/lib/websession_templates.py:1108
+#: modules/websession/lib/websession_templates_epfl.py:55
 msgid "Run Record Merger"
 msgstr ""
 
-#: modules/webaccess/lib/access_control_config.py:266
+#: modules/webaccess/lib/access_control_config.py:274
 msgid "Run BibSword client"
 msgstr ""
 
-#: modules/webaccess/lib/access_control_config.py:267
+#: modules/webaccess/lib/access_control_config.py:275
 #: modules/websession/lib/websession_templates.py:1116
+#: modules/websession/lib/websession_templates_epfl.py:62
 msgid "Configure BibKnowledge"
 msgstr ""
 
-#: modules/webaccess/lib/access_control_config.py:268
+#: modules/webaccess/lib/access_control_config.py:276
 #: modules/websession/lib/websession_templates.py:1114
+#: modules/websession/lib/websession_templates_epfl.py:61
 msgid "Configure BibFormat"
 msgstr ""
 
-#: modules/webaccess/lib/access_control_config.py:269
+#: modules/webaccess/lib/access_control_config.py:277
 #: modules/websession/lib/websession_templates.py:1118
+#: modules/websession/lib/websession_templates_epfl.py:64
 msgid "Configure OAI Harvest"
 msgstr ""
 
-#: modules/webaccess/lib/access_control_config.py:270
+#: modules/webaccess/lib/access_control_config.py:278
 #: modules/websession/lib/websession_templates.py:1120
+#: modules/websession/lib/websession_templates_epfl.py:66
 msgid "Configure OAI Repository"
 msgstr ""
 
-#: modules/webaccess/lib/access_control_config.py:271
+#: modules/webaccess/lib/access_control_config.py:279
 #: modules/websession/lib/websession_templates.py:1122
+#: modules/websession/lib/websession_templates_epfl.py:68
 msgid "Configure BibIndex"
 msgstr ""
 
-#: modules/webaccess/lib/access_control_config.py:272
+#: modules/webaccess/lib/access_control_config.py:280
 #: modules/websession/lib/websession_templates.py:1124
+#: modules/websession/lib/websession_templates_epfl.py:70
 msgid "Configure BibRank"
 msgstr ""
 
-#: modules/webaccess/lib/access_control_config.py:273
+#: modules/webaccess/lib/access_control_config.py:281
 #: modules/websession/lib/websession_templates.py:1126
+#: modules/websession/lib/websession_templates_epfl.py:72
 msgid "Configure WebAccess"
 msgstr ""
 
-#: modules/webaccess/lib/access_control_config.py:274
+#: modules/webaccess/lib/access_control_config.py:282
 #: modules/websession/lib/websession_templates.py:1128
+#: modules/websession/lib/websession_templates_epfl.py:74
 msgid "Configure WebComment"
 msgstr ""
 
-#: modules/webaccess/lib/access_control_config.py:275
+#: modules/webaccess/lib/access_control_config.py:283
 #: modules/websession/lib/websession_templates.py:1132
+#: modules/websession/lib/websession_templates_epfl.py:78
 msgid "Configure WebSearch"
 msgstr ""
 
-#: modules/webaccess/lib/access_control_config.py:276
+#: modules/webaccess/lib/access_control_config.py:284
 #: modules/websession/lib/websession_templates.py:1134
+#: modules/websession/lib/websession_templates_epfl.py:80
 msgid "Configure WebSubmit"
 msgstr ""
 
-#: modules/webaccess/lib/access_control_config.py:277
+#: modules/webaccess/lib/access_control_config.py:285
 #: modules/websession/lib/websession_templates.py:1130
+#: modules/websession/lib/websession_templates_epfl.py:76
 msgid "Configure WebJournal"
 msgstr ""
 
-#: modules/webaccess/lib/access_control_config.py:278
+#: modules/webaccess/lib/access_control_config.py:286
 #: modules/websession/lib/websession_templates.py:1106
+#: modules/websession/lib/websession_templates_epfl.py:53
 msgid "Run BibCirculation"
 msgstr ""
 
-#: modules/webaccess/lib/access_control_config.py:279
+#: modules/webaccess/lib/access_control_config.py:287
 #: modules/websession/lib/websession_templates.py:1112
+#: modules/websession/lib/websession_templates_epfl.py:59
 msgid "Run Batch Uploader"
 msgstr ""
 
@@ -2705,6 +1497,8 @@ msgstr ""
 #: modules/websearch/lib/websearch_templates.py:3328
 #: modules/websearch/lib/websearch_templates.py:3334
 #: modules/websearch/lib/websearch_templates.py:3339
+#: modules/webbasket/lib/webbasket_templates_epfl.py:1069
+#: modules/bibformat/lib/elements/bfe_brief_links.py:55
 msgid "Detailed record"
 msgstr ""
 
@@ -2726,6 +1520,7 @@ msgstr ""
 
 #: modules/webalert/lib/webalert.py:111
 #: modules/websearch/lib/websearch_templates.py:3913
+#: modules/websearch/lib/websearch_templates_epfl.py:2303
 msgid "unknown"
 msgstr ""
 
@@ -2765,39 +1560,48 @@ msgid ""
 msgstr ""
 
 #: modules/webalert/lib/webalert_templates.py:74
+#: modules/webalert/lib/webalert_templates_epfl.py:58
 msgid "Pattern"
 msgstr ""
 
 #: modules/webalert/lib/webalert_templates.py:76
 #: modules/bibedit/lib/bibeditmulti_templates.py:509
+#: modules/webalert/lib/webalert_templates_epfl.py:60
 msgid "Field"
 msgstr ""
 
 #: modules/webalert/lib/webalert_templates.py:78
+#: modules/webalert/lib/webalert_templates_epfl.py:62
 msgid "Pattern 1"
 msgstr ""
 
 #: modules/webalert/lib/webalert_templates.py:80
+#: modules/webalert/lib/webalert_templates_epfl.py:64
 msgid "Field 1"
 msgstr ""
 
 #: modules/webalert/lib/webalert_templates.py:82
+#: modules/webalert/lib/webalert_templates_epfl.py:66
 msgid "Pattern 2"
 msgstr ""
 
 #: modules/webalert/lib/webalert_templates.py:84
+#: modules/webalert/lib/webalert_templates_epfl.py:68
 msgid "Field 2"
 msgstr ""
 
 #: modules/webalert/lib/webalert_templates.py:86
+#: modules/webalert/lib/webalert_templates_epfl.py:70
 msgid "Pattern 3"
 msgstr ""
 
 #: modules/webalert/lib/webalert_templates.py:88
+#: modules/webalert/lib/webalert_templates_epfl.py:72
 msgid "Field 3"
 msgstr ""
 
 #: modules/webalert/lib/webalert_templates.py:90
+#: modules/webalert/lib/webalert_templates_epfl.py:74
 msgid "Collections"
 msgstr ""
 
@@ -2812,85 +1616,108 @@ msgstr ""
 #: modules/bibcirculation/lib/bibcirculation_templates.py:7206
 #: modules/bibcirculation/lib/bibcirculation_templates.py:7575
 #: modules/bibcirculation/lib/bibcirculation_templates.py:8373
+#: modules/webalert/lib/webalert_templates_epfl.py:76
 msgid "Collection"
 msgstr ""
 
 #: modules/webalert/lib/webalert_templates.py:113
+#: modules/webalert/lib/webalert_templates_epfl.py:97
 msgid "You own the following alerts:"
 msgstr ""
 
 #: modules/webalert/lib/webalert_templates.py:114
+#: modules/webalert/lib/webalert_templates_epfl.py:98
 msgid "alert name"
 msgstr ""
 
 #: modules/webalert/lib/webalert_templates.py:122
+#: modules/webalert/lib/webalert_templates_epfl.py:107
 msgid "SHOW"
 msgstr ""
 
 #: modules/webalert/lib/webalert_templates.py:171
+#: modules/webalert/lib/webalert_templates_epfl.py:156
 msgid ""
 "This alert will notify you each time/only if a new item satisfies the "
 "following query:"
 msgstr ""
 
 #: modules/webalert/lib/webalert_templates.py:172
+#: modules/webalert/lib/webalert_templates_epfl.py:157
 msgid "QUERY"
 msgstr ""
 
 #: modules/webalert/lib/webalert_templates.py:210
+#: modules/webalert/lib/webalert_templates_epfl.py:195
 msgid "Alert identification name:"
 msgstr ""
 
 #: modules/webalert/lib/webalert_templates.py:212
+#: modules/webalert/lib/webalert_templates_epfl.py:197
 msgid "Search-checking frequency:"
 msgstr ""
 
 #: modules/webalert/lib/webalert_templates.py:216
 #: modules/webalert/lib/webalert_templates.py:336
 #: modules/bibharvest/lib/oai_harvest_admin.py:141
+#: modules/webalert/lib/webalert_templates_epfl.py:201
+#: modules/webalert/lib/webalert_templates_epfl.py:320
 msgid "monthly"
 msgstr ""
 
 #: modules/webalert/lib/webalert_templates.py:217
 #: modules/webalert/lib/webalert_templates.py:334
 #: modules/bibharvest/lib/oai_harvest_admin.py:140
+#: modules/webalert/lib/webalert_templates_epfl.py:202
+#: modules/webalert/lib/webalert_templates_epfl.py:318
 msgid "weekly"
 msgstr ""
 
 #: modules/webalert/lib/webalert_templates.py:218
 #: modules/webalert/lib/webalert_templates.py:331
 #: modules/bibharvest/lib/oai_harvest_admin.py:139
+#: modules/webalert/lib/webalert_templates_epfl.py:203
+#: modules/webalert/lib/webalert_templates_epfl.py:315
 msgid "daily"
 msgstr ""
 
 #: modules/webalert/lib/webalert_templates.py:219
+#: modules/webalert/lib/webalert_templates_epfl.py:204
 msgid "Send notification email?"
 msgstr ""
 
 #: modules/webalert/lib/webalert_templates.py:222
 #: modules/webalert/lib/webalert_templates.py:339
+#: modules/webalert/lib/webalert_templates_epfl.py:207
+#: modules/webalert/lib/webalert_templates_epfl.py:323
 msgid "yes"
 msgstr ""
 
 #: modules/webalert/lib/webalert_templates.py:223
 #: modules/webalert/lib/webalert_templates.py:341
+#: modules/webalert/lib/webalert_templates_epfl.py:208
+#: modules/webalert/lib/webalert_templates_epfl.py:325
 msgid "no"
 msgstr ""
 
 #: modules/webalert/lib/webalert_templates.py:224
+#: modules/webalert/lib/webalert_templates_epfl.py:209
 #, python-format
 msgid "if %(x_fmt_open)sno%(x_fmt_close)s you must specify a basket"
 msgstr ""
 
 #: modules/webalert/lib/webalert_templates.py:226
+#: modules/webalert/lib/webalert_templates_epfl.py:211
 msgid "Store results in basket?"
 msgstr ""
 
 #: modules/webalert/lib/webalert_templates.py:247
+#: modules/webalert/lib/webalert_templates_epfl.py:232
 msgid "SET ALERT"
 msgstr ""
 
 #: modules/webalert/lib/webalert_templates.py:248
+#: modules/webalert/lib/webalert_templates_epfl.py:233
 msgid "CLEAR DATA"
 msgstr ""
 
@@ -2914,22 +1741,28 @@ msgid "No"
 msgstr ""
 
 #: modules/webalert/lib/webalert_templates.py:319
+#: modules/webalert/lib/webalert_templates_epfl.py:303
 msgid "Search checking frequency"
 msgstr ""
 
 #: modules/webalert/lib/webalert_templates.py:320
+#: modules/webalert/lib/webalert_templates_epfl.py:304
 msgid "Notification by email"
 msgstr ""
 
 #: modules/webalert/lib/webalert_templates.py:321
+#: modules/webalert/lib/webalert_templates_epfl.py:305
 msgid "Result in basket"
 msgstr ""
 
 #: modules/webalert/lib/webalert_templates.py:322
+#: modules/webalert/lib/webalert_templates_epfl.py:306
 msgid "Date last run"
 msgstr ""
 
 #: modules/webalert/lib/webalert_templates.py:323
+#: modules/webalert/lib/webalert_templates_epfl.py:307
+#: modules/websearch/lib/websearch_templates_epfl.py:1705
 msgid "Creation date"
 msgstr ""
 
@@ -2938,26 +1771,32 @@ msgstr ""
 #: modules/bibexport/lib/bibexport_method_fieldexporter_templates.py:399
 #: modules/bibexport/lib/bibexport_method_fieldexporter_templates.py:459
 #: modules/bibexport/lib/bibexport_method_fieldexporter_templates.py:632
+#: modules/webalert/lib/webalert_templates_epfl.py:308
 msgid "Query"
 msgstr ""
 
 #: modules/webalert/lib/webalert_templates.py:367
 #: modules/webbasket/lib/webbasket_templates.py:1748
+#: modules/webalert/lib/webalert_templates_epfl.py:350
 msgid "no basket"
 msgstr ""
 
 #: modules/webalert/lib/webalert_templates.py:384
+#: modules/webalert/lib/webalert_templates_epfl.py:367
 msgid "Modify"
 msgstr ""
 
 #: modules/webalert/lib/webalert_templates.py:390
 #: modules/webjournal/lib/webjournaladminlib.py:225
 #: modules/webjournal/lib/webjournaladminlib.py:231
+#: modules/webalert/lib/webalert_templates_epfl.py:373
 msgid "Remove"
 msgstr ""
 
 #: modules/webalert/lib/webalert_templates.py:392
 #: modules/webalert/lib/webalert_templates.py:482
+#: modules/webalert/lib/webalert_templates_epfl.py:375
+#: modules/webalert/lib/webalert_templates_epfl.py:477
 msgid "Execute search"
 msgstr ""
 
@@ -2967,6 +1806,7 @@ msgid "You have defined %s alerts."
 msgstr ""
 
 #: modules/webalert/lib/webalert_templates.py:436
+#: modules/webalert/lib/webalert_templates_epfl.py:426
 #, python-format
 msgid ""
 "You have not executed any search yet. Please go to the %(x_url_open)ssearch "
@@ -2974,6 +1814,7 @@ msgid ""
 msgstr ""
 
 #: modules/webalert/lib/webalert_templates.py:445
+#: modules/webalert/lib/webalert_templates_epfl.py:438
 #, python-format
 msgid ""
 "You have performed %(x_nb1)s searches (%(x_nb2)s different questions) during "
@@ -2981,19 +1822,23 @@ msgid ""
 msgstr ""
 
 #: modules/webalert/lib/webalert_templates.py:450
+#: modules/webalert/lib/webalert_templates_epfl.py:442
 #, python-format
 msgid "Here are the %s most popular searches."
 msgstr ""
 
 #: modules/webalert/lib/webalert_templates.py:461
+#: modules/webalert/lib/webalert_templates_epfl.py:452
 msgid "Question"
 msgstr ""
 
 #: modules/webalert/lib/webalert_templates.py:465
+#: modules/webalert/lib/webalert_templates_epfl.py:457
 msgid "Last Run"
 msgstr ""
 
 #: modules/webalert/lib/webalert_templates.py:483
+#: modules/webalert/lib/webalert_templates_epfl.py:478
 msgid "Set new alert"
 msgstr ""
 
@@ -3029,7 +1874,6 @@ msgstr ""
 #: modules/webalert/lib/webalert_webinterface.py:472
 #: modules/webalert/lib/webalert_webinterface.py:520
 #: modules/webalert/lib/webalert_webinterface.py:548
-#: modules/webbasket/lib/webbasket.py:2097
 #: modules/webbasket/lib/webbasket_webinterface.py:804
 #: modules/webbasket/lib/webbasket_webinterface.py:899
 #: modules/webbasket/lib/webbasket_webinterface.py:1021
@@ -3038,26 +1882,27 @@ msgstr ""
 #: modules/webmessage/lib/webmessage_templates.py:466
 #: modules/websession/lib/websession_templates.py:617
 #: modules/websession/lib/websession_templates.py:2349
-#: modules/websession/lib/websession_webinterface.py:214
-#: modules/websession/lib/websession_webinterface.py:236
-#: modules/websession/lib/websession_webinterface.py:282
-#: modules/websession/lib/websession_webinterface.py:533
-#: modules/websession/lib/websession_webinterface.py:556
-#: modules/websession/lib/websession_webinterface.py:584
-#: modules/websession/lib/websession_webinterface.py:600
-#: modules/websession/lib/websession_webinterface.py:652
-#: modules/websession/lib/websession_webinterface.py:675
-#: modules/websession/lib/websession_webinterface.py:701
-#: modules/websession/lib/websession_webinterface.py:767
-#: modules/websession/lib/websession_webinterface.py:816
-#: modules/websession/lib/websession_webinterface.py:851
-#: modules/websession/lib/websession_webinterface.py:882
-#: modules/websession/lib/websession_webinterface.py:954
-#: modules/websession/lib/websession_webinterface.py:992
+#: modules/websession/lib/websession_webinterface.py:218
+#: modules/websession/lib/websession_webinterface.py:240
+#: modules/websession/lib/websession_webinterface.py:287
+#: modules/websession/lib/websession_webinterface.py:538
+#: modules/websession/lib/websession_webinterface.py:561
+#: modules/websession/lib/websession_webinterface.py:589
+#: modules/websession/lib/websession_webinterface.py:605
+#: modules/websession/lib/websession_webinterface.py:657
+#: modules/websession/lib/websession_webinterface.py:680
+#: modules/websession/lib/websession_webinterface.py:706
+#: modules/websession/lib/websession_webinterface.py:772
+#: modules/websession/lib/websession_webinterface.py:834
+#: modules/websession/lib/websession_webinterface.py:869
+#: modules/websession/lib/websession_webinterface.py:900
+#: modules/websession/lib/websession_webinterface.py:972
+#: modules/websession/lib/websession_webinterface.py:1010
 #: modules/websubmit/web/publiline.py:133
 #: modules/websubmit/web/publiline.py:154
 #: modules/websubmit/web/yourapprovals.py:91
 #: modules/websubmit/web/yoursubmissions.py:163
+#: modules/websession/lib/websession_templates_epfl.py:264
 msgid "Your Account"
 msgstr ""
 
@@ -3078,18 +1923,18 @@ msgstr ""
 #: modules/webalert/lib/webalert_webinterface.py:475
 #: modules/webalert/lib/webalert_webinterface.py:523
 #: modules/webalert/lib/webalert_webinterface.py:551
-#: modules/websession/lib/websession_webinterface.py:217
-#: modules/websession/lib/websession_webinterface.py:239
-#: modules/websession/lib/websession_webinterface.py:284
-#: modules/websession/lib/websession_webinterface.py:535
-#: modules/websession/lib/websession_webinterface.py:558
-#: modules/websession/lib/websession_webinterface.py:587
-#: modules/websession/lib/websession_webinterface.py:603
-#: modules/websession/lib/websession_webinterface.py:621
-#: modules/websession/lib/websession_webinterface.py:631
-#: modules/websession/lib/websession_webinterface.py:654
-#: modules/websession/lib/websession_webinterface.py:677
-#: modules/websession/lib/websession_webinterface.py:703
+#: modules/websession/lib/websession_webinterface.py:221
+#: modules/websession/lib/websession_webinterface.py:243
+#: modules/websession/lib/websession_webinterface.py:289
+#: modules/websession/lib/websession_webinterface.py:540
+#: modules/websession/lib/websession_webinterface.py:563
+#: modules/websession/lib/websession_webinterface.py:592
+#: modules/websession/lib/websession_webinterface.py:608
+#: modules/websession/lib/websession_webinterface.py:626
+#: modules/websession/lib/websession_webinterface.py:636
+#: modules/websession/lib/websession_webinterface.py:659
+#: modules/websession/lib/websession_webinterface.py:682
+#: modules/websession/lib/websession_webinterface.py:708
 #, python-format
 msgid "%s, personalize"
 msgstr ""
@@ -3154,69 +1999,46 @@ msgstr ""
 msgid "Display alerts"
 msgstr ""
 
-#: modules/webbasket/lib/webbasket.py:2014
-#: modules/webbasket/lib/webbasket.py:2127
-#: modules/webbasket/lib/webbasket_templates.py:100
-#: modules/webbasket/lib/webbasket_templates.py:150
-#: modules/webbasket/lib/webbasket_templates.py:156
-#: modules/webbasket/lib/webbasket_templates.py:604
-#: modules/webbasket/lib/webbasket_templates.py:656
-msgid "Personal baskets"
+#: modules/webbasket/lib/webbasket.py:2030
+#: modules/webbasket/lib/webbasket.py:2098
+#: modules/webbasket/lib/webbasket_templates_epfl.py:73
+#: modules/webbasket/lib/webbasket_templates_epfl.py:259
+msgid "Personal collections"
 msgstr ""
 
-#: modules/webbasket/lib/webbasket.py:2038
-#: modules/webbasket/lib/webbasket.py:2144
-#: modules/webbasket/lib/webbasket_templates.py:166
-#: modules/webbasket/lib/webbasket_templates.py:198
-#: modules/webbasket/lib/webbasket_templates.py:204
-#: modules/webbasket/lib/webbasket_templates.py:613
-#: modules/webbasket/lib/webbasket_templates.py:690
-msgid "Group baskets"
+#: modules/webbasket/lib/webbasket.py:2044
+#: modules/webbasket/lib/webbasket_templates_epfl.py:290
+msgid "Group collections"
 msgstr ""
 
-#: modules/webbasket/lib/webbasket.py:2064
-msgid "Others' baskets"
+#: modules/webbasket/lib/webbasket.py:2084
+#: modules/webstyle/lib/webstyle_templates_epfl.py:371
+msgid "My account"
 msgstr ""
 
-#: modules/webbasket/lib/webbasket.py:2100
-#: modules/websession/lib/websession_templates.py:479
-#: modules/websession/lib/websession_templates.py:625
-msgid "Your Baskets"
+#: modules/webbasket/lib/webbasket.py:2085
+#: modules/websession/lib/websession_templates_epfl.py:147
+msgid "My collections"
 msgstr ""
 
-#: modules/webbasket/lib/webbasket.py:2105
-#: modules/webbasket/lib/webbasket_webinterface.py:1254
-#: modules/webbasket/lib/webbasket_webinterface.py:1329
-#: modules/webbasket/lib/webbasket_webinterface.py:1373
-#: modules/webbasket/lib/webbasket_webinterface.py:1434
-msgid "List of public baskets"
+#: modules/webbasket/lib/webbasket.py:2088
+msgid "Search collections"
 msgstr ""
 
-#: modules/webbasket/lib/webbasket.py:2116
-#: modules/webbasket/lib/webbasket_webinterface.py:429
-msgid "Search baskets"
+#: modules/webbasket/lib/webbasket.py:2090
+msgid "Add to collection"
 msgstr ""
 
-#: modules/webbasket/lib/webbasket.py:2121
-#: modules/webbasket/lib/webbasket_webinterface.py:741
-#: modules/websearch/lib/websearch_templates.py:2850
-#: modules/websearch/lib/websearch_templates.py:3036
-msgid "Add to basket"
+#: modules/webbasket/lib/webbasket.py:2111
+#: modules/webbasket/lib/webbasket_templates_epfl.py:119
+msgid "Groups' collections"
 msgstr ""
 
-#: modules/webbasket/lib/webbasket.py:2161
-#: modules/webbasket/lib/webbasket_templates.py:217
-#: modules/webbasket/lib/webbasket_templates.py:223
-#: modules/webbasket/lib/webbasket_templates.py:622
-#: modules/webbasket/lib/webbasket_templates.py:724
-msgid "Public baskets"
-msgstr ""
-
-#: modules/webbasket/lib/webbasket.py:2191
+#: modules/webbasket/lib/webbasket.py:2143
 #, python-format
 msgid ""
-"You have %(x_nb_perso)s personal baskets and are subscribed to "
-"%(x_nb_group)s group baskets and %(x_nb_public)s other users public baskets."
+"You have %(x_nb_perso)s personal collections and are subscribed to "
+"%(x_nb_group)s group collections."
 msgstr ""
 
 #: modules/webbasket/lib/webbasket_templates.py:86
@@ -3229,6 +2051,14 @@ msgstr ""
 #, python-format
 msgid ""
 "You may want to start by %(x_url_open)screating a new basket%(x_url_close)s."
+msgstr ""
+
+#: modules/webbasket/lib/webbasket_templates.py:100
+#: modules/webbasket/lib/webbasket_templates.py:150
+#: modules/webbasket/lib/webbasket_templates.py:156
+#: modules/webbasket/lib/webbasket_templates.py:604
+#: modules/webbasket/lib/webbasket_templates.py:656
+msgid "Personal baskets"
 msgstr ""
 
 #: modules/webbasket/lib/webbasket_templates.py:111
@@ -3244,6 +2074,21 @@ msgstr ""
 #: modules/webbasket/lib/webbasket_templates.py:123
 #: modules/webbasket/lib/webbasket_webinterface.py:1145
 msgid "Edit topic"
+msgstr ""
+
+#: modules/webbasket/lib/webbasket_templates.py:166
+#: modules/webbasket/lib/webbasket_templates.py:198
+#: modules/webbasket/lib/webbasket_templates.py:204
+#: modules/webbasket/lib/webbasket_templates.py:613
+#: modules/webbasket/lib/webbasket_templates.py:690
+msgid "Group baskets"
+msgstr ""
+
+#: modules/webbasket/lib/webbasket_templates.py:217
+#: modules/webbasket/lib/webbasket_templates.py:223
+#: modules/webbasket/lib/webbasket_templates.py:622
+#: modules/webbasket/lib/webbasket_templates.py:724
+msgid "Public baskets"
 msgstr ""
 
 #: modules/webbasket/lib/webbasket_templates.py:558
@@ -3271,6 +2116,10 @@ msgstr ""
 #: modules/webbasket/lib/webbasket_templates.py:743
 #: modules/webbasket/lib/webbasket_templates.py:759
 #: modules/webbasket/lib/webbasket_templates.py:775
+#: modules/webbasket/lib/webbasket_templates_epfl.py:261
+#: modules/webbasket/lib/webbasket_templates_epfl.py:278
+#: modules/webbasket/lib/webbasket_templates_epfl.py:292
+#: modules/webbasket/lib/webbasket_templates_epfl.py:309
 #, python-format
 msgid "%i items found"
 msgstr ""
@@ -3281,6 +2130,7 @@ msgid "All public baskets"
 msgstr ""
 
 #: modules/webbasket/lib/webbasket_templates.py:647
+#: modules/webbasket/lib/webbasket_templates_epfl.py:249
 msgid "No items found."
 msgstr ""
 
@@ -3288,6 +2138,8 @@ msgstr ""
 #: modules/webbasket/lib/webbasket_templates.py:708
 #: modules/webbasket/lib/webbasket_templates.py:741
 #: modules/webbasket/lib/webbasket_templates.py:773
+#: modules/webbasket/lib/webbasket_templates_epfl.py:276
+#: modules/webbasket/lib/webbasket_templates_epfl.py:307
 #, python-format
 msgid "In %(x_linked_basket_name)s"
 msgstr ""
@@ -3396,6 +2248,8 @@ msgstr ""
 #: modules/bibcirculation/lib/bibcirculation_templates.py:11345
 #: modules/bibcirculation/lib/bibcirculation_templates.py:15576
 #: modules/bibcirculation/lib/bibcirculation_templates.py:15738
+#: modules/websearch/lib/websearch_templates_epfl.py:981
+#: modules/websearch/lib/websearch_templates_epfl.py:1706
 msgid "Title"
 msgstr ""
 
@@ -3419,6 +2273,7 @@ msgid " or return to your %(x_url_open)sprevious basket%(x_url_close)s"
 msgstr ""
 
 #: modules/webbasket/lib/webbasket_templates.py:1289
+#: modules/webbasket/lib/webbasket_templates_epfl.py:484
 #, python-format
 msgid " or return to your %(x_url_open)ssearch%(x_url_close)s"
 msgstr ""
@@ -3444,6 +2299,7 @@ msgid "Optionally, add a note to this item"
 msgstr ""
 
 #: modules/webbasket/lib/webbasket_templates.py:1412
+#: modules/webbasket/lib/webbasket_templates_epfl.py:527
 msgid "Add items"
 msgstr ""
 
@@ -3475,21 +2331,27 @@ msgstr ""
 #: modules/webmessage/lib/webmessage_templates.py:508
 #: modules/websession/lib/websession_templates.py:2235
 #: modules/websession/lib/websession_templates.py:2275
+#: modules/webbasket/lib/webbasket_templates_epfl.py:599
 msgid "Yes"
 msgstr ""
 
 #: modules/webbasket/lib/webbasket_templates.py:1517
 #: modules/webbasket/lib/webbasket_templates.py:1613
+#: modules/webbasket/lib/webbasket_templates_epfl.py:625
 msgid "General settings"
 msgstr ""
 
 #: modules/webbasket/lib/webbasket_templates.py:1532
 #: modules/webbasket/lib/webbasket_templates.py:1707
 #: modules/webbasket/lib/webbasket_templates.py:1734
+#: modules/webbasket/lib/webbasket_templates_epfl.py:650
+#: modules/webbasket/lib/webbasket_templates_epfl.py:764
+#: modules/webbasket/lib/webbasket_templates_epfl.py:767
 msgid "Add group"
 msgstr ""
 
 #: modules/webbasket/lib/webbasket_templates.py:1537
+#: modules/webbasket/lib/webbasket_templates_epfl.py:648
 msgid "Manage group rights"
 msgstr ""
 
@@ -3511,6 +2373,7 @@ msgstr ""
 
 #: modules/webbasket/lib/webbasket_templates.py:1587
 #: modules/webbasket/lib/webbasket_templates.py:1642
+#: modules/webbasket/lib/webbasket_templates_epfl.py:689
 msgid "Save changes"
 msgstr ""
 
@@ -3525,11 +2388,13 @@ msgstr ""
 
 #: modules/webbasket/lib/webbasket_templates.py:1654
 #: modules/webbasket/lib/webbasket_templates.py:1669
+#: modules/webbasket/lib/webbasket_templates_epfl.py:701
 msgid "No rights"
 msgstr ""
 
 #: modules/webbasket/lib/webbasket_templates.py:1656
 #: modules/webbasket/lib/webbasket_templates.py:1671
+#: modules/webbasket/lib/webbasket_templates_epfl.py:703
 msgid "View records"
 msgstr ""
 
@@ -3541,6 +2406,9 @@ msgstr ""
 #: modules/webbasket/lib/webbasket_templates.py:1679
 #: modules/webbasket/lib/webbasket_templates.py:1681
 #: modules/webbasket/lib/webbasket_templates.py:1683
+#: modules/webbasket/lib/webbasket_templates_epfl.py:705
+#: modules/webbasket/lib/webbasket_templates_epfl.py:707
+#: modules/webbasket/lib/webbasket_templates_epfl.py:709
 msgid "and"
 msgstr ""
 
@@ -3561,6 +2429,7 @@ msgid "add notes"
 msgstr ""
 
 #: modules/webbasket/lib/webbasket_templates.py:1677
+#: modules/webbasket/lib/webbasket_templates_epfl.py:705
 msgid "add records"
 msgstr ""
 
@@ -3569,14 +2438,17 @@ msgid "delete notes"
 msgstr ""
 
 #: modules/webbasket/lib/webbasket_templates.py:1681
+#: modules/webbasket/lib/webbasket_templates_epfl.py:707
 msgid "remove records"
 msgstr ""
 
 #: modules/webbasket/lib/webbasket_templates.py:1683
+#: modules/webbasket/lib/webbasket_templates_epfl.py:709
 msgid "manage sharing rights"
 msgstr ""
 
 #: modules/webbasket/lib/webbasket_templates.py:1705
+#: modules/webbasket/lib/webbasket_templates_epfl.py:734
 msgid "You are not a member of a group."
 msgstr ""
 
@@ -3600,7 +2472,7 @@ msgid ""
 msgstr ""
 
 #: modules/webbasket/lib/webbasket_templates.py:1771
-#: modules/websession/lib/websession_webinterface.py:261
+#: modules/websession/lib/websession_webinterface.py:266
 msgid "This functionality is forbidden to guest users."
 msgstr ""
 
@@ -3663,6 +2535,7 @@ msgid "Basket is empty"
 msgstr ""
 
 #: modules/webbasket/lib/webbasket_templates.py:2159
+#: modules/webbasket/lib/webbasket_templates_epfl.py:961
 msgid "You do not have sufficient rights to view this basket's content."
 msgstr ""
 
@@ -3684,10 +2557,13 @@ msgstr ""
 
 #: modules/webbasket/lib/webbasket_templates.py:2238
 #: modules/webbasket/lib/webbasket_templates.py:3142
+#: modules/webbasket/lib/webbasket_templates_epfl.py:1035
+#: modules/webbasket/lib/webbasket_templates_epfl.py:1036
 msgid "Copy item"
 msgstr ""
 
 #: modules/webbasket/lib/webbasket_templates.py:2254
+#: modules/webbasket/lib/webbasket_templates_epfl.py:1049
 msgid "Remove item"
 msgstr ""
 
@@ -3882,10 +2758,20 @@ msgstr ""
 msgid "Display baskets"
 msgstr ""
 
+#: modules/webbasket/lib/webbasket_webinterface.py:429
+msgid "Search baskets"
+msgstr ""
+
 #: modules/webbasket/lib/webbasket_webinterface.py:567
 #: modules/webbasket/lib/webbasket_webinterface.py:643
 #: modules/webbasket/lib/webbasket_webinterface.py:1579
 msgid "Display item and notes"
+msgstr ""
+
+#: modules/webbasket/lib/webbasket_webinterface.py:741
+#: modules/websearch/lib/websearch_templates.py:2850
+#: modules/websearch/lib/websearch_templates.py:3036
+msgid "Add to basket"
 msgstr ""
 
 #: modules/webbasket/lib/webbasket_webinterface.py:825
@@ -3894,6 +2780,13 @@ msgstr ""
 
 #: modules/webbasket/lib/webbasket_webinterface.py:884
 msgid "Copy record to basket"
+msgstr ""
+
+#: modules/webbasket/lib/webbasket_webinterface.py:1254
+#: modules/webbasket/lib/webbasket_webinterface.py:1329
+#: modules/webbasket/lib/webbasket_webinterface.py:1373
+#: modules/webbasket/lib/webbasket_webinterface.py:1434
+msgid "List of public baskets"
 msgstr ""
 
 #: modules/webcomment/lib/webcomment.py:1072
@@ -4049,16 +2942,17 @@ msgstr ""
 
 #: modules/webcomment/lib/webcomment_templates.py:600
 #: modules/webcomment/lib/webcomment_templates.py:615
-#: modules/webcomment/lib/webcomment_webinterface.py:231
-#: modules/webcomment/lib/webcomment_webinterface.py:444
+#: modules/webcomment/lib/webcomment_webinterface.py:230
+#: modules/webcomment/lib/webcomment_webinterface.py:436
 #: modules/websubmit/lib/websubmit_templates.py:2663
 msgid "Comments"
 msgstr ""
 
 #: modules/webcomment/lib/webcomment_templates.py:601
 #: modules/webcomment/lib/webcomment_templates.py:616
-#: modules/webcomment/lib/webcomment_webinterface.py:231
-#: modules/webcomment/lib/webcomment_webinterface.py:444
+#: modules/webcomment/lib/webcomment_webinterface.py:230
+#: modules/webcomment/lib/webcomment_webinterface.py:436
+#: modules/websearch/lib/websearch_templates_epfl.py:512
 msgid "Reviews"
 msgstr ""
 
@@ -4066,12 +2960,17 @@ msgstr ""
 #: modules/websearch/lib/websearch_templates.py:1862
 #: modules/bibcatalog/lib/bibcatalog_templates.py:50
 #: modules/bibknowledge/lib/bibknowledge_templates.py:159
+#: modules/websearch/lib/websearch_templates_epfl.py:1186
+#: modules/websearch/lib/websearch_templates_epfl.py:1603
+#: modules/websearch/lib/websearch_templates_epfl.py:1606
 msgid "Previous"
 msgstr ""
 
 #: modules/webcomment/lib/webcomment_templates.py:777
 #: modules/bibcatalog/lib/bibcatalog_templates.py:72
 #: modules/bibknowledge/lib/bibknowledge_templates.py:157
+#: modules/websearch/lib/websearch_templates_epfl.py:1623
+#: modules/websearch/lib/websearch_templates_epfl.py:1626
 msgid "Next"
 msgstr ""
 
@@ -4088,6 +2987,8 @@ msgstr ""
 #: modules/webcomment/lib/webcomment_templates.py:822
 #: modules/webcomment/lib/webcomment_templates.py:1583
 #: modules/websearch/lib/websearch_templates.py:569
+#: modules/websearch/lib/websearch_templates_epfl.py:175
+#: modules/bibformat/lib/elements/bfe_doctype.py:49
 msgid "Record"
 msgstr ""
 
@@ -4103,6 +3004,7 @@ msgstr ""
 
 #: modules/webcomment/lib/webcomment_templates.py:830
 #: modules/webcomment/lib/webcomment_templates.py:1818
+#: modules/bibformat/lib/elements/bfe_doctype.py:27
 msgid "Review"
 msgstr ""
 
@@ -4217,7 +3119,7 @@ msgid "Add review"
 msgstr ""
 
 #: modules/webcomment/lib/webcomment_templates.py:1284
-#: modules/webcomment/lib/webcomment_webinterface.py:489
+#: modules/webcomment/lib/webcomment_webinterface.py:481
 msgid "Add Review"
 msgstr ""
 
@@ -4549,51 +3451,51 @@ msgstr ""
 msgid "For any question, please use <%(CFG_SITE_SUPPORT_EMAIL)s>"
 msgstr ""
 
-#: modules/webcomment/lib/webcomment_webinterface.py:256
-#: modules/webcomment/lib/webcomment_webinterface.py:511
+#: modules/webcomment/lib/webcomment_webinterface.py:255
+#: modules/webcomment/lib/webcomment_webinterface.py:503
 msgid "Record Not Found"
 msgstr ""
 
-#: modules/webcomment/lib/webcomment_webinterface.py:335
-#: modules/webcomment/lib/webcomment_webinterface.py:573
-#: modules/webcomment/lib/webcomment_webinterface.py:650
+#: modules/webcomment/lib/webcomment_webinterface.py:334
+#: modules/webcomment/lib/webcomment_webinterface.py:565
+#: modules/webcomment/lib/webcomment_webinterface.py:642
 msgid "Specified comment does not belong to this record"
 msgstr ""
 
-#: modules/webcomment/lib/webcomment_webinterface.py:344
-#: modules/webcomment/lib/webcomment_webinterface.py:579
-#: modules/webcomment/lib/webcomment_webinterface.py:656
+#: modules/webcomment/lib/webcomment_webinterface.py:343
+#: modules/webcomment/lib/webcomment_webinterface.py:571
+#: modules/webcomment/lib/webcomment_webinterface.py:648
 msgid "You do not have access to the specified comment"
 msgstr ""
 
-#: modules/webcomment/lib/webcomment_webinterface.py:491
+#: modules/webcomment/lib/webcomment_webinterface.py:483
 #: modules/websubmit/lib/websubmit_templates.py:2659
 #: modules/websubmit/lib/websubmit_templates.py:2660
 msgid "Add Comment"
 msgstr ""
 
-#: modules/webcomment/lib/webcomment_webinterface.py:584
+#: modules/webcomment/lib/webcomment_webinterface.py:576
 msgid "You cannot vote for a deleted comment"
 msgstr ""
 
-#: modules/webcomment/lib/webcomment_webinterface.py:661
+#: modules/webcomment/lib/webcomment_webinterface.py:653
 msgid "You cannot report a deleted comment"
 msgstr ""
 
-#: modules/webcomment/lib/webcomment_webinterface.py:788
-#: modules/webcomment/lib/webcomment_webinterface.py:828
+#: modules/webcomment/lib/webcomment_webinterface.py:780
+#: modules/webcomment/lib/webcomment_webinterface.py:820
 msgid "Page Not Found"
 msgstr ""
 
-#: modules/webcomment/lib/webcomment_webinterface.py:789
+#: modules/webcomment/lib/webcomment_webinterface.py:781
 msgid "The requested comment could not be found"
 msgstr ""
 
-#: modules/webcomment/lib/webcomment_webinterface.py:809
+#: modules/webcomment/lib/webcomment_webinterface.py:801
 msgid "You cannot access files of a deleted comment"
 msgstr ""
 
-#: modules/webcomment/lib/webcomment_webinterface.py:829
+#: modules/webcomment/lib/webcomment_webinterface.py:821
 msgid "The requested file could not be found"
 msgstr ""
 
@@ -4616,7 +3518,7 @@ msgstr ""
 #: modules/webcomment/web/admin/webcommentadmin.py:273
 #: modules/websearch/lib/websearch_webinterface.py:969
 #: modules/websearch/web/admin/websearchadmin.py:1040
-#: modules/websession/lib/websession_webinterface.py:948
+#: modules/websession/lib/websession_webinterface.py:966
 #: modules/webstyle/lib/webstyle_templates.py:583
 #: modules/webjournal/web/admin/webjournaladmin.py:390
 #: modules/bibcheck/web/admin/bibcheckadmin.py:333
@@ -4864,180 +3766,242 @@ msgstr ""
 msgid "Read a message"
 msgstr ""
 
-#: modules/websearch/lib/search_engine.py:750
-#: modules/websearch/lib/search_engine.py:777
-#: modules/websearch/lib/search_engine.py:4533
-#: modules/websearch/lib/search_engine.py:4586
+#: modules/websearch/lib/search_engine.py:768
+#: modules/websearch/lib/search_engine.py:798
+#: modules/websearch/lib/search_engine.py:4603
+#: modules/websearch/lib/search_engine.py:4656
 msgid "Search Results"
 msgstr ""
 
-#: modules/websearch/lib/search_engine.py:880
+#: modules/websearch/lib/search_engine.py:920
 #: modules/websearch/lib/websearch_templates.py:1185
 msgid "any day"
 msgstr ""
 
-#: modules/websearch/lib/search_engine.py:886
+#: modules/websearch/lib/search_engine.py:926
 #: modules/websearch/lib/websearch_templates.py:1197
 msgid "any month"
 msgstr ""
 
-#: modules/websearch/lib/search_engine.py:894
+#: modules/websearch/lib/search_engine.py:934
 #: modules/websearch/lib/websearch_templates.py:1211
 msgid "any year"
 msgstr ""
 
-#: modules/websearch/lib/search_engine.py:935
-#: modules/websearch/lib/search_engine.py:954
+#: modules/websearch/lib/search_engine.py:975
+#: modules/websearch/lib/search_engine.py:994
 msgid "any public collection"
 msgstr ""
 
-#: modules/websearch/lib/search_engine.py:939
+#: modules/websearch/lib/search_engine.py:979
 msgid "remove this collection"
 msgstr ""
 
-#: modules/websearch/lib/search_engine.py:950
+#: modules/websearch/lib/search_engine.py:990
 msgid "add another collection"
 msgstr ""
 
-#: modules/websearch/lib/search_engine.py:960
-#: modules/websearch/lib/websearch_webcoll.py:591
+#: modules/websearch/lib/search_engine.py:1000
+#: modules/websearch/lib/search_engine.py:1156
+#: modules/websearch/lib/websearch_templates.py:1162
+#: modules/websearch/lib/websearch_webcoll.py:596
+msgid "OR"
+msgstr ""
+
+#: modules/websearch/lib/search_engine.py:1000
+#: modules/websearch/lib/websearch_webcoll.py:596
 msgid "rank by"
 msgstr ""
 
-#: modules/websearch/lib/search_engine.py:980
+#: modules/websearch/lib/search_engine.py:1020
+#: modules/websearch/lib/websearch_templates_epfl.py:1712
 msgid "HTML brief"
 msgstr ""
 
-#: modules/websearch/lib/search_engine.py:1093
-#: modules/websearch/lib/websearch_webcoll.py:561
+#: modules/websearch/lib/search_engine.py:1134
+#: modules/websearch/lib/websearch_webcoll.py:566
 msgid "latest first"
 msgstr ""
 
-#: modules/websearch/lib/search_engine.py:1702
+#: modules/websearch/lib/search_engine.py:1155
+#: modules/websearch/lib/websearch_templates.py:1161
+msgid "AND"
+msgstr ""
+
+#: modules/websearch/lib/search_engine.py:1157
+#: modules/websearch/lib/websearch_templates.py:1163
+msgid "AND NOT"
+msgstr ""
+
+#: modules/websearch/lib/search_engine.py:1175
+#: modules/websearch/lib/websearch_templates.py:1111
+msgid "All of the words:"
+msgstr ""
+
+#: modules/websearch/lib/search_engine.py:1176
+#: modules/websearch/lib/websearch_templates.py:1113
+msgid "Any of the words:"
+msgstr ""
+
+#: modules/websearch/lib/search_engine.py:1177
+#: modules/websearch/lib/websearch_templates.py:1115
+msgid "Exact phrase:"
+msgstr ""
+
+#: modules/websearch/lib/search_engine.py:1178
+#: modules/websearch/lib/websearch_templates.py:1117
+msgid "Partial phrase:"
+msgstr ""
+
+#: modules/websearch/lib/search_engine.py:1179
+#: modules/websearch/lib/websearch_templates.py:1119
+msgid "Regular expression:"
+msgstr ""
+
+#: modules/websearch/lib/search_engine.py:1744
 msgid "No values found."
 msgstr ""
 
-#: modules/websearch/lib/search_engine.py:1825
+#: modules/websearch/lib/search_engine.py:1867
 #, python-format
 msgid ""
 "Warning: full-text search is only available for a subset of papers mostly "
 "from %(x_range_from_year)s-%(x_range_to_year)s."
 msgstr ""
 
-#: modules/websearch/lib/search_engine.py:1829
+#: modules/websearch/lib/search_engine.py:1871
 #, python-format
 msgid ""
 "Warning: figure caption search is only available for a subset of papers "
 "mostly from %(x_range_from_year)s-%(x_range_to_year)s."
 msgstr ""
 
-#: modules/websearch/lib/search_engine.py:1838
+#: modules/websearch/lib/search_engine.py:1880
 msgid ""
 "No phrase index available for fulltext yet, looking for word combination..."
 msgstr ""
 
-#: modules/websearch/lib/search_engine.py:1878
+#: modules/websearch/lib/search_engine.py:1920
 #, python-format
 msgid "No exact match found for %(x_query1)s, using %(x_query2)s instead..."
 msgstr ""
 
-#: modules/websearch/lib/search_engine.py:1888
-#: modules/websearch/lib/search_engine.py:1897
-#: modules/websearch/lib/search_engine.py:4505
-#: modules/websearch/lib/search_engine.py:4543
-#: modules/websearch/lib/search_engine.py:4594
+#: modules/websearch/lib/search_engine.py:1930
+#: modules/websearch/lib/search_engine.py:1939
+#: modules/websearch/lib/search_engine.py:4575
+#: modules/websearch/lib/search_engine.py:4613
+#: modules/websearch/lib/search_engine.py:4664
 #: modules/websubmit/lib/websubmit_webinterface.py:110
 #: modules/websubmit/lib/websubmit_webinterface.py:145
 #: modules/bibcirculation/lib/bibcirculation_webinterface.py:327
 msgid "Requested record does not seem to exist."
 msgstr ""
 
-#: modules/websearch/lib/search_engine.py:2019
+#: modules/websearch/lib/search_engine.py:2061
 msgid ""
 "Search syntax misunderstood. Ignoring all parentheses in the query. If this "
 "doesn't help, please check your search and try again."
 msgstr ""
 
-#: modules/websearch/lib/search_engine.py:2341
+#: modules/websearch/lib/search_engine.py:2383
 #, python-format
 msgid ""
 "No match found in collection %(x_collection)s. Other public collections gave "
 "%(x_url_open)s%(x_nb_hits)d hits%(x_url_close)s."
 msgstr ""
 
-#: modules/websearch/lib/search_engine.py:2350
+#: modules/websearch/lib/search_engine.py:2392
 msgid ""
 "No public collection matched your query. If you were looking for a non-"
 "public document, please choose the desired restricted collection first."
 msgstr ""
 
-#: modules/websearch/lib/search_engine.py:2467
+#: modules/websearch/lib/search_engine.py:2509
 #, python-format
 msgid "There are no records referring to %s."
 msgstr ""
 
-#: modules/websearch/lib/search_engine.py:2469
+#: modules/websearch/lib/search_engine.py:2511
 #, python-format
 msgid "There are no records cited by %s."
 msgstr ""
 
-#: modules/websearch/lib/search_engine.py:2474
+#: modules/websearch/lib/search_engine.py:2516
 #, python-format
 msgid "No word index is available for %s."
 msgstr ""
 
-#: modules/websearch/lib/search_engine.py:2485
+#: modules/websearch/lib/search_engine.py:2527
 #, python-format
 msgid "No phrase index is available for %s."
 msgstr ""
 
-#: modules/websearch/lib/search_engine.py:2530
+#: modules/websearch/lib/search_engine.py:2572
 #, python-format
 msgid ""
 "Search term %(x_term)s inside index %(x_index)s did not match any record. "
 "Nearest terms in any collection are:"
 msgstr ""
 
-#: modules/websearch/lib/search_engine.py:2534
+#: modules/websearch/lib/search_engine.py:2576
 #, python-format
 msgid ""
 "Search term %s did not match any record. Nearest terms in any collection are:"
 msgstr ""
 
-#: modules/websearch/lib/search_engine.py:3290
+#: modules/websearch/lib/search_engine.py:3333
 #, python-format
 msgid ""
 "Sorry, sorting is allowed on sets of up to %d records only. Using default "
 "sort order."
 msgstr ""
 
-#: modules/websearch/lib/search_engine.py:3314
+#: modules/websearch/lib/search_engine.py:3357
 #, python-format
 msgid ""
 "Sorry, %s does not seem to be a valid sort option. Choosing title sort "
 "instead."
 msgstr ""
 
-#: modules/websearch/lib/search_engine.py:3507
-#: modules/websearch/lib/search_engine.py:3836
-#: modules/websearch/lib/search_engine.py:4014
-#: modules/websearch/lib/search_engine.py:4037
-#: modules/websearch/lib/search_engine.py:4045
-#: modules/websearch/lib/search_engine.py:4053
-#: modules/websearch/lib/search_engine.py:4099
+#: modules/websearch/lib/search_engine.py:3552
+#: modules/websearch/lib/search_engine.py:3881
+#: modules/websearch/lib/search_engine.py:4059
+#: modules/websearch/lib/search_engine.py:4082
+#: modules/websearch/lib/search_engine.py:4090
+#: modules/websearch/lib/search_engine.py:4098
+#: modules/websearch/lib/search_engine.py:4144
 #: modules/bibcirculation/lib/bibcirculation_webinterface.py:325
 msgid "The record has been deleted."
 msgstr ""
 
-#: modules/websearch/lib/search_engine.py:3735
+#: modules/websearch/lib/search_engine.py:3780
 msgid "Use different search terms."
 msgstr ""
 
-#: modules/websearch/lib/search_engine.py:4815
+#: modules/websearch/lib/search_engine.py:4580
+#: modules/websearch/lib/websearch_templates.py:804
+#: modules/websearch/lib/websearch_templates.py:882
+#: modules/websearch/lib/websearch_templates.py:1005
+#: modules/websearch/lib/websearch_templates.py:1963
+#: modules/websearch/lib/websearch_templates.py:2054
+#: modules/websearch/lib/websearch_templates.py:2111
+#: modules/websearch/lib/websearch_templates.py:2168
+#: modules/websearch/lib/websearch_templates.py:2207
+#: modules/websearch/lib/websearch_templates.py:2230
+#: modules/websearch/lib/websearch_templates.py:2261
+#: modules/websearch/lib/websearch_templates_epfl.py:744
+#: modules/websearch/lib/websearch_templates_epfl.py:1318
+#: modules/websearch/lib/websearch_templates_epfl.py:1341
+#: modules/websearch/lib/websearch_templates_epfl.py:1372
+#: modules/webstyle/lib/webstyle_templates_epfl.py:459
+msgid "Browse"
+msgstr ""
+
+#: modules/websearch/lib/search_engine.py:4885
 msgid "No match within your time limits, discarding this condition..."
 msgstr ""
 
-#: modules/websearch/lib/search_engine.py:4842
+#: modules/websearch/lib/search_engine.py:4912
 msgid "No match within your search limits, discarding this condition..."
 msgstr ""
 
@@ -5097,6 +4061,8 @@ msgstr ""
 #: modules/websearch/lib/websearch_templates.py:3708
 #: modules/websearch/lib/websearch_templates.py:3785
 #: modules/websearch/lib/websearch_templates.py:3845
+#: modules/websearch/lib/websearch_templates_epfl.py:952
+#: modules/websearch/lib/websearch_templates_epfl.py:2256
 msgid "more"
 msgstr ""
 
@@ -5120,45 +4086,100 @@ msgstr ""
 #: modules/websearch/lib/websearch_templates.py:878
 #: modules/websearch/lib/websearch_templates.py:2099
 #: modules/websearch/lib/websearch_templates.py:2157
+#: modules/websearch/lib/websearch_templates_epfl.py:633
+#: modules/websearch/lib/websearch_templates_epfl.py:1283
 msgid "Advanced Search"
 msgstr ""
 
+#: modules/websearch/lib/websearch_templates.py:803
+#: modules/websearch/lib/websearch_templates.py:881
+#: modules/websearch/lib/websearch_templates.py:1004
+#: modules/websearch/lib/websearch_templates.py:1960
+#: modules/websearch/lib/websearch_templates.py:2053
+#: modules/websearch/lib/websearch_templates.py:2110
+#: modules/websearch/lib/websearch_templates.py:2167
+#: modules/webstyle/lib/webstyle_templates.py:431
+#: modules/webstyle/lib/webstyle_templates.py:499
+#: modules/webstyle/lib/webdoc_tests.py:86
+#: modules/bibedit/lib/bibeditmulti_templates.py:296
+#: modules/bibcirculation/lib/bibcirculation_templates.py:1819
+#: modules/bibcirculation/lib/bibcirculation_templates.py:1877
+#: modules/bibcirculation/lib/bibcirculation_templates.py:7673
+#: modules/bibcirculation/lib/bibcirculation_templates.py:8240
+#: modules/bibcirculation/lib/bibcirculation_templates.py:14050
+#: modules/bibcirculation/lib/bibcirculation_templates.py:15528
+#: modules/bibcirculation/lib/bibcirculation_templates.py:15686
+#: modules/bibcirculation/lib/bibcirculation_templates.py:16648
+#: modules/bibknowledge/lib/bibknowledge_templates.py:394
+#: modules/webbasket/lib/webbasket_templates_epfl.py:217
+#: modules/websearch/lib/websearch_templates_epfl.py:631
+#: modules/websearch/lib/websearch_templates_epfl.py:743
+#: modules/websearch/lib/websearch_templates_epfl.py:1281
+#: modules/webstyle/lib/webstyle_templates_epfl.py:458
+msgid "Search"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates.py:805
+#: modules/websearch/lib/websearch_templates.py:883
+#: modules/websearch/lib/websearch_templates.py:1006
+#: modules/websearch/lib/websearch_templates.py:2058
+#: modules/websearch/lib/websearch_templates.py:2115
+#: modules/websearch/lib/websearch_templates.py:2172
+#: modules/websearch/lib/websearch_templates_epfl.py:632
+#: modules/websearch/lib/websearch_templates_epfl.py:745
+#: modules/websearch/lib/websearch_templates_epfl.py:1282
+msgid "Search Tips"
+msgstr ""
+
 #: modules/websearch/lib/websearch_templates.py:939
+#: modules/websearch/lib/websearch_templates_epfl.py:678
 #, python-format
 msgid "Search %s records for"
 msgstr ""
 
 #: modules/websearch/lib/websearch_templates.py:990
 #: modules/websearch/lib/websearch_templates.py:2015
+#: modules/websearch/lib/websearch_templates_epfl.py:729
 msgid "Simple Search"
 msgstr ""
 
 #: modules/websearch/lib/websearch_templates.py:1023
+#: modules/websearch/lib/websearch_templates_epfl.py:762
 msgid "Search options:"
 msgstr ""
 
 #: modules/websearch/lib/websearch_templates.py:1070
 #: modules/websearch/lib/websearch_templates.py:2253
+#: modules/websearch/lib/websearch_templates_epfl.py:809
+#: modules/websearch/lib/websearch_templates_epfl.py:1364
 msgid "Added/modified since:"
 msgstr ""
 
 #: modules/websearch/lib/websearch_templates.py:1071
 #: modules/websearch/lib/websearch_templates.py:2254
+#: modules/websearch/lib/websearch_templates_epfl.py:810
+#: modules/websearch/lib/websearch_templates_epfl.py:1365
 msgid "until:"
 msgstr ""
 
 #: modules/websearch/lib/websearch_templates.py:1076
 #: modules/websearch/lib/websearch_templates.py:2296
+#: modules/websearch/lib/websearch_templates_epfl.py:815
+#: modules/websearch/lib/websearch_templates_epfl.py:1407
 msgid "Sort by:"
 msgstr ""
 
 #: modules/websearch/lib/websearch_templates.py:1077
 #: modules/websearch/lib/websearch_templates.py:2297
+#: modules/websearch/lib/websearch_templates_epfl.py:816
+#: modules/websearch/lib/websearch_templates_epfl.py:1408
 msgid "Display results:"
 msgstr ""
 
 #: modules/websearch/lib/websearch_templates.py:1078
 #: modules/websearch/lib/websearch_templates.py:2298
+#: modules/websearch/lib/websearch_templates_epfl.py:817
+#: modules/websearch/lib/websearch_templates_epfl.py:1409
 msgid "Output format:"
 msgstr ""
 
@@ -5168,6 +4189,10 @@ msgstr ""
 
 #: modules/websearch/lib/websearch_templates.py:1239
 msgid "Modified since:"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates.py:1275
+msgid "Narrow by collection:"
 msgstr ""
 
 #: modules/websearch/lib/websearch_templates.py:1276
@@ -5209,16 +4234,19 @@ msgid "Cited by %i records"
 msgstr ""
 
 #: modules/websearch/lib/websearch_templates.py:1690
+#: modules/websearch/lib/websearch_templates_epfl.py:1028
 #, python-format
 msgid "Words nearest to %(x_word)s inside %(x_field)s in any collection are:"
 msgstr ""
 
 #: modules/websearch/lib/websearch_templates.py:1693
+#: modules/websearch/lib/websearch_templates_epfl.py:1031
 #, python-format
 msgid "Words nearest to %(x_word)s in any collection are:"
 msgstr ""
 
 #: modules/websearch/lib/websearch_templates.py:1785
+#: modules/websearch/lib/websearch_templates_epfl.py:1109
 msgid "Hits"
 msgstr ""
 
@@ -5226,39 +4254,48 @@ msgstr ""
 #: modules/websearch/lib/websearch_templates.py:2516
 #: modules/websearch/lib/websearch_templates.py:2706
 #: modules/bibedit/lib/bibeditmulti_templates.py:577
+#: modules/websearch/lib/websearch_templates_epfl.py:1188
 msgid "next"
 msgstr ""
 
 #: modules/websearch/lib/websearch_templates.py:2202
+#: modules/websearch/lib/websearch_templates_epfl.py:1313
 msgid "collections"
 msgstr ""
 
 #: modules/websearch/lib/websearch_templates.py:2224
+#: modules/websearch/lib/websearch_templates_epfl.py:1335
 msgid "Limit to:"
 msgstr ""
 
 #: modules/websearch/lib/websearch_templates.py:2266
-#: modules/websearch/lib/websearch_webcoll.py:609
+#: modules/websearch/lib/websearch_webcoll.py:614
+#: modules/websearch/lib/websearch_templates_epfl.py:1377
+#: modules/websearch/lib/websearch_templates_epfl.py:1779
 msgid "results"
 msgstr ""
 
 #: modules/websearch/lib/websearch_templates.py:2302
-#: modules/websearch/lib/websearch_webcoll.py:579
+#: modules/websearch/lib/websearch_webcoll.py:584
+#: modules/websearch/lib/websearch_templates_epfl.py:1413
 msgid "asc."
 msgstr ""
 
 #: modules/websearch/lib/websearch_templates.py:2305
-#: modules/websearch/lib/websearch_webcoll.py:580
+#: modules/websearch/lib/websearch_webcoll.py:585
+#: modules/websearch/lib/websearch_templates_epfl.py:1416
 msgid "desc."
 msgstr ""
 
 #: modules/websearch/lib/websearch_templates.py:2311
-#: modules/websearch/lib/websearch_webcoll.py:624
+#: modules/websearch/lib/websearch_webcoll.py:629
+#: modules/websearch/lib/websearch_templates_epfl.py:1422
 msgid "single list"
 msgstr ""
 
 #: modules/websearch/lib/websearch_templates.py:2314
-#: modules/websearch/lib/websearch_webcoll.py:623
+#: modules/websearch/lib/websearch_webcoll.py:628
+#: modules/websearch/lib/websearch_templates_epfl.py:1425
 msgid "split by collection"
 msgstr ""
 
@@ -5272,6 +4309,9 @@ msgstr ""
 #: modules/websearch/lib/websearch_templates.py:2662
 #: modules/websearch/lib/websearch_templates.py:2983
 #: modules/websearch/lib/websearch_templates.py:2992
+#: modules/websearch/lib/websearch_templates_epfl.py:1761
+#: modules/websearch/lib/websearch_templates_epfl.py:1958
+#: modules/websearch/lib/websearch_templates_epfl.py:1967
 #, python-format
 msgid "%s records found"
 msgstr ""
@@ -5306,6 +4346,7 @@ msgid "Search took %s seconds."
 msgstr ""
 
 #: modules/websearch/lib/websearch_templates.py:2950
+#: modules/websearch/lib/websearch_templates_epfl.py:1925
 #, python-format
 msgid ""
 "%(x_fmt_open)sResults overview:%(x_fmt_close)s Found %(x_nb_records)s "
@@ -5313,11 +4354,13 @@ msgid ""
 msgstr ""
 
 #: modules/websearch/lib/websearch_templates.py:2962
+#: modules/websearch/lib/websearch_templates_epfl.py:1937
 #, python-format
 msgid "%(x_fmt_open)sResults overview%(x_fmt_close)s"
 msgstr ""
 
 #: modules/websearch/lib/websearch_templates.py:2970
+#: modules/websearch/lib/websearch_templates_epfl.py:1945
 #, python-format
 msgid ""
 "%(x_fmt_open)sResults overview:%(x_fmt_close)s Found at least "
@@ -5329,11 +4372,13 @@ msgid "No results found..."
 msgstr ""
 
 #: modules/websearch/lib/websearch_templates.py:3080
+#: modules/websearch/lib/websearch_templates_epfl.py:2002
 msgid ""
 "Boolean query returned no hits. Please combine your search terms differently."
 msgstr ""
 
 #: modules/websearch/lib/websearch_templates.py:3112
+#: modules/websearch/lib/websearch_templates_epfl.py:2034
 msgid "See also: similar author names"
 msgstr ""
 
@@ -5367,12 +4412,14 @@ msgstr ""
 
 #: modules/websearch/lib/websearch_templates.py:3537
 #: modules/websearch/lib/websearch_webinterface.py:982
+#: modules/websearch/lib/websearch_templates_epfl.py:2123
 #, python-format
 msgid "Sorry, collection %s does not seem to exist."
 msgstr ""
 
 #: modules/websearch/lib/websearch_templates.py:3539
 #: modules/websearch/lib/websearch_webinterface.py:983
+#: modules/websearch/lib/websearch_templates_epfl.py:2125
 #, python-format
 msgid "You may want to start browsing from %s."
 msgstr ""
@@ -5395,10 +4442,12 @@ msgid "Interested in being notified about new results for this query?"
 msgstr ""
 
 #: modules/websearch/lib/websearch_templates.py:3701
+#: modules/websearch/lib/websearch_templates_epfl.py:2249
 msgid "People who downloaded this document also downloaded:"
 msgstr ""
 
 #: modules/websearch/lib/websearch_templates.py:3717
+#: modules/websearch/lib/websearch_templates_epfl.py:2265
 msgid "People who viewed this page also viewed:"
 msgstr ""
 
@@ -5418,30 +4467,37 @@ msgid ".. of which self-citations: %s records"
 msgstr ""
 
 #: modules/websearch/lib/websearch_templates.py:3925
+#: modules/websearch/lib/websearch_templates_epfl.py:2315
 msgid "Papers:"
 msgstr ""
 
 #: modules/websearch/lib/websearch_templates.py:3928
+#: modules/websearch/lib/websearch_templates_epfl.py:2318
 msgid "downloaded"
 msgstr ""
 
 #: modules/websearch/lib/websearch_templates.py:3929
+#: modules/websearch/lib/websearch_templates_epfl.py:2319
 msgid "times"
 msgstr ""
 
 #: modules/websearch/lib/websearch_templates.py:3962
+#: modules/websearch/lib/websearch_templates_epfl.py:2353
 msgid "Affiliations:"
 msgstr ""
 
 #: modules/websearch/lib/websearch_templates.py:3981
+#: modules/websearch/lib/websearch_templates_epfl.py:2372
 msgid "Frequent keywords:"
 msgstr ""
 
 #: modules/websearch/lib/websearch_templates.py:4002
+#: modules/websearch/lib/websearch_templates_epfl.py:2393
 msgid "Frequent co-authors:"
 msgstr ""
 
 #: modules/websearch/lib/websearch_templates.py:4022
+#: modules/websearch/lib/websearch_templates_epfl.py:2413
 msgid "Citations:"
 msgstr ""
 
@@ -5516,7 +4572,7 @@ msgstr ""
 msgid "%s seconds"
 msgstr ""
 
-#: modules/websearch/lib/websearch_webcoll.py:645
+#: modules/websearch/lib/websearch_webcoll.py:650
 msgid "brief"
 msgstr ""
 
@@ -5752,7 +4808,7 @@ msgid ""
 msgstr ""
 
 #: modules/websession/lib/websession_templates.py:463
-#: modules/websession/lib/websession_webinterface.py:277
+#: modules/websession/lib/websession_webinterface.py:282
 msgid "Your Settings"
 msgstr ""
 
@@ -5764,6 +4820,11 @@ msgstr ""
 
 #: modules/websession/lib/websession_templates.py:472
 msgid "View all the searches you performed during the last 30 days."
+msgstr ""
+
+#: modules/websession/lib/websession_templates.py:479
+#: modules/websession/lib/websession_templates.py:625
+msgid "Your Baskets"
 msgstr ""
 
 #: modules/websession/lib/websession_templates.py:480
@@ -5817,7 +4878,8 @@ msgstr ""
 
 #: modules/websession/lib/websession_templates.py:637
 #: modules/websession/lib/websession_templates.py:2347
-#: modules/websession/lib/websession_webinterface.py:1031
+#: modules/websession/lib/websession_webinterface.py:1049
+#: modules/websession/lib/websession_templates_epfl.py:262
 msgid "Your Groups"
 msgstr ""
 
@@ -5855,7 +4917,7 @@ msgid "Your Tickets"
 msgstr ""
 
 #: modules/websession/lib/websession_templates.py:658
-#: modules/websession/lib/websession_webinterface.py:650
+#: modules/websession/lib/websession_webinterface.py:655
 msgid "Your Administrative Activities"
 msgstr ""
 
@@ -5960,15 +5022,16 @@ msgstr ""
 
 #: modules/websession/lib/websession_templates.py:915
 #: modules/websession/lib/websession_templates.py:1193
-#: modules/websession/lib/websession_webinterface.py:101
-#: modules/websession/lib/websession_webinterface.py:196
-#: modules/websession/lib/websession_webinterface.py:766
-#: modules/websession/lib/websession_webinterface.py:850
+#: modules/websession/lib/websession_webinterface.py:104
+#: modules/websession/lib/websession_webinterface.py:199
+#: modules/websession/lib/websession_webinterface.py:771
+#: modules/websession/lib/websession_webinterface.py:868
+#: modules/websession/lib/websession_templates_epfl.py:298
 msgid "login"
 msgstr ""
 
 #: modules/websession/lib/websession_templates.py:920
-#: modules/websession/lib/websession_webinterface.py:554
+#: modules/websession/lib/websession_webinterface.py:559
 msgid "Lost your password?"
 msgstr ""
 
@@ -6013,7 +5076,7 @@ msgid "Retype Password"
 msgstr ""
 
 #: modules/websession/lib/websession_templates.py:1054
-#: modules/websession/lib/websession_webinterface.py:953
+#: modules/websession/lib/websession_webinterface.py:971
 msgid "register"
 msgstr ""
 
@@ -6036,6 +5099,7 @@ msgid ""
 msgstr ""
 
 #: modules/websession/lib/websession_templates.py:1085
+#: modules/websession/lib/websession_templates_epfl.py:32
 #, python-format
 msgid ""
 "You seem to be a guest user. You have to %(x_url_open)slogin%(x_url_close)s "
@@ -6043,23 +5107,28 @@ msgid ""
 msgstr ""
 
 #: modules/websession/lib/websession_templates.py:1091
+#: modules/websession/lib/websession_templates_epfl.py:38
 msgid "You are not authorized to access administrative functions."
 msgstr ""
 
 #: modules/websession/lib/websession_templates.py:1094
+#: modules/websession/lib/websession_templates_epfl.py:41
 #, python-format
 msgid "You are enabled to the following roles: %(x_role)s."
 msgstr ""
 
 #: modules/websession/lib/websession_templates.py:1110
+#: modules/websession/lib/websession_templates_epfl.py:57
 msgid "Run BibSword Client"
 msgstr ""
 
 #: modules/websession/lib/websession_templates.py:1136
+#: modules/websession/lib/websession_templates_epfl.py:82
 msgid "Here are some interesting web admin links for you:"
 msgstr ""
 
 #: modules/websession/lib/websession_templates.py:1138
+#: modules/websession/lib/websession_templates_epfl.py:84
 #, python-format
 msgid ""
 "For more admin-level activities, see the complete %(x_url_open)sAdmin Area"
@@ -6071,6 +5140,7 @@ msgid "guest"
 msgstr ""
 
 #: modules/websession/lib/websession_templates.py:1205
+#: modules/websession/lib/websession_templates_epfl.py:304
 msgid "logout"
 msgstr ""
 
@@ -6152,7 +5222,7 @@ msgstr ""
 #: modules/websession/lib/websession_templates.py:1569
 #: modules/websession/lib/websession_templates.py:1709
 #: modules/websession/lib/websession_templates.py:1711
-#: modules/websession/lib/websession_webinterface.py:1091
+#: modules/websession/lib/websession_webinterface.py:1109
 msgid "Create new group"
 msgstr ""
 
@@ -6415,61 +5485,73 @@ msgid ""
 "invenio/tree/RELEASE-NOTES"
 msgstr ""
 
-#: modules/websession/lib/webuser.py:156
-msgid "Database problem"
+#: modules/websession/lib/webuser.py:147
+msgid "Maintenance status"
 msgstr ""
 
-#: modules/websession/lib/webuser.py:304
+#: modules/websession/lib/webuser.py:148
+msgid "Infoscience is currently down for maintenance."
+msgstr ""
+
+#: modules/websession/lib/webuser.py:149
+msgid "We expect to be back online shortly, thanks for your patience."
+msgstr ""
+
+#: modules/websession/lib/webuser.py:150
+msgid "In case of trouble, please contact"
+msgstr ""
+
+#: modules/websession/lib/webuser.py:327
 #: modules/websession/lib/webgroup_dblayer.py:314
 msgid "user"
 msgstr ""
 
-#: modules/websession/lib/webuser.py:479
+#: modules/websession/lib/webuser.py:502
 #, python-format
 msgid "Account registration at %s"
 msgstr ""
 
-#: modules/websession/lib/webuser.py:712
+#: modules/websession/lib/webuser.py:735
 msgid "New account on"
 msgstr ""
 
-#: modules/websession/lib/webuser.py:714
+#: modules/websession/lib/webuser.py:737
 msgid "PLEASE ACTIVATE"
 msgstr ""
 
-#: modules/websession/lib/webuser.py:715
+#: modules/websession/lib/webuser.py:738
 msgid "A new account has been created on"
 msgstr ""
 
-#: modules/websession/lib/webuser.py:717
+#: modules/websession/lib/webuser.py:740
 msgid " and is awaiting activation"
 msgstr ""
 
-#: modules/websession/lib/webuser.py:719
+#: modules/websession/lib/webuser.py:742
 msgid "   Username/Email"
 msgstr ""
 
-#: modules/websession/lib/webuser.py:720
+#: modules/websession/lib/webuser.py:743
 msgid "You can approve or reject this account request at"
 msgstr ""
 
-#: modules/websession/lib/webuser.py:902 modules/websession/lib/webuser.py:903
+#: modules/websession/lib/webuser.py:925 modules/websession/lib/webuser.py:926
 msgid "Run File Manager"
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:83
+#: modules/websession/lib/websession_webinterface.py:86
 msgid "Mail Cookie Service"
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:93
+#: modules/websession/lib/websession_webinterface.py:96
 msgid "Role authorization request"
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:93
+#: modules/websession/lib/websession_webinterface.py:96
 msgid "This request for an authorization has already been authorized."
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:96
+#: modules/websession/lib/websession_webinterface.py:99
 #, python-format
 msgid ""
 "You have successfully obtained an authorization as %(x_role)s! This "
@@ -6477,94 +5559,94 @@ msgid ""
 "browser if you are a guest user."
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:114
+#: modules/websession/lib/websession_webinterface.py:117
 msgid "You have confirmed the validity of your email address!"
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:117
-#: modules/websession/lib/websession_webinterface.py:127
+#: modules/websession/lib/websession_webinterface.py:120
+#: modules/websession/lib/websession_webinterface.py:130
 msgid "Please, wait for the administrator to enable your account."
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:121
-#: modules/websession/lib/websession_webinterface.py:130
+#: modules/websession/lib/websession_webinterface.py:124
+#: modules/websession/lib/websession_webinterface.py:133
 #, python-format
 msgid "You can now go to %(x_url_open)syour account page%(x_url_close)s."
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:122
-#: modules/websession/lib/websession_webinterface.py:131
+#: modules/websession/lib/websession_webinterface.py:125
+#: modules/websession/lib/websession_webinterface.py:134
 msgid "Email address successfully activated"
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:125
+#: modules/websession/lib/websession_webinterface.py:128
 msgid "You have already confirmed the validity of your email address!"
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:134
+#: modules/websession/lib/websession_webinterface.py:137
 msgid ""
 "This request for confirmation of an email address is not valid or is expired."
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:139
+#: modules/websession/lib/websession_webinterface.py:142
 msgid "This request for an authorization is not valid or is expired."
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:152
+#: modules/websession/lib/websession_webinterface.py:155
 msgid "Reset password"
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:158
+#: modules/websession/lib/websession_webinterface.py:161
 msgid "This request for resetting a password has already been used."
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:161
+#: modules/websession/lib/websession_webinterface.py:164
 msgid "This request for resetting a password is not valid or is expired."
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:166
+#: modules/websession/lib/websession_webinterface.py:169
 msgid "This request for resetting the password is not valid or is expired."
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:179
+#: modules/websession/lib/websession_webinterface.py:182
 msgid "The two provided passwords aren't equal."
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:194
+#: modules/websession/lib/websession_webinterface.py:197
 msgid "The password was successfully set! You can now proceed with the login."
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:283
+#: modules/websession/lib/websession_webinterface.py:288
 #, python-format
 msgid "%s Personalize, Your Settings"
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:351
-#: modules/websession/lib/websession_webinterface.py:427
-#: modules/websession/lib/websession_webinterface.py:489
-#: modules/websession/lib/websession_webinterface.py:502
-#: modules/websession/lib/websession_webinterface.py:515
+#: modules/websession/lib/websession_webinterface.py:356
+#: modules/websession/lib/websession_webinterface.py:432
+#: modules/websession/lib/websession_webinterface.py:494
+#: modules/websession/lib/websession_webinterface.py:507
+#: modules/websession/lib/websession_webinterface.py:520
 msgid "Settings edited"
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:353
-#: modules/websession/lib/websession_webinterface.py:426
-#: modules/websession/lib/websession_webinterface.py:467
-#: modules/websession/lib/websession_webinterface.py:491
-#: modules/websession/lib/websession_webinterface.py:504
-#: modules/websession/lib/websession_webinterface.py:510
+#: modules/websession/lib/websession_webinterface.py:358
+#: modules/websession/lib/websession_webinterface.py:431
+#: modules/websession/lib/websession_webinterface.py:472
+#: modules/websession/lib/websession_webinterface.py:496
+#: modules/websession/lib/websession_webinterface.py:509
+#: modules/websession/lib/websession_webinterface.py:515
 msgid "Show account"
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:357
+#: modules/websession/lib/websession_webinterface.py:362
 msgid "Unable to change login method."
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:365
+#: modules/websession/lib/websession_webinterface.py:370
 msgid "Switched to internal login method."
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:366
+#: modules/websession/lib/websession_webinterface.py:371
 msgid ""
 "Please note that if this is the first time that you are using this account "
 "with the internal login method then the system has set for you a randomly "
@@ -6572,294 +5654,295 @@ msgid ""
 "reset request link sent to you via email:"
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:374
+#: modules/websession/lib/websession_webinterface.py:379
 msgid "Send Password"
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:384
+#: modules/websession/lib/websession_webinterface.py:389
 #, python-format
 msgid ""
 "Unable to switch to external login method %s, because your email address is "
 "unknown."
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:388
+#: modules/websession/lib/websession_webinterface.py:393
 #, python-format
 msgid ""
 "Unable to switch to external login method %s, because your email address is "
 "unknown to the external login system."
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:392
+#: modules/websession/lib/websession_webinterface.py:397
 msgid "Login method successfully selected."
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:394
+#: modules/websession/lib/websession_webinterface.py:399
 #, python-format
 msgid ""
 "The external login method %s does not support email address based logins.  "
 "Please contact the site administrators."
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:406
+#: modules/websession/lib/websession_webinterface.py:411
 msgid "Your nickname has not been updated"
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:420
+#: modules/websession/lib/websession_webinterface.py:425
 msgid "Settings successfully edited."
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:421
+#: modules/websession/lib/websession_webinterface.py:426
 #, python-format
 msgid ""
 "Note that if you have changed your email address, you will have to "
 "%(x_url_open)sreset your password%(x_url_close)s anew."
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:429
-#: modules/websession/lib/websession_webinterface.py:923
+#: modules/websession/lib/websession_webinterface.py:434
+#: modules/websession/lib/websession_webinterface.py:941
 #, python-format
 msgid "Desired nickname %s is invalid."
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:430
-#: modules/websession/lib/websession_webinterface.py:436
-#: modules/websession/lib/websession_webinterface.py:449
-#: modules/websession/lib/websession_webinterface.py:471
-#: modules/websession/lib/websession_webinterface.py:477
-#: modules/websession/lib/websession_webinterface.py:914
-#: modules/websession/lib/websession_webinterface.py:919
-#: modules/websession/lib/websession_webinterface.py:924
-#: modules/websession/lib/websession_webinterface.py:935
+#: modules/websession/lib/websession_webinterface.py:435
+#: modules/websession/lib/websession_webinterface.py:441
+#: modules/websession/lib/websession_webinterface.py:454
+#: modules/websession/lib/websession_webinterface.py:476
+#: modules/websession/lib/websession_webinterface.py:482
+#: modules/websession/lib/websession_webinterface.py:932
+#: modules/websession/lib/websession_webinterface.py:937
+#: modules/websession/lib/websession_webinterface.py:942
+#: modules/websession/lib/websession_webinterface.py:953
 msgid "Please try again."
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:432
-#: modules/websession/lib/websession_webinterface.py:438
-#: modules/websession/lib/websession_webinterface.py:445
-#: modules/websession/lib/websession_webinterface.py:451
-#: modules/websession/lib/websession_webinterface.py:473
-#: modules/websession/lib/websession_webinterface.py:479
-#: modules/websession/lib/websession_webinterface.py:526
+#: modules/websession/lib/websession_webinterface.py:437
+#: modules/websession/lib/websession_webinterface.py:443
+#: modules/websession/lib/websession_webinterface.py:450
+#: modules/websession/lib/websession_webinterface.py:456
+#: modules/websession/lib/websession_webinterface.py:478
+#: modules/websession/lib/websession_webinterface.py:484
+#: modules/websession/lib/websession_webinterface.py:531
 msgid "Edit settings"
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:433
-#: modules/websession/lib/websession_webinterface.py:439
-#: modules/websession/lib/websession_webinterface.py:446
-#: modules/websession/lib/websession_webinterface.py:452
-#: modules/websession/lib/websession_webinterface.py:528
+#: modules/websession/lib/websession_webinterface.py:438
+#: modules/websession/lib/websession_webinterface.py:444
+#: modules/websession/lib/websession_webinterface.py:451
+#: modules/websession/lib/websession_webinterface.py:457
+#: modules/websession/lib/websession_webinterface.py:533
 msgid "Editing settings failed"
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:435
-#: modules/websession/lib/websession_webinterface.py:918
+#: modules/websession/lib/websession_webinterface.py:440
+#: modules/websession/lib/websession_webinterface.py:936
 #, python-format
 msgid "Supplied email address %s is invalid."
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:441
-#: modules/websession/lib/websession_webinterface.py:928
+#: modules/websession/lib/websession_webinterface.py:446
+#: modules/websession/lib/websession_webinterface.py:946
 #, python-format
 msgid "Supplied email address %s already exists in the database."
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:443
-#: modules/websession/lib/websession_webinterface.py:930
+#: modules/websession/lib/websession_webinterface.py:448
+#: modules/websession/lib/websession_webinterface.py:948
 msgid "Or please try again."
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:448
+#: modules/websession/lib/websession_webinterface.py:453
 #, python-format
 msgid "Desired nickname %s is already in use."
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:457
+#: modules/websession/lib/websession_webinterface.py:462
 msgid "Users cannot edit passwords on this site."
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:465
+#: modules/websession/lib/websession_webinterface.py:470
 msgid "Password successfully edited."
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:468
+#: modules/websession/lib/websession_webinterface.py:473
 msgid "Password edited"
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:470
-#: modules/websession/lib/websession_webinterface.py:913
+#: modules/websession/lib/websession_webinterface.py:475
+#: modules/websession/lib/websession_webinterface.py:931
 msgid "Both passwords must match."
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:474
-#: modules/websession/lib/websession_webinterface.py:480
+#: modules/websession/lib/websession_webinterface.py:479
+#: modules/websession/lib/websession_webinterface.py:485
 msgid "Editing password failed"
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:476
+#: modules/websession/lib/websession_webinterface.py:481
 msgid "Wrong old password inserted."
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:492
-#: modules/websession/lib/websession_webinterface.py:505
-#: modules/websession/lib/websession_webinterface.py:519
+#: modules/websession/lib/websession_webinterface.py:497
+#: modules/websession/lib/websession_webinterface.py:510
+#: modules/websession/lib/websession_webinterface.py:524
 msgid "User settings saved correctly."
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:512
+#: modules/websession/lib/websession_webinterface.py:517
 msgid "Editing bibcatalog authorization failed"
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:513
+#: modules/websession/lib/websession_webinterface.py:518
 msgid "Empty username or password"
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:522
+#: modules/websession/lib/websession_webinterface.py:527
 msgid "Unable to update settings."
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:583
+#: modules/websession/lib/websession_webinterface.py:588
 msgid ""
 "Cannot send password reset request since you are using external "
 "authentication system."
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:599
+#: modules/websession/lib/websession_webinterface.py:604
 msgid "The entered email address does not exist in the database."
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:613
+#: modules/websession/lib/websession_webinterface.py:618
 msgid "Password reset request for"
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:617
+#: modules/websession/lib/websession_webinterface.py:622
 msgid ""
 "The entered email address is incorrect, please check that it is written "
 "correctly (e.g. johndoe@example.com)."
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:618
+#: modules/websession/lib/websession_webinterface.py:623
 msgid "Incorrect email address"
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:628
+#: modules/websession/lib/websession_webinterface.py:633
 msgid "Reset password link sent"
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:673
+#: modules/websession/lib/websession_webinterface.py:678
 msgid "Delete Account"
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:699
+#: modules/websession/lib/websession_webinterface.py:704
 msgid "Logout"
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:765
-#: modules/websession/lib/websession_webinterface.py:814
-#: modules/websession/lib/websession_webinterface.py:849
+#: modules/websession/lib/websession_webinterface.py:770
+#: modules/websession/lib/websession_webinterface.py:832
+#: modules/websession/lib/websession_webinterface.py:867
+#: modules/webstyle/lib/webstyle_templates_epfl.py:165
 msgid "Login"
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:880
+#: modules/websession/lib/websession_webinterface.py:898
 msgid "Register"
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:883
-#: modules/websession/lib/websession_webinterface.py:955
+#: modules/websession/lib/websession_webinterface.py:901
+#: modules/websession/lib/websession_webinterface.py:973
 #, python-format
 msgid "%s  Personalize, Main page"
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:900
+#: modules/websession/lib/websession_webinterface.py:918
 msgid "Your account has been successfully created."
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:901
+#: modules/websession/lib/websession_webinterface.py:919
 msgid "Account created"
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:903
+#: modules/websession/lib/websession_webinterface.py:921
 msgid ""
 "In order to confirm its validity, an email message containing an account "
 "activation key has been sent to the given email address."
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:904
+#: modules/websession/lib/websession_webinterface.py:922
 msgid ""
 "Please follow instructions presented there in order to complete the account "
 "registration process."
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:906
+#: modules/websession/lib/websession_webinterface.py:924
 msgid ""
 "A second email will be sent when the account has been activated and can be "
 "used."
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:909
+#: modules/websession/lib/websession_webinterface.py:927
 #, python-format
 msgid "You can now access your %(x_url_open)saccount%(x_url_close)s."
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:916
-#: modules/websession/lib/websession_webinterface.py:921
-#: modules/websession/lib/websession_webinterface.py:926
-#: modules/websession/lib/websession_webinterface.py:932
-#: modules/websession/lib/websession_webinterface.py:937
-#: modules/websession/lib/websession_webinterface.py:941
-#: modules/websession/lib/websession_webinterface.py:945
+#: modules/websession/lib/websession_webinterface.py:934
+#: modules/websession/lib/websession_webinterface.py:939
+#: modules/websession/lib/websession_webinterface.py:944
 #: modules/websession/lib/websession_webinterface.py:950
+#: modules/websession/lib/websession_webinterface.py:955
+#: modules/websession/lib/websession_webinterface.py:959
+#: modules/websession/lib/websession_webinterface.py:963
+#: modules/websession/lib/websession_webinterface.py:968
 msgid "Registration failure"
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:934
+#: modules/websession/lib/websession_webinterface.py:952
 #, python-format
 msgid "Desired nickname %s already exists in the database."
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:939
+#: modules/websession/lib/websession_webinterface.py:957
 msgid "Users cannot register themselves, only admin can register them."
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:943
+#: modules/websession/lib/websession_webinterface.py:961
 msgid ""
 "The site is having troubles in sending you an email for confirming your "
 "email address."
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:943
+#: modules/websession/lib/websession_webinterface.py:961
 #: modules/websubmit/lib/websubmit_webinterface.py:141
 msgid ""
 "The error has been logged and will be taken in consideration as soon as "
 "possible."
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:990
+#: modules/websession/lib/websession_webinterface.py:1008
 msgid "Your tickets"
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:1026
-#: modules/websession/lib/websession_webinterface.py:1071
-#: modules/websession/lib/websession_webinterface.py:1132
-#: modules/websession/lib/websession_webinterface.py:1196
-#: modules/websession/lib/websession_webinterface.py:1255
-#: modules/websession/lib/websession_webinterface.py:1328
+#: modules/websession/lib/websession_webinterface.py:1044
+#: modules/websession/lib/websession_webinterface.py:1089
+#: modules/websession/lib/websession_webinterface.py:1150
+#: modules/websession/lib/websession_webinterface.py:1214
+#: modules/websession/lib/websession_webinterface.py:1273
+#: modules/websession/lib/websession_webinterface.py:1346
 msgid "You are not authorized to use groups."
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:1157
+#: modules/websession/lib/websession_webinterface.py:1175
 msgid "Join New Group"
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:1211
+#: modules/websession/lib/websession_webinterface.py:1229
 msgid "Leave Group"
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:1283
+#: modules/websession/lib/websession_webinterface.py:1301
 msgid "Edit Group"
 msgstr ""
 
-#: modules/websession/lib/websession_webinterface.py:1357
+#: modules/websession/lib/websession_webinterface.py:1375
 msgid "Edit group members"
 msgstr ""
 
@@ -6879,6 +5962,7 @@ msgstr ""
 
 #: modules/webstyle/lib/webstyle_templates.py:434
 #: modules/webstyle/lib/webstyle_templates.py:502
+#: modules/webstyle/lib/webstyle_templates_epfl.py:474
 msgid "Help"
 msgstr ""
 
@@ -6949,6 +6033,11 @@ msgstr ""
 #: modules/webstyle/lib/webdoc.py:547
 #, python-format
 msgid "%(category)s Pages"
+msgstr ""
+
+#: modules/webstyle/lib/webdoc_tests.py:105
+#: modules/webstyle/lib/webdoc_webinterface.py:155
+msgid "Help Central"
 msgstr ""
 
 #: modules/webstyle/lib/webdoc_webinterface.py:144
@@ -7393,6 +6482,14 @@ msgstr ""
 
 #: modules/websubmit/lib/websubmit_templates.py:1113
 msgid "You must now"
+msgstr ""
+
+#: modules/websubmit/lib/websubmit_templates.py:1118
+#: modules/bibharvest/lib/oai_harvest_admin.py:409
+#: modules/bibharvest/lib/oai_harvest_admin.py:417
+#: modules/bibharvest/lib/oai_harvest_admin.py:431
+#: modules/bibharvest/lib/oai_harvest_admin.py:446
+msgid "or"
 msgstr ""
 
 #: modules/websubmit/lib/websubmit_templates.py:1145
@@ -7883,41 +6980,41 @@ msgstr ""
 msgid "Requested file does not seem to exist."
 msgstr ""
 
-#: modules/websubmit/lib/websubmit_webinterface.py:266
+#: modules/websubmit/lib/websubmit_webinterface.py:265
 msgid "Access to Fulltext"
 msgstr ""
 
-#: modules/websubmit/lib/websubmit_webinterface.py:315
+#: modules/websubmit/lib/websubmit_webinterface.py:314
 msgid "An error has happened in trying to retrieve the requested file."
 msgstr ""
 
-#: modules/websubmit/lib/websubmit_webinterface.py:317
+#: modules/websubmit/lib/websubmit_webinterface.py:316
 msgid "Not enough information to retrieve the document"
 msgstr ""
 
-#: modules/websubmit/lib/websubmit_webinterface.py:325
+#: modules/websubmit/lib/websubmit_webinterface.py:324
 msgid "An error has happened in trying to retrieving the requested file."
 msgstr ""
 
-#: modules/websubmit/lib/websubmit_webinterface.py:376
+#: modules/websubmit/lib/websubmit_webinterface.py:375
 msgid "Manage Document Files"
 msgstr ""
 
-#: modules/websubmit/lib/websubmit_webinterface.py:394
+#: modules/websubmit/lib/websubmit_webinterface.py:393
 #, python-format
 msgid "Your modifications to record #%i have been submitted"
 msgstr ""
 
-#: modules/websubmit/lib/websubmit_webinterface.py:402
+#: modules/websubmit/lib/websubmit_webinterface.py:401
 #, python-format
 msgid "Your modifications to record #%i have been cancelled"
 msgstr ""
 
-#: modules/websubmit/lib/websubmit_webinterface.py:411
+#: modules/websubmit/lib/websubmit_webinterface.py:410
 msgid "Edit"
 msgstr ""
 
-#: modules/websubmit/lib/websubmit_webinterface.py:412
+#: modules/websubmit/lib/websubmit_webinterface.py:411
 msgid "Edit record"
 msgstr ""
 
@@ -8695,11 +7792,8 @@ msgstr ""
 #: modules/bibcirculation/lib/bibcirculation_templates.py:5228
 #: modules/bibcirculation/lib/bibcirculation_templates.py:15577
 #: modules/bibcirculation/lib/bibcirculation_templates.py:15739
+#: modules/websearch/lib/websearch_templates_epfl.py:982
 msgid "Author"
-msgstr ""
-
-#: modules/bibcirculation/lib/bibcirculation_utils.py:321
-msgid "Editor"
 msgstr ""
 
 #: modules/bibcirculation/lib/bibcirculation_utils.py:322
@@ -9600,10 +8694,6 @@ msgstr ""
 msgid "Item details"
 msgstr ""
 
-#: modules/bibcirculation/lib/bibcirculation_templates.py:2830
-msgid "Edit this record"
-msgstr ""
-
 #: modules/bibcirculation/lib/bibcirculation_templates.py:2832
 msgid "Additional details"
 msgstr ""
@@ -9907,6 +8997,7 @@ msgid "EAN"
 msgstr ""
 
 #: modules/bibcirculation/lib/bibcirculation_templates.py:5232
+#: modules/bibformat/lib/elements/bfe_imprint.py:25
 msgid "Publication date"
 msgstr ""
 
@@ -10463,9 +9554,7 @@ msgid "Printable format"
 msgstr ""
 
 #: modules/bibcirculation/lib/bibcirculation_templates.py:15526
-#: modules/bibcirculation/lib/bibcirculation_templates.py:15684
-msgid ""
-"Check if the book already exists on Invenio, before to send your ILL request."
+msgid "Check if the book already exists on Invenio,"
 msgstr ""
 
 #: modules/bibcirculation/lib/bibcirculation_templates.py:15550
@@ -10475,6 +9564,11 @@ msgstr ""
 
 #: modules/bibcirculation/lib/bibcirculation_templates.py:15618
 msgid "Proceed anyway"
+msgstr ""
+
+#: modules/bibcirculation/lib/bibcirculation_templates.py:15684
+msgid ""
+"Check if the book already exists on Invenio, before to send your ILL request."
 msgstr ""
 
 #: modules/bibcirculation/lib/bibcirculation_templates.py:15861
@@ -10497,6 +9591,8 @@ msgstr ""
 
 #: modules/bibcirculation/lib/bibcirculation_templates.py:16220
 #: modules/bibcirculation/lib/bibcirculation_templates.py:16407
+#: modules/websearch/lib/websearch_templates_epfl.py:986
+#: modules/websearch/lib/websearch_templates_epfl.py:1708
 msgid "Report number"
 msgstr ""
 
@@ -11004,4 +10100,784 @@ msgstr ""
 #, python-format
 msgid ""
 "The user '%(x_user)s' is not authorized to modify collection '%(x_coll)s'"
+msgstr ""
+
+#: modules/webalert/lib/webalert_templates_epfl.py:284
+#, python-format
+msgid ""
+"You can set a new alert from %(x_url_open)syour searches%(x_url_close)s."
+msgstr ""
+
+#: modules/webalert/lib/webalert_templates_epfl.py:381
+#: modules/webalert/lib/webalert_templates_epfl.py:429
+#: modules/webalert/lib/webalert_templates_epfl.py:488
+#: modules/webbasket/lib/webbasket_templates_epfl.py:391
+#: modules/webbasket/lib/webbasket_templates_epfl.py:430
+#: modules/webbasket/lib/webbasket_templates_epfl.py:491
+#: modules/webbasket/lib/webbasket_templates_epfl.py:590
+#: modules/webbasket/lib/webbasket_templates_epfl.py:683
+#: modules/webbasket/lib/webbasket_templates_epfl.py:762
+msgid "New personal collection"
+msgstr ""
+
+#: modules/webalert/lib/webalert_templates_epfl.py:383
+#: modules/websession/lib/websession_templates_epfl.py:148
+msgid "My alerts"
+msgstr ""
+
+#: modules/webalert/lib/webalert_templates_epfl.py:431
+#: modules/webalert/lib/webalert_templates_epfl.py:490
+msgid "Performed searches"
+msgstr ""
+
+#: modules/webbasket/lib/webbasket_templates_epfl.py:60
+msgid "You have no personal or group collections"
+msgstr ""
+
+#: modules/webbasket/lib/webbasket_templates_epfl.py:61
+#, python-format
+msgid ""
+"You may want to start by %(x_url_open)screating a new collection"
+"%(x_url_close)s."
+msgstr ""
+
+#: modules/webbasket/lib/webbasket_templates_epfl.py:68
+msgid "Create collection"
+msgstr ""
+
+#: modules/webbasket/lib/webbasket_templates_epfl.py:358
+#: modules/websearch/lib/websearch_templates_epfl.py:1524
+msgid "Export"
+msgstr ""
+
+#: modules/webbasket/lib/webbasket_templates_epfl.py:359
+msgid "Add to my website"
+msgstr ""
+
+#: modules/webbasket/lib/webbasket_templates_epfl.py:388
+#: modules/websearch/lib/websearch_templates_epfl.py:1251
+msgid "Search results"
+msgstr ""
+
+#: modules/webbasket/lib/webbasket_templates_epfl.py:390
+msgid "Search collections for"
+msgstr ""
+
+#: modules/webbasket/lib/webbasket_templates_epfl.py:430
+msgid "Create new collection"
+msgstr ""
+
+#: modules/webbasket/lib/webbasket_templates_epfl.py:430
+#: modules/webbasket/lib/webbasket_templates_epfl.py:626
+msgid "Collection name"
+msgstr ""
+
+#: modules/webbasket/lib/webbasket_templates_epfl.py:474
+#, python-format
+msgid "%i items have been successfully added to your collection"
+msgstr ""
+
+#: modules/webbasket/lib/webbasket_templates_epfl.py:475
+#, python-format
+msgid "Proceed to the %(x_url_open)scollection%(x_url_close)s"
+msgstr ""
+
+#: modules/webbasket/lib/webbasket_templates_epfl.py:480
+#, python-format
+msgid " or return to your %(x_url_open)sprevious collection%(x_url_close)s"
+msgstr ""
+
+#: modules/webbasket/lib/webbasket_templates_epfl.py:491
+msgid "Successfully added"
+msgstr ""
+
+#: modules/webbasket/lib/webbasket_templates_epfl.py:519
+#, python-format
+msgid ""
+"Please choose a collection: %(x_basket_selection_box)s (or "
+"%(x_url_open)screate a new one%(x_url_close)s first)"
+msgstr ""
+
+#: modules/webbasket/lib/webbasket_templates_epfl.py:530
+#, python-format
+msgid "Adding %i items to your collections"
+msgstr ""
+
+#: modules/webbasket/lib/webbasket_templates_epfl.py:550
+msgid "Are you sure you want to delete this collection?"
+msgstr ""
+
+#: modules/webbasket/lib/webbasket_templates_epfl.py:553
+#, python-format
+msgid "%i users are subscribed to this collection."
+msgstr ""
+
+#: modules/webbasket/lib/webbasket_templates_epfl.py:555
+#, python-format
+msgid "%i user groups are subscribed to this collection."
+msgstr ""
+
+#: modules/webbasket/lib/webbasket_templates_epfl.py:557
+#, python-format
+msgid "You have set %i alerts on this collection."
+msgstr ""
+
+#: modules/webbasket/lib/webbasket_templates_epfl.py:654
+#: modules/webbasket/lib/webbasket_templates_epfl.py:869
+msgid "Delete collection"
+msgstr ""
+
+#: modules/webbasket/lib/webbasket_templates_epfl.py:684
+#, python-format
+msgid "Editing collection %(x_basket_name)s"
+msgstr ""
+
+#: modules/webbasket/lib/webbasket_templates_epfl.py:761
+msgid "Sharing collection to a new group"
+msgstr ""
+
+#: modules/webbasket/lib/webbasket_templates_epfl.py:868
+msgid "Edit collection"
+msgstr ""
+
+#: modules/webbasket/lib/webbasket_templates_epfl.py:883
+#, python-format
+msgid "%(nb)i records, last modified on %(date)s"
+msgstr ""
+
+#: modules/webbasket/lib/webbasket_templates_epfl.py:929
+msgid "collection is empty"
+msgstr ""
+
+#: modules/webbasket/lib/webbasket_templates_epfl.py:1188
+#: modules/webbasket/lib/webbasket_templates_epfl.py:1193
+msgid "All my collections"
+msgstr ""
+
+#: modules/webbasket/lib/webbasket_templates_epfl.py:1197
+#: modules/webbasket/lib/webbasket_templates_epfl.py:1202
+#: modules/webbasket/lib/webbasket_templates_epfl.py:1275
+msgid "My personal collections"
+msgstr ""
+
+#: modules/webbasket/lib/webbasket_templates_epfl.py:1207
+#: modules/webbasket/lib/webbasket_templates_epfl.py:1212
+#: modules/webbasket/lib/webbasket_templates_epfl.py:1285
+msgid "My groups' collections"
+msgstr ""
+
+#: modules/webbasket/lib/webbasket_templates_epfl.py:1270
+msgid "*** collection name ***"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:246
+#: modules/websearch/lib/websearch_templates_epfl.py:386
+msgid "Infoscience, EPFL's scientific publications"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:250
+#: modules/websearch/lib/websearch_templates_epfl.py:390
+msgid "EPFL Directive for Research Integrity"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:254
+#: modules/websearch/lib/websearch_templates_epfl.py:394
+msgid ""
+"SNSF regulations on information, valorisation and rights to research results"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:259
+#: modules/websearch/lib/websearch_templates_epfl.py:399
+msgid "Overview of SNSF Guidelines on Open Access"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:263
+#: modules/websearch/lib/websearch_templates_epfl.py:403
+msgid "Open Access Guidelines for researchers funded by the ERC"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:295
+msgid "Latest additions"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:356
+msgid "Search publications"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:359
+#, python-format
+msgid "Access to the %s scientific publications"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:360
+#, python-format
+msgid "Access to the %s documentary resources"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:362
+msgid "More news"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:509
+msgid "Filter by document type"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:510
+msgid "Publications"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:511
+#: modules/webstyle/lib/webstyle_templates_epfl.py:469
+msgid "Journal Articles"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:513
+#: modules/webstyle/lib/webstyle_templates_epfl.py:470
+msgid "Conference Papers"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:515
+msgid "Monographs"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:516
+msgid "Books"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:517
+#: modules/webstyle/lib/webstyle_templates_epfl.py:471
+msgid "Theses"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:518
+msgid "Book Chapters"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:519
+msgid "Conference Proceedings"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:521
+#: modules/websearch/lib/websearch_templates_epfl.py:523
+msgid "Presentations &amp; Talks"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:522
+msgid "Posters"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:525
+msgid "Standards &amp; Patents"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:526
+msgid "Standards"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:527
+msgid "Patents"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:529
+#: modules/webstyle/lib/webstyle_templates_epfl.py:472
+msgid "Reports"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:530
+msgid "Technical Reports"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:531
+msgid "Working Papers"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:533
+msgid "Lectures &amp; teaching material"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:534
+msgid "Teaching Documents"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:535
+msgid "Student Projects"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:537
+msgid "Filter by publication status"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:538
+msgid "Peer-reviewed publications"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:539
+msgid "Published"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:540
+msgid "Accepted"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:541
+msgid "Submitted"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:543
+msgid "Filter by origin"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:544
+msgid "Work produced at EPFL"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:546
+msgid "Filter by fulltext availability"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:547
+msgid "Publicly available"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:548
+msgid "Restricted access"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:569
+msgid "Boolean operators"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:570
+msgid ""
+"AND: vetterli AND wavelet <emph>(you can also use <strong>+</strong> char "
+"instead of AND)</emph>"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:571
+msgid ""
+"NOT: vetterli NOT wavelet <emph>(you can also use <strong>-</strong> char "
+"instead of NOT)</emph>"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:572
+msgid ""
+"OR: vetterli OR wavelet  <emph>(you can also use <strong>|</strong> char "
+"instead of OR)</emph>"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:573
+msgid "Parentheses"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:574
+msgid ""
+"You can also use parentheses in your queries to group boolean expressions "
+"together. Nested parentheses are also supported."
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:575
+msgid "Full documentation about searching"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:855
+msgid "Search specifically in"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:857
+msgid "Focus on"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:980
+#: modules/websearch/lib/websearch_templates_epfl.py:989
+msgid "Any field"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:983
+msgid "Keyword"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:985
+msgid "Source"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:987
+msgid "DOI"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:1059
+#: modules/websearch/lib/websearch_templates_epfl.py:1061
+#, python-format
+msgid "%s results"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:1480
+msgid "Add record to collection"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:1481
+msgid "Please choose a collection"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:1482
+#, python-format
+msgid "or %(x_url_open)screate a new one%(x_url_close)s first"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:1485
+msgid "Add record"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:1525
+msgid "Integrate these publications into my website"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:1707
+msgid "First author"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:1709
+msgid "Publication year"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:1710
+msgid "Ascending"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:1711
+msgid "Descending"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:1713
+msgid "HTML detailed"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:1714
+msgid "HTML MARC21"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:1762
+msgid "Sort by"
+msgstr ""
+
+#: modules/websearch/lib/websearch_templates_epfl.py:2110
+msgid "Add to my collections"
+msgstr ""
+
+#: modules/websession/lib/websession_templates_epfl.py:146
+msgid "My profile"
+msgstr ""
+
+#: modules/websession/lib/websession_templates_epfl.py:149
+msgid "to be validated"
+msgstr ""
+
+#: modules/websession/lib/websession_templates_epfl.py:150
+msgid "to be imported"
+msgstr ""
+
+#: modules/websession/lib/websession_templates_epfl.py:151
+msgid "to be matched"
+msgstr ""
+
+#: modules/websession/lib/websession_templates_epfl.py:153
+msgid "XX-Translate-test"
+msgstr ""
+
+#: modules/websession/lib/websession_templates_epfl.py:204
+msgid "Dropbox"
+msgstr ""
+
+#: modules/websession/lib/websession_templates_epfl.py:205
+msgid "Delete by reference"
+msgstr ""
+
+#: modules/websession/lib/websession_templates_epfl.py:206
+msgid "Laboratories management"
+msgstr ""
+
+#: modules/websession/lib/websession_templates_epfl.py:207
+msgid "Laboratories stats"
+msgstr ""
+
+#: modules/websession/lib/websession_templates_epfl.py:208
+msgid "Authors management"
+msgstr ""
+
+#: modules/websession/lib/websession_templates_epfl.py:209
+msgid "Create user"
+msgstr ""
+
+#: modules/websession/lib/websession_templates_epfl.py:210
+msgid "Publication statistics / bibliometrics"
+msgstr ""
+
+#: modules/websession/lib/websession_templates_epfl.py:215
+msgid "Deduplicate"
+msgstr ""
+
+#: modules/websession/lib/websession_templates_epfl.py:216
+msgid "Manual match"
+msgstr ""
+
+#: modules/websession/lib/websession_templates_epfl.py:217
+msgid "Rejected imports"
+msgstr ""
+
+#: modules/webstyle/lib/webstyle_templates_epfl.py:135
+#: modules/webstyle/lib/webstyle_templates_epfl.py:475
+msgid "About Infoscience"
+msgstr ""
+
+#: modules/webstyle/lib/webstyle_templates_epfl.py:136
+msgid "Contact"
+msgstr ""
+
+#: modules/webstyle/lib/webstyle_templates_epfl.py:137
+msgid "Accessibility"
+msgstr ""
+
+#: modules/webstyle/lib/webstyle_templates_epfl.py:169
+#, python-format
+msgid "Logout (%(username)s)"
+msgstr ""
+
+#: modules/webstyle/lib/webstyle_templates_epfl.py:225
+msgid "Infoscience: Scientific publications of EPFL"
+msgstr ""
+
+#: modules/webstyle/lib/webstyle_templates_epfl.py:333
+msgid "Choose your language"
+msgstr ""
+
+#: modules/webstyle/lib/webstyle_templates_epfl.py:460
+msgid "Publications by school"
+msgstr ""
+
+#: modules/webstyle/lib/webstyle_templates_epfl.py:461
+msgid "ENAC - Architecture, Civil and Environmental Engineering"
+msgstr ""
+
+#: modules/webstyle/lib/webstyle_templates_epfl.py:462
+msgid "I&amp;C - Computer &amp; Communication Sciences"
+msgstr ""
+
+#: modules/webstyle/lib/webstyle_templates_epfl.py:463
+msgid "SB - Basic Sciences"
+msgstr ""
+
+#: modules/webstyle/lib/webstyle_templates_epfl.py:464
+msgid "STI - Engineering"
+msgstr ""
+
+#: modules/webstyle/lib/webstyle_templates_epfl.py:465
+msgid "SV - Life Sciences"
+msgstr ""
+
+#: modules/webstyle/lib/webstyle_templates_epfl.py:466
+msgid "CDM - Management of Technology"
+msgstr ""
+
+#: modules/webstyle/lib/webstyle_templates_epfl.py:467
+msgid "CDH - College of Humanities"
+msgstr ""
+
+#: modules/webstyle/lib/webstyle_templates_epfl.py:468
+msgid "Publications by document type"
+msgstr ""
+
+#: modules/webstyle/lib/webstyle_templates_epfl.py:473
+msgid "Deposit / Publish"
+msgstr ""
+
+#: modules/webstyle/lib/webstyle_templates_epfl.py:476
+msgid "Open Access &amp; Copyright"
+msgstr ""
+
+#: modules/webstyle/lib/webstyle_templates_epfl.py:477
+msgid "Start using Infoscience"
+msgstr ""
+
+#: modules/webstyle/lib/webstyle_templates_epfl.py:478
+msgid "Add a document"
+msgstr ""
+
+#: modules/webstyle/lib/webstyle_templates_epfl.py:479
+msgid "Document types"
+msgstr ""
+
+#: modules/webstyle/lib/webstyle_templates_epfl.py:480
+msgid "Publication status"
+msgstr ""
+
+#: modules/webstyle/lib/webstyle_templates_epfl.py:481
+msgid "Manage publications"
+msgstr ""
+
+#: modules/webstyle/lib/webstyle_templates_epfl.py:482
+msgid "Edit a publication"
+msgstr ""
+
+#: modules/webstyle/lib/webstyle_templates_epfl.py:483
+msgid "Remove a publication"
+msgstr ""
+
+#: modules/webstyle/lib/webstyle_templates_epfl.py:484
+msgid "Export a publication list"
+msgstr ""
+
+#: modules/webstyle/lib/webstyle_templates_epfl.py:485
+msgid "Manage my account"
+msgstr ""
+
+#: modules/webstyle/lib/webstyle_templates_epfl.py:486
+msgid "Create a personal collection"
+msgstr ""
+
+#: modules/webstyle/lib/webstyle_templates_epfl.py:487
+msgid "Display my publications in people@EPFL"
+msgstr ""
+
+#: modules/webstyle/lib/webstyle_templates_epfl.py:527
+#: modules/webstyle/lib/webstyle_templates_epfl.py:542
+msgid "EPFL Homepage"
+msgstr ""
+
+#: modules/webstyle/lib/webstyle_templates_epfl.py:543
+msgid "Infoscience Homepage"
+msgstr ""
+
+#: modules/bibformat/lib/elements/bfe_doctype.py:15
+msgid "Journal article"
+msgstr ""
+
+#: modules/bibformat/lib/elements/bfe_doctype.py:17
+msgid "Book"
+msgstr ""
+
+#: modules/bibformat/lib/elements/bfe_doctype.py:19
+msgid "Book Chapter"
+msgstr ""
+
+#: modules/bibformat/lib/elements/bfe_doctype.py:21
+msgid "Conference paper"
+msgstr ""
+
+#: modules/bibformat/lib/elements/bfe_doctype.py:23
+msgid "Lecture"
+msgstr ""
+
+#: modules/bibformat/lib/elements/bfe_doctype.py:25
+msgid "Report"
+msgstr ""
+
+#: modules/bibformat/lib/elements/bfe_doctype.py:29
+msgid "Patent"
+msgstr ""
+
+#: modules/bibformat/lib/elements/bfe_doctype.py:31
+msgid "Researcher's profile"
+msgstr ""
+
+#: modules/bibformat/lib/elements/bfe_doctype.py:33
+msgid "Teaching document"
+msgstr ""
+
+#: modules/bibformat/lib/elements/bfe_doctype.py:35
+msgid "Poster"
+msgstr ""
+
+#: modules/bibformat/lib/elements/bfe_doctype.py:37
+msgid "Conference proceedings"
+msgstr ""
+
+#: modules/bibformat/lib/elements/bfe_doctype.py:39
+msgid "Standard"
+msgstr ""
+
+#: modules/bibformat/lib/elements/bfe_doctype.py:41
+msgid "Student project"
+msgstr ""
+
+#: modules/bibformat/lib/elements/bfe_doctype.py:43
+msgid "Presentation / Talk"
+msgstr ""
+
+#: modules/bibformat/lib/elements/bfe_doctype.py:45
+msgid "Thesis"
+msgstr ""
+
+#: modules/bibformat/lib/elements/bfe_doctype.py:47
+msgid "Working paper"
+msgstr ""
+
+#: modules/bibformat/lib/elements/bfe_epfl_fulltext.py:149
+msgid "Get the whole digitalized project"
+msgstr ""
+
+#: modules/bibformat/lib/elements/bfe_epfl_fulltext.py:194
+msgid "EPFL intranet: Fulltext"
+msgstr ""
+
+#: modules/bibformat/lib/elements/bfe_epfl_fulltext.py:204
+#, python-format
+msgid "EPFL intranet: %s"
+msgstr ""
+
+#: modules/bibformat/lib/elements/bfe_epfl_fulltext.py:208
+msgid "Order free pdf"
+msgstr ""
+
+#: modules/bibformat/lib/elements/bfe_epfl_fulltext.py:280
+msgid "Thesis submitted - Forthcoming publication"
+msgstr ""
+
+#: modules/bibformat/lib/elements/bfe_epfl_fulltext.py:282
+msgid "Official version"
+msgstr ""
+
+#: modules/bibformat/lib/elements/bfe_epfl_fulltext.py:291
+msgid "There is no available fulltext. Please contact the lab or the authors."
+msgstr ""
+
+#: modules/bibformat/lib/elements/bfe_host.py:31
+#: modules/bibformat/lib/elements/bfe_host.py:38
+msgid "Submitted to"
+msgstr ""
+
+#: modules/bibformat/lib/elements/bfe_host.py:33
+#: modules/bibformat/lib/elements/bfe_host.py:40
+msgid "Accepted in"
+msgstr ""
+
+#: modules/bibformat/lib/elements/bfe_host.py:35
+msgid "Published in"
+msgstr ""
+
+#: modules/bibformat/lib/elements/bfe_references.py:31
+msgid "Search for this record at the European Patent Office"
+msgstr ""
+
+#: modules/bibformat/lib/elements/bfe_references.py:42
+msgid "View record in Web of Science"
+msgstr ""
+
+#: modules/bibformat/lib/elements/bfe_references.py:45
+msgid "View record in Scopus"
+msgstr ""
+
+#: modules/bibformat/lib/elements/bfe_references.py:48
+msgid "View record in PubMed"
+msgstr ""
+
+#: modules/bibformat/lib/elements/bfe_references.py:51
+msgid "View record in arXiv"
+msgstr ""
+
+#: modules/bibformat/lib/elements/bfe_references.py:60
+msgid "Print copy in library catalog"
+msgstr ""
+
+#: modules/bibformat/lib/elements/bfe_updated_date.py:17
+#, python-format
+msgid "Record created on %(creation_date)s, modified on %(modification_date)s"
 msgstr ""
