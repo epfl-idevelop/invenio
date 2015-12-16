@@ -1,32 +1,20 @@
-# # This file is part of Invenio.
-# # Copyright (C) 2005, 2006, 2007, 2008, 2009, 2010, 2011 CERN.
-# #
-# # Invenio is free software; you can redistribute it and/or
-# # modify it under the terms of the GNU General Public License as
-# # published by the Free Software Foundation; either version 2 of the
-# # License, or (at your option) any later version.
-# #
-# # Invenio is distributed in the hope that it will be useful, but
-# # WITHOUT ANY WARRANTY; without even the implied warranty of
-# # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-# # General Public License for more details.
-# #
-# # You should have received a copy of the GNU General Public License
-# # along with Invenio; if not, write to the Free Software Foundation, Inc.,
-# # 59 Temple Place, Suite 330, Boston, MA 02111-1307, USA.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: Invenio 1.0.9\n"
+"Project-Id-Version: infoscience\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-12-16 16:21+0100\n"
-"PO-Revision-Date: 2012-02-16 14:04+0100\n"
-"Last-Translator: Jérôme Caffaro <jerome.caffaro@cern.ch>\n"
-"Language-Team: FR <info@invenio-software.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2012-03-23 15:12+0100\n"
+"Last-Translator: Gregory Favre\n"
+"Language-Team: infoscience-admin\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: pygettext.py 1.5\n"
 
 #: modules/bibedit/lib/bibedit_templates.py:266
 #: modules/bibedit/lib/bibedit_templates_epfl.py:105
@@ -167,7 +155,7 @@ msgstr "Vérifier les dépendances"
 #: modules/websubmit/lib/functions/Create_Upload_Files_Interface.py:447
 #: modules/webalert/lib/webalert_templates_epfl.py:302
 msgid "Name"
-msgstr "Nom"
+msgstr "Nome"
 
 #: modules/bibformat/lib/bibformat_templates.py:389
 #: modules/bibformat/lib/bibformat_templates.py:930
@@ -421,30 +409,29 @@ msgid "Enter a search query here."
 msgstr "Entrez une requête de recherche ici."
 
 #: modules/bibformat/lib/elements/bfe_authors.py:73
-#, fuzzy
 msgid "Editors"
-msgstr "Éditeur"
+msgstr "Editeurs"
 
 #: modules/bibformat/lib/elements/bfe_authors.py:75
 #: modules/bibcirculation/lib/bibcirculation_utils.py:321
 msgid "Editor"
-msgstr "Éditeur"
+msgstr "Editeur"
 
 #: modules/bibformat/lib/elements/bfe_authors.py:89
 msgid "Translators: "
-msgstr ""
+msgstr "Traducteurs"
 
 #: modules/bibformat/lib/elements/bfe_authors.py:89
 msgid "Translator: "
-msgstr ""
+msgstr "Traducteur: "
 
 #: modules/bibformat/lib/elements/bfe_authors.py:97
 msgid "Advisor: "
-msgstr ""
+msgstr "Directeur: "
 
 #: modules/bibformat/lib/elements/bfe_authors.py:97
 msgid "Advisors: "
-msgstr ""
+msgstr "Directeurs: "
 
 #: modules/bibformat/lib/elements/bfe_authors.py:145
 #, python-format
@@ -459,12 +446,12 @@ msgstr "Afficher les %i auteurs"
 #: modules/bibformat/lib/elements/bfe_fulltext_mini.py:124
 #: modules/bibformat/lib/elements/bfe_fulltext_mini.py:126
 msgid "Download fulltext"
-msgstr "Télécharger le document"
+msgstr "Télécharger le fulltext"
 
 #: modules/bibformat/lib/elements/bfe_fulltext.py:84
 #: modules/bibformat/lib/elements/bfe_fulltext_mini.py:59
 msgid "additional files"
-msgstr "Fichiers additionnels"
+msgstr "fichiers additionels"
 
 #: modules/bibformat/lib/elements/bfe_fulltext.py:121
 #: modules/bibformat/lib/elements/bfe_fulltext_mini.py:111
@@ -494,7 +481,7 @@ msgstr "liens externes"
 #: modules/bibformat/lib/elements/bfe_epfl_fulltext.py:136
 #: modules/bibformat/lib/elements/bfe_epfl_fulltext.py:173
 msgid "Fulltext"
-msgstr "Fichiers"
+msgstr "Texte intégral"
 
 #: modules/bibformat/lib/elements/bfe_edit_files.py:50
 msgid "Manage Files of This Record"
@@ -502,38 +489,32 @@ msgstr "Gérer les fichiers de cette notice"
 
 #: modules/bibformat/lib/elements/bfe_edit_record.py:59
 #: modules/websearch/lib/websearch_templates_epfl.py:1484
-#, fuzzy
 msgid "This field is required"
-msgstr "L'accès à ce fichier est restreint:"
+msgstr "Ce champ est requis"
 
 #: modules/bibformat/lib/elements/bfe_edit_record.py:60
-#, fuzzy
 msgid "Please wait while your message is being sent"
-msgstr "Votre message a été envoyé."
+msgstr "Veuillez patienter pendant que le message est envoyé"
 
 #: modules/bibformat/lib/elements/bfe_edit_record.py:61
-#, fuzzy
 msgid "Your request has been successfully sent."
-msgstr "Votre compte a été créé."
+msgstr "Votre requête a été envoyé avec succès."
 
 #: modules/bibformat/lib/elements/bfe_edit_record.py:103
 msgid "Ask for removal"
-msgstr ""
+msgstr "Demande de suppression"
 
 #: modules/bibformat/lib/elements/bfe_edit_record.py:105
-#, fuzzy
 msgid "Removal request"
-msgstr "Réservations"
+msgstr "Demande de suppression"
 
 #: modules/bibformat/lib/elements/bfe_edit_record.py:106
-#, fuzzy
 msgid "Please tell us the reason you want to remove it"
-msgstr "Veuillez indiquer l'identifiant de la notice que vous souhaitez éditer"
+msgstr "Veuillez indiquer les raisons de cette demande de suppression"
 
 #: modules/bibformat/lib/elements/bfe_edit_record.py:108
-#, fuzzy
 msgid "Send request"
-msgstr "Nouvelle réservation"
+msgstr "Envoyer la requête"
 
 #: modules/bibformat/lib/elements/bfe_edit_record.py:109
 #: modules/bibformat/web/admin/bibformatadmin.py:388
@@ -575,12 +556,11 @@ msgstr "Annuler"
 #: modules/bibformat/lib/elements/bfe_edit_record.py:146
 #: modules/bibcirculation/lib/bibcirculation_templates.py:2830
 msgid "Edit this record"
-msgstr "Editer cette notice"
+msgstr "Éditer cette publication"
 
 #: modules/bibformat/lib/elements/bfe_edit_record.py:157
-#, fuzzy
 msgid "Edit this record (BibEdit)"
-msgstr "Editer cette notice"
+msgstr "Éditer avec BibEdit"
 
 #: modules/bibformat/web/admin/bibformatadmin.py:175
 #: modules/bibformat/web/admin/bibformatadmin.py:243
@@ -1216,7 +1196,7 @@ msgstr "jour"
 #: modules/bibcirculation/lib/bibcirculation_templates.py:16411
 #: modules/websearch/lib/websearch_templates_epfl.py:984
 msgid "Year"
-msgstr "année"
+msgstr "Année"
 
 #: modules/miscutil/lib/errorlib_webinterface.py:64
 #: modules/miscutil/lib/errorlib_webinterface.py:69
@@ -1355,13 +1335,13 @@ msgstr "Besoin d'une intervention humaine? Veuillez contacter"
 #: modules/websession/lib/webuser.py:924
 #: modules/websession/lib/websession_templates_epfl.py:49
 msgid "Run Record Editor"
-msgstr "Lancer éditeur de notices"
+msgstr "Édition de notices"
 
 #: modules/webaccess/lib/access_control_config.py:271
 #: modules/websession/lib/websession_templates.py:1104
 #: modules/websession/lib/websession_templates_epfl.py:51
 msgid "Run Multi-Record Editor"
-msgstr "Lancer éditeur de notices multiples"
+msgstr "Édition par lot"
 
 #: modules/webaccess/lib/access_control_config.py:272
 #: modules/websession/lib/webuser.py:915
@@ -1372,7 +1352,7 @@ msgstr "Lancer gestionnaire de fichiers"
 #: modules/websession/lib/websession_templates.py:1108
 #: modules/websession/lib/websession_templates_epfl.py:55
 msgid "Run Record Merger"
-msgstr "Lancer fusionneur de notices"
+msgstr "Fusion de notices"
 
 #: modules/webaccess/lib/access_control_config.py:274
 msgid "Run BibSword client"
@@ -1454,7 +1434,7 @@ msgstr "Lancer BibCirculation"
 #: modules/websession/lib/websession_templates.py:1112
 #: modules/websession/lib/websession_templates_epfl.py:59
 msgid "Run Batch Uploader"
-msgstr "Lancer Batch Uploader"
+msgstr "Dropbox - MARC21"
 
 #: modules/webaccess/lib/webaccessadmin_lib.py:3704
 #, python-format
@@ -1588,7 +1568,7 @@ msgstr ""
 #: modules/webalert/lib/webalert_templates.py:74
 #: modules/webalert/lib/webalert_templates_epfl.py:58
 msgid "Pattern"
-msgstr "Recherche"
+msgstr "Clé"
 
 #: modules/webalert/lib/webalert_templates.py:76
 #: modules/bibedit/lib/bibeditmulti_templates.py:509
@@ -1599,7 +1579,7 @@ msgstr "Champ"
 #: modules/webalert/lib/webalert_templates.py:78
 #: modules/webalert/lib/webalert_templates_epfl.py:62
 msgid "Pattern 1"
-msgstr "Recherche 1"
+msgstr "Clé 1"
 
 #: modules/webalert/lib/webalert_templates.py:80
 #: modules/webalert/lib/webalert_templates_epfl.py:64
@@ -1609,7 +1589,7 @@ msgstr "Champ 1"
 #: modules/webalert/lib/webalert_templates.py:82
 #: modules/webalert/lib/webalert_templates_epfl.py:66
 msgid "Pattern 2"
-msgstr "Recherche 2"
+msgstr "Clé 2"
 
 #: modules/webalert/lib/webalert_templates.py:84
 #: modules/webalert/lib/webalert_templates_epfl.py:68
@@ -1619,7 +1599,7 @@ msgstr "Champ 2"
 #: modules/webalert/lib/webalert_templates.py:86
 #: modules/webalert/lib/webalert_templates_epfl.py:70
 msgid "Pattern 3"
-msgstr "Recherche 3"
+msgstr "Clé 3"
 
 #: modules/webalert/lib/webalert_templates.py:88
 #: modules/webalert/lib/webalert_templates_epfl.py:72
@@ -1659,7 +1639,7 @@ msgstr "nom de l'alerte"
 #: modules/webalert/lib/webalert_templates.py:122
 #: modules/webalert/lib/webalert_templates_epfl.py:107
 msgid "SHOW"
-msgstr "AFFICHER"
+msgstr "Afficher"
 
 #: modules/webalert/lib/webalert_templates.py:171
 #: modules/webalert/lib/webalert_templates_epfl.py:156
@@ -1667,23 +1647,23 @@ msgid ""
 "This alert will notify you each time/only if a new item satisfies the "
 "following query:"
 msgstr ""
-"Cette alerte vous préviendra dès qu'un nouvel article satisfera la recherche "
-"suivante:"
+"Cette alerte vous préviendra à chaque fois qu'une nouvelle publication "
+"satisfait la requête suivante:"
 
 #: modules/webalert/lib/webalert_templates.py:172
 #: modules/webalert/lib/webalert_templates_epfl.py:157
 msgid "QUERY"
-msgstr "RECHERCHE"
+msgstr "Requête"
 
 #: modules/webalert/lib/webalert_templates.py:210
 #: modules/webalert/lib/webalert_templates_epfl.py:195
 msgid "Alert identification name:"
-msgstr "Nom de l'alerte:"
+msgstr "Nom de l'alerte"
 
 #: modules/webalert/lib/webalert_templates.py:212
 #: modules/webalert/lib/webalert_templates_epfl.py:197
 msgid "Search-checking frequency:"
-msgstr "Fréquence de vérification:"
+msgstr "Fréquence d'interrogation:"
 
 #: modules/webalert/lib/webalert_templates.py:216
 #: modules/webalert/lib/webalert_templates.py:336
@@ -1712,7 +1692,7 @@ msgstr "quotidien"
 #: modules/webalert/lib/webalert_templates.py:219
 #: modules/webalert/lib/webalert_templates_epfl.py:204
 msgid "Send notification email?"
-msgstr "Envoyer une notification par email?"
+msgstr "Envoyer un email de notification?"
 
 #: modules/webalert/lib/webalert_templates.py:222
 #: modules/webalert/lib/webalert_templates.py:339
@@ -1733,22 +1713,23 @@ msgstr "non"
 #, python-format
 msgid "if %(x_fmt_open)sno%(x_fmt_close)s you must specify a basket"
 msgstr ""
-"si %(x_fmt_open)snon%(x_fmt_close)s vous devez indiquer un nom de panier"
+"si %(x_fmt_open)snon%(x_fmt_close)s il vous faut définir une collection "
+"privée"
 
 #: modules/webalert/lib/webalert_templates.py:226
 #: modules/webalert/lib/webalert_templates_epfl.py:211
 msgid "Store results in basket?"
-msgstr "Enregistrer les résultats dans un panier?"
+msgstr "Enregistrer les résultats dans une collection privée?"
 
 #: modules/webalert/lib/webalert_templates.py:247
 #: modules/webalert/lib/webalert_templates_epfl.py:232
 msgid "SET ALERT"
-msgstr "ACTIVER L'ALERTE"
+msgstr "Définir l'alerte"
 
 #: modules/webalert/lib/webalert_templates.py:248
 #: modules/webalert/lib/webalert_templates_epfl.py:233
 msgid "CLEAR DATA"
-msgstr "EFFACER"
+msgstr "Effacer"
 
 #: modules/webalert/lib/webalert_templates.py:299
 #, python-format
@@ -1775,7 +1756,7 @@ msgstr "Non"
 #: modules/webalert/lib/webalert_templates.py:319
 #: modules/webalert/lib/webalert_templates_epfl.py:303
 msgid "Search checking frequency"
-msgstr "Fréquence de vérification"
+msgstr "Fréquence d'interrogation"
 
 #: modules/webalert/lib/webalert_templates.py:320
 #: modules/webalert/lib/webalert_templates_epfl.py:304
@@ -1785,12 +1766,12 @@ msgstr "Notification par email"
 #: modules/webalert/lib/webalert_templates.py:321
 #: modules/webalert/lib/webalert_templates_epfl.py:305
 msgid "Result in basket"
-msgstr "résultat dans le panier"
+msgstr "Enregistrement dans une collection privée"
 
 #: modules/webalert/lib/webalert_templates.py:322
 #: modules/webalert/lib/webalert_templates_epfl.py:306
 msgid "Date last run"
-msgstr "Date de la dernière vérification"
+msgstr "Dernière interrogation"
 
 #: modules/webalert/lib/webalert_templates.py:323
 #: modules/webalert/lib/webalert_templates_epfl.py:307
@@ -1805,18 +1786,18 @@ msgstr "Date de création"
 #: modules/bibexport/lib/bibexport_method_fieldexporter_templates.py:632
 #: modules/webalert/lib/webalert_templates_epfl.py:308
 msgid "Query"
-msgstr "Recherche"
+msgstr "Requête"
 
 #: modules/webalert/lib/webalert_templates.py:367
 #: modules/webbasket/lib/webbasket_templates.py:1748
 #: modules/webalert/lib/webalert_templates_epfl.py:350
 msgid "no basket"
-msgstr "aucun panier"
+msgstr "pas de collection"
 
 #: modules/webalert/lib/webalert_templates.py:384
 #: modules/webalert/lib/webalert_templates_epfl.py:367
 msgid "Modify"
-msgstr "Changer"
+msgstr "Modifier"
 
 #: modules/webalert/lib/webalert_templates.py:390
 #: modules/webjournal/lib/webjournaladminlib.py:225
@@ -1830,7 +1811,7 @@ msgstr "Supprimer"
 #: modules/webalert/lib/webalert_templates_epfl.py:375
 #: modules/webalert/lib/webalert_templates_epfl.py:477
 msgid "Execute search"
-msgstr "Exécuter la recherche"
+msgstr "Lancer la recherche"
 
 #: modules/webalert/lib/webalert_templates.py:398
 #, python-format
@@ -1844,7 +1825,7 @@ msgid ""
 "You have not executed any search yet. Please go to the %(x_url_open)ssearch "
 "interface%(x_url_close)s first."
 msgstr ""
-"Vous n'avez pas encore effectué de recherche. Vous pouvez aller sur "
+"Vous n'avez pas encore lancé de recherche. Veuillez commencer par "
 "%(x_url_open)sl'interface de recherche%(x_url_close)s."
 
 #: modules/webalert/lib/webalert_templates.py:445
@@ -1854,19 +1835,19 @@ msgid ""
 "You have performed %(x_nb1)s searches (%(x_nb2)s different questions) during "
 "the last 30 days or so."
 msgstr ""
-"Vous avez effectué %(x_nb1)s recherches (%(x_nb2)s différentes questions) "
+"Vous avez exécuté %(x_nb1)s recherches (%(x_nb2)s différentes questions) "
 "durant les 30 derniers jours."
 
 #: modules/webalert/lib/webalert_templates.py:450
 #: modules/webalert/lib/webalert_templates_epfl.py:442
 #, python-format
 msgid "Here are the %s most popular searches."
-msgstr "Liste des %s requêtes les plus populaires."
+msgstr "Voici les %s recherches les plus populaires."
 
 #: modules/webalert/lib/webalert_templates.py:461
 #: modules/webalert/lib/webalert_templates_epfl.py:452
 msgid "Question"
-msgstr "Requête"
+msgstr "Recherche"
 
 #: modules/webalert/lib/webalert_templates.py:465
 #: modules/webalert/lib/webalert_templates_epfl.py:457
@@ -1876,7 +1857,7 @@ msgstr "Dernière exécution"
 #: modules/webalert/lib/webalert_templates.py:483
 #: modules/webalert/lib/webalert_templates_epfl.py:478
 msgid "Set new alert"
-msgstr "Définir une nouvelle alerte"
+msgstr "Créer une alerte"
 
 #: modules/webalert/lib/webalert_webinterface.py:76
 #: modules/webalert/lib/webalert_webinterface.py:139
@@ -1940,7 +1921,7 @@ msgstr "Vos Recherches"
 #: modules/websubmit/web/yoursubmissions.py:163
 #: modules/websession/lib/websession_templates_epfl.py:264
 msgid "Your Account"
-msgstr "Votre Compte"
+msgstr "Mon compte"
 
 #: modules/webalert/lib/webalert_webinterface.py:100
 #, python-format
@@ -2039,52 +2020,45 @@ msgstr "Afficher les alertes"
 #: modules/webbasket/lib/webbasket.py:2098
 #: modules/webbasket/lib/webbasket_templates_epfl.py:73
 #: modules/webbasket/lib/webbasket_templates_epfl.py:259
-#, fuzzy
 msgid "Personal collections"
-msgstr "Détails personnels"
+msgstr "Collections personnelles"
 
 #: modules/webbasket/lib/webbasket.py:2044
 #: modules/webbasket/lib/webbasket_templates_epfl.py:290
-#, fuzzy
 msgid "Group collections"
-msgstr "collections"
+msgstr "Collections de groupe"
 
 #: modules/webbasket/lib/webbasket.py:2084
 #: modules/webstyle/lib/webstyle_templates_epfl.py:371
-#, fuzzy
 msgid "My account"
-msgstr "compte"
+msgstr "Mon compte"
 
 #: modules/webbasket/lib/webbasket.py:2085
 #: modules/websession/lib/websession_templates_epfl.py:147
-#, fuzzy
 msgid "My collections"
-msgstr "collections"
+msgstr "Mes collections"
 
 #: modules/webbasket/lib/webbasket.py:2088
-#, fuzzy
 msgid "Search collections"
-msgstr "Options de recherche:"
+msgstr "Recherche"
 
 #: modules/webbasket/lib/webbasket.py:2090
-#, fuzzy
 msgid "Add to collection"
-msgstr "Toutes les collections"
+msgstr "Ajout à la collection"
 
 #: modules/webbasket/lib/webbasket.py:2111
 #: modules/webbasket/lib/webbasket_templates_epfl.py:119
-#, fuzzy
 msgid "Groups' collections"
-msgstr "collections"
+msgstr "Collection de mes groupes"
 
 #: modules/webbasket/lib/webbasket.py:2143
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "You have %(x_nb_perso)s personal collections and are subscribed to "
 "%(x_nb_group)s group collections."
 msgstr ""
-"Vous possédez %(x_nb_perso)s paniers personnels et êtes abonnés à "
-"%(x_nb_group)s paniers de groupes et à %(x_nb_public)s paniers publics."
+"Vous possédez %(x_nb_perso)s collections personnelles et avez accès à "
+"%(x_nb_group)s collections de groupe."
 
 #: modules/webbasket/lib/webbasket_templates.py:86
 msgid ""
@@ -2171,7 +2145,7 @@ msgstr "Aperçu des résultats"
 #: modules/webbasket/lib/webbasket_templates_epfl.py:309
 #, python-format
 msgid "%i items found"
-msgstr "%i résultats"
+msgstr "%i publications trouvées"
 
 #: modules/webbasket/lib/webbasket_templates.py:631
 #: modules/webbasket/lib/webbasket_templates.py:757
@@ -2181,7 +2155,7 @@ msgstr "Tous les paniers publics"
 #: modules/webbasket/lib/webbasket_templates.py:647
 #: modules/webbasket/lib/webbasket_templates_epfl.py:249
 msgid "No items found."
-msgstr "Aucun élément trouvé."
+msgstr "Aucune publication trouvée"
 
 #: modules/webbasket/lib/webbasket_templates.py:674
 #: modules/webbasket/lib/webbasket_templates.py:708
@@ -2191,7 +2165,7 @@ msgstr "Aucun élément trouvé."
 #: modules/webbasket/lib/webbasket_templates_epfl.py:307
 #, python-format
 msgid "In %(x_linked_basket_name)s"
-msgstr "Dans %(x_linked_basket_name)s"
+msgstr "In %(x_linked_basket_name)s"
 
 #: modules/webbasket/lib/webbasket_templates.py:868
 #: modules/webbasket/lib/webbasket_webinterface.py:1272
@@ -2356,7 +2330,7 @@ msgstr "Optionnellement, ajoutez une note à cet élément"
 #: modules/webbasket/lib/webbasket_templates.py:1412
 #: modules/webbasket/lib/webbasket_templates_epfl.py:527
 msgid "Add items"
-msgstr "Ajouter les notices"
+msgstr "Ajouter les publications"
 
 #: modules/webbasket/lib/webbasket_templates.py:1436
 msgid "Are you sure you want to delete this basket?"
@@ -2394,7 +2368,7 @@ msgstr "Oui"
 #: modules/webbasket/lib/webbasket_templates.py:1613
 #: modules/webbasket/lib/webbasket_templates_epfl.py:625
 msgid "General settings"
-msgstr "Paramètres généraux"
+msgstr "Configuration de la collection"
 
 #: modules/webbasket/lib/webbasket_templates.py:1532
 #: modules/webbasket/lib/webbasket_templates.py:1707
@@ -2408,7 +2382,7 @@ msgstr "Ajouter un groupe"
 #: modules/webbasket/lib/webbasket_templates.py:1537
 #: modules/webbasket/lib/webbasket_templates_epfl.py:648
 msgid "Manage group rights"
-msgstr "Gérer les permissions des groupes"
+msgstr "Gérer les droits du groupe"
 
 #: modules/webbasket/lib/webbasket_templates.py:1549
 msgid "Manage global sharing rights"
@@ -2430,7 +2404,7 @@ msgstr "Édition du panier %(x_basket_name)s"
 #: modules/webbasket/lib/webbasket_templates.py:1642
 #: modules/webbasket/lib/webbasket_templates_epfl.py:689
 msgid "Save changes"
-msgstr "Enregistrer les modifications"
+msgstr "Enregistrer"
 
 #: modules/webbasket/lib/webbasket_templates.py:1608
 msgid "Topic name"
@@ -2451,7 +2425,7 @@ msgstr "Aucun droit"
 #: modules/webbasket/lib/webbasket_templates.py:1671
 #: modules/webbasket/lib/webbasket_templates_epfl.py:703
 msgid "View records"
-msgstr "Voir notices"
+msgstr "Afficher le contenu"
 
 #: modules/webbasket/lib/webbasket_templates.py:1658
 #: modules/webbasket/lib/webbasket_templates.py:1660
@@ -2486,7 +2460,7 @@ msgstr "ajouter des notes"
 #: modules/webbasket/lib/webbasket_templates.py:1677
 #: modules/webbasket/lib/webbasket_templates_epfl.py:705
 msgid "add records"
-msgstr "ajouter des notices"
+msgstr "ajouter des publications"
 
 #: modules/webbasket/lib/webbasket_templates.py:1679
 msgid "delete notes"
@@ -2495,7 +2469,7 @@ msgstr "effacer des notes"
 #: modules/webbasket/lib/webbasket_templates.py:1681
 #: modules/webbasket/lib/webbasket_templates_epfl.py:707
 msgid "remove records"
-msgstr "supprimer les notices"
+msgstr "supprimer des publications"
 
 #: modules/webbasket/lib/webbasket_templates.py:1683
 #: modules/webbasket/lib/webbasket_templates_epfl.py:709
@@ -2505,7 +2479,7 @@ msgstr "gérer les droits d'accès"
 #: modules/webbasket/lib/webbasket_templates.py:1705
 #: modules/webbasket/lib/webbasket_templates_epfl.py:734
 msgid "You are not a member of a group."
-msgstr "Vous n'êtes pas membre de groupe."
+msgstr "Vous n'êtes pas membre de ce groupe"
 
 #: modules/webbasket/lib/webbasket_templates.py:1727
 msgid "Sharing basket to a new group"
@@ -2596,7 +2570,7 @@ msgstr "Le panier est vide"
 #: modules/webbasket/lib/webbasket_templates.py:2159
 #: modules/webbasket/lib/webbasket_templates_epfl.py:961
 msgid "You do not have sufficient rights to view this basket's content."
-msgstr "Vous n'êtes pas autorisé à voir le contenu de ce panier."
+msgstr "Vous n'avez pas le droit de voir le contenu de cette collection."
 
 #: modules/webbasket/lib/webbasket_templates.py:2202
 msgid "Move item up"
@@ -3015,7 +2989,7 @@ msgstr "Commentaires"
 #: modules/webcomment/lib/webcomment_webinterface.py:436
 #: modules/websearch/lib/websearch_templates_epfl.py:512
 msgid "Reviews"
-msgstr "Évaluations"
+msgstr "Reviews"
 
 #: modules/webcomment/lib/webcomment_templates.py:761
 #: modules/websearch/lib/websearch_templates.py:1862
@@ -3051,7 +3025,7 @@ msgstr "Il y a un total de %s commentaires"
 #: modules/websearch/lib/websearch_templates_epfl.py:175
 #: modules/bibformat/lib/elements/bfe_doctype.py:49
 msgid "Record"
-msgstr "Notice"
+msgstr "Publication"
 
 #: modules/webcomment/lib/webcomment_templates.py:829
 #: modules/webcomment/lib/webcomment_templates.py:888
@@ -3067,7 +3041,7 @@ msgstr "commentaire"
 #: modules/webcomment/lib/webcomment_templates.py:1818
 #: modules/bibformat/lib/elements/bfe_doctype.py:27
 msgid "Review"
-msgstr "Évaluation"
+msgstr "Review"
 
 #: modules/webcomment/lib/webcomment_templates.py:830
 #: modules/webcomment/lib/webcomment_templates.py:1147
@@ -3537,7 +3511,7 @@ msgstr ""
 #: modules/webcomment/lib/webcomment_webinterface.py:255
 #: modules/webcomment/lib/webcomment_webinterface.py:503
 msgid "Record Not Found"
-msgstr "Notice introuvable"
+msgstr "Publication introuvable"
 
 #: modules/webcomment/lib/webcomment_webinterface.py:334
 #: modules/webcomment/lib/webcomment_webinterface.py:565
@@ -3559,8 +3533,9 @@ msgid "Add Comment"
 msgstr "Ajouter un commentaire"
 
 #: modules/webcomment/lib/webcomment_webinterface.py:576
+#, fuzzy
 msgid "You cannot vote for a deleted comment"
-msgstr ""
+msgstr "Voir tous les commentaires signalés"
 
 #: modules/webcomment/lib/webcomment_webinterface.py:653
 #, fuzzy
@@ -3570,19 +3545,20 @@ msgstr "Voir tous les commentaires signalés"
 #: modules/webcomment/lib/webcomment_webinterface.py:780
 #: modules/webcomment/lib/webcomment_webinterface.py:820
 msgid "Page Not Found"
-msgstr "Page Introuvable"
+msgstr "Page introuvable"
 
 #: modules/webcomment/lib/webcomment_webinterface.py:781
 msgid "The requested comment could not be found"
-msgstr "Le commentaire demandé n'a pas été trouvé"
+msgstr "Le commentaire est introuvable"
 
 #: modules/webcomment/lib/webcomment_webinterface.py:801
+#, fuzzy
 msgid "You cannot access files of a deleted comment"
-msgstr ""
+msgstr "Voir tous les commentaires signalés"
 
 #: modules/webcomment/lib/webcomment_webinterface.py:821
 msgid "The requested file could not be found"
-msgstr "Le fichier demandé n'a pas été trouvé"
+msgstr "Le fichier est introuvable"
 
 #: modules/webcomment/web/admin/webcommentadmin.py:45
 #: modules/webcomment/web/admin/webcommentadmin.py:59
@@ -3863,7 +3839,7 @@ msgstr "Lire un message"
 #: modules/websearch/lib/search_engine.py:4603
 #: modules/websearch/lib/search_engine.py:4656
 msgid "Search Results"
-msgstr "Résultats de la recherche"
+msgstr "Résultats"
 
 #: modules/websearch/lib/search_engine.py:920
 #: modules/websearch/lib/websearch_templates.py:1185
@@ -3887,7 +3863,7 @@ msgstr "toutes les collections"
 
 #: modules/websearch/lib/search_engine.py:979
 msgid "remove this collection"
-msgstr "enlever cette collection"
+msgstr "supprimer cette collection"
 
 #: modules/websearch/lib/search_engine.py:990
 msgid "add another collection"
@@ -3976,8 +3952,7 @@ msgstr ""
 msgid ""
 "No phrase index available for fulltext yet, looking for word combination..."
 msgstr ""
-"Aucun index de phrase disponible pour le texte intégral, recherche pour une "
-"combinaison de mots..."
+"No phrase index available for fulltext yet, looking for word combination..."
 
 #: modules/websearch/lib/search_engine.py:1920
 #, python-format
@@ -3995,15 +3970,15 @@ msgstr ""
 #: modules/websubmit/lib/websubmit_webinterface.py:145
 #: modules/bibcirculation/lib/bibcirculation_webinterface.py:327
 msgid "Requested record does not seem to exist."
-msgstr "Désolé, cette notice n'existe pas."
+msgstr "Désolé, cette publication n'existe pas."
 
 #: modules/websearch/lib/search_engine.py:2061
 msgid ""
 "Search syntax misunderstood. Ignoring all parentheses in the query. If this "
 "doesn't help, please check your search and try again."
 msgstr ""
-"Syntaxe de recherche non reconnue. Les parenthèses sont ignorées. En cas de "
-"doute vérifiez votre recherche et réessayez."
+"Erreur dans la syntaxe des termes de recherche. Les parenthèses ont été "
+"ignorées."
 
 #: modules/websearch/lib/search_engine.py:2383
 #, python-format
@@ -4026,22 +4001,22 @@ msgstr ""
 #: modules/websearch/lib/search_engine.py:2509
 #, python-format
 msgid "There are no records referring to %s."
-msgstr "Il n'y a aucune notice se référant à %s."
+msgstr "Aucune publication ne fait référence à %s."
 
 #: modules/websearch/lib/search_engine.py:2511
 #, python-format
 msgid "There are no records cited by %s."
-msgstr "Il n'y a aucune notice citée par %s."
+msgstr "Aucune publication n'a été citée par %s."
 
 #: modules/websearch/lib/search_engine.py:2516
 #, python-format
 msgid "No word index is available for %s."
-msgstr "Aucun index des mots n'est disponible pour %s."
+msgstr "Aucun mot indexé n'est disponible pour %s."
 
 #: modules/websearch/lib/search_engine.py:2527
 #, python-format
 msgid "No phrase index is available for %s."
-msgstr "Aucun index des phrases n'est disponible pour %s."
+msgstr "Aucune phrase indexée n'est disponible pour %s."
 
 #: modules/websearch/lib/search_engine.py:2572
 #, python-format
@@ -4050,15 +4025,16 @@ msgid ""
 "Nearest terms in any collection are:"
 msgstr ""
 "Le terme de recherche %(x_term)s dans l'index %(x_index)s ne se trouve dans "
-"aucune notice. Les termes les plus proches parmi toutes les collections sont:"
+"aucune publication. Les termes les plus proches parmi toutes les collections "
+"sont:"
 
 #: modules/websearch/lib/search_engine.py:2576
 #, python-format
 msgid ""
 "Search term %s did not match any record. Nearest terms in any collection are:"
 msgstr ""
-"Le terme de recherche %s ne se trouve dans aucune notice. Les termes les "
-"plus proches parmi toutes les collections sont:"
+"Le terme de recherche %s ne se trouve dans aucune publication. Les termes "
+"les plus proches parmi toutes les collections sont:"
 
 #: modules/websearch/lib/search_engine.py:3333
 #, python-format
@@ -4066,8 +4042,8 @@ msgid ""
 "Sorry, sorting is allowed on sets of up to %d records only. Using default "
 "sort order."
 msgstr ""
-"Désolé, le tri n'est pas autorisé sur un ensemble de plus de %d notices. Les "
-"notices les plus récentes sont affichées en premier."
+"Désolé, le tri n'est pas autorisé sur un ensemble de plus de %d "
+"publications. Les publications les plus récentes sont affichées en premier."
 
 #: modules/websearch/lib/search_engine.py:3357
 #, python-format
@@ -4087,11 +4063,11 @@ msgstr ""
 #: modules/websearch/lib/search_engine.py:4144
 #: modules/bibcirculation/lib/bibcirculation_webinterface.py:325
 msgid "The record has been deleted."
-msgstr "La notice a été supprimée."
+msgstr "La publication a été supprimée."
 
 #: modules/websearch/lib/search_engine.py:3780
 msgid "Use different search terms."
-msgstr "Utiliser d'autres termes de recherche"
+msgstr "Utiliser différents termes de recherche"
 
 #: modules/websearch/lib/search_engine.py:4580
 #: modules/websearch/lib/websearch_templates.py:804
@@ -4110,7 +4086,7 @@ msgstr "Utiliser d'autres termes de recherche"
 #: modules/websearch/lib/websearch_templates_epfl.py:1372
 #: modules/webstyle/lib/webstyle_templates_epfl.py:459
 msgid "Browse"
-msgstr "Liste"
+msgstr "Parcourir"
 
 #: modules/websearch/lib/search_engine.py:4885
 msgid "No match within your time limits, discarding this condition..."
@@ -4183,7 +4159,7 @@ msgstr "moins"
 #: modules/websearch/lib/websearch_templates_epfl.py:952
 #: modules/websearch/lib/websearch_templates_epfl.py:2256
 msgid "more"
-msgstr "davantage"
+msgstr "Plus de publications"
 
 #: modules/websearch/lib/websearch_templates.py:751
 #, python-format
@@ -4236,7 +4212,7 @@ msgstr "Recherche avancée"
 #: modules/websearch/lib/websearch_templates_epfl.py:1281
 #: modules/webstyle/lib/webstyle_templates_epfl.py:458
 msgid "Search"
-msgstr "Recherche"
+msgstr "Rechercher"
 
 #: modules/websearch/lib/websearch_templates.py:805
 #: modules/websearch/lib/websearch_templates.py:883
@@ -4254,7 +4230,7 @@ msgstr "Conseils de recherche"
 #: modules/websearch/lib/websearch_templates_epfl.py:678
 #, python-format
 msgid "Search %s records for"
-msgstr "Chercher dans %s notices:"
+msgstr "Chercher parmi %s notices:"
 
 #: modules/websearch/lib/websearch_templates.py:990
 #: modules/websearch/lib/websearch_templates.py:2015
@@ -4479,14 +4455,14 @@ msgid ""
 "%(x_fmt_open)sResults overview:%(x_fmt_close)s Found %(x_nb_records)s "
 "records in %(x_nb_seconds)s seconds."
 msgstr ""
-"%(x_fmt_open)sAperçu des résultats:%(x_fmt_close)s Trouvé %(x_nb_records)s "
-"notices en %(x_nb_seconds)s secondes."
+"%(x_fmt_open)sVue d'ensemble sur les résultats:%(x_fmt_close)s Trouvé "
+"%(x_nb_records)s notices en %(x_nb_seconds)s secondes."
 
 #: modules/websearch/lib/websearch_templates.py:2962
 #: modules/websearch/lib/websearch_templates_epfl.py:1937
 #, python-format
 msgid "%(x_fmt_open)sResults overview%(x_fmt_close)s"
-msgstr "%(x_fmt_open)sAperçu des résultats%(x_fmt_close)s"
+msgstr "%(x_fmt_open)sVue d'ensemble sur les résultats%(x_fmt_close)s"
 
 #: modules/websearch/lib/websearch_templates.py:2970
 #: modules/websearch/lib/websearch_templates_epfl.py:1945
@@ -4495,7 +4471,7 @@ msgid ""
 "%(x_fmt_open)sResults overview:%(x_fmt_close)s Found at least "
 "%(x_nb_records)s records in %(x_nb_seconds)s seconds."
 msgstr ""
-"%(x_fmt_open)sAperçu des résultats:%(x_fmt_close)s Trouvé au moins "
+"%(x_fmt_open)sVue d'ensemble sur les résultats:%(x_fmt_close)s Trouvé "
 "%(x_nb_records)s notices en %(x_nb_seconds)s secondes."
 
 #: modules/websearch/lib/websearch_templates.py:3047
@@ -4548,7 +4524,7 @@ msgstr "Collection %s introuvable"
 #: modules/websearch/lib/websearch_templates_epfl.py:2123
 #, python-format
 msgid "Sorry, collection %s does not seem to exist."
-msgstr "Désolé, la collection %s n'existe pas."
+msgstr "Désolé, la collection %s n'existe pas"
 
 #: modules/websearch/lib/websearch_templates.py:3539
 #: modules/websearch/lib/websearch_webinterface.py:983
@@ -5075,7 +5051,7 @@ msgstr ""
 #: modules/websession/lib/websession_webinterface.py:1049
 #: modules/websession/lib/websession_templates_epfl.py:262
 msgid "Your Groups"
-msgstr "Vos Groupes"
+msgstr "Mes groupes"
 
 #: modules/websession/lib/websession_templates.py:640
 #, python-format
@@ -5244,7 +5220,7 @@ msgstr "Mémoriser ma session sur cet ordinateur."
 #: modules/websession/lib/websession_webinterface.py:868
 #: modules/websession/lib/websession_templates_epfl.py:298
 msgid "login"
-msgstr "identification"
+msgstr "Connexion"
 
 #: modules/websession/lib/websession_templates.py:920
 #: modules/websession/lib/websession_webinterface.py:559
@@ -5355,7 +5331,7 @@ msgstr "Vous avez accès aux rôles suivants: %(x_role)s."
 #: modules/websession/lib/websession_templates.py:1110
 #: modules/websession/lib/websession_templates_epfl.py:57
 msgid "Run BibSword Client"
-msgstr "Lancer client BibSword"
+msgstr "BibSword"
 
 #: modules/websession/lib/websession_templates.py:1136
 #: modules/websession/lib/websession_templates_epfl.py:82
@@ -5752,22 +5728,22 @@ msgstr ""
 "software.org/repo/invenio/tree/RELEASE-NOTES"
 
 #: modules/websession/lib/webuser.py:147
-#, fuzzy
 msgid "Maintenance status"
-msgstr "Statut du prêt"
+msgstr "Statut de la maintenance"
 
 #: modules/websession/lib/webuser.py:148
 msgid "Infoscience is currently down for maintenance."
-msgstr ""
+msgstr "Infoscience est actuellement en maintenance."
 
 #: modules/websession/lib/webuser.py:149
 msgid "We expect to be back online shortly, thanks for your patience."
 msgstr ""
+"Nous espérons que ce service sera rapidement disponible, merci de votre "
+"patience."
 
 #: modules/websession/lib/webuser.py:150
-#, fuzzy
 msgid "In case of trouble, please contact"
-msgstr "En cas de doute, contactez %(x_admin_email)s."
+msgstr "En cas de problème, n'hésitez pas à nous écrire sur"
 
 #: modules/websession/lib/webuser.py:327
 #: modules/websession/lib/webgroup_dblayer.py:314
@@ -5777,15 +5753,15 @@ msgstr "utilisateur"
 #: modules/websession/lib/webuser.py:502
 #, python-format
 msgid "Account registration at %s"
-msgstr "Enregistrement d'un compte sur %s"
+msgstr "Enregistrement du compte le %s"
 
 #: modules/websession/lib/webuser.py:735
 msgid "New account on"
-msgstr "Nouveau compte sur"
+msgstr "Nouveau compte le"
 
 #: modules/websession/lib/webuser.py:737
 msgid "PLEASE ACTIVATE"
-msgstr "VEUILLEZ ACTIVER"
+msgstr "Veuillez activer"
 
 #: modules/websession/lib/webuser.py:738
 msgid "A new account has been created on"
@@ -6136,7 +6112,7 @@ msgstr "Déconnexion"
 #: modules/websession/lib/websession_webinterface.py:867
 #: modules/webstyle/lib/webstyle_templates_epfl.py:165
 msgid "Login"
-msgstr "Identification"
+msgstr "Connexion"
 
 #: modules/websession/lib/websession_webinterface.py:898
 msgid "Register"
@@ -6499,7 +6475,7 @@ msgstr "Envoyer"
 #: modules/websubmit/lib/websubmit_webinterface.py:449
 #: modules/bibedit/lib/bibeditmulti_templates.py:305
 msgid "Apply changes"
-msgstr "Appliquer les modifications"
+msgstr "Enregistrer les modifications"
 
 #: modules/websubmit/lib/websubmit_managedocfiles.py:864
 #, python-format
@@ -7330,7 +7306,7 @@ msgstr "rejeter"
 
 #: modules/websubmit/lib/websubmit_webinterface.py:114
 msgid "Requested record does not seem to have been integrated."
-msgstr "La notice demandée ne semble pas avoir déjà intégrée."
+msgstr "Désolé, cette publication n'existe pas."
 
 #: modules/websubmit/lib/websubmit_webinterface.py:140
 msgid ""
@@ -7347,35 +7323,35 @@ msgstr ""
 
 #: modules/websubmit/lib/websubmit_webinterface.py:210
 msgid "This file is restricted: "
-msgstr "L'accès à ce fichier est restreint:"
+msgstr "L'accès à ce fichier est restreint: "
 
 #: modules/websubmit/lib/websubmit_webinterface.py:222
 msgid "An error has happened in trying to stream the request file."
-msgstr "Une erreur est survenue en tentant de transmettre le fichier demandé."
+msgstr "Une erreur est survenue en tentant de transmettre le fichier."
 
 #: modules/websubmit/lib/websubmit_webinterface.py:225
 msgid "The requested file is hidden and can not be accessed."
-msgstr "Le fichier demandé est caché et ne peut pas être accédé."
+msgstr "Le fichier est caché et ne peut pas être affiché."
 
 #: modules/websubmit/lib/websubmit_webinterface.py:232
 msgid "Requested file does not seem to exist."
-msgstr "Le fichier demandé ne semble pas exister."
+msgstr "Le fichier est introuvable."
 
 #: modules/websubmit/lib/websubmit_webinterface.py:265
 msgid "Access to Fulltext"
-msgstr "Accès aux Fichiers"
+msgstr "Accès au texte intégral"
 
 #: modules/websubmit/lib/websubmit_webinterface.py:314
 msgid "An error has happened in trying to retrieve the requested file."
-msgstr "Une erreur est survenue en tentant de retrouver le fichier demandé."
+msgstr "Une erreur est survenue en tentant de récupérer le fichier."
 
 #: modules/websubmit/lib/websubmit_webinterface.py:316
 msgid "Not enough information to retrieve the document"
-msgstr "Il manque des informations pour retrouver le document"
+msgstr "Pas assez d'informations pour récupérer le document"
 
 #: modules/websubmit/lib/websubmit_webinterface.py:324
 msgid "An error has happened in trying to retrieving the requested file."
-msgstr "Une erreur est survenue en tentant de retrouver le fichier demandé."
+msgstr "Une erreur est survenue en tentant de récupérer le fichier."
 
 #: modules/websubmit/lib/websubmit_webinterface.py:375
 msgid "Manage Document Files"
@@ -7384,12 +7360,12 @@ msgstr "Gérer les fichiers"
 #: modules/websubmit/lib/websubmit_webinterface.py:393
 #, python-format
 msgid "Your modifications to record #%i have been submitted"
-msgstr "Vos modifications de la notice #%i ont été soumises"
+msgstr "Vos modifications à la notice #%i ont été soumises"
 
 #: modules/websubmit/lib/websubmit_webinterface.py:401
 #, python-format
 msgid "Your modifications to record #%i have been cancelled"
-msgstr "Vos modifications de la notice #%i ont été annulées"
+msgstr "Vos modifications à la notice #%i ont été annulées"
 
 #: modules/websubmit/lib/websubmit_webinterface.py:410
 msgid "Edit"
@@ -7402,7 +7378,7 @@ msgstr "Éditer la notice"
 #: modules/websubmit/lib/websubmit_webinterface.py:427
 #: modules/websubmit/lib/websubmit_webinterface.py:458
 msgid "Document File Manager"
-msgstr "Gestionnaire de fichiers"
+msgstr "Gestionnaire de documents"
 
 #: modules/websubmit/lib/websubmit_webinterface.py:428
 #: modules/websubmit/lib/websubmit_webinterface.py:458
@@ -7412,7 +7388,7 @@ msgstr "Notice #%i"
 
 #: modules/websubmit/lib/websubmit_webinterface.py:450
 msgid "Cancel all changes"
-msgstr "Annuler tous les changements"
+msgstr "Annuler les modifications"
 
 #: modules/websubmit/lib/websubmit_webinterface.py:922
 msgid "Sorry, 'sub' parameter missing..."
@@ -7424,7 +7400,7 @@ msgstr "Désolé. Impossible d'analyser le paramètre"
 
 #: modules/websubmit/lib/websubmit_webinterface.py:986
 msgid "Sorry, invalid URL..."
-msgstr "Désolé, URL non valide..."
+msgstr "Désolé, URL invalide..."
 
 #: modules/websubmit/web/approve.py:55
 msgid "approve.py: cannot determine document reference"
@@ -7806,7 +7782,7 @@ msgstr "fermer"
 #: modules/webjournal/lib/widgets/bfe_webjournal_widget_weather.py:126
 #: modules/webjournal/lib/widgets/bfe_webjournal_widget_weather.py:141
 msgid "No information available"
-msgstr "Aucune information disponible"
+msgstr "Aucun information disponible"
 
 #: modules/webjournal/lib/widgets/bfe_webjournal_widget_seminars.py:111
 msgid "No seminars today"
@@ -10535,11 +10511,12 @@ msgstr ""
 "'%(x_coll)s'"
 
 #: modules/webalert/lib/webalert_templates_epfl.py:284
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "You can set a new alert from %(x_url_open)syour searches%(x_url_close)s."
 msgstr ""
-"Vous pouvez consulter la liste de %(x_url_open)svos tickets%(x_url_close)s."
+"Vous pouvez définir une nouvelle alerte depuis %(x_url_open)svos recherches"
+"%(x_url_close)s."
 
 #: modules/webalert/lib/webalert_templates_epfl.py:381
 #: modules/webalert/lib/webalert_templates_epfl.py:429
@@ -10550,832 +10527,759 @@ msgstr ""
 #: modules/webbasket/lib/webbasket_templates_epfl.py:590
 #: modules/webbasket/lib/webbasket_templates_epfl.py:683
 #: modules/webbasket/lib/webbasket_templates_epfl.py:762
-#, fuzzy
 msgid "New personal collection"
-msgstr "Filtrer par collection"
+msgstr "Nouvelle collection personnelle"
 
 #: modules/webalert/lib/webalert_templates_epfl.py:383
 #: modules/websession/lib/websession_templates_epfl.py:148
-#, fuzzy
 msgid "My alerts"
-msgstr "alertes"
+msgstr "Mes alertes"
 
 #: modules/webalert/lib/webalert_templates_epfl.py:431
 #: modules/webalert/lib/webalert_templates_epfl.py:490
-#, fuzzy
 msgid "Performed searches"
-msgstr "Vos recherches"
+msgstr "Requêtes exécutées"
 
 #: modules/webbasket/lib/webbasket_templates_epfl.py:60
-#, fuzzy
 msgid "You have no personal or group collections"
-msgstr ""
-"Vous n'avez pas de panier personnel ou de groupe, ni souscrit à un panier "
-"public."
+msgstr "Vous ne possédez pas encore de collections"
 
 #: modules/webbasket/lib/webbasket_templates_epfl.py:61
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "You may want to start by %(x_url_open)screating a new collection"
 "%(x_url_close)s."
 msgstr ""
-"Vous pouvez commencer par %(x_url_open)scréer un nouveau panier"
-"%(x_url_close)s."
+"Vous pouvez %(x_url_open)scréer une nouvelle collection %(x_url_close)s."
 
 #: modules/webbasket/lib/webbasket_templates_epfl.py:68
-#, fuzzy
 msgid "Create collection"
-msgstr "Filtrer par collection"
+msgstr "Créer une collection"
 
 #: modules/webbasket/lib/webbasket_templates_epfl.py:358
 #: modules/websearch/lib/websearch_templates_epfl.py:1524
-#, fuzzy
 msgid "Export"
-msgstr "Exporter vers"
+msgstr "Exporter"
 
 #: modules/webbasket/lib/webbasket_templates_epfl.py:359
-#, fuzzy
 msgid "Add to my website"
-msgstr "Ajouter au panier"
+msgstr "Intégrer les publications sur mon site"
 
 #: modules/webbasket/lib/webbasket_templates_epfl.py:388
 #: modules/websearch/lib/websearch_templates_epfl.py:1251
-#, fuzzy
 msgid "Search results"
 msgstr "Résultats de la recherche"
 
 #: modules/webbasket/lib/webbasket_templates_epfl.py:390
-#, fuzzy
 msgid "Search collections for"
-msgstr "Options de recherche:"
+msgstr "Chercher dans les collections"
 
 #: modules/webbasket/lib/webbasket_templates_epfl.py:430
-#, fuzzy
 msgid "Create new collection"
-msgstr "Créer un nouveau thème"
+msgstr "Nouvelle collection"
 
 #: modules/webbasket/lib/webbasket_templates_epfl.py:430
 #: modules/webbasket/lib/webbasket_templates_epfl.py:626
-#, fuzzy
 msgid "Collection name"
-msgstr "Collection"
+msgstr "Nom de la collection"
 
 #: modules/webbasket/lib/webbasket_templates_epfl.py:474
-#, fuzzy, python-format
+#, python-format
 msgid "%i items have been successfully added to your collection"
-msgstr "%i notices ont été ajoutées à votre panier"
+msgstr "%i publications ont été ajoutées à votre collection"
 
 #: modules/webbasket/lib/webbasket_templates_epfl.py:475
-#, fuzzy, python-format
+#, python-format
 msgid "Proceed to the %(x_url_open)scollection%(x_url_close)s"
-msgstr "Aller aux %(x_url_open)spaniers%(x_url_close)s"
+msgstr "Voir la %(x_url_open)scollection%(x_url_close)s"
 
 #: modules/webbasket/lib/webbasket_templates_epfl.py:480
-#, fuzzy, python-format
+#, python-format
 msgid " or return to your %(x_url_open)sprevious collection%(x_url_close)s"
-msgstr " ou retourner à votre %(x_url_open)spanier précédent%(x_url_close)s"
+msgstr " ou retourner à la %(x_url_open)scollection précédente%(x_url_close)s"
 
 #: modules/webbasket/lib/webbasket_templates_epfl.py:491
-#, fuzzy
 msgid "Successfully added"
-msgstr "validation effectuée"
+msgstr "Ajout effectué"
 
 #: modules/webbasket/lib/webbasket_templates_epfl.py:519
-#, fuzzy, python-format
+#, python-format
 msgid ""
 "Please choose a collection: %(x_basket_selection_box)s (or "
 "%(x_url_open)screate a new one%(x_url_close)s first)"
 msgstr ""
-"Veuillez choisir un panier  %(x_basket_selection_box)s %(x_fmt_open)s(ou "
-"%(x_url_open)scréez en un nouveau%(x_url_close)s d'abord)%(x_fmt_close)s"
+"Veuillez choisir une collection: %(x_basket_selection_box)s (ou "
+"%(x_url_open)sen créer une nouvelle%(x_url_close)s first)"
 
 #: modules/webbasket/lib/webbasket_templates_epfl.py:530
-#, fuzzy, python-format
+#, python-format
 msgid "Adding %i items to your collections"
-msgstr "Ajout de %i notices à vos paniers"
+msgstr "Ajout de %i publications à vos collections"
 
 #: modules/webbasket/lib/webbasket_templates_epfl.py:550
-#, fuzzy
 msgid "Are you sure you want to delete this collection?"
-msgstr "Êtes-vous sûr de vouloir supprimer ce panier?"
+msgstr "Voulez-vous vraiment supprimer cette collection?"
 
 #: modules/webbasket/lib/webbasket_templates_epfl.py:553
-#, fuzzy, python-format
+#, python-format
 msgid "%i users are subscribed to this collection."
-msgstr "%i utilisateurs sont abonnés à ce panier."
+msgstr "%i utilisateurs sont abonnés à cette collection."
 
 #: modules/webbasket/lib/webbasket_templates_epfl.py:555
-#, fuzzy, python-format
+#, python-format
 msgid "%i user groups are subscribed to this collection."
-msgstr "%i groupes sont abonnés à ce panier."
+msgstr "%i groupes ont accès à cette collection"
 
 #: modules/webbasket/lib/webbasket_templates_epfl.py:557
-#, fuzzy, python-format
+#, python-format
 msgid "You have set %i alerts on this collection."
-msgstr "Vous avez défini %i alertes sur ce panier."
+msgstr "Vous avez lié %i alertes à cette collection."
 
 #: modules/webbasket/lib/webbasket_templates_epfl.py:654
 #: modules/webbasket/lib/webbasket_templates_epfl.py:869
-#, fuzzy
 msgid "Delete collection"
-msgstr "Filtrer par collection"
+msgstr "Supprimer la collection"
 
 #: modules/webbasket/lib/webbasket_templates_epfl.py:684
-#, fuzzy, python-format
+#, python-format
 msgid "Editing collection %(x_basket_name)s"
-msgstr "Édition du panier %(x_basket_name)s"
+msgstr "Édition de la collection %(x_basket_name)s"
 
 #: modules/webbasket/lib/webbasket_templates_epfl.py:761
-#, fuzzy
 msgid "Sharing collection to a new group"
-msgstr "Partager le panier avec un nouveau groupe"
+msgstr "Partage de la collection avec un nouveau groupe"
 
 #: modules/webbasket/lib/webbasket_templates_epfl.py:868
-#, fuzzy
 msgid "Edit collection"
-msgstr "Filtrer par collection"
+msgstr "Modifier la collection"
 
 #: modules/webbasket/lib/webbasket_templates_epfl.py:883
 #, python-format
 msgid "%(nb)i records, last modified on %(date)s"
-msgstr ""
+msgstr "%(nb)i publications, dernière modification: %(date)s"
 
 #: modules/webbasket/lib/webbasket_templates_epfl.py:929
-#, fuzzy
 msgid "collection is empty"
-msgstr "collections"
+msgstr "la collection est vide"
 
 #: modules/webbasket/lib/webbasket_templates_epfl.py:1188
 #: modules/webbasket/lib/webbasket_templates_epfl.py:1193
-#, fuzzy
 msgid "All my collections"
-msgstr "Toutes les collections"
+msgstr "Toutes mes collections"
 
 #: modules/webbasket/lib/webbasket_templates_epfl.py:1197
 #: modules/webbasket/lib/webbasket_templates_epfl.py:1202
 #: modules/webbasket/lib/webbasket_templates_epfl.py:1275
-#, fuzzy
 msgid "My personal collections"
-msgstr "toutes les collections"
+msgstr "Mes collections personnelles"
 
 #: modules/webbasket/lib/webbasket_templates_epfl.py:1207
 #: modules/webbasket/lib/webbasket_templates_epfl.py:1212
 #: modules/webbasket/lib/webbasket_templates_epfl.py:1285
-#, fuzzy
 msgid "My groups' collections"
-msgstr "collections"
+msgstr "Collections de mes groupes"
 
 #: modules/webbasket/lib/webbasket_templates_epfl.py:1270
-#, fuzzy
 msgid "*** collection name ***"
-msgstr "*** nom du panier ***"
+msgstr "*** nom de la collection ***"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:246
 #: modules/websearch/lib/websearch_templates_epfl.py:386
 msgid "Infoscience, EPFL's scientific publications"
-msgstr ""
+msgstr "Infoscience, les publications scientifiques de l'EPFL"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:250
 #: modules/websearch/lib/websearch_templates_epfl.py:390
 msgid "EPFL Directive for Research Integrity"
-msgstr ""
+msgstr "Directive EPFL pour l'intégrité scientifique"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:254
 #: modules/websearch/lib/websearch_templates_epfl.py:394
 msgid ""
 "SNSF regulations on information, valorisation and rights to research results"
 msgstr ""
+"Règlement du FNS sur l’information, la valorisation et les droits relatifs "
+"aux résultats issus de la recherche"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:259
 #: modules/websearch/lib/websearch_templates_epfl.py:399
 msgid "Overview of SNSF Guidelines on Open Access"
-msgstr ""
+msgstr "Le Règlement du FNS relatif au libre accès en bref"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:263
 #: modules/websearch/lib/websearch_templates_epfl.py:403
 msgid "Open Access Guidelines for researchers funded by the ERC"
-msgstr ""
+msgstr "Open Access Guidelines for researchers funded by the ERC"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:295
-#, fuzzy
 msgid "Latest additions"
-msgstr "Derniers ajouts:"
+msgstr "Derniers ajouts"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:356
-#, fuzzy
 msgid "Search publications"
-msgstr "Options de recherche:"
+msgstr "Chercher des publications"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:359
 #, python-format
 msgid "Access to the %s scientific publications"
-msgstr ""
+msgstr "Accéder aux %s publications scientifiques"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:360
 #, python-format
 msgid "Access to the %s documentary resources"
-msgstr ""
+msgstr "Accéder aux %s ressources documentaires"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:362
-#, fuzzy
 msgid "More news"
-msgstr "Détails"
+msgstr "Plus d'actualités"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:509
-#, fuzzy
 msgid "Filter by document type"
-msgstr "Type de document inconnu"
+msgstr "Filtrer par type de document"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:510
-#, fuzzy
 msgid "Publications"
-msgstr "Liste de Publications "
+msgstr "Publications"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:511
 #: modules/webstyle/lib/webstyle_templates_epfl.py:469
-#, fuzzy
 msgid "Journal Articles"
-msgstr "Aucun article"
+msgstr "Articles de journaux"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:513
 #: modules/webstyle/lib/webstyle_templates_epfl.py:470
-#, fuzzy
 msgid "Conference Papers"
-msgstr "Articles Récents"
+msgstr "Papiers de conférence"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:515
 msgid "Monographs"
-msgstr ""
+msgstr "Monographies"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:516
 msgid "Books"
-msgstr ""
+msgstr "Livres"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:517
 #: modules/webstyle/lib/webstyle_templates_epfl.py:471
 msgid "Theses"
-msgstr ""
+msgstr "Thèses"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:518
-#, fuzzy
 msgid "Book Chapters"
-msgstr "Titre du livre"
+msgstr "Chapitres de livre"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:519
 msgid "Conference Proceedings"
-msgstr ""
+msgstr "Actes de congrès"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:521
 #: modules/websearch/lib/websearch_templates_epfl.py:523
 msgid "Presentations &amp; Talks"
-msgstr ""
+msgstr "Présentations et talks"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:522
 msgid "Posters"
-msgstr ""
+msgstr "Posters"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:525
 msgid "Standards &amp; Patents"
-msgstr ""
+msgstr "Normes et brevets"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:526
 msgid "Standards"
-msgstr ""
+msgstr "Normes"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:527
-#, fuzzy
 msgid "Patents"
-msgstr "Événements"
+msgstr "Brevets"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:529
 #: modules/webstyle/lib/webstyle_templates_epfl.py:472
-#, fuzzy
 msgid "Reports"
-msgstr "Signaler un abus"
+msgstr "Rapport"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:530
 msgid "Technical Reports"
-msgstr ""
+msgstr "Rapports techniques"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:531
-#, fuzzy
 msgid "Working Papers"
-msgstr "Aucun Article"
+msgstr "Working papers"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:533
 msgid "Lectures &amp; teaching material"
-msgstr ""
+msgstr "Cours et matériel pédagogique"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:534
-#, fuzzy
 msgid "Teaching Documents"
-msgstr "Gérer les fichiers"
+msgstr "Documents d'enseignement"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:535
 msgid "Student Projects"
-msgstr ""
+msgstr "Projets d'étudiants"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:537
-#, fuzzy
 msgid "Filter by publication status"
-msgstr "Corriger ma liste de publications!"
+msgstr "Filtrer par statut de publication"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:538
-#, fuzzy
 msgid "Peer-reviewed publications"
-msgstr "Passez en revue vos actions"
+msgstr "Publications validées par les pairs"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:539
-#, fuzzy
 msgid "Published"
-msgstr "Éditeur"
+msgstr "Publié"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:540
-#, fuzzy
 msgid "Accepted"
-msgstr "Accepter un nouveau membre"
+msgstr "Accepté"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:541
-#, fuzzy
 msgid "Submitted"
-msgstr "Soumis le"
+msgstr "Soumis"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:543
-#, fuzzy
 msgid "Filter by origin"
-msgstr "Filtrer par collection"
+msgstr "Filtrer par origine"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:544
 msgid "Work produced at EPFL"
-msgstr ""
+msgstr "Travail produit à l'EPFL"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:546
 msgid "Filter by fulltext availability"
-msgstr ""
+msgstr "Filtrer par disponibilité du fulltext"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:547
-#, fuzzy
 msgid "Publicly available"
-msgstr "Non disponible"
+msgstr "Public"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:548
-#, fuzzy
 msgid "Restricted access"
-msgstr "Restreint"
+msgstr "Accès restreint"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:569
-#, fuzzy
 msgid "Boolean operators"
-msgstr "Options de prêt"
+msgstr "Opérateurs booléens"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:570
 msgid ""
 "AND: vetterli AND wavelet <emph>(you can also use <strong>+</strong> char "
 "instead of AND)</emph>"
 msgstr ""
+"AND: vetterli AND wavelet <emph>(vous pouvez aussi utiliser le caractère "
+"<strong>+</strong> au lieu de AND)</emph>"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:571
 msgid ""
 "NOT: vetterli NOT wavelet <emph>(you can also use <strong>-</strong> char "
 "instead of NOT)</emph>"
 msgstr ""
+"NOT: vetterli NOT wavelet <emph>(vous pouvez aussi utiliser le caractère "
+"<strong>-</strong> au lieu de NOT)</emph>"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:572
 msgid ""
 "OR: vetterli OR wavelet  <emph>(you can also use <strong>|</strong> char "
 "instead of OR)</emph>"
 msgstr ""
+"OR: vetterli OR wavelet <emph>(vous pouvez aussi utiliser le caractère "
+"<strong>|</strong> au lieu de OR)</emph>"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:573
 msgid "Parentheses"
-msgstr ""
+msgstr "Parenthèses"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:574
 msgid ""
 "You can also use parentheses in your queries to group boolean expressions "
 "together. Nested parentheses are also supported."
 msgstr ""
+"Vous pouvez utiliser des parenthèses dans votre recherche de manière à "
+"grouper les expressions. L'utilisation de parenthèses imbriquées est "
+"également possible"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:575
 msgid "Full documentation about searching"
-msgstr ""
+msgstr "Documentation complète sur la recherche"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:855
 msgid "Search specifically in"
-msgstr ""
+msgstr "Affiner les résultats"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:857
-#, fuzzy
 msgid "Focus on"
-msgstr "Focaliser sur:"
+msgstr "Focaliser sur"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:980
 #: modules/websearch/lib/websearch_templates_epfl.py:989
-#, fuzzy
 msgid "Any field"
-msgstr "tous les champs"
+msgstr "Tous les champs"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:983
-#, fuzzy
 msgid "Keyword"
-msgstr "Mot clé"
+msgstr "Mot clef"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:985
 msgid "Source"
-msgstr ""
+msgstr "Source"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:987
 msgid "DOI"
-msgstr ""
+msgstr "DOI"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:1059
 #: modules/websearch/lib/websearch_templates_epfl.py:1061
-#, fuzzy, python-format
+#, python-format
 msgid "%s results"
-msgstr "résultats"
+msgstr "%s résultats"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:1480
-#, fuzzy
 msgid "Add record to collection"
-msgstr "enlever cette collection"
+msgstr "Ajouter à mes collections"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:1481
-#, fuzzy
 msgid "Please choose a collection"
-msgstr "Veuillez choisir une catégorie"
+msgstr "Veuillez choisir une collection"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:1482
-#, fuzzy, python-format
+#, python-format
 msgid "or %(x_url_open)screate a new one%(x_url_close)s first"
-msgstr ""
-"Vous pouvez commencer par %(x_url_open)scréer un nouveau panier"
-"%(x_url_close)s."
+msgstr "ou d'abord en %(x_url_open)scréer une nouvelle%(x_url_close)s"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:1485
-#, fuzzy
 msgid "Add record"
-msgstr "ajouter des notices"
+msgstr "Ajouter"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:1525
 msgid "Integrate these publications into my website"
-msgstr ""
+msgstr "Intégrer ces publications sur mon site web"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:1707
-#, fuzzy
 msgid "First author"
-msgstr "auteur"
+msgstr "Premier auteur"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:1709
-#, fuzzy
 msgid "Publication year"
-msgstr "Date de publication"
+msgstr "Année de publication"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:1710
-#, fuzzy
 msgid "Ascending"
-msgstr "En attente"
+msgstr "Croissant"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:1711
-#, fuzzy
 msgid "Descending"
-msgstr "En attente"
+msgstr "Décroissant"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:1713
-#, fuzzy
 msgid "HTML detailed"
-msgstr "Détails"
+msgstr "détaillé"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:1714
 msgid "HTML MARC21"
-msgstr ""
+msgstr "MARC21"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:1762
-#, fuzzy
 msgid "Sort by"
-msgstr "Trier par:"
+msgstr "Trier par"
 
 #: modules/websearch/lib/websearch_templates_epfl.py:2110
-#, fuzzy
 msgid "Add to my collections"
-msgstr "Toutes les collections"
+msgstr "Ajouter à mes collections"
 
 #: modules/websession/lib/websession_templates_epfl.py:146
-#, fuzzy
 msgid "My profile"
-msgstr "Maximum un fichier"
+msgstr "Mon profil"
 
 #: modules/websession/lib/websession_templates_epfl.py:149
 msgid "to be validated"
-msgstr ""
+msgstr "à valider"
 
 #: modules/websession/lib/websession_templates_epfl.py:150
 msgid "to be imported"
-msgstr ""
+msgstr "à importer"
 
 #: modules/websession/lib/websession_templates_epfl.py:151
+#, fuzzy
 msgid "to be matched"
-msgstr ""
+msgstr "à importer"
 
 #: modules/websession/lib/websession_templates_epfl.py:153
 msgid "XX-Translate-test"
-msgstr ""
+msgstr "XX-Translate-test"
 
 #: modules/websession/lib/websession_templates_epfl.py:204
 msgid "Dropbox"
-msgstr ""
+msgstr "Dropbox"
 
 #: modules/websession/lib/websession_templates_epfl.py:205
-#, fuzzy
 msgid "Delete by reference"
-msgstr "Sélectionner un relecteur"
+msgstr "Supprimer par référence"
 
 #: modules/websession/lib/websession_templates_epfl.py:206
 msgid "Laboratories management"
-msgstr ""
+msgstr "Gestion des laboratoires"
 
 #: modules/websession/lib/websession_templates_epfl.py:207
 #, fuzzy
 msgid "Laboratories stats"
-msgstr "Statut du prêt"
+msgstr "Gestion des laboratoires"
 
 #: modules/websession/lib/websession_templates_epfl.py:208
 msgid "Authors management"
-msgstr ""
+msgstr "Gestion des auteurs"
 
 #: modules/websession/lib/websession_templates_epfl.py:209
-#, fuzzy
 msgid "Create user"
-msgstr "Nouveau"
+msgstr "Crée un utilisateur"
 
 #: modules/websession/lib/websession_templates_epfl.py:210
 msgid "Publication statistics / bibliometrics"
-msgstr ""
+msgstr "Statistiques de publication / bibliométrie"
 
 #: modules/websession/lib/websession_templates_epfl.py:215
 msgid "Deduplicate"
-msgstr ""
+msgstr "Dédoublonnage"
 
 #: modules/websession/lib/websession_templates_epfl.py:216
-#, fuzzy
 msgid "Manual match"
-msgstr "janvier"
+msgstr "Assignation manuelle"
 
 #: modules/websession/lib/websession_templates_epfl.py:217
-#, fuzzy
 msgid "Rejected imports"
-msgstr "Rejeté"
+msgstr "Imports rejetés"
 
 #: modules/webstyle/lib/webstyle_templates_epfl.py:135
 #: modules/webstyle/lib/webstyle_templates_epfl.py:475
 msgid "About Infoscience"
-msgstr ""
+msgstr "À propos d'Infoscience"
 
 #: modules/webstyle/lib/webstyle_templates_epfl.py:136
 msgid "Contact"
-msgstr ""
+msgstr "Contact"
 
 #: modules/webstyle/lib/webstyle_templates_epfl.py:137
-#, fuzzy
 msgid "Accessibility"
-msgstr "Accès"
+msgstr "Accessibilité"
 
 #: modules/webstyle/lib/webstyle_templates_epfl.py:169
 #, python-format
 msgid "Logout (%(username)s)"
-msgstr ""
+msgstr "Déconnexion (%(username)s)"
 
 #: modules/webstyle/lib/webstyle_templates_epfl.py:225
 msgid "Infoscience: Scientific publications of EPFL"
-msgstr ""
+msgstr "Infoscience: Les publications scientifiques de l'EPFL"
 
 #: modules/webstyle/lib/webstyle_templates_epfl.py:333
-#, fuzzy
 msgid "Choose your language"
-msgstr "Choisir un fichier"
+msgstr "Choix de la langue"
 
 #: modules/webstyle/lib/webstyle_templates_epfl.py:460
-#, fuzzy
 msgid "Publications by school"
-msgstr "Lieu de publication"
+msgstr "Publications par faculté"
 
 #: modules/webstyle/lib/webstyle_templates_epfl.py:461
 msgid "ENAC - Architecture, Civil and Environmental Engineering"
-msgstr ""
+msgstr "ENAC - Environnement Naturel, Architectural et Construit"
 
 #: modules/webstyle/lib/webstyle_templates_epfl.py:462
 msgid "I&amp;C - Computer &amp; Communication Sciences"
-msgstr ""
+msgstr "I&amp;C - Informatique &amp; Communications"
 
 #: modules/webstyle/lib/webstyle_templates_epfl.py:463
 msgid "SB - Basic Sciences"
-msgstr ""
+msgstr "SB - Sciences de Base"
 
 #: modules/webstyle/lib/webstyle_templates_epfl.py:464
 msgid "STI - Engineering"
-msgstr ""
+msgstr "STI - Sciences et Techniques de l'Ingénieur"
 
 #: modules/webstyle/lib/webstyle_templates_epfl.py:465
 msgid "SV - Life Sciences"
-msgstr ""
+msgstr "SV - Sciences de la Vie"
 
 #: modules/webstyle/lib/webstyle_templates_epfl.py:466
 msgid "CDM - Management of Technology"
-msgstr ""
+msgstr "CDM - Collège du Management de la Technologie"
 
 #: modules/webstyle/lib/webstyle_templates_epfl.py:467
 msgid "CDH - College of Humanities"
-msgstr ""
+msgstr "CDH - Collège des Humanités"
 
 #: modules/webstyle/lib/webstyle_templates_epfl.py:468
-#, fuzzy
 msgid "Publications by document type"
-msgstr "Date de publication"
+msgstr "Publications par type de document"
 
 #: modules/webstyle/lib/webstyle_templates_epfl.py:473
 msgid "Deposit / Publish"
-msgstr ""
+msgstr "Déposer / Publier"
 
 #: modules/webstyle/lib/webstyle_templates_epfl.py:476
 msgid "Open Access &amp; Copyright"
-msgstr ""
+msgstr "Open Access &amp; Copyright"
 
 #: modules/webstyle/lib/webstyle_templates_epfl.py:477
 msgid "Start using Infoscience"
-msgstr ""
+msgstr "Démarrer avec Infoscience"
 
 #: modules/webstyle/lib/webstyle_templates_epfl.py:478
-#, fuzzy
 msgid "Add a document"
-msgstr "document"
+msgstr "Ajouter un document"
 
 #: modules/webstyle/lib/webstyle_templates_epfl.py:479
-#, fuzzy
 msgid "Document types"
-msgstr "Type de document inconnu"
+msgstr "Types de documents"
 
 #: modules/webstyle/lib/webstyle_templates_epfl.py:480
-#, fuzzy
 msgid "Publication status"
-msgstr "Date de publication"
+msgstr "Statut de publication"
 
 #: modules/webstyle/lib/webstyle_templates_epfl.py:481
-#, fuzzy
 msgid "Manage publications"
-msgstr "toutes les collections"
+msgstr "Gérer les publications"
 
 #: modules/webstyle/lib/webstyle_templates_epfl.py:482
-#, fuzzy
 msgid "Edit a publication"
-msgstr "Liste des documents de publication"
+msgstr "Éditer une publication"
 
 #: modules/webstyle/lib/webstyle_templates_epfl.py:483
-#, fuzzy
 msgid "Remove a publication"
-msgstr "enlever cette collection"
+msgstr "Supprimer une publication"
 
 #: modules/webstyle/lib/webstyle_templates_epfl.py:484
-#, fuzzy
 msgid "Export a publication list"
-msgstr "Corriger ma liste de publications!"
+msgstr "Export une liste de publications"
 
 #: modules/webstyle/lib/webstyle_templates_epfl.py:485
-#, fuzzy
 msgid "Manage my account"
-msgstr "Effacement de votre compte"
+msgstr "Gérer mon compte"
 
 #: modules/webstyle/lib/webstyle_templates_epfl.py:486
-#, fuzzy
 msgid "Create a personal collection"
-msgstr "enlever cette collection"
+msgstr "Créer une collection personnelle"
 
 #: modules/webstyle/lib/webstyle_templates_epfl.py:487
 msgid "Display my publications in people@EPFL"
-msgstr ""
+msgstr "Afficher mes publications dans mon profil people@EPFL"
 
 #: modules/webstyle/lib/webstyle_templates_epfl.py:527
 #: modules/webstyle/lib/webstyle_templates_epfl.py:542
 msgid "EPFL Homepage"
-msgstr ""
+msgstr "Page d'accueil de l'EPFL"
 
 #: modules/webstyle/lib/webstyle_templates_epfl.py:543
 msgid "Infoscience Homepage"
-msgstr ""
+msgstr "Page d'accueil d'Infoscience"
 
 #: modules/bibformat/lib/elements/bfe_doctype.py:15
-#, fuzzy
 msgid "Journal article"
-msgstr "Erreur interne"
+msgstr "Article de journal"
 
 #: modules/bibformat/lib/elements/bfe_doctype.py:17
 msgid "Book"
-msgstr ""
+msgstr "Livre"
 
 #: modules/bibformat/lib/elements/bfe_doctype.py:19
-#, fuzzy
 msgid "Book Chapter"
-msgstr "Titre du livre"
+msgstr "Chapitre de livre"
 
 #: modules/bibformat/lib/elements/bfe_doctype.py:21
 msgid "Conference paper"
-msgstr ""
+msgstr "Papier de conférence"
 
 #: modules/bibformat/lib/elements/bfe_doctype.py:23
 msgid "Lecture"
-msgstr ""
+msgstr "Cours"
 
 #: modules/bibformat/lib/elements/bfe_doctype.py:25
-#, fuzzy
 msgid "Report"
-msgstr "Signaler un abus"
+msgstr "Rapport"
 
 #: modules/bibformat/lib/elements/bfe_doctype.py:29
 msgid "Patent"
-msgstr ""
+msgstr "Brevet"
 
 #: modules/bibformat/lib/elements/bfe_doctype.py:31
 msgid "Researcher's profile"
-msgstr ""
+msgstr "Profil de chercheur"
 
 #: modules/bibformat/lib/elements/bfe_doctype.py:33
-#, fuzzy
 msgid "Teaching document"
-msgstr "Évaluer ce document"
+msgstr "Document d'enseignement"
 
 #: modules/bibformat/lib/elements/bfe_doctype.py:35
 msgid "Poster"
-msgstr ""
+msgstr "Poster"
 
 #: modules/bibformat/lib/elements/bfe_doctype.py:37
 msgid "Conference proceedings"
-msgstr ""
+msgstr "Actes de congrès"
 
 #: modules/bibformat/lib/elements/bfe_doctype.py:39
 msgid "Standard"
-msgstr ""
+msgstr "Norme"
 
 #: modules/bibformat/lib/elements/bfe_doctype.py:41
 msgid "Student project"
-msgstr ""
+msgstr "Projet d'étudiant"
 
 #: modules/bibformat/lib/elements/bfe_doctype.py:43
 msgid "Presentation / Talk"
-msgstr ""
+msgstr "Présentation / Talk"
 
 #: modules/bibformat/lib/elements/bfe_doctype.py:45
 msgid "Thesis"
-msgstr ""
+msgstr "Thèse"
 
 #: modules/bibformat/lib/elements/bfe_doctype.py:47
-#, fuzzy
 msgid "Working paper"
-msgstr "Vos articles"
+msgstr "Working paper"
 
 #: modules/bibformat/lib/elements/bfe_epfl_fulltext.py:149
 msgid "Get the whole digitalized project"
-msgstr ""
+msgstr "Voir le travail intégral sous format numérique"
 
 #: modules/bibformat/lib/elements/bfe_epfl_fulltext.py:194
 msgid "EPFL intranet: Fulltext"
-msgstr ""
+msgstr "Accès réservé Intranet EPFL: Texte intégral"
 
 #: modules/bibformat/lib/elements/bfe_epfl_fulltext.py:204
 #, python-format
 msgid "EPFL intranet: %s"
-msgstr ""
+msgstr "Accès réservé Intranet EPFL: %s"
 
 #: modules/bibformat/lib/elements/bfe_epfl_fulltext.py:208
-#, fuzzy
 msgid "Order free pdf"
-msgstr "Commander un exemplaire"
+msgstr "Commander le PDF (gratuit)"
 
 #: modules/bibformat/lib/elements/bfe_epfl_fulltext.py:280
 msgid "Thesis submitted - Forthcoming publication"
-msgstr ""
+msgstr "Thèse soumise - En cours de publication"
 
 #: modules/bibformat/lib/elements/bfe_epfl_fulltext.py:282
-#, fuzzy
 msgid "Official version"
-msgstr "Communications officielles"
+msgstr "Version officielle"
 
 #: modules/bibformat/lib/elements/bfe_epfl_fulltext.py:291
 msgid "There is no available fulltext. Please contact the lab or the authors."
 msgstr ""
+"Aucun fulltext n'est disponible. Veuillez contacter le laboratoire ou les "
+"auteurs."
 
 #: modules/bibformat/lib/elements/bfe_host.py:31
 #: modules/bibformat/lib/elements/bfe_host.py:38
-#, fuzzy
 msgid "Submitted to"
-msgstr "Soumis le"
+msgstr "Soumis à"
 
 #: modules/bibformat/lib/elements/bfe_host.py:33
 #: modules/bibformat/lib/elements/bfe_host.py:40
 msgid "Accepted in"
-msgstr ""
+msgstr "Accepté par"
 
 #: modules/bibformat/lib/elements/bfe_host.py:35
-#, fuzzy
 msgid "Published in"
-msgstr "Éditeur"
+msgstr "Publié dans"
 
 #: modules/bibformat/lib/elements/bfe_references.py:31
 msgid "Search for this record at the European Patent Office"
@@ -11383,32 +11287,28 @@ msgstr ""
 
 #: modules/bibformat/lib/elements/bfe_references.py:42
 msgid "View record in Web of Science"
-msgstr ""
+msgstr "Afficher la publication dans Web of Science"
 
 #: modules/bibformat/lib/elements/bfe_references.py:45
-#, fuzzy
 msgid "View record in Scopus"
-msgstr "Voir notices"
+msgstr "Afficher la publication dans Scopus"
 
 #: modules/bibformat/lib/elements/bfe_references.py:48
-#, fuzzy
 msgid "View record in PubMed"
-msgstr "Voir notices"
+msgstr "Afficher la publication dans PubMed"
 
 #: modules/bibformat/lib/elements/bfe_references.py:51
-#, fuzzy
 msgid "View record in arXiv"
-msgstr "Voir notices"
+msgstr "Afficher la publication dans arXiv"
 
 #: modules/bibformat/lib/elements/bfe_references.py:60
 msgid "Print copy in library catalog"
-msgstr ""
+msgstr "Version imprimée dans le catalogue de la bibliothèque"
 
 #: modules/bibformat/lib/elements/bfe_updated_date.py:17
-#, fuzzy, python-format
+#, python-format
 msgid "Record created on %(creation_date)s, modified on %(modification_date)s"
-msgstr ""
-"Notice créée le %(x_date_creation)s, modifiée le %(x_date_modification)s"
+msgstr "Notice créée le %(creation_date)s, modifiée le %(modification_date)s"
 
 #~ msgid "Search Guide"
 #~ msgstr "Guide de recherche"
@@ -13121,3 +13021,101 @@ msgstr ""
 
 #~ msgid "Please login to perform this action."
 #~ msgstr "Identifiez-vous pour effectuer cette action."
+
+#~ msgid "Export as"
+#~ msgstr "Exporter vers"
+
+#~ msgid ""
+#~ "Warning: full-text search is only available for a subset of papers mostly "
+#~ "from 2006-2010."
+#~ msgstr ""
+#~ "Warning: full-text search is only available for a subset of papers mostly "
+#~ "from 2006-2010."
+
+#~ msgid ""
+#~ "Warning: figure caption search is only available for a subset of papers "
+#~ "mostly from 2008-2010."
+#~ msgstr ""
+#~ "Warning: figure caption search is only available for a subset of papers "
+#~ "mostly from 2008-2010."
+
+#, fuzzy
+#~ msgid "period_of_interest_from"
+#~ msgstr "Période souhaitée - De"
+
+#, fuzzy
+#~ msgid "period_of_interest_to"
+#~ msgstr "Période souhaitée - À"
+
+#, fuzzy
+#~ msgid "now"
+#~ msgstr "non"
+
+#~ msgid ""
+#~ "You have %(x_nb_perso)s personal baskets and are subscribed to "
+#~ "%(x_nb_group)s group baskets and %(x_nb_public)s other users public "
+#~ "baskets."
+#~ msgstr ""
+#~ "Vous possédez %(x_nb_perso)s paniers personnels et êtes abonnés à "
+#~ "%(x_nb_group)s paniers de groupes et à %(x_nb_public)s paniers publics."
+
+#~ msgid "SNSF's Directive for open access publications"
+#~ msgstr "Directive du Fonds National Suisse pour pour l'Open Access"
+
+#~ msgid "I'm author of"
+#~ msgstr "dont je suis l'auteur"
+
+#~ msgid "I've deposited / published"
+#~ msgstr "que j'ai déposées / publiées"
+
+#~ msgid "Forthcoming"
+#~ msgstr "A paraître"
+
+#~ msgid "... I've submitted deposited"
+#~ msgstr "... que j'ai ajoutées"
+
+#~ msgid "Edit a record"
+#~ msgstr "Éditer une notice"
+
+#~ msgid "Remove a document"
+#~ msgstr "Supprimer une notice"
+
+#~ msgid "No Papers"
+#~ msgstr "Aucun Article"
+
+#~ msgid "Restricted"
+#~ msgstr "Restreint"
+
+#~ msgid "Events"
+#~ msgstr "Événements"
+
+#~ msgid "Any collection"
+#~ msgstr "Toutes les collections"
+
+#~ msgid "Your papers"
+#~ msgstr "Vos articles"
+
+#~ msgid "Please review your actions"
+#~ msgstr "Passez en revue vos actions"
+
+#~ msgid "Not available"
+#~ msgstr "Non disponible"
+
+#~ msgid "Recent Papers"
+#~ msgstr "Articles Récents"
+
+#~ msgid "Publication List "
+#~ msgstr "Liste de Publications "
+
+#~ msgid "Correct my publication lists!"
+#~ msgstr "Corriger ma liste de publications!"
+
+#~ msgid "Please enter the ID of the record you want to edit"
+#~ msgstr ""
+#~ "Veuillez indiquer l'identifiant de la notice que vous souhaitez éditer"
+
+#~ msgid "alerts"
+#~ msgstr "alertes"
+
+#~ msgid "account"
+#~ msgstr "compte"
