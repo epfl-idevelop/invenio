@@ -24,7 +24,7 @@ __revision__ = \
 
 from invenio.config import CFG_SITE_NAME, CFG_SITE_URL, CFG_SITE_LANG, \
      CFG_SITE_SECURE_URL, CFG_SITE_SUPPORT_EMAIL, CFG_CERN_SITE, \
-     CFG_OPENAIRE_SITE
+     CFG_OPENAIRE_SITE, CFG_EPFL_SITE
 from invenio.messages import gettext_set_language
 
 
@@ -105,6 +105,15 @@ elif CFG_OPENAIRE_SITE:
     "OpenAIRE": ExternalAuthRobot(enforce_external_nicknames=True, use_zlib=False),
     "ZOpenAIRE": ExternalAuthRobot(enforce_external_nicknames=True, use_zlib=True)
     }
+elif CFG_EPFL_SITE:
+    from invenio.external_authentication_tequila import TequilaExternalAuth    
+    CFG_EXTERNAL_AUTH_DEFAULT = 'EPFL'
+    CFG_EXTERNAL_AUTH_USING_SSO = False
+    CFG_EXTERNAL_AUTH_LOGOUT_SSO = None
+    CFG_EXTERNAL_AUTHENTICATION = {
+    "Local": None,
+    "EPFL": TequilaExternalAuth(),
+    }    
 else:
     CFG_EXTERNAL_AUTH_DEFAULT = 'Local'
     CFG_EXTERNAL_AUTH_USING_SSO = False
@@ -114,7 +123,6 @@ else:
     "Robot": ExternalAuthRobot(enforce_external_nicknames=True, use_zlib=False),
     "ZRobot": ExternalAuthRobot(enforce_external_nicknames=True, use_zlib=True)
     }
-
 
 # default data for the add_default_settings function
 # Note: by default the definition is set to deny any. This won't be a problem
@@ -314,4 +322,3 @@ CFG_WEBACCESS_WARNING_MSGS = {
                                19: """The site is having troubles in sending you an email for confirming your email address. The error has been logged and will be taken care of as soon as possible.""",
                                20: """No roles are authorized to perform action %s with the given parameters."""
         }
-

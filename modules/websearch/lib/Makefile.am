@@ -38,7 +38,8 @@ pylib_DATA = \
 	websearch_external_collections_searcher.py \
 	websearch_external_collections_templates.py \
 	websearch_external_collections_tests.py \
-	websearch_external_collections_utils.py 
+	websearch_external_collections_utils.py \
+	websearch_templates_epfl.py
 
 EXTRA_DIST = $(pylib_DATA)
 

@@ -1,0 +1,13 @@
+tag 980__a:
+ARTICLE   --- ExportfullTIAU.bft
+REVIEW   --- ExportfullTIAU.bft
+CHAPTER  --- ExportfullTIAU.bft
+BOOK --- ExportfullbookTIAU.bft
+PROC --- ExportfullbookTIAU.bft
+STUDENT --- ExportfullbookTIAU.bft
+THESIS --- ExportfullbookTIAU.bft
+CONF --- ExportfullconferenceTIAU.bft
+POSTER --- ExportfullconferenceTIAU.bft
+TALK --- ExportfullconferenceTIAU.bft
+
+default: ExportfullTIAU.bft

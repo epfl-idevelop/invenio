@@ -1,0 +1,13 @@
+tag 980__a:
+ARTICLE   --- Exportshort.bft
+REVIEW   --- Exportshort.bft
+CHAPTER  --- Exportshort.bft
+BOOK --- Exportshortbook.bft
+PROC --- Exportshortbook.bft
+STUDENT --- Exportshortbook.bft
+THESIS --- Exportshortbook.bft
+CONF --- Exportshortconference.bft
+POSTER --- Exportshortconference.bft
+TALK --- Exportshortconference.bft
+
+default: Exportshort.bft

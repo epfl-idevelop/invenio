@@ -1,0 +1,4 @@
+<name>EPFL HTML brief - conference</name>
+<description>Brief format for conference, poster, proccedings, talk</description>
+<div class="record_data"><BFE_AUTHORS_SHORT prefix='<span class="infoscience_authors">' suffix=".</span> "  print_links="no" /><BFE_TITLE prefix='<span class="infoscience_title">' suffix="</span> "  punctuation="." latex_to_html="yes"><BFE_CONFERENCE prefix='<span class="infoscience_conference">' suffix=".</span> " separator=", "/><BFE_SERIES_INTEXT prefix=', ' css_class="infoscience_series" suffix=". "/></div>
+<span class="infoscience_links"><BFE_BRIEF_LINKS /></span>

@@ -31,6 +31,7 @@ pylib_DATA = access_control_engine.py \
              external_authentication_cern_tests.py \
              external_authentication_sso.py \
              external_authentication_robot.py \
+             external_authentication_tequila.py \
              webaccess_regression_tests.py
 
 noinst_DATA = collection_restrictions_migration_kit.py

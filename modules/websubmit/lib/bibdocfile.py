@@ -262,6 +262,11 @@ def normalize_format(format, allow_subformat=True):
     @return: the normalized format.
     @rtype; string
     """
+
+    # Infoscience modification
+    # allow language and allow unicode format
+    if '&' in format:
+        format = format.split('&')[0]
     if allow_subformat:
         subformat = format[format.rfind(';'):]
         format = format[:format.rfind(';')]
@@ -277,6 +282,10 @@ def normalize_format(format, allow_subformat=True):
             '.htm' : '.html',
             '.tif' : '.tiff'
         }.get(format, format)
+    if type(format) is unicode:
+        format = format.encode('utf-8')
+    if type(subformat) is unicode:
+        subformat = subformat.encode('utf-8')
     return format + subformat
 
 def guess_format_from_url(url):
@@ -383,7 +392,8 @@ def normalize_docname(docname):
     @return: the normalized docname.
     @rtype: string
     """
-    #return _docname_re.sub('', docname)
+    if type(docname) is unicode:
+        docname = docname.encode('utf-8')
     return docname
 
 def normalize_version(version):
@@ -435,6 +445,8 @@ def decompose_file(afile, skip_version=False, only_known_extensions=False,
     @note: if a URL is provided, the scheme will be part of the dirname.
     @see: L{file_strip_ext} for the algorithm used to retrieve the extension.
     """
+    if type(afile) is unicode:
+        afile = afile.encode('utf-8')
     if skip_version:
         version = afile.split(';')[-1]
         try:
@@ -836,7 +848,7 @@ class BibRecDocs:
         """
         for bibdoc in self.bibdocs:
             if bibdoc.id == docid:
-                return bibdoc.docname
+                return bibdoc.get_docname()
         raise InvenioWebSubmitFileError, "Recid '%s' is not connected with a " \
             "docid '%s'" % (self.id, docid)
 
@@ -858,10 +870,9 @@ class BibRecDocs:
         @return: the bibdoc with a particular docname associated with
         this recid"""
         for bibdoc in self.bibdocs:
-            if bibdoc.docname == docname:
+            if bibdoc.get_docname() == normalize_docname(docname):
                 return bibdoc
-        raise InvenioWebSubmitFileError, "Recid '%s' is not connected with " \
-            " docname '%s'" % (self.id, docname)
+        raise InvenioWebSubmitFileError, "Recid '%s' is not connected with docname" % self.id
 
     def delete_bibdoc(self, docname):
         """
@@ -1703,7 +1714,7 @@ class BibDoc:
                     format = decompose_file(filename)[2]
                 else:
                     format = normalize_format(format)
-                destination = "%s/%s%s;%i" % (self.basedir, self.docname, format, myversion)
+                destination = os.path.join(self.get_base_dir(), self.get_docname() + format + ';' + str(myversion))
                 try:
                     shutil.copyfile(filename, destination)
                     os.chmod(destination, 0644)
@@ -1763,7 +1774,9 @@ class BibDoc:
                     format = decompose_file(filename)[2]
                 else:
                     format = normalize_format(format)
-                destination = "%s/%s%s;%i" % (self.basedir, self.docname, format, version)
+                filename = self.get_docname() + format 
+                filename += ';' + str(version)  
+                destination = os.path.join(self.get_base_dir(), filename)
                 if os.path.exists(destination):
                     raise InvenioWebSubmitFileError, "A file for docname '%s' for the recid '%s' already exists for the format '%s'" % (self.docname, self.recid, format)
                 try:
@@ -1844,7 +1857,7 @@ class BibDoc:
             version = int(version)
             new_version = self.get_latest_version() + 1
             for docfile in self.list_version_files(version):
-                destination = "%s/%s%s;%i" % (self.basedir, self.docname, docfile.get_format(), new_version)
+                destination = os.path.join(self.get_base_dir(), self.get_docname() + docfile.get_format() + ';' + str(new_version))
                 if os.path.exists(destination):
                     raise InvenioWebSubmitFileError, "A file for docname '%s' for the recid '%s' already exists for the format '%s'" % (self.docname, self.recid, docfile.get_format())
                 try:
@@ -2220,18 +2233,15 @@ class BibDoc:
         return self.more_info.has_flag('HIDDEN', format, version)
 
     def get_docname(self):
-        """
-        @return: the name of this document.
-        @rtype: string
-        """
+        """retrieve bibdoc name"""
+        if type(self.docname) is unicode:
+            return self.docname.encode('utf-8')
         return self.docname
 
     def get_base_dir(self):
-        """
-        @return: the base directory on the local filesystem for this document
-            (e.g. C{/soft/cdsweb/var/data/files/g0/123})
-        @rtype: string
-        """
+        """retrieve bibdoc base directory, e.g. /soft/cdsweb/var/data/files/123"""
+        if type(self.basedir) is unicode:
+            return self.basedir.encode('utf-8')
         return self.basedir
 
     def get_type(self):
@@ -2586,6 +2596,9 @@ class BibDoc:
         if format[:1] == '.':
             format = format[1:]
         format = format.upper()
+        if not version:
+            version = 1
+        
         return run_sql("INSERT DELAYED INTO rnkDOWNLOADS "
             "(id_bibrec,id_bibdoc,file_version,file_format,"
             "id_user,client_host,download_time) VALUES "
@@ -2684,8 +2697,32 @@ class BibDocFile:
 
     def is_restricted(self, user_info):
         """Returns restriction state. (see acc_authorize_action return values)"""
-        if self.status not in ('', 'DELETED'):
+        def check_private_authorization():
+            (code, message) = check_bibdoc_authorization(user_info, 'role:librarian')
+            if code == 0:
+                return (code, message)
+            sciper = user_info.get('external_uniqueidentifier', [None])[0]
+            if sciper:
+                from invenio.search_engine import get_fieldvalues
+                scipers = get_fieldvalues(self.recid, '700__g') + get_fieldvalues(self.recid, '917Z8x')
+                if sciper in scipers:
+                    return (0, '')
+            return (1, 'This file is private')
+
+        if self.status == 'LAB':
+            from invenio.search_engine import get_fieldvalues
+            labs = get_fieldvalues(self.recid, '909C0p')
+            if not labs:
+                return check_private_authorization()
+            for lab in labs:
+                (code, message) = check_bibdoc_authorization(user_info, 'role:%s' % lab)
+                if code == 0:
+                    return (code, message)
+            return (code, message)
+        elif self.status == 'RESTRICTED':
             return check_bibdoc_authorization(user_info, status=self.status)
+        elif self.status == 'PRIVATE':
+            return check_private_authorization()
         elif self.status == 'DELETED':
             return (1, 'File has ben deleted')
         else:
@@ -2714,6 +2751,8 @@ class BibDocFile:
         return self.doctype
 
     def get_path(self):
+        if type(self.fullpath) is unicode:
+            return self.fullpath.encode('utf-8')
         return self.fullpath
 
     def get_bibdocid(self):
@@ -2723,11 +2762,15 @@ class BibDocFile:
         return self.name
 
     def get_full_name(self):
+        if type(self.fullname) is unicode:
+            return self.fullname.encode('utf-8')
         return self.fullname
-
+    
     def get_full_path(self):
+        if type(self.fullpath) is unicode:
+            return self.fullpath.encode('utf-8')
         return self.fullpath
-
+    
     def get_format(self):
         return self.format
 
@@ -2747,9 +2790,13 @@ class BibDocFile:
         return self.checksum
 
     def get_description(self):
-        return self.description
-
+        if type(self.description) is unicode:
+            return self.description.encode('utf-8')
+        return self.description or ""
+    
     def get_comment(self):
+        if type(self.comment) is unicode:
+            return self.comment.encode('utf-8')
         return self.comment
 
     def get_content(self):
@@ -3159,6 +3206,10 @@ class Md5Folder:
             old_umask = os.umask(022)
             md5file = open(os.path.join(self.folder, ".md5"), "w")
             for key, value in self.md5s.items():
+                if type(key) is unicode:
+                    key = key.encode('utf-8')
+                if type(value) is unicode:
+                    value = value.encode('utf-8')
                 md5file.write('%s *%s\n' % (value, key))
             md5file.close()
             os.umask(old_umask)
@@ -3214,7 +3265,7 @@ def calculate_md5_external(filename):
     """Calculate the md5 of a physical file through md5sum Command Line Tool.
     This is suitable for file larger than 256Kb."""
     try:
-        md5_result = os.popen(CFG_PATH_MD5SUM + ' -b %s' % escape_shell_arg(filename))
+        md5_result = os.popen(CFG_PATH_MD5SUM + ' -b %s' % escape_shell_arg(normalize_docname(filename)))
         ret = md5_result.read()[:32]
         md5_result.close()
         if len(ret) != 32:
@@ -3589,7 +3640,11 @@ class BibDocMoreInfo:
         try:
             assert(type(version) is int)
             format = normalize_format(format)
-            return self.more_info['descriptions'].get(version, {}).get(format)
+            description = self.more_info['descriptions'].get(version, {}).get(format)
+            if type(description) is unicode:
+                return description.encode('utf-8')
+            else:
+                return description
         except:
             register_exception()
             raise

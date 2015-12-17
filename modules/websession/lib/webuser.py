@@ -126,43 +126,65 @@ def page_not_authorized(req, referer='', uid='', text='', navtrail='', ln=CFG_SI
     from invenio.webpage import page
 
     _ = gettext_set_language(ln)
-
-    if not referer:
-        referer = req.unparsed_uri
-
-    if not CFG_ACCESS_CONTROL_LEVEL_SITE:
-        title = CFG_WEBACCESS_MSGS[5]
-        if not uid:
-            uid = getUid(req)
-        try:
-            res = run_sql("SELECT email FROM user WHERE id=%s AND note=1" % uid)
-
-            if res and res[0][0]:
-                if text:
-                    body = text
-                else:
-                    body = "%s %s" % (CFG_WEBACCESS_WARNING_MSGS[9] % cgi.escape(res[0][0]),
-                                      ("%s %s" % (CFG_WEBACCESS_MSGS[0] % urllib.quote(referer), CFG_WEBACCESS_MSGS[1])))
-            else:
-                if text:
-                    body = text
-                else:
-                    if CFG_ACCESS_CONTROL_LEVEL_GUESTS == 1:
-                        body = CFG_WEBACCESS_MSGS[3]
-                    else:
-                        body = CFG_WEBACCESS_WARNING_MSGS[4] + CFG_WEBACCESS_MSGS[2]
-
-        except OperationalError, e:
-            body = _("Database problem") + ': ' + str(e)
-
-
-    elif CFG_ACCESS_CONTROL_LEVEL_SITE == 1:
-        title = CFG_WEBACCESS_MSGS[8]
-        body = "%s %s" % (CFG_WEBACCESS_MSGS[7], CFG_WEBACCESS_MSGS[2])
-
-    elif CFG_ACCESS_CONTROL_LEVEL_SITE == 2:
-        title = CFG_WEBACCESS_MSGS[6]
-        body = "%s %s" % (CFG_WEBACCESS_MSGS[4], CFG_WEBACCESS_MSGS[2])
+    
+    title = "Maintenance"
+    body = """
+    <div id="tools">
+      <div class="button feed">
+        <a href="http://blogs.epfl.ch/public/export?blog=infoscience">
+          <button class="icon"></button>
+          <span class="label">%(status)s</span>
+        </a>
+      </div>
+     </div>
+    <div id="content" class="content fullpage-content">
+      <h2>%(title)s</h2>
+      <p>%(message)s</p>
+      <img src="https://www.epfl.ch/img/cle.png" />
+      <p>%(contact)s <a href="mailto:infoscience@epfl.ch">infoscience@epfl.ch</a>.</p>
+    </div>
+    
+""" % {'status': _("Maintenance status"),
+       'title': _("Infoscience is currently down for maintenance."),
+       'message': _("We expect to be back online shortly, thanks for your patience."), 
+       'contact': _("In case of trouble, please contact"),}
+        
+    #if not referer:
+    #    referer = req.unparsed_uri
+    #
+    #if not CFG_ACCESS_CONTROL_LEVEL_SITE:
+    #    title = CFG_WEBACCESS_MSGS[5]
+    #    if not uid:
+    #        uid = getUid(req)
+    #    try:
+    #        res = run_sql("SELECT email FROM user WHERE id=%s AND note=1" % uid)
+    #
+    #        if res and res[0][0]:
+    #            if text:
+    #                body = text
+    #            else:
+    #                body = "%s %s" % (CFG_WEBACCESS_WARNING_MSGS[9] % cgi.escape(res[0][0]),
+    #                                  ("%s %s" % (CFG_WEBACCESS_MSGS[0] % urllib.quote(referer), CFG_WEBACCESS_MSGS[1])))
+    #        else:
+    #            if text:
+    #                body = text
+    #            else:
+    #                if CFG_ACCESS_CONTROL_LEVEL_GUESTS == 1:
+    #                    body = CFG_WEBACCESS_MSGS[3]
+    #                else:
+    #                    body = CFG_WEBACCESS_WARNING_MSGS[4] + CFG_WEBACCESS_MSGS[2]
+    #
+    #    except OperationalError, e:
+    #        body = _("Database problem") + ': ' + str(e)
+    #
+    #
+    #elif CFG_ACCESS_CONTROL_LEVEL_SITE == 1:
+    #    title = CFG_WEBACCESS_MSGS[8]
+    #    body = "%s %s" % (CFG_WEBACCESS_MSGS[7], CFG_WEBACCESS_MSGS[2])
+    #
+    #elif CFG_ACCESS_CONTROL_LEVEL_SITE == 2:
+    #    title = CFG_WEBACCESS_MSGS[6]
+    #    body = "%s %s" % (CFG_WEBACCESS_MSGS[4], CFG_WEBACCESS_MSGS[2])
 
     return page(title=title,
                 language=ln,
@@ -170,7 +192,8 @@ def page_not_authorized(req, referer='', uid='', text='', navtrail='', ln=CFG_SI
                 body=body,
                 navtrail=navtrail,
                 req=req,
-                navmenuid=navmenuid)
+                navmenuid="503",
+                rssurl="http://blogs.epfl.ch/public/export?blog=infoscience")
 
 def getUid(req):
     """Return user ID taking it from the cookie of the request.
@@ -840,7 +863,7 @@ def create_useractivities_menu(req, uid, navmenuid, ln="en"):
         is_user_menu_selected = True
 
     try:
-        return tmpl.tmpl_create_useractivities_menu(
+        return tmpl.tmpl_create_useractivities_menu(user_info=user_info,
             ln=ln,
             selected=is_user_menu_selected,
             url_referer=url_referer,

@@ -223,12 +223,11 @@ class WebInterfaceCommentsPages(WebInterfaceDirectory):
 
             title, description, keywords = websearch_templates.tmpl_record_page_header_content(req, self.recid, argd['ln'])
             navtrail = create_navtrail_links(cc=guess_primary_collection_of_a_record(self.recid), ln=argd['ln'])
-            if navtrail:
-                navtrail += ' &gt; '
-            navtrail += '<a class="navtrail" href="%s/record/%s?ln=%s">'% (CFG_SITE_URL, self.recid, argd['ln'])
-            navtrail += title
-            navtrail += '</a>'
-            navtrail += ' &gt; <a class="navtrail">%s</a>' % (self.discussion==1 and _("Reviews") or _("Comments"))
+
+            # Infoscience modification
+            # Custom link presentation
+            navtrail += '<li><a href="%s/record/%s?ln=%s">%s</a></li>'% (CFG_SITE_URL, self.recid, argd['ln'], title)
+            navtrail += '<li class="last">%s</li>' % (self.discussion==1 and _("Reviews") or _("Comments"))
 
             mathjaxheader = ''
             if CFG_WEBCOMMENT_USE_MATHJAX_IN_COMMENTS:
@@ -248,7 +247,7 @@ class WebInterfaceCommentsPages(WebInterfaceDirectory):
                         language=argd['ln'],
                         navmenuid='search',
                         navtrail_append_title_p=0) + \
-                    websearch_templates.tmpl_search_pagestart(argd['ln']) + \
+                    websearch_templates.tmpl_search_pagestart(user_info, '', argd['ln']) + \
                     top + body + bottom + \
                     websearch_templates.tmpl_search_pageend(argd['ln']) + \
                     pagefooteronly(lastupdated=__lastupdated__, language=argd['ln'], req=req)
@@ -432,16 +431,9 @@ class WebInterfaceCommentsPages(WebInterfaceDirectory):
                                                                                                self.recid,
                                                                                                argd['ln'])
             navtrail = create_navtrail_links(cc=guess_primary_collection_of_a_record(self.recid))
-            if navtrail:
-                navtrail += ' &gt; '
-            navtrail += '<a class="navtrail" href="%s/record/%s?ln=%s">'% (CFG_SITE_URL, self.recid, argd['ln'])
-            navtrail += title
-            navtrail += '</a>'
-            navtrail += '&gt; <a class="navtrail" href="%s/record/%s/%s/?ln=%s">%s</a>' % (CFG_SITE_URL,
-                                                                                           self.recid,
-                                                                                           self.discussion==1 and 'reviews' or 'comments',
-                                                                                           argd['ln'],
-                                                                                           self.discussion==1 and _('Reviews') or _('Comments'))
+
+            navtrail += '<li><a href="%s/record/%s?ln=%s">%s</a></li>'% (CFG_SITE_URL, self.recid, argd['ln'], title)
+            navtrail += '<li class="last">%s</li>' % (self.discussion==1 and _('Reviews') or _('Comments'))
 
             if argd['action'] not in actions:
                 argd['action'] = 'DISPLAY'

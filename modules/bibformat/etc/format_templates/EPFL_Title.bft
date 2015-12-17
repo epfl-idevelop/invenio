@@ -1,0 +1,3 @@
+<name>EPFL-Title</name>
+<description>Only output the title of a record</description>
+<BFE_title />

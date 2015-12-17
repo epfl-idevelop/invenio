@@ -26,8 +26,8 @@ EXTRA_DIST = UNINSTALL THANKS RELEASE-NOTES configure-tests.py config.nice.in \
 
 # current MathJax version and packages
 
-MJV = 1.0.1a
-MATHJAX = http://invenio-software.org/download/mathjax/MathJax-v$(MJV).zip
+MJV = 2.3.0
+MATHJAX = https://github.com/mathjax/MathJax/archive/$(MJV).zip
 
 # current FCKeditor version
 FCKV = 2.6.6
@@ -139,7 +139,8 @@ install-jquery-plugins:
 	@echo "***********************************************************"
 	@echo "** Installing various jQuery plugins, please wait...     **"
 	@echo "***********************************************************"
-	mkdir -p ${prefix}/var/www/js
+	mkdir -p ${prefix}/var/www/js && \
+	mkdir -p ${prefix}/var/www/img && \
 	(cd ${prefix}/var/www/js && \
 	wget http://jqueryjs.googlecode.com/files/jquery-1.3.1.min.js && \
 	mv jquery-1.3.1.min.js jquery.min.js && \
@@ -172,7 +173,6 @@ install-jquery-plugins:
 	mv development-bundle/ui/ui.core.js ui.core.js && \
 	rm -rf development-bundle && \
 	rm jquery-ui-1.7.3.custom.zip && \
-	mkdir -p ${prefix}/var/www/img && \
 	cd ${prefix}/var/www/img && \
 	wget -r -np -nH --cut-dirs=4 -A "png,css" -P jquery-ui/themes http://jquery-ui.googlecode.com/svn/tags/1.7.3/themes/base/ && \
 	wget http://jquery-ui.googlecode.com/svn/tags/1.7.3/themes/redmond/jquery-ui.css && \
@@ -258,6 +258,15 @@ uninstall-pdfa-helper-files:
 	rm -f ${prefix}/etc/websubmit/file_converter_templates/ISOCoatedsb.icc
 	@echo "***********************************************************"
 	@echo "** The PDF/A helper files were successfully uninstalled. **"
+	@echo "***********************************************************"
+
+install-django-tequila:
+	@echo "***********************************************************"
+	@echo "** Installing Django Tequila, please wait...             **"
+	@echo "***********************************************************"
+	pip install -e 'svn+https://svn.epfl.ch/svn/django-tools/trunk/django-tequila#egg=django-tequila'
+	@echo "***********************************************************"
+	@echo "** The Django Tequila has been successfully installed.   **"
 	@echo "***********************************************************"
 
 update-v0.3.0-tables update-v0.3.1-tables:

@@ -1,0 +1,10 @@
+<name>Export detailed ENAC</name>
+<description>Detailed format for article, review</description>
+<div class="more">
+
+<BFE_EPFL_ICON link="yes" link_class="thumb advance-link" />
+<h3 class="infoscience_title"><BFE_TITLE prefix="" punctuation="." suffix=" " latex_to_html="no" link_to_fulltext="no"/></h3>
+<p class="infoscience_authors"><BFE_AUTHORS_DETAILED prefix="" suffix=". " print_links="no" author_class="infoscience_author" /></p>
+<p class="infoscience_host"><BFE_CONFERENCE separator=", " suffix=". "/><BFE_SERIES_INTEXT prefix=', ' css_class="infoscience_series" suffix="."/></p>
+<BFE_ABSTRACT prefix='<span class="toggler"><a class="label">Abstract preview</a></span><p class="infoscience_abstract" style="display:none">' suffix='</p>'  print_lang="en" />
+</div>

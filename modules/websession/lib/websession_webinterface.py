@@ -65,6 +65,9 @@ import invenio.template
 websession_templates = invenio.template.load('websession')
 bibcatalog_templates = invenio.template.load('bibcatalog')
 
+from django_tequila.tequila_client import TequilaClient
+from django_tequila.tequila_client import EPFLConfig
+
 class WebInterfaceYourAccountPages(WebInterfaceDirectory):
 
     _exports = ['', 'edit', 'change', 'lost', 'display',
@@ -200,6 +203,7 @@ class WebInterfaceYourAccountPages(WebInterfaceDirectory):
             navmenuid='youraccount', secure_page_p=1)
 
     def display(self, req, form):
+        return redirect_to_url(req, '%s' % CFG_SITE_SECURE_URL)
         args = wash_urlargd(form, {})
         uid = webuser.getUid(req)
 
@@ -246,6 +250,7 @@ class WebInterfaceYourAccountPages(WebInterfaceDirectory):
 
 
     def edit(self, req, form):
+        return redirect_to_url(req, '%s/curator/my_account' % CFG_SITE_SECURE_URL)
         args = wash_urlargd(form, {"verbose" : (int, 0)})
         uid = webuser.getUid(req)
 
@@ -774,12 +779,11 @@ class WebInterfaceYourAccountPages(WebInterfaceDirectory):
                         lastupdated=__lastupdated__,
                         navmenuid='youraccount')
 
-
-
     def login(self, req, form):
         args = wash_urlargd(form, {
             'p_un': (str, None),
             'p_pw': (str, None),
+            'key': (str, None),
             'login_method': (str, None),
             'action': (str, ''),
             'remember_me' : (str, ''),
@@ -789,6 +793,8 @@ class WebInterfaceYourAccountPages(WebInterfaceDirectory):
         args['login_method'] = wash_login_method(args['login_method'])
         if args['p_un']:
             args['p_un'] = args['p_un'].strip()
+        if args['key']:
+            args['key'] = args['key'].strip()
         args['remember_me'] = args['remember_me'] != ''
 
         locals().update(args)
@@ -796,6 +802,15 @@ class WebInterfaceYourAccountPages(WebInterfaceDirectory):
         if CFG_ACCESS_CONTROL_LEVEL_SITE > 0:
             return webuser.page_not_authorized(req, "../youraccount/login?ln=%s" % args['ln'],
                                                navmenuid='youraccount')
+
+        if not args['key']:
+            redirect_url = CFG_SITE_URL + '/youraccount/login%s' % make_canonical_urlargd({'ln' : args['ln'], 'referer' : args['referer']}, {})
+            
+            tequila_client = TequilaClient(EPFLConfig(allow_guests=True,
+                                                      redirect_to = redirect_url,
+                                                      service = "Infoscience"))
+            
+            return redirect_to_url(req, tequila_client.login_url())
 
         uid = webuser.getUid(req)
 
@@ -810,19 +825,22 @@ class WebInterfaceYourAccountPages(WebInterfaceDirectory):
                 pass
 
         if not CFG_EXTERNAL_AUTH_USING_SSO:
-            if args['p_un'] is None or not args['login_method']:
-                return page(title=_("Login"),
-                            body=webaccount.create_login_page_box(args['referer'], args['ln']),
-                            navtrail="""<a class="navtrail" href="%s/youraccount/display?ln=%s">""" % (CFG_SITE_SECURE_URL, args['ln']) + _("Your Account") + """</a>""",
-                            description="%s Personalize, Main page" % CFG_SITE_NAME_INTL.get(args['ln'], CFG_SITE_NAME),
-                            keywords="%s , personalize" % CFG_SITE_NAME_INTL.get(args['ln'], CFG_SITE_NAME),
-                            uid=uid,
-                            req=req,
-                            secure_page_p=1,
-                            language=args['ln'],
-                            lastupdated=__lastupdated__,
-                            navmenuid='youraccount')
-            (iden, args['p_un'], args['p_pw'], msgcode) = webuser.loginUser(req, args['p_un'], args['p_pw'], args['login_method'])
+            if args['key']:
+                (iden, args['p_un'], args['p_pw'], msgcode) = webuser.loginUser(req, args['key'], '', "EPFL")
+            else:            
+                if args['p_un'] is None or not args['login_method']:
+                    return page(title=_("Login"),
+                                body=webaccount.create_login_page_box(args['referer'], args['ln']),
+                                navtrail="""<a class="navtrail" href="%s/youraccount/display?ln=%s">""" % (CFG_SITE_SECURE_URL, args['ln']) + _("Your Account") + """</a>""",
+                                description="%s Personalize, Main page" % CFG_SITE_NAME_INTL.get(args['ln'], CFG_SITE_NAME),
+                                keywords="%s , personalize" % CFG_SITE_NAME_INTL.get(args['ln'], CFG_SITE_NAME),
+                                uid=uid,
+                                req=req,
+                                secure_page_p=1,
+                                language=args['ln'],
+                                lastupdated=__lastupdated__,
+                                navmenuid='youraccount')
+                (iden, args['p_un'], args['p_pw'], msgcode) = webuser.loginUser(req, args['p_un'], args['p_pw'], args['login_method'])
         else:
             # Fake parameters for p_un & p_pw because SSO takes them from the environment
             (iden, args['p_un'], args['p_pw'], msgcode) = webuser.loginUser(req, '', '', CFG_EXTERNAL_AUTH_USING_SSO)

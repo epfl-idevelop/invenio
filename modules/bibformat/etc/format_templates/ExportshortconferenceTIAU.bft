@@ -1,0 +1,3 @@
+<name>Export short - conference, link on titles, authors</name>
+<description>Short format for conference, poster, proccedings, talk, which puts links to fulltexts on titles, authors</description>
+<BFE_AUTHORS_SHORT prefix='<span class="infoscience_authors">' suffix="</span>. "  print_links="yes" /><BFE_TITLE prefix='<span class="infoscience_title">' punctuation=". " suffix="</span>" latex_to_html="no" link_to_fulltext="yes"/><BFE_CONFERENCE prefix='<span class="infoscience_conference">' suffix="</span>" separator=", " year="no"/><BFE_SERIES_INTEXT prefix=', ' css_class="infoscience_series"/><BFE_YEAR prefix=", " suffix="." default="."/>    

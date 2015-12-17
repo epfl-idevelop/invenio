@@ -261,9 +261,8 @@ class WebInterfaceFilesPages(WebInterfaceDirectory):
             title, description, keywords = websearch_templates.tmpl_record_page_header_content(req, self.recid, args['ln'])
             return pageheaderonly(title=title,
                         navtrail=create_navtrail_links(cc=cc, aas=0, ln=ln) + \
-                                        ''' &gt; <a class="navtrail" href="%s/record/%s">%s</a>
-                                        &gt; %s''' % \
-                        (CFG_SITE_URL, self.recid, title, _("Access to Fulltext")),
+                                        '<li><a href="%s/record/%s?ln=%s">%s</a></li><li class="last">%s</li>' % \
+                        (CFG_SITE_URL, self.recid, ln, title, _("Access to Fulltext")),
 
                         description="",
                         keywords="keywords",
@@ -272,7 +271,7 @@ class WebInterfaceFilesPages(WebInterfaceDirectory):
                         req=req,
                         navmenuid='search',
                         navtrail_append_title_p=0) + \
-                        websearch_templates.tmpl_search_pagestart(ln) + \
+                        websearch_templates.tmpl_search_pagestart(user_info, ln=ln) + \
                         top + t + bottom + \
                         websearch_templates.tmpl_search_pageend(ln) + \
                         pagefooteronly(lastupdated=__lastupdated__, language=ln, req=req)
@@ -371,7 +370,7 @@ class WebInterfaceSubmitPages(WebInterfaceDirectory):
                                        navmenuid="admin")
 
         # Prepare navtrail
-        navtrail = '''<a class="navtrail" href="%(CFG_SITE_URL)s/help/admin">Admin Area</a> &gt; %(manage_files)s''' \
+        navtrail = '''<li><a href="%(CFG_SITE_URL)s/help/admin">Admin Area</a></li><li class="last">%(manage_files)s</li>''' \
         % {'CFG_SITE_URL': CFG_SITE_URL,
            'manage_files': _("Manage Document Files")}
 
@@ -418,9 +417,10 @@ class WebInterfaceSubmitPages(WebInterfaceDirectory):
             # Prepare navtrail
             title, description, keywords = websearch_templates.tmpl_record_page_header_content(req, argd['recid'],
                                                                                                argd['ln'])
-            navtrail = '''<a class="navtrail" href="%(CFG_SITE_URL)s/help/admin">Admin Area</a> &gt;
-        <a class="navtrail" href="%(CFG_SITE_URL)s/submit/managedocfiles">%(manage_files)s</a> &gt;
-        %(record)s: %(title)s
+            navtrail = '''
+      <li><a href="%(CFG_SITE_URL)s/help/admin">Admin Area</a></li>
+      <li><a href="%(CFG_SITE_URL)s/submit/managedocfiles">%(manage_files)s</a></li>
+      <li class="last">%(record)s: %(title)s</li>
         ''' \
             % {'CFG_SITE_URL': CFG_SITE_URL,
                'title': title,

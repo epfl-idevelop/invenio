@@ -1,0 +1,3 @@
+<name>Filler result</name>
+<description>Short format for submit-filler result list</description>
+<BFE_AUTHORS_SHORT prefix='<span class="infoscience_authors">' suffix=".</span> " print_links="no" /><BFE_TITLE prefix='<span class="infoscience_title">' suffix="</span>" latex_to_html="no" link_to_fulltext="no" /><BFE_HOST prefix=', <span class="infoscience_host">' suffix="</span>" /><BFE_SERIES_INTEXT prefix=", " css_class="infoscience_series" /><BFE_YEAR prefix=", " suffix="." default="."/><BFE_PATENT add_link_to_epo="True" />

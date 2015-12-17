@@ -1,33 +1,52 @@
-# -*- coding: utf-8 -*-
-##
-## This file is part of Invenio.
-## Copyright (C) 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010 CERN.
-##
-## Invenio is free software; you can redistribute it and/or
-## modify it under the terms of the GNU General Public License as
-## published by the Free Software Foundation; either version 2 of the
-## License, or (at your option) any later version.
-##
-## Invenio is distributed in the hope that it will be useful, but
-## WITHOUT ANY WARRANTY; without even the implied warranty of
-## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-## General Public License for more details.
-##
-## You should have received a copy of the GNU General Public License
-## along with Invenio; if not, write to the Free Software Foundation, Inc.,
-## 59 Temple Place, Suite 330, Boston, MA 02111-1307, USA.
 """BibFormat element - Prints titles
 """
-__revision__ = "$Id$"
-
 import cgi
 
-def format_element(bfo, separator=" ", highlight='no'):
+from invenio import bibformat_utils
+from invenio.bibdocfile import BibRecDocs
+from invenio.config import CFG_SITE_URL
+
+def add_link_to_fulltext(bfo, text):
+    """
+    Creates a link to fulltext on given text. 
+    """
+    documents = BibRecDocs(bfo.recID)
+    
+    # assert we have some files
+    if documents and len(documents.bibdocs) == 0:
+        return text
+    
+    # check visibility
+    visible_list = []
+    
+    for doc in documents.bibdocs:
+        files = doc.list_latest_files()
+        if len(files):
+            #try:
+            fulltext = files[0]
+            if fulltext.status in  ['', 'PUBLIC']:
+                visible_list.append(fulltext)
+            #except IndexError:
+            #    return        
+            
+    # build url
+    if len(visible_list) == 0:
+        return text
+    elif len(visible_list) == 1:
+        #only one, return a direct url to the last version
+        return '<a href ="%s">%s</a>' % (visible_list[0].fullurl, text)
+    else:
+        return '<a href ="%s/record/%s/files">%s</a>' % (CFG_SITE_URL, bfo.recID, text)
+
+def format_element(bfo, separator=" ", highlight='no', latex_to_html='no', link_to_fulltext='no', punctuation = ''):
     """
     Prints the titles of a record.
 
     @param separator: separator between the different titles
     @param highlight: highlights the words corresponding to search query if set to 'yes'
+    @param latex_to_html: if 'yes', interpret as LaTeX title
+    @param link_to_fulltext: if 'yes', link title to fulltext if available.
+    @param punctuation: add this char if the title don't already end with one
     """
     titles = []
 
@@ -36,6 +55,13 @@ def format_element(bfo, separator=" ", highlight='no'):
     edition_statement = bfo.field('250__a')
     title_tome = bfo.field('245__n')
     title_part = bfo.field('245__p')
+    
+    #start with standard number if given
+    standard_number = bfo.field('740__a')
+    
+    if len(standard_number) > 0:
+        standard_number += ' - '
+        titles.append(standard_number)
 
     if len(title) > 0:
         if title_remainder:
@@ -44,10 +70,6 @@ def format_element(bfo, separator=" ", highlight='no'):
             title += ", " + title_tome
         if len(title_part) > 0:
             title += ": " + title_part
-        titles.append( title )
-
-    title = bfo.field('0248_a')
-    if len(title) > 0:
         titles.append( title )
 
     title = bfo.field('246__a')
@@ -62,22 +84,28 @@ def format_element(bfo, separator=" ", highlight='no'):
     if len(title) > 0:
         titles.append( title )
 
-    if len(titles) > 0:
-        #Display 'Conference' title only if other titles were not found
-        title = bfo.field('111__a')
-        if len(title) > 0:
-            titles.append( title )
-
     titles = [cgi.escape(x) for x in titles]
 
     if highlight == 'yes':
-        from invenio import bibformat_utils
         titles = [bibformat_utils.highlight(x, bfo.search_pattern) for x in titles]
-
+    
     if len(edition_statement) > 0:
-        return separator.join(titles) + "; " + edition_statement
+        out = separator.join(titles) + "; " + edition_statement
     else:
-        return separator.join(titles)
+        out = separator.join(titles)
+    
+    if latex_to_html == 'yes':
+        out = bibformat_utils.latex_to_html(out)
+    
+    if link_to_fulltext == 'yes':
+        out = add_link_to_fulltext(bfo, out) 
+        
+    # add a , at the  end if not already
+    if out and punctuation:
+        if out[-1] not in [',', '.', '!', '?', ';']:
+            out += punctuation
+    
+    return out
 
 def escape_values(bfo):
     """
@@ -85,9 +113,3 @@ def escape_values(bfo):
     should be escaped.
     """
     return 0
-
-
-
-
-
-

@@ -1,0 +1,29 @@
+<name>EPFL HTML matching preview</name>
+<description>Preview and detailed format for matches. Prints affiliations</description>
+        <div class="html-detailed-record">
+          <div class="left-col">
+            <div class="doctype local-color"><BFE_DOCTYPE /></div>
+            <BFE_EPFL_ICON />
+          </div>
+          <div class="record-container">
+            <h1 class="h2"><BFE_TITLE prefix='' suffix="" latex_to_html="yes" /></h1>
+            <BFE_AUTHORS_INFO />
+            <ul class="record-metadata">
+              <BFE_CONFERENCE prefix='<li><span class="field-label"><lang><en>Presented at:</en><fr>Présenté à:</fr></lang></span> ' suffix="</li>"/>
+              <BFE_HOST prefix="<li>" display_label="yes" display_identifiers="yes" label_with_span="yes" /><BFE_EDITORS print_links="no" limit="10" extension="et al." prefix=". " suffix="</li>" default="</li>" />
+              <BFE_SERIES_INTEXT prefix='<li><span class="field-label"><lang><en>Series:</en><fr>Série:</fr></lang></span> ' suffix="</li>" />
+              <BFE_PATENT prefix='<li><span class="field-label"><lang><en>Patent number:</en><fr>Numéro de brevet:</fr></lang></span> ' suffix="</li>"/>
+              <BFE_IMPRINT prefix='<li>' suffix="</li>" />
+            </ul>
+            <BFE_ABSTRACT prefix="<p>" suffix="</p>" latex_to_html="yes"  print_lang="en" />
+            <BFE_NOTES note_prefix='<p><span class="field-label">Note:</span> ' note_suffix="</p>" />
+            <BFE_KEYWORDS prefix='<p><span class="field-label">Keywords:</span> ' suffix="</p>" keyword_prefix="" keyword_suffix="" />
+              
+            <h4><lang><en>Reference</en><fr>Référence</fr></lang></h4>
+            <ul>
+              <BFE_REFERENCES />
+            </ul>
+            <BFE_EPFL_FULLTEXT style="url_list" display_fulltext="no" display_url="yes" display_replacement_text="no" />          
+          </div>
+        </div>
+        <div class="clear"></div>

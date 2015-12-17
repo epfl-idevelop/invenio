@@ -1,0 +1,6 @@
+<name>Export detailed ENAC, links on titles</name>
+<description>Detailed format for article, review, with links on titles</description>
+<BFE_EPFL_ICON />
+<h3 class="infoscience_title"><BFE_TITLE suffix=". " latex_to_html="no" link_to_fulltext="yes"/></h3>
+<p class="infoscience_authors"><BFE_AUTHORS_DETAILED suffix=". "  print_links="no" author_class="infoscience_author" /></p>
+<p class="infoscience_host"><BFE_HOST hostname_class="infoscience_hostname" suffix=", " /><BFE_SERIES_INTEXT suffix=", " css_class="infoscience_series" /><BFE_YEAR suffix="." /><BFE_PATENT /></p>

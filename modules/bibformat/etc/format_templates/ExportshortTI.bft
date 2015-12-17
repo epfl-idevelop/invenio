@@ -1,0 +1,3 @@
+<name>Export short, link on titles</name>
+<description>Short format for article, review which puts links to fulltexts on title</description>
+<BFE_AUTHORS_SHORT prefix='<span class="infoscience_authors">' suffix="</span>. "  print_links="no" /><BFE_TITLE prefix='<span class="infoscience_title">' suffix="</span>" latex_to_html="no" link_to_fulltext="yes" /><BFE_HOST prefix=', <span class="infoscience_host">' suffix="</span>"/><BFE_SERIES_INTEXT prefix=", " css_class="infoscience_series" /><BFE_PATENT prefix=', '  short='yes' /><BFE_YEAR prefix=", " suffix="." default="."/>

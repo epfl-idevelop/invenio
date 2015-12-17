@@ -21,7 +21,27 @@ etc_DATA = HB.bfo HC.bfo HD.bfo HP.bfo HX.bfo XM.bfo EXCEL.bfo \
 	   XD.bfo HS.bfo \
 	   XE.bfo XN.bfo XR.bfo XW.bfo \
 	   XOAIDC.bfo XO.bfo \
-	   HDREF.bfo HDFILE.bfo HDACT.bfo
+	   HDREF.bfo HDFILE.bfo HDACT.bfo \
+		DTAU.bfo \
+		DTLD.bfo \
+		DTTI.bfo \
+		DTTIAU.bfo \
+		ENACDTAU.bfo \
+		ENACDTLD.bfo \
+		ENACDTTI.bfo \
+		ENACDTTIAU.bfo \
+		ENACFULL.bfo \
+		FLAU.bfo \
+		FLTI.bfo \
+		FLTIAU.bfo \
+		FULL.bfo \
+		HR.bfo \
+		MATCH.bfo \
+		PREVIEW.bfo \
+		SHAU.bfo \
+		SHRT.bfo \
+		SHTI.bfo \
+		SHTIAU.bfo
 
 tmpdir = $(prefix)/var/tmp
 

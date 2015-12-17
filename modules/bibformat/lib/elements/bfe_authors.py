@@ -1,26 +1,17 @@
 # -*- coding: utf-8 -*-
-##
-## This file is part of Invenio.
-## Copyright (C) 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010 CERN.
-##
-## Invenio is free software; you can redistribute it and/or
-## modify it under the terms of the GNU General Public License as
-## published by the Free Software Foundation; either version 2 of the
-## License, or (at your option) any later version.
-##
-## Invenio is distributed in the hope that it will be useful, but
-## WITHOUT ANY WARRANTY; without even the implied warranty of
-## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-## General Public License for more details.
-##
-## You should have received a copy of the GNU General Public License
-## along with Invenio; if not, write to the Free Software Foundation, Inc.,
-## 59 Temple Place, Suite 330, Boston, MA 02111-1307, USA.
-"""BibFormat element - Prints authors
-"""
-__revision__ = "$Id$"
 
-def format_element(bfo, limit, separator=' ; ',
+"""BibFormat element - Prints authors"""
+from cgi import escape
+from urllib import quote
+
+from invenio.config import CFG_SITE_URL
+from invenio.messages import gettext_set_language
+from invenio import bibformat_utils
+
+from Infoscience.Names import InfoscienceName
+
+
+def format_element(bfo, limit, separator='; ',
            extension='[...]',
            print_links="yes",
            print_affiliations='no',
@@ -41,28 +32,155 @@ def format_element(bfo, limit, separator=' ; ',
     @param interactive: if yes, enable user to show/hide authors when there are too many (html + javascript)
     @param highlight: highlights authors corresponding to search query if set to 'yes'
     """
-    from urllib import quote
-    from cgi import escape
-    from invenio.config import CFG_SITE_URL
-    from invenio.messages import gettext_set_language
-
     _ = gettext_set_language(bfo.lang)    # load the right message language
-
-    authors = []
+    
+    output = []
+    
+    all_authors = []
     authors_1 = bfo.fields('100__')
     authors_2 = bfo.fields('700__')
 
-    authors.extend(authors_1)
-    authors.extend(authors_2)
+    all_authors.extend(authors_1)
+    all_authors.extend(authors_2)
 
-    nb_authors = len(authors)
+    roles = {}
+    for author in all_authors:
+        if author.has_key('a') and author['a'].strip():
+            role = 'author'
+            if author.has_key('e') and author['e'].strip():
+                if 'ed' in author['e'].lower():
+                    role = 'editor'
+                elif 'trad' in author['e'].lower():
+                    role = 'translator'
+                elif 'dir' in author['e'].lower():
+                    role = 'director'
+            if roles.has_key(role):
+                roles[role].append(author)
+            else:
+                roles[role] = [author]
+    
+    if 'author' in roles.keys():
+        output.append(render_authors(bfo, roles['author'], limit, separator, 
+                                     extension, print_links, print_affiliations, 
+                                     affiliation_prefix, affiliation_suffix, 
+                                     interactive, highlight, ""))
+    corporates = bfo.fields('710__a')
+    if len(corporates):
+        output.append(render_corporates(bfo, corporates, separator, print_links))
+
+    if 'editor' in roles.keys():
+        if len(roles['editor']) > 1:
+            prefix = _("Editors")
+        else:
+            prefix = _("Editor")
+            
+        output.append(render_authors(bfo, roles['editor'], limit, separator, 
+                                 extension, print_links, print_affiliations, 
+                                 affiliation_prefix, affiliation_suffix, 
+                                 interactive, highlight, 
+                                 prefix + ": ")
+                         )
+        
+    if 'translator' in roles.keys():
+        output.append(render_authors(bfo, roles['translator'], limit, separator, 
+                                     extension, print_links, print_affiliations, 
+                                     affiliation_prefix, affiliation_suffix, 
+                                     interactive, highlight, 
+                                     len(roles['translator']) == 1 and _("Translators: ") or _("Translator: "))
+                     )
+    
+    if 'director' in roles.keys():
+        output.append(render_authors(bfo, roles['director'], limit, separator, 
+                                     extension, print_links, print_affiliations, 
+                                     affiliation_prefix, affiliation_suffix, 
+                                     interactive, highlight, 
+                                     len(roles['director']) == 1 and _("Advisor: ") or _("Advisors: "))
+                     )
+
+            
+    if len(output) == 0:
+        return ''
+    
+    return '<br />'.join(output)
+
+
+
+
+def render_authors(bfo, authors_list, limit, separator='; ', extension='[...]',
+                   print_links="yes", print_affiliations='no',
+                   affiliation_prefix = ' (', affiliation_suffix = ')',
+                   interactive="no", highlight="no", prefix=""):
+    
+    _ = gettext_set_language(bfo.lang)
+    nb_authors = len(authors_list)
+    
+    for author in authors_list:
+        if highlight == 'yes':
+            author['a'] = bibformat_utils.highlight(author['a'], bfo.search_pattern)
+        if print_links.lower() == "yes":
+            author['a'] = '<a href="%s/search?f=author&amp;p=%s&amp;ln=%s">%s</a>' % \
+                          (CFG_SITE_URL, quote(author['a']), bfo.lang, escape(author['a']))
+        if author.has_key('u') and print_affiliations == "yes":
+            author['u'] = affiliation_prefix + author['u'] + affiliation_suffix
+            author['a'] = author.get('a', '') + author.get('u', '')
+    
+    authors = []
+    
+    for author in authors_list:
+        if author.has_key('q'):
+            authors.append(author['a'] + " (" + author['q'] + ")")
+        else:
+            authors.append(author['a'])
+    
+    #authors = [author['a'] for author in authors_list] #James: have to put a condition to know if a q argument exist
+            
+    if limit.isdigit() and  nb_authors > int(limit) and interactive != "yes":
+        return prefix + separator.join(authors[:int(limit)]) + extension
+    
+    elif limit.isdigit() and nb_authors > int(limit) and interactive == "yes":
+        return """%s%s<br />
+                  <div class="toggler"><a href="#">%s</a></div>
+                  <div class="toggled" style="display:none">%s</div>""" % (prefix, 
+                                                      separator.join(authors[:int(limit)]),
+                                                      _("Show all %i authors") % nb_authors,
+                                                      separator.join(authors[int(limit):]))
+    else:
+        return prefix + separator.join(authors)
+                                                      
+                                                    
+def render_corporates(bfo, corporate_list, separator, print_links):
+    out = []
+    for corporate in corporate_list:
+        if  print_links.lower() == "yes":
+            out.append('<a href="%s/search?f=710__a&amp;p=%s&amp;ln=%s">%s</a>' % \
+                          (CFG_SITE_URL, quote(corporate), bfo.lang, escape(corporate)))
+        else:
+            out.append(coporate)
+    return separator.join(out)
+
+"""
+
+    authors = []
+    for author in all_authors:
+        if author.has_key('a'):
+            
+        if is_part_of_something and author.has_key('e') and author['e'].strip():
+            # AB 2011-11-04 check for editors of the containing work, which should not appear among authors
+            if 'ed' in author['e'].lower():
+                role = 'editor'
+                continue
+            else:
+                authors.append(author)
+        else:
+            authors.append(author)
+
+    nb_authors = len(authors)    
 
     # Process authors to add link, highlight and format affiliation
     for author in authors:
-
         if author.has_key('a'):
             if highlight == 'yes':
-                from invenio import bibformat_utils
+                
                 author['a'] = bibformat_utils.highlight(author['a'],
                                                         bfo.search_pattern)
 
@@ -128,7 +246,7 @@ def format_element(bfo, limit, separator=' ; ',
         return out
     elif nb_authors > 0:
         return separator.join(authors)
-
+"""
 def escape_values(bfo):
     """
     Called by BibFormat in order to check if output of this element

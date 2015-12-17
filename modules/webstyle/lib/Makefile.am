@@ -33,6 +33,7 @@ pylib_DATA = webdoc.py \
              webinterface_handler_wsgi_utils.py \
              webinterface_handler_config.py \
              httptest_webinterface.py \
+             webstyle_templates_epfl.py \
              ping_webinterface.py
 
 wsgiweb_DATA = invenio.wsgi

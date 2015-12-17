@@ -136,7 +136,8 @@ def perform_request_display_public(uid,
                                                           ln)
 
     if of == 'hb':
-        body = webbasket_templates.tmpl_display(content=content)
+        # Infoscience modification
+        body = webbasket_templates.tmpl_display(content=content, ln=ln)
         warnings = warnings_item + warnings_basket
         warnings_html = webbasket_templates.tmpl_warnings(warnings, ln)
         body = warnings_html + body
@@ -349,7 +350,8 @@ def perform_request_list_public_baskets(uid,
                                      category=CFG_WEBBASKET_CATEGORIES['ALLPUBLIC'],
                                      ln=ln)
 
-    body = webbasket_templates.tmpl_display(content=body, search_box=search_box)
+    # Infoscience modification
+    body = webbasket_templates.tmpl_display(content=body, search_box=search_box, ln=ln)
 
     body = warnings_html + body
 
@@ -736,7 +738,8 @@ def perform_request_display(uid,
                                              ln=ln)
 
     if not of.startswith('x'):
-        body = webbasket_templates.tmpl_display(directory_box, content, search_box)
+        # Infoscience modification
+        body = webbasket_templates.tmpl_display(directory_box, content, search_box, ln=ln)
         body = warnings_html + body
     else:
         body = content
@@ -1289,8 +1292,15 @@ def perform_request_search(uid,
                                      n=n,
                                      ln=ln)
 
-    body = webbasket_templates.tmpl_display(search_box=search_box,
-                                            search_results=search_results_html)
+    # Infoscience modification
+    personal_info = db.get_all_personal_basket_ids_and_names_by_topic(uid)
+    group_info = db.get_all_group_basket_ids_and_names_by_group(uid)
+    directory_box = webbasket_templates.tmpl_create_directory_box(None, None, (None, None), None,
+                                                                 (personal_info, None),
+                                                                 (group_info, None),
+                                                                 None, ln)
+    body = webbasket_templates.tmpl_display(directory=directory_box, search_box=search_box,
+                                            search_results=search_results_html, ln=ln)
     body = warnings_html + body
 
     navtrail = create_webbasket_navtrail(uid,
@@ -2004,74 +2014,49 @@ def create_basket_navtrail(uid,
     @param group: selected group id for displaying (int)
     @param bskid: basket id (int)
     @param ln: language"""
+
+
+    # Infoscience modification
+    # Custom basket viewer
+
     _ = gettext_set_language(ln)
     out = ''
     if category == CFG_WEBBASKET_CATEGORIES['PRIVATE']:
-        out += ' &gt; <a class="navtrail" href="%s/yourbaskets/display?%s">'\
-               '%s</a>'
-        out %= (CFG_SITE_URL,
-                'category=' + category + '&amp;ln=' + ln,
-                _("Personal baskets"))
-        topics = map(lambda x: x[0], db.get_personal_topics_infos(uid))
-        if topic in topics:
-            out += ' &gt; '
-            out += '<a class="navtrail" href="%s/yourbaskets/display?%s">'\
-                   '%s</a>'
-            out %= (CFG_SITE_URL,
-                    'category=' + category + '&amp;topic=' + \
-                                  topic + '&amp;ln=' + ln,
-                    cgi.escape(topic))
-            if bskid:
-                basket = db.get_public_basket_infos(bskid)
-                if basket:
-                    out += ' &gt; '
-                    out += '<a class="navtrail" href="%s/yourbaskets/display'\
-                           '?%s">%s</a>'
-                    out %= (CFG_SITE_URL,
-                            'category=' + category + '&amp;topic=' + \
-                            topic + '&amp;ln=' + ln + '#bsk' + str(bskid),
-                            cgi.escape(basket[1]))
-
+        if bskid:
+            style = ''
+        else:
+            style = ' class="last"'
+        out += '<li%s><a href="/yourbaskets/display?%s">%s</a></li>'
+        out %= (style, 'category=' + category + '&amp;ln=' + ln, _("Personal collections"))
+        
+        if bskid:
+            basket = db.get_public_basket_infos(bskid)
+            if basket:
+                out += '<li class="last"><a href="/yourbaskets/display?%s">%s</a></li>'
+                out %= ('category=' + category + '&amp;topic=' + topic + '&amp;ln=' + ln + '#bsk' + str(bskid), cgi.escape(basket[1]))
+    
     elif category == CFG_WEBBASKET_CATEGORIES['GROUP']:
-        out += ' &gt; <a class="navtrail" href="%s/yourbaskets/display?%s">'\
-               '%s</a>'
-        out %= (CFG_SITE_URL, 'category=' + category + '&amp;ln=' + ln, _("Group baskets"))
+        if group or bskid:
+            style = ''
+        else:
+            style = ' class="last"'
+        out += '<li%s><a href="/yourbaskets/display?%s">%s</a></li>'
+        out %= (style, 'category=%s&amp;ln=%s' %(category, ln), _("Group collections"))
         groups = db.get_group_infos(uid)
         if group:
             groups = filter(lambda x: x[0] == group, groups)
         if len(groups):
-            out += ' &gt; '
-            out += '<a class="navtrail" href="%s/yourbaskets/display?%s">%s</a>'
-            out %= (CFG_SITE_URL,
-                    'category=' + category + '&amp;group=' + \
-                              str(group) + '&amp;ln=' + ln,
-                    cgi.escape(groups[0][1]))
+            if bskid:
+                style = ''
+            else:
+                style = ' class="last"'
+            out += '<li%s><a href="/yourbaskets/display?%s">%s</a></li>'
+            out %= (style, 'category=%s&amp;group=%s&amp;ln=%s' % (category, str(group), ln), cgi.escape(groups[0][1]))
             if bskid:
                 basket = db.get_public_basket_infos(bskid)
                 if basket:
-                    out += ' &gt; '
-                    out += '<a class="navtrail" href="%s/yourbaskets/display?'\
-                           '%s">%s</a>'
-                    out %= (CFG_SITE_URL,
-                            'category=' + category + '&amp;group=' + \
-                            str(group) + '&amp;ln=' + ln + '#bsk' + str(bskid),
-                            cgi.escape(basket[1]))
-    elif category == CFG_WEBBASKET_CATEGORIES['EXTERNAL']:
-        out += ' &gt; <a class="navtrail" href="%s/yourbaskets/display?%s">'\
-               '%s</a>'
-        out %= (CFG_SITE_URL,
-                'category=' + category + '&amp;ln=' + ln,
-                _("Others' baskets"))
-        if bskid:
-            basket = db.get_public_basket_infos(bskid)
-            if basket:
-                out += ' &gt; '
-                out += '<a class="navtrail" href="%s/yourbaskets/display?%s">'\
-                       '%s</a>'
-                out %= (CFG_SITE_URL,
-                        'category=' + category + '&amp;ln=' + ln + \
-                        '#bsk' + str(bskid),
-                        cgi.escape(basket[1]))
+                    out += '<li class="last"><a href="/yourbaskets/display?%s">%s</a></li>'
+                    out %= ('category=%s&amp;group=%s&amp;ln=%s#bsk%s' % (category, str(group), ln, str(bskid)), cgi.escape(basket[1]))
     return out
 
 def create_webbasket_navtrail(uid,
@@ -2091,85 +2076,52 @@ def create_webbasket_navtrail(uid,
     @param bskid: selected basket id (int)
     @param ln: language"""
 
+    # Infoscience modification
+    # Custom basket viewer
+
     _ = gettext_set_language(ln)
 
-    out = """<a class="navtrail" href="%s/youraccount/display?ln=%s">%s</a>""" % \
-          (CFG_SITE_URL, ln, _("Your Account"))
-    out += " &gt; "
-    out += """<a class="navtrail" href="%s/yourbaskets/display?ln=%s">%s</a>""" % \
-           (CFG_SITE_URL, ln, _("Your Baskets"))
+    out = '<li><a href="/youraccount/display?ln=%s">%s</a></li>' % (ln, _("My account"))
+    out += '<li><a href="/yourbaskets/display?ln=%s">%s</a></li>' % (ln, _("My collections"))
 
-    if public_basket:
-        out += " &gt; "
-        out += """<a class="navtrail" href="%s/yourbaskets/list_public_baskets?ln=%s">%s</a>""" % \
-               (CFG_SITE_URL, ln, _("List of public baskets"))
-        if bskid:
-            basket = db.get_basket_name(bskid)
-            if basket:
-                out += " &gt; "
-                out += """<a class="navtrail" href="%s/yourbaskets/display_public?bskid=%i&amp;ln=%s">%s</a>""" % \
-                       (CFG_SITE_URL, bskid, ln, cgi.escape(basket))
-
-    elif search_baskets:
-        out += " &gt; "
-        out += """<a class="navtrail" href="%s/yourbaskets/search?ln=%s">%s</a>""" % \
-               (CFG_SITE_URL, ln, _("Search baskets"))
-
+    if search_baskets:
+        out += '<li class="last"><a href="/yourbaskets/search?ln=%s">%s</a></li>' % (ln, _("Search collections"))
     elif add_to_basket:
-        out += " &gt; "
-        out += """<a class="navtrail" href="%s/yourbaskets/add?ln=%s">%s</a>""" % \
-               (CFG_SITE_URL, ln, _("Add to basket"))
-
+        out += '<li class="last"><a href="/yourbaskets/add?ln=%s">%s</a><li>' % (ln, _("Add to collection"))
     else:
         if category == CFG_WEBBASKET_CATEGORIES['PRIVATE']:
-            out += " &gt; "
-            out += """<a class="navtrail" href="%s/yourbaskets/display?category=%s&amp;ln=%s">%s</a>""" % \
-                   (CFG_SITE_URL, CFG_WEBBASKET_CATEGORIES['PRIVATE'], ln, _("Personal baskets"))
-            if topic:
-                topic_names = map(lambda x: x[0], db.get_personal_topics_infos(uid))
-                if topic in topic_names:
-                    out += " &gt; "
-                    out += """<a class="navtrail" href="%s/yourbaskets/display?category=%s&amp;topic=%s&amp;ln=%s">%s</a>""" % \
-                           (CFG_SITE_URL, CFG_WEBBASKET_CATEGORIES['PRIVATE'], cgi.escape(topic), ln, cgi.escape(topic))
-                    if bskid:
-                        basket = db.get_basket_name(bskid)
-                        if basket:
-                            out += " &gt; "
-                            out += """<a class="navtrail" href="%s/yourbaskets/display?category=%s&amp;topic=%s&amp;bskid=%i&amp;ln=%s">%s</a>""" % \
-                                   (CFG_SITE_URL, CFG_WEBBASKET_CATEGORIES['PRIVATE'], cgi.escape(topic), bskid, ln, cgi.escape(basket))
-
-        elif category == CFG_WEBBASKET_CATEGORIES['GROUP']:
-            out += " &gt; "
-            out += """<a class="navtrail" href="%s/yourbaskets/display?category=%s&amp;ln=%s">%s</a>""" % \
-                   (CFG_SITE_URL, CFG_WEBBASKET_CATEGORIES['GROUP'], ln, _("Group baskets"))
-            if group:
-                group_names = map(lambda x: x[0] == group and x[1], db.get_group_infos(uid))
-                if group_names and group_names[0]:
-                    out += " &gt; "
-                    out += """<a class="navtrail" href="%s/yourbaskets/display?category=%s&amp;group=%i&amp;ln=%s">%s</a>""" % \
-                           (CFG_SITE_URL, CFG_WEBBASKET_CATEGORIES['GROUP'], group, ln, cgi.escape(group_names[0]))
-                    if bskid:
-                        basket = db.get_basket_name(bskid)
-                        if basket:
-                            out += " &gt; "
-                            out += """<a class="navtrail" href="%s/yourbaskets/display?category=%s&amp;topic=%s&amp;bskid=%i&amp;ln=%s">%s</a>""" % \
-                                   (CFG_SITE_URL, CFG_WEBBASKET_CATEGORIES['GROUP'], group, bskid, ln, cgi.escape(basket))
-
-        elif category == CFG_WEBBASKET_CATEGORIES['EXTERNAL']:
-            out += " &gt; "
-            out += """<a class="navtrail" href="%s/yourbaskets/display?category=%s&amp;ln=%s">%s</a>""" % \
-                   (CFG_SITE_URL, category, ln, _("Public baskets"))
+            if bskid:
+                style = ''
+            else:
+                style = ' class="last"'
+            out += '<li%s><a href="/yourbaskets/display?category=%s&amp;ln=%s">%s</a></li>' % \
+                   (style, CFG_WEBBASKET_CATEGORIES['PRIVATE'], ln, _("Personal collections"))
             if bskid:
                 basket = db.get_basket_name(bskid)
                 if basket:
-                    out += " &gt; "
-                    out += """<a class="navtrail" href="%s/yourbaskets/display?category=%s&amp;topic=%s&amp;bskid=%i&amp;ln=%s">%s</a>""" % \
-                           (CFG_SITE_URL, category, group, bskid, ln, cgi.escape(basket))
+                    out += '<li class="last"><a href="/yourbaskets/display?category=%s&amp;topic=%s&amp;bskid=%i&amp;ln=%s">%s</a></li>' % \
+                                (CFG_WEBBASKET_CATEGORIES['PRIVATE'], cgi.escape(topic), bskid, ln, cgi.escape(basket))
+
+        elif category == CFG_WEBBASKET_CATEGORIES['GROUP']:
+            if group and bskid:
+                style = ''
+            else:
+                style =' class="last"'
+            out += '<li%s><a href="/yourbaskets/display?category=%s&amp;ln=%s">%s</a></li>' % \
+                   (style, CFG_WEBBASKET_CATEGORIES['GROUP'], ln, _("Groups' collections"))
+            if bskid:
+                basket = db.get_basket_name(bskid)
+                if basket:
+                     out += '<li class="last"><a href="/yourbaskets/display?category=%s&amp;topic=%s&amp;bskid=%i&amp;ln=%s">%s</a>' % \
+                                   (CFG_WEBBASKET_CATEGORIES['GROUP'], group, bskid, ln, cgi.escape(basket))
 
     return out
 
 def account_list_baskets(uid, ln=CFG_SITE_LANG):
     """Display baskets informations on account page"""
+    # Infoscience modification
+    # Custom names
+
     _ = gettext_set_language(ln)
     (personal, group, external) = db.count_baskets(uid)
     link = '<a href="%s">%s</a>'
@@ -2188,7 +2140,7 @@ def account_list_baskets(uid, ln=CFG_SITE_LANG):
     else:
         url = CFG_SITE_URL + '/yourbaskets/list_public_baskets?ln=' + ln
     external_text = link % (url, external_text)
-    out = _("You have %(x_nb_perso)s personal baskets and are subscribed to %(x_nb_group)s group baskets and %(x_nb_public)s other users public baskets.") %\
+    out = _("You have %(x_nb_perso)s personal collections and are subscribed to %(x_nb_group)s group collections.") %\
         {'x_nb_perso': personal_text,
          'x_nb_group': group_text,
          'x_nb_public': external_text}

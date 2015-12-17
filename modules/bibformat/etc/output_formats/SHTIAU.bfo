@@ -1,0 +1,13 @@
+tag 980__a:
+ARTICLE   --- ExportshortTIAU.bft
+REVIEW   --- ExportshortTIAU.bft
+CHAPTER  --- ExportshortTIAU.bft
+BOOK --- ExportshortbookTIAU.bft
+PROC --- ExportshortbookTIAU.bft
+STUDENT --- ExportshortbookTIAU.bft
+THESIS --- ExportshortbookTIAU.bft
+CONF --- ExportshortconferenceTIAU.bft
+POSTER --- ExportshortconferenceTIAU.bft
+TALK --- ExportshortconferenceTIAU.bft
+
+default: ExportshortTIAU.bft

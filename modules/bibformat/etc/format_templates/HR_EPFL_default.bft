@@ -1,0 +1,43 @@
+<name>EPFL HTML result detailed  - default</name>
+<description>Detailed format, for result list, for article, review</description>
+        <div class="html-detailed-record">
+          <div class="left-col">
+            <div class="doctype local-color"><BFE_DOCTYPE /></div>
+            <BFE_EPFL_ICON />
+          </div>
+          <div class="record-container">
+            <h1 class="h2"><BFE_TITLE prefix='' suffix="" latex_to_html="yes" /></h1>
+            <p class="authors"><BFE_AUTHORS print_links="yes" limit="10" interactive="yes" extension="et al." separator="; "/></p>
+            <ul class="record-metadata">
+            <BFE_CONFERENCE prefix='<li><span class="field-label"><lang><en>Presented at:</en><fr>Présenté à:</fr></lang></span> ' suffix="</li>"/>
+            <BFE_HOST prefix="<li>" display_label="yes" display_identifiers="yes" label_with_span="yes" /><BFE_EDITORS print_links="no" limit="10" extension="et al." prefix=". " suffix="</li>" default="</li>" />
+            <BFE_SERIES_INTEXT prefix='<li><span class="field-label"><lang><en>Series:</en><fr>Série:</fr></lang></span> ' suffix="</li>" />
+            <BFE_PATENT prefix='<li><span class="field-label"><lang><en>Patent number:</en><fr>Numéro de brevet:</fr></lang></span> ' suffix="</li>"/>
+            <BFE_IMPRINT prefix='<li>' suffix="</li>" />
+            </ul>
+            <BFE_ABSTRACT prefix="<p>" suffix="</p>" latex_to_html="yes"  print_lang="en" />
+            
+            <BFE_KEYWORDS prefix='<p><span class="field-label"><lang><en>Keywords:</en><fr>Mots-clefs:</fr></lang></span> ' suffix="</p>" keyword_prefix="" keyword_suffix="" />
+            <BFE_THESIS_INFO />
+            <BFE_DEFENSE prefix='<p><lang><en>Public defense:</en><fr>Soutenance:</fr></lang> ' suffix="</p>" />
+
+            <BFE_AWARD prefix='<p>' suffix="</p>" />
+            <BFE_NOTE prefix='<p><span class="field-label">Note:</span> ' suffix="</p>" />
+
+            <h4><lang><en>Reference</en><fr>Référence</fr></lang></h4>
+            <ul>
+              <BFE_REFERENCES />
+            </ul>
+            <BFE_EPFL_FULLTEXT style="url_list" display_fulltext="no" display_url="yes" display_replacement_text="no" />
+            
+            <h4><lang><en>Fulltext</en><fr>Fulltext</fr></lang></h4>
+            <BFE_EPFL_FULLTEXT style="fulltext_list" />
+
+            <h4><lang><en>Contacts</en><fr>Contacts</fr></lang></h4>
+            <ul class="link-list" style="margin-bottom: 20px;"><BFE_CONTACT_LAB kb_name="lab_name" kb_url="lab_url" /></ul>
+            <BFE_CONTACT_AUTHORS prefix='<h4><lang><en>EPFL authors</en><fr>Auteurs EPFL</fr></lang></h4><ul class="link-list">' suffix='</ul>'  />
+            
+            <a href="/record/<BFE_RECID />"><lang><en>Detailed record</en><fr>Notice détaillée</fr></lang></a>
+          </div>
+        </div>
+        <div class="clear"></div>

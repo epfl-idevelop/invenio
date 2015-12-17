@@ -1,0 +1,37 @@
+<name>EPFL HTML preview detailed - default</name>
+<description>Preview and detailed format</description>
+        <div class="html-detailed-record">
+          <div class="left-col">
+            <div class="doctype local-color"><BFE_DOCTYPE /></div>
+            <BFE_EPFL_ICON />
+          </div>
+          <div class="record-container">
+            <h1 class="h2"><BFE_TITLE prefix='' suffix="" latex_to_html="yes" /></h1>
+            <div class="authors"><BFE_AUTHORS print_links="yes" limit="10" interactive="yes" extension="et al." separator="; "/></div>
+            <ul class="record-metadata">
+              <BFE_CONFERENCE prefix='<li><span class="field-label"><lang><en>Presented at:</en><fr>Présenté à:</fr></lang></span> ' suffix="</li>"/>
+              <BFE_HOST prefix="<li>" display_label="yes" display_identifiers="yes" label_with_span="yes" />
+              <BFE_SERIES_INTEXT prefix='<li><span class="field-label"><lang><en>Series:</en><fr>Série:</fr></lang></span> ' suffix="</li>" />
+              <BFE_IMPRINT prefix='<li>' suffix="</li>" />
+            </ul>
+            <BFE_ABSTRACT prefix="<p>" suffix="</p>" latex_to_html="yes"  print_lang="en" />
+            
+            <ul>
+                <BFE_PATENT />
+            </ul>
+                        
+            <BFE_NOTE note_prefix='<p><span class="field-label">Note:</span> ' note_suffix="</p>" />
+            <BFE_KEYWORDS prefix='<p><span class="field-label"><lang><en>Keywords:</en><fr>Mots-clefs:</fr></lang></span> ' suffix="</p>" keyword_prefix="" keyword_suffix="" />
+            <BFE_THESIS_INFO />
+            <BFE_DEFENSE prefix='<p><lang><en>Public defense:</en><fr>Soutenance:</fr></lang> ' suffix="</p>" />
+
+            <BFE_AWARD prefix='<p>' suffix="</p>" />
+                          
+            <h4><lang><en>Reference</en><fr>Référence</fr></lang></h4>
+            <ul>
+              <BFE_REFERENCES />
+            </ul>
+            <BFE_EPFL_FULLTEXT style="url_list" display_fulltext="no" display_url="yes" display_replacement_text="no" />          
+          </div>
+        </div>
+        <div class="clear"></div>

@@ -1,0 +1,13 @@
+tag 980__a:
+ARTICLE   --- ExportdetailedAU.bft
+REVIEW   --- ExportdetailedAU.bft
+CHAPTER  --- ExportdetailedAU.bft
+BOOK --- ExportdetailedbookAU.bft
+PROC --- ExportdetailedbookAU.bft
+STUDENT --- ExportdetailedbookAU.bft
+THESIS --- ExportdetailedbookAU.bft
+CONF --- ExportdetailedconferenceAU.bft
+POSTER --- ExportdetailedconferenceAU.bft
+TALK --- ExportdetailedconferenceAU.bft
+
+default: ExportdetailedAU.bft

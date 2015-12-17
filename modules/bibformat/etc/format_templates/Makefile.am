@@ -27,7 +27,71 @@ etc_DATA = Default_HTML_captions.bft Picture_HTML_brief.bft \
 	   Default_HTML_references.bft Default_HTML_files.bft \
 	   Default_HTML_actions.bft Journal_HTML_detailed.bft \
 	   Journal_HTML_brief.bft \
-           Poetry_HTML_brief.bft Poetry_HTML_detailed.bft
+       Poetry_HTML_brief.bft Poetry_HTML_detailed.bft \
+		ENACExportfull.bft \
+		ENACExportfullbook.bft \
+		ENACExportfullconference.bft \
+		EPFL_Title.bft \
+		Exportdetailed.bft \
+		ExportdetailedAU.bft \
+		ExportdetailedAUENAC.bft \
+		ExportdetailedENAC.bft \
+		ExportdetailedTI.bft \
+		ExportdetailedTIAU.bft \
+		ExportdetailedTIAUENAC.bft \
+		ExportdetailedTIENAC.bft \
+		Exportdetailedbook.bft \
+		ExportdetailedbookAU.bft \
+		ExportdetailedbookAUENAC.bft \
+		ExportdetailedbookENAC.bft \
+		ExportdetailedbookTI.bft \
+		ExportdetailedbookTIAU.bft \
+		ExportdetailedbookTIAUENAC.bft \
+		ExportdetailedbookTIENAC.bft \
+		Exportdetailedconference.bft \
+		ExportdetailedconferenceAU.bft \
+		ExportdetailedconferenceAUENAC.bft \
+		ExportdetailedconferenceENAC.bft \
+		ExportdetailedconferenceTI.bft \
+		ExportdetailedconferenceTIAU.bft \
+		ExportdetailedconferenceTIAUENAC.bft \
+		ExportdetailedconferenceTIENAC.bft \
+		Exportfull.bft \
+		ExportfullAU.bft \
+		ExportfullTI.bft \
+		ExportfullTIAU.bft \
+		Exportfullbook.bft \
+		ExportfullbookAU.bft \
+		ExportfullbookTI.bft \
+		ExportfullbookTIAU.bft \
+		Exportfullconference.bft \
+		ExportfullconferenceAU.bft \
+		ExportfullconferenceTI.bft \
+		ExportfullconferenceTIAU.bft \
+		Exportshort.bft \
+		ExportshortAU.bft \
+		ExportshortTI.bft \
+		ExportshortTIAU.bft \
+		Exportshortbook.bft \
+		ExportshortbookAU.bft \
+		ExportshortbookTI.bft \
+		ExportshortbookTIAU.bft \
+		Exportshortconference.bft \
+		ExportshortconferenceAU.bft \
+		ExportshortconferenceTI.bft \
+		ExportshortconferenceTIAU.bft \
+		HB_book.bft \
+		HB_conf.bft \
+		HB_default.bft \
+		HB_hidden.bft \
+		HB_thesis.bft \
+		HD_EPFL_default.bft \
+		HD_hidden.bft \
+		HR_EPFL_default.bft \
+		HR_hidden.bft \
+		MATCH_EPFL_default.bft \
+		PREVIEW_EPFL_default.bft
+           
 
 tmpdir = $(prefix)/var/tmp
 
