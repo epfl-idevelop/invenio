@@ -394,6 +394,7 @@ class Template(webstyle_templates.Template):
                   <li><a href="/collection/Infoscience/Research/SV?ln=%(ln)s">%(SV)s</a></li>
                   <li><a href="/collection/Infoscience/Research/CDM?ln=%(ln)s">%(CDM)s</a></li>
                   <li><a href="/collection/Infoscience/Research/CDH?ln=%(ln)s">%(CDH)s</a></li>
+                  <li><a href="/collection/Infoscience/Research/ENT?ln=%(ln)s">%(ENT)s</a></li>
                   </ul>
               
               </li>
@@ -465,6 +466,7 @@ class Template(webstyle_templates.Template):
                        'SV': _("SV - Life Sciences"),
                        'CDM': _("CDM - Management of Technology"),
                        'CDH': _("CDH - College of Humanities"),
+                       'ENT': _("ENT - Transdisciplinary Entities"),
                        'by_doctype': _("Publications by document type"),
                        'ARTICLE': _("Journal Articles"),
                        'CONF': _("Conference Papers"),
@@ -650,7 +652,7 @@ def epfl_header(ln):
                 <li class="group-2-cols last">
                   <h3><a href="http://medias.epfl.ch/fr">Portail Médias</a></h3>
                   <ul>
-                    <li><a href="http://medias.epfl.ch/communiques-de-presse">Communiqués de presse</a>, <a href="http://medias.epfl.ch/reflex-fr">Reflex</a>, <a href="http://medias.epfl.ch/flash">Flash</a></li>
+                    <li><a href="http://actu.epfl.ch/search/mediacom/?keywords=&date_filter=all&projects=190&search=Rechercher">Communiqués de presse</a>, <a href="http://medias.epfl.ch/flash">Flash</a></li>
                     <li><a href="http://mediatheque.epfl.ch/">Banque d'images</a></li>
                   </ul>
                 </li>
@@ -672,7 +674,7 @@ def epfl_header(ln):
               <div class="clear"></div>
             </div>
           </li>
-          
+
           <li class="school menu" id="school-menu-link">
             <a class="main-link" href="http://www.epfl.ch/navigate.fr.shtml" title="Navigation par faculté EPFL"><span>Par</span>faculté</a>
             <div class="navigation-panel hidden" id="school-panel">
@@ -688,7 +690,7 @@ def epfl_header(ln):
                 <li class="group-2-cols">
                   <h3><a href="http://sb.epfl.ch/fr" class="sb">Sciences de Base <acronym title="Sciences de Base">SB</acronym></a></h3>
                   <ul>
-                    <li><a href="http://sb.epfl.ch/chimie">Chimie</a></li>
+                    <li><a href="http://sb.epfl.ch/chimie">Chimie et génie chimique</a></li>
                     <li><a href="http://sb.epfl.ch/mathematiques">Mathématiques</a></li>
                     <li><a href="http://sb.epfl.ch/physique">Physique</a></li>
                   </ul>
@@ -713,7 +715,7 @@ def epfl_header(ln):
                 <li class="group-2-cols">
                   <h3><a href="http://sv.epfl.ch/fr" class="sv">Sciences de la Vie <acronym title="Sciences de la Vie">SV</acronym></a></h3>
                   <ul>
-                    <li><a href="http://sv.epfl.ch/bioingenierie">Bioingénierie</a></li>
+                    <li><a href="http://bioengineering.epfl.ch/">Bioingénierie</a></li>
                     <li><a href="http://sv.epfl.ch/neurosciences">Neurosciences Brain Mind &amp; Blue Brain</a></li>
                     <li><a href="http://sv.epfl.ch/infectiologie">Infectiologie</a></li>
                     <li><a href="http://sv.epfl.ch/isrec">Cancer</a></li>
@@ -722,9 +724,9 @@ def epfl_header(ln):
                 <li class="group-2-cols last">
                   <h3><a href="http://cdm.epfl.ch/accueil" class="cdm">Collège du Management de la Technologie <acronym title="Collège du Management de la Technologie">CDM</acronym></a></h3>
                   <ul>
-                    <li><a href="http://mtei.epfl.ch">Management de la Technologie</a></li>
-                    <li><a href="http://itpp.epfl.ch">Technologie et politiques publiques</a></li>
-                    <li><a href="http://sfi.epfl.ch">Ingénierie financière</a></li>
+                    <li><a href="http://cdm.epfl.ch/page-116734-fr.html">Management de la Technologie</a></li>
+                    <li><a href="http://cdm.epfl.ch/page-116778-fr.html">Technologie et politiques publiques</a></li>
+                    <li><a href="http://sfi.epfl.ch">Ingénierie financière</a>
                   </ul>
                 </li>
                 <li class="group-2-cols" style="clear:left;">
@@ -738,7 +740,7 @@ def epfl_header(ln):
               <div class="clear"></div>
             </div>
           </li>
-          
+
           <li class="short menu" id="brief-menu-link">
             <a class="main-link" href="http://www.epfl.ch/navigate.fr.shtml" title="Navigation dans la structure de l'EPFL"><acronym title="École Polytechnique Fédérale de Lausanne">EPFL</acronym> en bref</a>
             <div class="navigation-panel hidden" id="brief-panel">
@@ -763,10 +765,11 @@ def epfl_header(ln):
                   </ul>
                 </li>
                 <li class="group-2-cols last">
-                  <h3><a href="http://research-office.epfl.ch/fr">Recherche</a></h3>
+                  <h3><a href="http://recherche.epfl.ch/accueil">Recherche</a></h3>
                   <ul>
-                    <li><a href="http://research-office.epfl.ch/centres-de-recherche">Centres de recherche</a></li>
+                    <li><a href="http://research-office.epfl.ch/fr">Research Office</a></li>
                     <li><a href="http://commission-recherche.epfl.ch/fr">Commission de la recherche</a></li>
+                    <li><a href="http://recherche.epfl.ch/centres">Centres de recherche</a></li>
                     <li><a href="http://infoscience.epfl.ch/?ln=fr">Publications <acronym title="École polytechnique fédérale de Lausanne">EPFL</acronym></a></li>
                   </ul>
                 </li>
@@ -823,24 +826,24 @@ def epfl_header(ln):
                 <li>
                   <input class="hidden" type="radio" name="engine" id="search-engine-publication" value="publication" title="Chercher des publications"/>
                   <label for="search-engine-publication" title="Chercher des publications">Publications</label>
-                </li>                
+                </li>
                 <li>
                   <input class="hidden" type="radio" name="engine" id="search-engine-actuweb" value="actuweb" title="Chercher des actualités"/>
                   <label for="search-engine-actuweb" title="Chercher des actualités">Actualités</label>
-                </li> 
+                </li>
                 <li>
                   <input class="hidden" type="radio" name="engine" id="search-engine-unit" value="unit" title="Chercher des unités EPFL"/>
                   <label for="search-engine-unit" title="Chercher des unités EPFL">Unités EPFL</label>
-                </li>                 
-                
+                </li>
+
               </ul>
-            </div>  
+            </div>
             <button type="submit" class="search-button local-color"  title="Rechercher">Rechercher</button>
           </form>
         </div>
       </div>
       <div class="clear"></div>
-    </div>    
+    </div>
 """
     else:
         return """
@@ -907,7 +910,7 @@ def epfl_header(ln):
                 <li class="group-2-cols last">
                   <h3><a href="http://medias.epfl.ch/media-and-communications">Mediacorner</a></h3>
                   <ul>
-                    <li><a href="http://medias.epfl.ch/press-releases">Press releases</a>, <a href="http://medias.epfl.ch/reflex-en">Reflex</a>, <a href="http://medias.epfl.ch/flash-newspaper">Flash</a></li>
+                    <li><a href="http://actu.epfl.ch/search/mediacom/?keywords=&date_filter=all&projects=190&search=Rechercher">Press releases</a>, <a href="http://medias.epfl.ch/flash-newspaper">Flash</a></li>
                     <li><a href="http://mediatheque.epfl.ch/">Image library</a></li>
                   </ul>
                 </li>
@@ -929,7 +932,7 @@ def epfl_header(ln):
               <div class="clear"></div>
             </div>
           </li>
-          
+
           <li class="school menu" id="school-menu-link">
             <a class="main-link" href="http://www.epfl.ch/navigate.en.shtml" title="Navigate by school"><span>By</span> school</a>
             <div class="navigation-panel hidden" id="school-panel">
@@ -945,7 +948,7 @@ def epfl_header(ln):
                 <li class="group-2-cols">
                   <h3><a href="http://sb.epfl.ch/en" class="sb">Basic Sciences <acronym title="Sciences de Base">SB</acronym></a></h3>
                   <ul>
-                    <li><a href="http://sb.epfl.ch/chemistry">Chemistry</a></li>
+                    <li><a href="http://sb.epfl.ch/chemistry">Chemistry and Chemical Engineering</a></li>
                     <li><a href="http://sb.epfl.ch/mathematics">Mathematics</a></li>
                     <li><a href="http://sb.epfl.ch/physics">Physics</a></li>
                   </ul>
@@ -970,7 +973,7 @@ def epfl_header(ln):
                 <li class="group-2-cols">
                   <h3><a href="http://sv.epfl.ch/home" class="sv">Life Sciences <acronym title="Sciences de la Vie">SV</acronym></a></h3>
                   <ul>
-                    <li><a href="http://sv.epfl.ch/IBI">Bioengineering</a></li>
+                    <li><a href="http://bioengineering.epfl.ch/">Bioengineering</a></li>
                     <li><a href="http://sv.epfl.ch/BMI">Neuroscience Brain Mind &amp; Blue Brain</a></li>
                     <li><a href="http://sv.epfl.ch/GHI">Global Health</a></li>
                     <li><a href="http://sv.epfl.ch/ISREC">Cancer</a></li>
@@ -979,9 +982,9 @@ def epfl_header(ln):
                 <li class="group-2-cols last">
                   <h3><a href="http://cdm.epfl.ch/homepage" class="cdm">Management of Technology <acronym title="Collège du Management de la Technologie">CDM</acronym></a></h3>
                   <ul>
-                    <li><a href="http://mtei.epfl.ch">Management of Technology</a></li>
-                    <li><a href="http://itpp.epfl.ch">Technology and Public Policy</a></li>
-                    <li><a href="http://sfi.epfl.ch">Financial Engineering</a></li>
+                    <li><a href="http://cdm.epfl.ch/mtei">Management, Technology & Entrepreneurship</a></li>
+                    <li><a href="http://cdm.epfl.ch/itpp">Technology and Public Policy</a></li>
+                    <li><a href="http://sfi.epfl.ch">Swiss Finance Institute</a>
                   </ul>
                 </li>
                 <li class="group-2-cols" style="clear:left">
@@ -995,7 +998,7 @@ def epfl_header(ln):
               <div class="clear"></div>
             </div>
           </li>
-          
+
           <li class="short menu" id="brief-menu-link">
             <a class="main-link" href="http://www.epfl.ch/navigate.en.shtml"><span>about</span> EPFL</a>
             <div class="navigation-panel hidden" id="brief-panel">
@@ -1020,10 +1023,11 @@ def epfl_header(ln):
                   </ul>
                 </li>
                 <li class="group-2-cols last">
-                  <h3><a href="http://research-office.epfl.ch/en">Research</a></h3>
+                  <h3><a href="http://recherche.epfl.ch/home">Research</a></h3>
                   <ul>
-                    <li><a href="http://research-office.epfl.ch/research-centers">Research Centers</a></li>
+                    <li><a href="http://research-office.epfl.ch/home">Research Office</a></li>
                     <li><a href="http://commission-recherche.epfl.ch/en">Research Commission</a></li>
+                    <li><a href="http://recherche.epfl.ch/centers">Research centers</a></li>
                     <li><a href="http://infoscience.epfl.ch/?ln=en"><acronym title="École polytechnique fédérale de Lausanne">EPFL</acronym> Publications</a></li>
                   </ul>
                 </li>
@@ -1080,18 +1084,18 @@ def epfl_header(ln):
                 <li>
                   <input class="hidden" type="radio" name="engine" id="search-engine-publication" value="publication" title="Find publications"/>
                   <label for="search-engine-publication" title="Find publications">Publications</label>
-                </li>                
+                </li>
                 <li>
                   <input class="hidden" type="radio" name="engine" id="search-engine-actuweb" value="actuweb" title="Find news"/>
                   <label for="search-engine-actuweb" title="Find news">News</label>
-                </li> 
+                </li>
                 <li>
                   <input class="hidden" type="radio" name="engine" id="search-engine-unit" value="unit" title="Find EPFL units"/>
                   <label for="search-engine-unit" title="Find EPFL units">EPFL units</label>
-                </li>                 
-                
+                </li>
+
               </ul>
-            </div>  
+            </div>
             <button type="submit" class="search-button local-color"  title="Search">Search</button>
           </form>
         </div>
