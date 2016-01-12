@@ -248,7 +248,7 @@ class FormatElementTest(unittest.TestCase):
         bibformat_engine.CFG_BIBFORMAT_ELEMENTS_PATH = bibformat_config.CFG_BIBFORMAT_ELEMENTS_PATH
         bibformat_engine.CFG_BIBFORMAT_ELEMENTS_IMPORT_PATH = bibformat_config.CFG_BIBFORMAT_ELEMENTS_IMPORT_PATH
         tags = bibformatadminlib.get_tags_used_by_element('bfe_abstract.py')
-        self.failUnless(len(tags) == 4,
+        self.failUnless(len(tags) == 5,
                         'Could not correctly identify tags used in bfe_abstract.py')
 
 class OutputFormatTest(unittest.TestCase):
@@ -790,7 +790,12 @@ class FormatTest(unittest.TestCase):
                                                               format_template_code=template['code'])
 
         self.assert_(isinstance(result, tuple))
-        self.assertEqual(result[0],'''<h1>hi</h1> this is my template\ntest<bfe_non_existing_element must disappear/><test_1  non prefixed element must stay as any normal tag/>tfrgarbage\n<br/>test me!&lt;b&gt;ok&lt;/b&gt;a default valueeditor\n<br/>test me!<b>ok</b>a default valueeditor\n<br/>test me!&lt;b&gt;ok&lt;/b&gt;a default valueeditor\n99999''')
+        # Infoscience : Modifying this test as we don't have the same configuration
+        # original
+        # self.assertEqual(result[0],'''<h1>hi</h1> this is my template\ntest<bfe_non_existing_element must disappear/><test_1  non prefixed element must stay as any normal tag/>tfrgarbage\n<br/>test me!&lt;b&gt;ok&lt;/b&gt;a default valueeditor\n<br/>test me!<b>ok</b>a default valueeditor\n<br/>test me!&lt;b&gt;ok&lt;/b&gt;a default valueeditor\n99999''')
+        # modified
+        self.assertEqual(result[0],'''<h1>hi</h1> this is my template\ntest<bfe_non_existing_element must disappear/><test_1  non prefixed element must stay as any normal tag/>tfrgarbage\n<br/>test me!&lt;b&gt;ok&lt;/b&gt;a default valueeditor\n<br/>test me!<b>ok</b>a default valueeditor\n<br/>test me!&lt;b&gt;ok&lt;/b&gt;a default valueeditor\n''')
+
 
 
 class MarcFilteringTest(unittest.TestCase):
