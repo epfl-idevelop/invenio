@@ -212,6 +212,7 @@ class TestQueryParser(unittest.TestCase):
         self._check("title:muon", '', None,
                     [['+', 'muon', 'title', 'w']])
 
+    # Infoscience modification
     # We don't have any index without word on Infoscience, removing the test"
     # def test_parsing_structured_query_existing_field(self):
     #    "search engine - parsing structured query, existing field, but no word index"

@@ -226,6 +226,8 @@ def perform_request_init(uid, ln, req, lastupdated):
             "   var fieldTemplates = %s\n" % (json.dumps(fieldTemplates), ) + \
             "</script>\n"
     # Add scripts (the ordering is NOT irrelevant).
+    # Infoscience modification :
+    # Removed jquery.min.js as we use the one from EPFL
     scripts = ['jquery.effects.core.min.js',
                'jquery.effects.highlight.min.js', 'jquery.autogrow.js',
                'jquery.jeditable.mini.js', 'jquery.hotkeys.min.js', 'json2.js',
@@ -234,8 +236,6 @@ def perform_request_init(uid, ln, req, lastupdated):
                'bibedit_clipboard.js']
 
     for script in scripts:
-        # Infoscience modification :
-        # make it aware of the server full path
         body += '    <script type="text/javascript" src="%s/js/%s">' \
             '</script>\n' % (CFG_SITE_URL, script)
 

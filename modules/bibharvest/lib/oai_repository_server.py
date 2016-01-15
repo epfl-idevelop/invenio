@@ -346,6 +346,8 @@ def print_record(sysno, format='marcxml', record_exists_result=None):
             formatted_record = get_preformatted_record(sysno, 'xm')
             if formatted_record is not None:
                 ## MARCXML is already preformatted. Adapt it if needed
+                # Infoscience modification :
+                # Added custom validator from Swiss librarians
                 formatted_record = formatted_record.replace("<record>", "<marc:record xmlns:marc=\"http://www.loc.gov/MARC21/slim\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.loc.gov/MARC21/slim http://ead.nb.admin.ch/web/standards/slb/MARC21/MARC21slim.xsd\" type=\"Bibliographic\">\n     <marc:leader>00000coc  2200000uu 4500</marc:leader>")
                 formatted_record = formatted_record.replace("<record xmlns=\"http://www.loc.gov/MARC21/slim\">", "<marc:record xmlns:marc=\"http://www.loc.gov/MARC21/slim\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.loc.gov/MARC21/slim http://ead.nb.admin.ch/web/standards/slb/MARC21/MARC21slim.xsd\" type=\"Bibliographic\">\n     <marc:leader>00000coc  2200000uu 4500</marc:leader>")
                 formatted_record = formatted_record.replace("</record", "</marc:record")
@@ -358,6 +360,7 @@ def print_record(sysno, format='marcxml', record_exists_result=None):
                 out += formatted_record
             else:
                 ## MARCXML is not formatted in the database, so produce it.
+                # Infoscience modification
                 out = out + "    <marc:record xmlns:marc=\"http://www.loc.gov/MARC21/slim\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"http://www.loc.gov/MARC21/slim http://ead.nb.admin.ch/web/standards/slb/MARC21/MARC21slim.xsd\" type=\"Bibliographic\">"
                 out = out + "     <marc:leader>00000coc  2200000uu 4500</marc:leader>"
                 out = "%s     <marc:controlfield tag=\"001\">%d</marc:controlfield>\n" % (out, int(sysno))
@@ -462,12 +465,14 @@ def oailistmetadataformats(args):
         out = out + "   </metadataFormat>\n"
         out = out + "   <metadataFormat>\n"
         out = out + "    <metadataPrefix>marcxml</metadataPrefix>\n"
+        # Infoscience modification
         out = out + "    <schema>http://ead.nb.admin.ch/web/standards/slb/MARC21/MARC21slim.xsd</schema>\n"
         out = out + "    <metadataNamespace>http://www.loc.gov/MARC21/slim</metadataNamespace>\n"
         out = out + "   </metadataFormat>\n"
 
     out = oai_header(args, "ListMetadataFormats") + out + oai_footer("ListMetadataFormats")
     return out
+
 
 def oailistrecords(args):
     "Generates response to oailistrecords verb."

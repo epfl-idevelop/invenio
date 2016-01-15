@@ -263,8 +263,8 @@ def normalize_format(format, allow_subformat=True):
     @rtype; string
     """
 
-    # Infoscience modification
-    # allow language and allow unicode format
+    # Infoscience modification :
+    # Remove second part of '&' on file extension
     if '&' in format:
         format = format.split('&')[0]
     if allow_subformat:
@@ -282,6 +282,8 @@ def normalize_format(format, allow_subformat=True):
             '.htm' : '.html',
             '.tif' : '.tiff'
         }.get(format, format)
+    # Infoscience modification :
+    # allow unicode format on file extension name
     if type(format) is unicode:
         format = format.encode('utf-8')
     if type(subformat) is unicode:
@@ -392,6 +394,8 @@ def normalize_docname(docname):
     @return: the normalized docname.
     @rtype: string
     """
+    # Infoscience modification :
+    # Allow unicode format in file name
     if type(docname) is unicode:
         docname = docname.encode('utf-8')
     return docname
@@ -872,7 +876,8 @@ class BibRecDocs:
         for bibdoc in self.bibdocs:
             if bibdoc.get_docname() == normalize_docname(docname):
                 return bibdoc
-        raise InvenioWebSubmitFileError, "Recid '%s' is not connected with docname" % self.id
+        raise InvenioWebSubmitFileError, "Recid '%s' is not connected with " \
+            " docname '%s'" % (self.id, bibdoc.get_docname())
 
     def delete_bibdoc(self, docname):
         """
@@ -1714,6 +1719,8 @@ class BibDoc:
                     format = decompose_file(filename)[2]
                 else:
                     format = normalize_format(format)
+                # Infosicence modification :
+                # Better path management for file save
                 destination = os.path.join(self.get_base_dir(), self.get_docname() + format + ';' + str(myversion))
                 try:
                     shutil.copyfile(filename, destination)
@@ -2596,6 +2603,8 @@ class BibDoc:
         if format[:1] == '.':
             format = format[1:]
         format = format.upper()
+        # Infoscience modification :
+        # Set by default a download as version = 1
         if not version:
             version = 1
         
@@ -2697,6 +2706,8 @@ class BibDocFile:
 
     def is_restricted(self, user_info):
         """Returns restriction state. (see acc_authorize_action return values)"""
+        # Infoscience modification :
+        # Custom restriction access on files and added 'RESTRICTED' and 'PRIVATE' right
         def check_private_authorization():
             (code, message) = check_bibdoc_authorization(user_info, 'role:librarian')
             if code == 0:
@@ -2765,12 +2776,12 @@ class BibDocFile:
         if type(self.fullname) is unicode:
             return self.fullname.encode('utf-8')
         return self.fullname
-    
+
     def get_full_path(self):
         if type(self.fullpath) is unicode:
             return self.fullpath.encode('utf-8')
         return self.fullpath
-    
+
     def get_format(self):
         return self.format
 

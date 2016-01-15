@@ -296,8 +296,8 @@ class Collection:
         ## precalculate latest additions for non-aggregate
         ## collections (the info is ln and as independent)
 
-        # Infoscience modification
-        # removed self.dbquery
+        # Infoscience modification :
+        # removed self.dbquery condition for webpage caching
         if not CFG_WEBSEARCH_I18N_LATEST_ADDITIONS:
             self.create_latest_additions_info()
 
@@ -308,7 +308,6 @@ class Collection:
             if lang in task_get_option("language", [lang]):
 
                 # Infoscience modification
-                # removed self.dbquery
                 if CFG_WEBSEARCH_I18N_LATEST_ADDITIONS:
                     self.create_latest_additions_info(ln=lang)
 

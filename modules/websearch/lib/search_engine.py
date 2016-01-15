@@ -154,6 +154,8 @@ re_unicode_lowercase_u = re.compile(unicode(r"(?u)[úùüû]", "utf-8"))
 re_unicode_lowercase_y = re.compile(unicode(r"(?u)[ýÿ]", "utf-8"))
 re_unicode_lowercase_c = re.compile(unicode(r"(?u)[çć]", "utf-8"))
 re_unicode_lowercase_n = re.compile(unicode(r"(?u)[ñ]", "utf-8"))
+# Infoscience modification :
+# Allow ss = ß in regex search
 re_unicode_lowercase_ss = re.compile(unicode(r"(?u)[ß]", "utf-8"))
 re_unicode_uppercase_a = re.compile(unicode(r"(?u)[ÁÀÄÂÃÅ]", "utf-8"))
 re_unicode_uppercase_ae = re.compile(unicode(r"(?u)[Æ]", "utf-8"))
@@ -783,6 +785,8 @@ def page_start(req, of, cc, aas, ln, uid, title_message=None,
         req.send_http_header()
     elif of == "id":
         pass # nothing to do, we shall only return list of recIDs
+    # Infoscience modification :
+    # Added a new export format : text/plain
     elif of == 'nn':
         req.content_type = "text/plain"
         req.send_http_header()
@@ -805,6 +809,8 @@ def page_start(req, of, cc, aas, ln, uid, title_message=None,
 
         ## add MathJax if displaying single records (FIXME: find
         ## eventual better place to this code)
+        # Infoscience modification :
+        # Custom MathJax rules
         if of.lower() in CFG_WEBSEARCH_USE_MATHJAX_FOR_FORMATS:
             metaheaderadd = """
 <script type="text/x-mathjax-config">
@@ -819,6 +825,7 @@ MathJax.Hub.Config({
 """
         else:
             metaheaderadd = ''
+        # Infoscience modification :
         # Add metadata in meta tags for Google scholar-esque harvesting...
         # only if we have a detailed meta format and we are looking at a
         # single record
@@ -868,6 +875,8 @@ MathJax.Hub.Config({
                                  rssurl=rssurl))
         user_info = collect_user_info(req)
         if recID == -1:
+            # Infoscience modification :
+            # Added user_info and rss_url to search page
             req.write(websearch_templates.tmpl_search_pagestart(user_info, rss_url=rssurl, ln=ln))
     else:
         req.content_type = content_type
@@ -880,6 +889,8 @@ def page_end(req, of="hb", ln=CFG_SITE_LANG):
     if not req:
         return # we were called from CLI
     if of.startswith('h'):
+        # Infoscience modification :
+        # Added a right column for listing of 'hr' & 'hm' listing
         if of == 'hd':
             # detailed page
             req.write(websearch_templates.tmpl_search_pageend(ln = ln)) # pagebody end
@@ -938,6 +949,7 @@ def create_inputdate_box(name="d1", selected_year=0, selected_month=0, selected_
 def create_search_box(cc, colls, p, f, rg, sf, so, sp, rm, of, ot, aas,
                       ln, p1, f1, m1, op1, p2, f2, m2, op2, p3, f3,
                       m3, sc, pl, d1y, d1m, d1d, d2y, d2m, d2d, dt, jrec, ec,
+                      # Infoscience modification
                       action="", ext=None):
 
     """Create search box for 'search again in the results page' functionality."""
@@ -3912,6 +3924,7 @@ def print_record(recID, format='hb', ot='', ln=CFG_SITE_LANG, decompress=zlib.de
         else:
             # record 'recID' is not formatted in 'format' -- they are not in "bibfmt" table; so fetch all the data from "bibXXx" tables:
             if format == "marcxml":
+                # Infoscience modification
                 out += """    <record xmlns="http://ead.nb.admin.ch/web/standards/slb/MARC21/MARC21slim.xsd">\n"""
                 out += "        <controlfield tag=\"001\">%d</controlfield>\n" % int(recID)
             elif format.startswith("xm"):
@@ -4427,7 +4440,8 @@ def perform_request_search(req=None, cc=CFG_SITE_NAME, c=None, p="", f="", rg=CF
                
          ext - EPFL!
     """
-    # EPFL
+    # Infoscience modification :
+    # Added extended search features
     if not ext:
         ext = []
     

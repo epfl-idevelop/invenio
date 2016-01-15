@@ -126,6 +126,9 @@ def page_not_authorized(req, referer='', uid='', text='', navtrail='', ln=CFG_SI
     from invenio.webpage import page
 
     _ = gettext_set_language(ln)
+
+    # Infoscience modification :
+    # Custom maintenance display
     
     title = "Maintenance"
     body = """

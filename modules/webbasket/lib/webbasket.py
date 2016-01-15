@@ -136,7 +136,8 @@ def perform_request_display_public(uid,
                                                           ln)
 
     if of == 'hb':
-        # Infoscience modification
+        # Infoscience modification :
+        # Added langage choice to basket display
         body = webbasket_templates.tmpl_display(content=content, ln=ln)
         warnings = warnings_item + warnings_basket
         warnings_html = webbasket_templates.tmpl_warnings(warnings, ln)
@@ -1292,7 +1293,8 @@ def perform_request_search(uid,
                                      n=n,
                                      ln=ln)
 
-    # Infoscience modification
+    # Infoscience modification :
+    # Custom basket navigation
     personal_info = db.get_all_personal_basket_ids_and_names_by_topic(uid)
     group_info = db.get_all_group_basket_ids_and_names_by_group(uid)
     directory_box = webbasket_templates.tmpl_create_directory_box(None, None, (None, None), None,
@@ -2016,8 +2018,8 @@ def create_basket_navtrail(uid,
     @param ln: language"""
 
 
-    # Infoscience modification
-    # Custom basket viewer
+    # Infoscience modification :
+    # Custom basket display
 
     _ = gettext_set_language(ln)
     out = ''
@@ -2076,11 +2078,9 @@ def create_webbasket_navtrail(uid,
     @param bskid: selected basket id (int)
     @param ln: language"""
 
-    # Infoscience modification
-    # Custom basket viewer
-
     _ = gettext_set_language(ln)
 
+    # Infoscience modification
     out = '<li><a href="/youraccount/display?ln=%s">%s</a></li>' % (ln, _("My account"))
     out += '<li><a href="/yourbaskets/display?ln=%s">%s</a></li>' % (ln, _("My collections"))
 
@@ -2119,9 +2119,6 @@ def create_webbasket_navtrail(uid,
 
 def account_list_baskets(uid, ln=CFG_SITE_LANG):
     """Display baskets informations on account page"""
-    # Infoscience modification
-    # Custom names
-
     _ = gettext_set_language(ln)
     (personal, group, external) = db.count_baskets(uid)
     link = '<a href="%s">%s</a>'
@@ -2140,6 +2137,9 @@ def account_list_baskets(uid, ln=CFG_SITE_LANG):
     else:
         url = CFG_SITE_URL + '/yourbaskets/list_public_baskets?ln=' + ln
     external_text = link % (url, external_text)
+    # Infoscience modification:
+    # Custom names, from basket to collection
+
     out = _("You have %(x_nb_perso)s personal collections and are subscribed to %(x_nb_group)s group collections.") %\
         {'x_nb_perso': personal_text,
          'x_nb_group': group_text,

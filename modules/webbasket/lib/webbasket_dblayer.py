@@ -1141,8 +1141,8 @@ def get_all_group_basket_ids_and_names_by_group_for_add_to_list(uid):
     basket tuples have to evaluated to be converted to actual
     tuples."""
 
-    # Infoscience modification
-    # group by id, return the id
+    # Infoscience modification :
+    # group basket items by id
 
     query = """ SELECT      ug.id,
                             ug.name,
