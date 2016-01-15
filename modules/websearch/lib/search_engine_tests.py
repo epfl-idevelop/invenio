@@ -87,6 +87,8 @@ class TestStripAccents(unittest.TestCase):
                          search_engine.strip_accents('œ'))
         self.assertEqual("OE",
                          search_engine.strip_accents('Œ'))
+        self.assertEqual("ss",
+                         search_engine.strip_accents('ß'))
 
 class TestQueryParser(unittest.TestCase):
     """Test of search pattern (or query) parser."""
