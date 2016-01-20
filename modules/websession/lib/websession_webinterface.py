@@ -779,6 +779,8 @@ class WebInterfaceYourAccountPages(WebInterfaceDirectory):
                         lastupdated=__lastupdated__,
                         navmenuid='youraccount')
 
+
+
     def login(self, req, form):
         args = wash_urlargd(form, {
             'p_un': (str, None),
@@ -825,6 +827,8 @@ class WebInterfaceYourAccountPages(WebInterfaceDirectory):
                 pass
 
         if not CFG_EXTERNAL_AUTH_USING_SSO:
+            # Infoscience modification :
+            # Custom display for Tequila authentication
             if args['key']:
                 (iden, args['p_un'], args['p_pw'], msgcode) = webuser.loginUser(req, args['key'], '', "EPFL")
             else:            

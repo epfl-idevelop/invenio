@@ -105,6 +105,8 @@ elif CFG_OPENAIRE_SITE:
     "OpenAIRE": ExternalAuthRobot(enforce_external_nicknames=True, use_zlib=False),
     "ZOpenAIRE": ExternalAuthRobot(enforce_external_nicknames=True, use_zlib=True)
     }
+# Infoscience modification:
+# Use Tequila for authentication
 elif CFG_EPFL_SITE:
     from invenio.external_authentication_tequila import TequilaExternalAuth    
     CFG_EXTERNAL_AUTH_DEFAULT = 'EPFL'
@@ -123,6 +125,7 @@ else:
     "Robot": ExternalAuthRobot(enforce_external_nicknames=True, use_zlib=False),
     "ZRobot": ExternalAuthRobot(enforce_external_nicknames=True, use_zlib=True)
     }
+
 
 # default data for the add_default_settings function
 # Note: by default the definition is set to deny any. This won't be a problem
@@ -322,3 +325,4 @@ CFG_WEBACCESS_WARNING_MSGS = {
                                19: """The site is having troubles in sending you an email for confirming your email address. The error has been logged and will be taken care of as soon as possible.""",
                                20: """No roles are authorized to perform action %s with the given parameters."""
         }
+

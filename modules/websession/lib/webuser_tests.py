@@ -30,8 +30,10 @@ from invenio.dbquery import run_sql
 class IsUserSuperAdminTests(unittest.TestCase):
     """Test functions related to the isUserSuperAdmin function."""
     def setUp(self):
-        self.id_admin = run_sql('SELECT id FROM user WHERE nickname="admin"')[0][0]
-        self.id_hyde = run_sql('SELECT id FROM user WHERE nickname="hyde"')[0][0]
+        # admin user found on prod database
+        self.id_admin = run_sql('SELECT id FROM user WHERE id=172960442')[0][0]
+        # generic user found on prod database
+        self.id_hyde = run_sql('SELECT id FROM user WHERE id=1072220')[0][0]
 
     def test_isUserSuperAdmin_admin(self):
         """webuser - isUserSuperAdmin with admin"""

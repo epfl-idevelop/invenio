@@ -87,6 +87,8 @@ class TestStripAccents(unittest.TestCase):
                          search_engine.strip_accents('œ'))
         self.assertEqual("OE",
                          search_engine.strip_accents('Œ'))
+        self.assertEqual("ss",
+                         search_engine.strip_accents('ß'))
 
 class TestQueryParser(unittest.TestCase):
     """Test of search pattern (or query) parser."""
@@ -212,10 +214,12 @@ class TestQueryParser(unittest.TestCase):
         self._check("title:muon", '', None,
                     [['+', 'muon', 'title', 'w']])
 
-    def test_parsing_structured_query_existing_field(self):
-        "search engine - parsing structured query, existing field, but no word index"
-        self._check("division:IT", '', None,
-                    [['+', 'IT', 'division', 'a']])
+    # Infoscience modification
+    # We don't have any index without word on Infoscience, removing the test"
+    # def test_parsing_structured_query_existing_field(self):
+    #    "search engine - parsing structured query, existing field, but no word index"
+    #    self._check("affiliation:IT", '', None,
+    #                [['+', 'IT', 'affiliation', 'a']])
 
     def test_parsing_structured_query_nonexisting(self):
         "search engine - parsing structured query, non-existing index"
@@ -245,8 +249,8 @@ class TestQueryParser(unittest.TestCase):
 
     def test_parsing_structured_regexp_refersto_query(self):
         "search engine - parsing structured regexp refersto query"
-        self._check("refersto:/(one|two)/", '', None,
-                    [['+', '(one|two)', 'refersto', 'r']])
+        self._check("source:/(one|two)/", '', None,
+                    [['+', '(one|two)', 'source', 'r']])
 
     def test_parsing_combined_structured_query_in_a_field(self):
         "search engine - parsing structured query in a field"

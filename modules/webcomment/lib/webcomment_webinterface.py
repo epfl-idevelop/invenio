@@ -224,8 +224,8 @@ class WebInterfaceCommentsPages(WebInterfaceDirectory):
             title, description, keywords = websearch_templates.tmpl_record_page_header_content(req, self.recid, argd['ln'])
             navtrail = create_navtrail_links(cc=guess_primary_collection_of_a_record(self.recid), ln=argd['ln'])
 
-            # Infoscience modification
-            # Custom link presentation
+            # Infoscience modification :
+            # Custom navtrail presentation
             navtrail += '<li><a href="%s/record/%s?ln=%s">%s</a></li>'% (CFG_SITE_URL, self.recid, argd['ln'], title)
             navtrail += '<li class="last">%s</li>' % (self.discussion==1 and _("Reviews") or _("Comments"))
 
@@ -237,7 +237,6 @@ class WebInterfaceCommentsPages(WebInterfaceDirectory):
             <script src="%(CFG_SITE_URL)s/js/jquery.MultiFile.pack.js" type="text/javascript" language="javascript"></script>
             ''' % {'CFG_SITE_URL': CFG_SITE_URL}
 
-
             return pageheaderonly(title=title,
                         navtrail=navtrail,
                         uid=uid,
@@ -246,6 +245,8 @@ class WebInterfaceCommentsPages(WebInterfaceDirectory):
                         req=req,
                         language=argd['ln'],
                         navmenuid='search',
+                        # Infoscience modification :
+                        # Added user_info to search templates generator
                         navtrail_append_title_p=0) + \
                     websearch_templates.tmpl_search_pagestart(user_info, '', argd['ln']) + \
                     top + body + bottom + \
@@ -431,7 +432,7 @@ class WebInterfaceCommentsPages(WebInterfaceDirectory):
                                                                                                self.recid,
                                                                                                argd['ln'])
             navtrail = create_navtrail_links(cc=guess_primary_collection_of_a_record(self.recid))
-
+            # Infoscience modification
             navtrail += '<li><a href="%s/record/%s?ln=%s">%s</a></li>'% (CFG_SITE_URL, self.recid, argd['ln'], title)
             navtrail += '<li class="last">%s</li>' % (self.discussion==1 and _('Reviews') or _('Comments'))
 
