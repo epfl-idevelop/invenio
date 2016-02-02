@@ -37,6 +37,7 @@ pylib_DATA = websubmit_config.py websubmit_engine.py file.py \
              bibdocfile.py \
              bibdocfilecli.py \
              bibdocfile_regression_tests.py \
+             bibdocfile_tests.py \
              hocrlib.py \
              websubmit_file_metadata.py \
              websubmitadmincli.py
