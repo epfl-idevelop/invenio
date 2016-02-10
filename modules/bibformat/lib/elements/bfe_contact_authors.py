@@ -11,7 +11,7 @@ def format(bfo, ):
     TODO USE Knowledge base!!
     
     """ 
-    authors = bfo.fields("700__")
+    authors = bfo.fields("700__", escape=3)
     out = []
     for author in authors:
         name = author.get('a')

@@ -11,7 +11,7 @@ def format(bfo, kb_name, kb_url):
     @param kb_name a knowledge base use to translate the lab identifier
     @param kb_url a knowledge base use to translate the lab identifier
     """ 
-    lab_identifiers = bfo.fields("909C0p")
+    lab_identifiers = bfo.fields("909C0p", escape=3)
     out = []
     for lab in lab_identifiers:
         lab_name = bfo.kb(kb_name, lab)

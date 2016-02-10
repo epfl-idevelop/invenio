@@ -10,7 +10,7 @@ def format(bfo):
     """
     total_output = []
 
-    for award_field in bfo.fields('586__a'):
+    for award_field in bfo.fields('586__a', escape=3):
         if award_field and award_field.strip():
             if not ',' in award_field:
                 award_name = award_field.strip()

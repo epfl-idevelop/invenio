@@ -11,12 +11,12 @@ def format(bfo, separator=', ', hostname_class="", display_label="no", display_y
     """
     _ = gettext_set_language(bfo.lang)
     output = ''
-    year = bfo.field('260__c')
+    year = bfo.field('260__c', escape=3)
     if not year:
         return output
-    publisher = bfo.field('260__b')
+    publisher = bfo.field('260__b', escape=3)
     if publisher:
-        place = bfo.field('260__a')
+        place = bfo.field('260__a', escape=3)
         if place:
             output = '%s: %s, %s' % (place, publisher, year)
         else:

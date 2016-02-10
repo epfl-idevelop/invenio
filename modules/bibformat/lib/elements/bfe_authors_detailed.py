@@ -65,7 +65,7 @@ def format(bfo, limit_to="", print_links="no", author_class="", separator='; '):
     
     is_part_of_something = (len(bfo.fields('773__')) > 0)
     
-    authors = bfo.fields('700__') 
+    authors = bfo.fields('700__', escape=3)
     roles = {}
     for author in authors:
         if author.has_key('a') and author['a'].strip():
@@ -91,7 +91,7 @@ def format(bfo, limit_to="", print_links="no", author_class="", separator='; '):
     if 'translator' in roles.keys():
         output.append(render_translators(roles['translator'], print_links, author_class))
     
-    corporates = bfo.fields('710__a')
+    corporates = bfo.fields('710__a', escape=3)
     if len(corporates):
         output.append(render_corporates(corporates, print_links, author_class))
     if len(output) == 0:

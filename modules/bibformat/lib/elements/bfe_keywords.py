@@ -34,7 +34,7 @@ def format_element(bfo, keyword_prefix, keyword_suffix, separator=' ; ', link='y
     @param link: links the keywords if 'yes' (HTML links)
     """
 
-    keywords = bfo.fields('6531_a')
+    keywords = bfo.fields('6531_a', escape=3)
 
     if len(keywords) > 0:
         if link == 'yes':

@@ -32,7 +32,7 @@ def format_element(bfo, limit, separator=" ", link='yes'):
     @param limit: the max number of report numbers to display
     @param link: if 'yes', display report number with corresponding link when possible
     """
-    numbers = bfo.fields("088__a")
+    numbers = bfo.fields("088__a", escape=3)
 
     if limit.isdigit() and int(limit) <= len(numbers):
         numbers = numbers[:int(limit)]

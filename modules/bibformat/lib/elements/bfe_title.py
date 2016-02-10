@@ -50,14 +50,14 @@ def format_element(bfo, separator=" ", highlight='no', latex_to_html='no', link_
     """
     titles = []
 
-    title = bfo.field('245__a')
-    title_remainder = bfo.field('245__b')
-    edition_statement = bfo.field('250__a')
-    title_tome = bfo.field('245__n')
-    title_part = bfo.field('245__p')
+    title = bfo.field('245__a', escape=3)
+    title_remainder = bfo.field('245__b', escape=3)
+    edition_statement = bfo.field('250__a', escape=3)
+    title_tome = bfo.field('245__n', escape=3)
+    title_part = bfo.field('245__p', escape=3)
     
     #start with standard number if given
-    standard_number = bfo.field('740__a')
+    standard_number = bfo.field('740__a', escape=3)
     
     if len(standard_number) > 0:
         standard_number += ' - '
@@ -72,15 +72,15 @@ def format_element(bfo, separator=" ", highlight='no', latex_to_html='no', link_
             title += ": " + title_part
         titles.append( title )
 
-    title = bfo.field('246__a')
+    title = bfo.field('246__a', escape=3)
     if len(title) > 0:
         titles.append( title )
 
-    title = bfo.field('246__b')
+    title = bfo.field('246__b', escape=3)
     if len(title) > 0:
         titles.append( title )
 
-    title = bfo.field('246_1a')
+    title = bfo.field('246_1a', escape=3)
     if len(title) > 0:
         titles.append( title )
 

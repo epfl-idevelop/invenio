@@ -62,7 +62,7 @@ def format_element(bfo, prefix_en, prefix_fr, suffix_en, suffix_fr, limit, max_c
 
     abstract_en = []
     abstract_fr = []
-    for abstract in bfo.fields('520__'):
+    for abstract in bfo.fields('520__', escape=3):
         lang = abstract.get('9', 'eng')
         if lang == 'eng':
             abstract_en.append(abstract.get('a', ''))

@@ -4,7 +4,7 @@
 
 def format(bfo, css_class='infoscience_serie'):
     """ Prints the series field of a record. """
-    allseries = bfo.fields('440__')
+    allseries = bfo.fields('440__', escape=3)
     if len(allseries) > 0:
         series = allseries[0]
         name = series.get('a')

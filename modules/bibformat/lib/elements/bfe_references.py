@@ -12,11 +12,11 @@ def format(bfo):
     """
     _ = gettext_set_language(bfo.lang)
     output = []
-    epflid = bfo.field('037__a').strip()
+    epflid = bfo.field('037__a', escape=3).strip()
     if epflid:
         output.append(epflid)
     
-    doi = bfo.field('0247_a').strip()
+    doi = bfo.field('0247_a', escape=3).strip()
     if doi:
         doi_re = re.compile(r'(10.(\d)+/(\S)+)')
         if doi_re.search(doi):
