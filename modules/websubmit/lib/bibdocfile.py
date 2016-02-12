@@ -873,11 +873,12 @@ class BibRecDocs:
         """
         @return: the bibdoc with a particular docname associated with
         this recid"""
+        docname = normalize_docname(docname)
         for bibdoc in self.bibdocs:
-            if bibdoc.get_docname() == normalize_docname(docname):
+            if bibdoc.get_docname() == docname:
                 return bibdoc
         raise InvenioWebSubmitFileError, "Recid '%s' is not connected with " \
-            " docname '%s'" % (self.id, bibdoc.get_docname())
+            " docname '%s'" % (self.id, docname)
 
     def delete_bibdoc(self, docname):
         """
