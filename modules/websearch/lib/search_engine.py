@@ -3900,7 +3900,8 @@ def print_record(recID, format='hb', ot='', ln=CFG_SITE_LANG, decompress=zlib.de
                                                                          sf=sf,
                                                                          so=so,
                                                                          sp=sp,
-                                                                         rm=rm)
+                                                                         rm=rm,
+                                                                         user_info=user_info)
         return out
 
     # Old PHP BibFormat procedure for formatting
