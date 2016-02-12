@@ -1,2 +1,4 @@
-<name>EPFL HTML meta hidden</name>
-<description>Hide HTML Meta tags when the record is hidden</description>
+tag 980__c:
+HIDDEN --- EPFL_HTML_meta_hidden.bft
+
+default: EPFL_HTML_meta.bft
