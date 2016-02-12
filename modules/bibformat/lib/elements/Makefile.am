@@ -35,7 +35,8 @@ pylib_DATA = bfe_field.py bfe_title.py bfe_authors.py bfe_abstract.py bfe_affili
 	     bfe_contact_authors.py bfe_contact_lab.py bfe_defense.py bfe_doctype.py \
 	     bfe_editor.py bfe_epfl_fulltext.py bfe_epfl_icon.py bfe_hidden.py \
 	     bfe_host.py bfe_icon.py bfe_note.py bfe_patent.py bfe_series_intext.py \
-	     bfe_series.py bfe_thesis_info.py bfe_updated_date.py
+	     bfe_series.py bfe_thesis_info.py bfe_updated_date.py \
+	     bfe_meta.py, bfe_contact_box.py
 
 tmpdir = $(prefix)/var/tmp/tests_bibformat_elements
 

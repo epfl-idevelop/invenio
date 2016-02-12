@@ -41,7 +41,9 @@ etc_DATA = HB.bfo HC.bfo HD.bfo HP.bfo HX.bfo XM.bfo EXCEL.bfo \
 		SHAU.bfo \
 		SHRT.bfo \
 		SHTI.bfo \
-		SHTIAU.bfo
+		SHTIAU.bfo \
+		HDM.bfo \
+		FILLER_RESULT.bfo
 
 tmpdir = $(prefix)/var/tmp
 

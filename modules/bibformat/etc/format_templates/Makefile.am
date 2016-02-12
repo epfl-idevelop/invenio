@@ -90,7 +90,11 @@ etc_DATA = Default_HTML_captions.bft Picture_HTML_brief.bft \
 		HR_EPFL_default.bft \
 		HR_hidden.bft \
 		MATCH_EPFL_default.bft \
-		PREVIEW_EPFL_default.bft
+		PREVIEW_EPFL_default.bft \
+		Default_HTML_meta.bft \
+		FillerResult.bft \
+		EPFL_HTML_meta.bft \
+		EPFL_HTML_meta_hidden.bft
            
 
 tmpdir = $(prefix)/var/tmp
