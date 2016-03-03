@@ -348,8 +348,9 @@ class Template(invenio.websearch_templates.Template):
             <span class="label">%(more_news_label)s</span>
           </a>
         </div>
-        <a href="http://actu.epfl.ch/search/infoscience/">
+        <!--<a href="http://actu.epfl.ch/search/infoscience/">-->
       </div>
+%(maintenance_msg)s
 %(right_col)s
       """
         
@@ -360,10 +361,29 @@ class Template(invenio.websearch_templates.Template):
                        'resource_label': _("Access to the %s documentary resources") % self.tmpl_nice_number_via_locale(resource.nbrecs, ln),
                        'news_feed': news_feed,
                        'more_news_label': _('More news'),
+                       'maintenance_msg': self.tmpl_maintenance_msg(ln),
                        'right_col': self.tmpl_default_right_col(ln),
                        'feed': self.build_rss_url({'c': 'Infoscience', 'ln': ln}),
                        'feed_label': 'RSS',
                        }
+
+    def tmpl_maintenance_msg(self, ln):
+        # desactivate but keep here for future use
+        return ""
+        _ = gettext_set_language(ln)
+        out = """
+<div class="right-col">
+    <div class="box box-flat-panel home-navpanel" style="background-color: #fec;">
+        <h3 style="color: black">&#9888; Maintenance</h3>
+        <p style="color: black">%(msg)s</p>
+    </div>
+</div>"""
+        return out % {
+            'msg': ('Infoscience will not be available due to server maintenance on March 2 between 7:30am and 8am.' \
+                    if ln == 'en' else \
+                    'Infoscience sera indisponible pour des raisons de maintenance des serveurs le mercredi 2 mars entre 7h30 et 8h00.'
+                    )
+        }
 
     def tmpl_default_right_col(self, ln):
         """EPFL => right column """
