@@ -20,14 +20,14 @@ def format(bfo, brief="no"):
         #return '(%s)' % bfo.field('260__c')
         return ''
     
-    thesis_number = bfo.field('088__a', escape=3)
+    thesis_number = bfo.field('088__a', escape=2)
     if brief != "yes":
         output = _("Thèse École polytechnique fédérale de Lausanne EPFL, n° %(number)s (%(year)s)")
         output %= {'number': thesis_number,
                    'year': bfo.field('920__b')}
     else:
         return "Thèse EPFL, n° %(number)s (%(year)s)" % {'number': thesis_number,
-                                                         'year': bfo.field('920__b', escape=3)}
+                                                         'year': bfo.field('920__b', escape=2)}
         
     output += '<br />'
     hierarchy = []

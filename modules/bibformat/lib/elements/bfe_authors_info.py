@@ -86,8 +86,8 @@ def format_element(bfo):
     output = []
     
     all_authors = []
-    authors_1 = bfo.fields('100__', escape=3)
-    authors_2 = bfo.fields('700__', escape=3)
+    authors_1 = bfo.fields('100__', escape=2)
+    authors_2 = bfo.fields('700__', escape=2)
 
     all_authors.extend(authors_1)
     all_authors.extend(authors_2)

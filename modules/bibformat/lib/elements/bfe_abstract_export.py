@@ -57,19 +57,19 @@ def format(bfo, limit, max_chars, extension="[...] ", languages='en', latex="no"
     out = ''
     abstract_en = []
     abstract_fr = []
-    for abstract in bfo.fields('520__', escape=3):
+    for abstract in bfo.fields('520__', escape=2):
         lang = abstract.get('9', 'eng')
         if lang == 'eng':
             abstract_en.append(abstract.get('a', ''))
         else:
             abstract_fr.append(abstract.get('a', ''))
     
-    #abstract_en = bfo.fields('520__a', escape=3)
-    #abstract_en.extend(bfo.fields('520__b', escape=3))
+    #abstract_en = bfo.fields('520__a', escape=2)
+    #abstract_en.extend(bfo.fields('520__b', escape=2))
     abstract_en = "<br />".join(abstract_en)
 
-    #abstract_fr = bfo.fields('590__a', escape=3)
-    #abstract_fr.extend(bfo.fields('590__b', escape=3))
+    #abstract_fr = bfo.fields('590__a', escape=2)
+    #abstract_fr.extend(bfo.fields('590__b', escape=2))
     abstract_fr = "<br />".join(abstract_fr)
 
     if limit != "" and limit.isdigit() and int(limit) > 0:

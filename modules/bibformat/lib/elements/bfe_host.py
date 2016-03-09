@@ -14,16 +14,16 @@ def format(bfo, separator=', ', hostname_class="", display_label="no", display_i
     """
     _ = gettext_set_language(bfo.lang)
     output = []
-    if bfo.field('773__p') and bfo.field('773__p', escape=3).strip():
-        journal_name = bfo.field('773__p', escape=3).strip()
+    if bfo.field('773__p') and bfo.field('773__p', escape=2).strip():
+        journal_name = bfo.field('773__p', escape=2).strip()
         if display_identifiers == 'yes':
-            if bfo.field('773__x', escape=3):
+            if bfo.field('773__x', escape=2):
                 # ISSN provided
-                issn = bfo.field('773__x', escape=3)
+                issn = bfo.field('773__x', escape=2)
                 journal_name = '%s (ISSN: <a href="http://www.sherpa.ac.uk/romeo/search.php?search=%s&jrule=ISSN">%s</a>)' % (journal_name, issn, issn)
-            if bfo.field('773__z', escape=3):
+            if bfo.field('773__z', escape=2):
                 # ISBN provided
-                journal_name = '%s (ISBN: %s)' % (journal_name,  bfo.field('773__z', escape=3))
+                journal_name = '%s (ISBN: %s)' % (journal_name,  bfo.field('773__z', escape=2))
     
         status = bfo.field('973__s')
         if display_label == 'yes':
@@ -42,13 +42,13 @@ def format(bfo, separator=', ', hostname_class="", display_label="no", display_i
                 output.append(emphasize("in " + bfo.field('773__p').strip(), hostname_class))
 
         if bfo.field('773__v') and bfo.field('773__v').strip():
-            output.append('vol.&nbsp;' + bfo.field('773__v', escape=3))
+            output.append('vol.&nbsp;' + bfo.field('773__v', escape=2))
         
         if bfo.field('773__n') and bfo.field('773__n').strip():
-            output.append('num.&nbsp;' + bfo.field('773__n', escape=3))
+            output.append('num.&nbsp;' + bfo.field('773__n', escape=2))
         
         if bfo.field('773__c') and bfo.field('773__c').strip():
-            output.append('p.&nbsp;' + bfo.field('773__c', escape=3))
+            output.append('p.&nbsp;' + bfo.field('773__c', escape=2))
         
     return separator.join(output)
         

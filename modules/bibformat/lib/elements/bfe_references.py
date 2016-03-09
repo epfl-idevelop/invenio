@@ -12,11 +12,11 @@ def format(bfo):
     """
     _ = gettext_set_language(bfo.lang)
     output = []
-    epflid = bfo.field('037__a', escape=3).strip()
+    epflid = bfo.field('037__a', escape=2).strip()
     if epflid:
         output.append(epflid)
     
-    doi = bfo.field('0247_a', escape=3).strip()
+    doi = bfo.field('0247_a', escape=2).strip()
     if doi:
         doi_re = re.compile(r'(10.(\d)+/(\S)+)')
         if doi_re.search(doi):
@@ -25,9 +25,9 @@ def format(bfo):
     # show patent search ?
     if bfo.field('013__a'):
         if bfo.lang == 'fr':
-            url = "http://worldwide.espacenet.com/searchResults?compact=false&PN=%s&ST=advanced&locale=fr_EP&DB=EPODOC" % str(bfo.field('013__a'))
+            url = "http://worldwide.espacenet.com/searchResults?compact=false&PN=%s&ST=advanced&locale=fr_EP&DB=EPODOC" % str(bfo.field('013__a', escape=2))
         else:
-            url = "http://worldwide.espacenet.com/searchResults?compact=false&PN=%s&ST=advanced&locale=en_EP&DB=EPODOC" % str(bfo.field('013__a'))
+            url = "http://worldwide.espacenet.com/searchResults?compact=false&PN=%s&ST=advanced&locale=en_EP&DB=EPODOC" % str(bfo.field('013__a', escape=2))
         output.append('<a href="%s" target="_blank">%s</a>' % (url, _("Search for this record at the European Patent Office")))
 
     external = bfo.fields('035__a')

@@ -59,10 +59,10 @@ def test():
 
 
 def thesis_link(bfo):
-    thesis_id = bfo.field('088__a', escape=3)
-    thesis_title = bfo.field('245__a', escape=3)
-    thesis_year = bfo.field('260__c', escape=3)
-    thesis_author = bfo.field('700__a', escape=3)
+    thesis_id = bfo.field('088__a', escape=2)
+    thesis_title = bfo.field('245__a', escape=2)
+    thesis_year = bfo.field('260__c', escape=2)
+    thesis_author = bfo.field('700__a', escape=2)
     fulltext_name = 'n/a'
     for url in bfo.fields("8564_u"):
         (dummy, host, path, dummy, params, dummy) = urlparse(url)
