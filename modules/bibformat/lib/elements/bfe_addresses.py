@@ -33,7 +33,7 @@ def format_element(bfo, separator="; ", print_link="yes"):
     @param print_link: Links the addresses to search engine (HTML links) if 'yes'
     """
 
-    addresses = bfo.fields('270')
+    addresses = bfo.fields('270', escape=2)
     list_addresses = []
     if print_link.lower() == 'yes':
         for address in addresses:

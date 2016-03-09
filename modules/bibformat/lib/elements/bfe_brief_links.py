@@ -21,7 +21,7 @@ def can_edit(bfo):
         return False
     
     sciper = user_info.get('external_uniqueidentifier', [None])[0]
-    labs = bfo.fields("909C0p")
+    labs = bfo.fields("909C0p", escape=2)
     # member of labs ?
     for lab in labs:
         (auth_code, auth_message) = acc_authorize_action(user_info, 'submit_epfl', categ=lab)
@@ -30,11 +30,11 @@ def can_edit(bfo):
         
     # author of publication ?
     if sciper:
-        scipers = bfo.fields('700__g')
+        scipers = bfo.fields('700__g', escape=2)
         if sciper in scipers:
             return True
         # original submitter ?
-        scipers = bfo.fields('917Z8x')
+        scipers = bfo.fields('917Z8x', escape=2)
         if sciper in scipers:
             return True
         

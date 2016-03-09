@@ -13,7 +13,7 @@ def format(bfo, short="no", add_link_to_epo=False):
     #  return "Pending patent"
     if short != "no":
         patent_to_print = ""
-        patents = bfo.fields('013')
+        patents = bfo.fields('013', escape=2)
         if patents:
             # return only the latest
             for patent in patents:
@@ -23,7 +23,7 @@ def format(bfo, short="no", add_link_to_epo=False):
         return
 
     url_to_espacenet = "http://worldwide.espacenet.com/searchResults?compact=false&PN=%s&ST=advanced&locale=en_EP&DB=EPODOC"
-    patents = bfo.fields('013')
+    patents = bfo.fields('013', escape=2)
 
     if bfo.lang != 'en':
         patent_text = 'Numéro de brevet'

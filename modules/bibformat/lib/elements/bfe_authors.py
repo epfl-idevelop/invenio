@@ -37,8 +37,8 @@ def format_element(bfo, limit, separator='; ',
     output = []
     
     all_authors = []
-    authors_1 = bfo.fields('100__')
-    authors_2 = bfo.fields('700__')
+    authors_1 = bfo.fields('100__', escape=2)
+    authors_2 = bfo.fields('700__', escape=2)
 
     all_authors.extend(authors_1)
     all_authors.extend(authors_2)
@@ -64,7 +64,7 @@ def format_element(bfo, limit, separator='; ',
                                      extension, print_links, print_affiliations, 
                                      affiliation_prefix, affiliation_suffix, 
                                      interactive, highlight, ""))
-    corporates = bfo.fields('710__a')
+    corporates = bfo.fields('710__a', escape=2)
     if len(corporates):
         output.append(render_corporates(bfo, corporates, separator, print_links))
 

@@ -8,7 +8,7 @@ def format(bfo):
 
     """
     output = ''
-    for note in bfo.fields('500__a'):
+    for note in bfo.fields('500__a', escape=2):
         if note.strip():
             output += '<p>%s</p>' % note.strip()
     

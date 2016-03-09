@@ -27,7 +27,7 @@ def format_element(bfo, style='record-illustration-enac'):
     @style: css class to appy
     """
     img = """<img src="%s" class="%s" />"""
-    
+
     urls = bfo.fields("8564_")
     
     icons_urls = []

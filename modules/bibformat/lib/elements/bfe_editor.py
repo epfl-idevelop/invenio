@@ -32,9 +32,9 @@ def format(bfo, style_status='', style_text='', separator=', '):
     """
     output = []    
     if bfo.field('260__b') and bfo.field('260__b').strip():
-        output.append(bfo.field('260__b'))
+        output.append(bfo.field('260__b', escape=2))
     if bfo.field('260__a') and bfo.field('260__a').strip():
-        output.append(bfo.field('260__a'))
+        output.append(bfo.field('260__a', escape=2))
 #    if bfo.field('260__c') and bfo.field('260__c').strip():
 #        output.append(bfo.field('260__c'))                
     return separator.join(output)

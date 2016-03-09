@@ -33,8 +33,8 @@ def format_element(bfo, limit, separator=" ", extension=" etc.", link='yes'):
     @param extension: a prefix printed when limit param is reached
     @param link: if 'yes', display report number with corresponding link when possible
     """
-    numbers = bfo.fields("037__a")
-    numbers.extend(bfo.fields("088__a"))
+    numbers = bfo.fields("037__a", escape=2)
+    numbers.extend(bfo.fields("088__a", escape=2))
 
     if limit.isdigit():
         limit_as_int = int(limit)

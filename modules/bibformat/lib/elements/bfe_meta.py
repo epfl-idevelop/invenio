@@ -78,14 +78,14 @@ def format_element(bfo, name, tag_name='', tag = '', respect_file_visiblity=Fals
             if marctag == '700__a' and author_only:
                 # authors
                 # no editor or director
-                authors_info = bfo.fields('700',escape=escape)
+                authors_info = bfo.fields('700',escape=2)
                 for author_info in authors_info:
                     if not author_info.has_key('e'):
                         values.append(author_info['a'])
             # doi                        
             elif marctag == '0247_a':
                 # dont show anything that is not an doi
-                doi_infos =  bfo.fields('0247_',escape=escape)
+                doi_infos =  bfo.fields('0247_',escape=2)
                 for doi_info in doi_infos:
                     if doi_info.has_key('2'):
                         if doi_info['2'] == 'doi':
@@ -94,7 +94,7 @@ def format_element(bfo, name, tag_name='', tag = '', respect_file_visiblity=Fals
                         values.append(doi_info['a'])
             ####
             else:
-                values.append(bfo.fields(marctag,escape=escape))
+                values.append(bfo.fields(marctag,escape=2))
 
     out = []
     for value in values:

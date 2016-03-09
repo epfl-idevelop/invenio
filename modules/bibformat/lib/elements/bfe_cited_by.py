@@ -31,8 +31,8 @@ def format_element(bfo, separator='; '):
     from urllib import quote
     from invenio.config import CFG_SITE_URL
 
-    primary_report_numbers = bfo.fields('037__a')
-    additional_report_numbers = bfo.fields('088__a')
+    primary_report_numbers = bfo.fields('037__a', escape=2)
+    additional_report_numbers = bfo.fields('088__a', escape=2)
 
     primary_citations = ['<a href="' + CFG_SITE_URL + \
                          '/search?f=reference&amp;p=' + quote(report_number) + \
