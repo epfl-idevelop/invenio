@@ -1015,7 +1015,10 @@ def get_user_preferences(uid):
 
 def set_user_preferences(uid, pref):
     assert(type(pref) == type({}))
-    run_sql("UPDATE user SET settings=%s WHERE id=%s",
+    # _binary : avoid 'Warning: Invalid utf8 character string' exceptions
+    # with debug activated
+    # https://bugs.mysql.com/bug.php?id=79317
+    run_sql("UPDATE user SET settings=_binary %s WHERE id=%s",
             (serialize_via_marshal(pref), uid))
 
 def get_default_user_preferences():
