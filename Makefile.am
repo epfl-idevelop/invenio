@@ -266,7 +266,7 @@ install-django-tequila:
 	@echo "***********************************************************"
 	@echo "** Installing Django Tequila, please wait...             **"
 	@echo "***********************************************************"
-	pip install -e 'svn+https://svn.epfl.ch/svn/django-tools/trunk/django-tequila#egg=django-tequila'
+	pip install --upgrade django-tequila==2.1.1
 	@echo "***********************************************************"
 	@echo "** The Django Tequila has been successfully installed.   **"
 	@echo "***********************************************************"
