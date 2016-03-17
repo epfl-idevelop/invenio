@@ -806,7 +806,7 @@ class WebInterfaceYourAccountPages(WebInterfaceDirectory):
                                                navmenuid='youraccount')
 
         if not args['key']:
-            redirect_url = CFG_SITE_URL + '/youraccount/login%s' % make_canonical_urlargd({'ln' : args['ln'], 'referer' : args['referer']}, {})
+            redirect_url = CFG_SITE_SECURE_URL + '/youraccount/login%s' % make_canonical_urlargd({'ln' : args['ln'], 'referer' : args['referer']}, {})
             
             tequila_client = TequilaClient(EPFLConfig(allow_guests=True,
                                                       redirect_to = redirect_url,
