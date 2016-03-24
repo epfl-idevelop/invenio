@@ -639,14 +639,14 @@ def epfl_header(ln):
                   <h3><a href="http://working.epfl.ch/portail-collaborateurs">Portail Collaborateurs</a></h3>
                   <ul>
                     <li><a href="http://rh.epfl.ch">Ressources humaines</a></li>
-                    <li><a href="http://help.epfl.ch/aide">(Help)</a></li>
+                    <li><a href="https://polylex.epfl.ch/page-26060-fr.html">Polylex: lois, directives</a></li>
                   </ul>
                 </li>
                 <li class="group-2-cols">
                   <h3><a href="http://entreprises.epfl.ch/fr">Portail Entreprises</a></h3>
                   <ul>
                     <li><a href="http://vpiv.epfl.ch/fr">Innovation &amp; valorisation</a></li>
-                    <li><a href="http://vpiv.epfl.ch/innovationpark">EPFL Innovation Park</a></li>
+                    <li><a href="http://vpiv.epfl.ch/innovationpark_fr">EPFL Innovation Park</a></li>
                   </ul>
                 </li>
                 <li class="group-2-cols last">
@@ -897,14 +897,14 @@ def epfl_header(ln):
                   <h3><a href="http://working.epfl.ch/staff-portal">Staff portal</a></h3>
                   <ul>
                     <li><a href="http://rh.epfl.ch">Human resources</a></li>
-                    <li><a href="http://help.epfl.ch/help">(Help)</a></li>
+                    <li><a href="http://polylex.epfl.ch/page-26060-en.html">Polylex: laws, directives</a></li>
                   </ul>
                 </li>
                 <li class="group-2-cols">
                   <h3><a href="http://entreprises.epfl.ch/business">Business portal</a></h3>
                   <ul>
                     <li><a href="http://vpiv.epfl.ch/en">Innovation &amp; Tech Transfer</a></li>
-                    <li><a href="http://vpiv.epfl.ch/innovationparkengl">EPFL Innovation Park</a></li>
+                    <li><a href="http://vpiv.epfl.ch/innovationpark">EPFL Innovation Park</a></li>
                   </ul>
                 </li>
                 <li class="group-2-cols last">
