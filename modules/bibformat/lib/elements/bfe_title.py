@@ -1,6 +1,6 @@
 """BibFormat element - Prints titles
 """
-import cgi
+#import cgi
 
 from invenio import bibformat_utils
 from invenio.bibdocfile import BibRecDocs
@@ -83,8 +83,6 @@ def format_element(bfo, separator=" ", highlight='no', latex_to_html='no', link_
     title = bfo.field('246_1a', escape=2)
     if len(title) > 0:
         titles.append( title )
-
-    titles = [cgi.escape(x) for x in titles]
 
     if highlight == 'yes':
         titles = [bibformat_utils.highlight(x, bfo.search_pattern) for x in titles]
