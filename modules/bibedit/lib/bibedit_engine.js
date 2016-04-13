@@ -246,11 +246,9 @@ function initMisc(){
   /*
    * Miscellaneous initialization operations.
    */
-  // CERN allows for capital MARC indicators.
-  if (gCERN_SITE){
-    validMARC.reIndicator1 = /[\dA-Za-z]{1}/;
-    validMARC.reIndicator2 = /[\dA-Za-z]{1}/;
-  }
+  // INC0084683 : allow both lower- and uppercase indicators
+  validMARC.reIndicator1 = /[\dA-Za-z]{1}/;
+  validMARC.reIndicator2 = /[\dA-Za-z]{1}/;
 
   // Warn user if BibEdit is being closed while a record is open.
   window.onbeforeunload = function(){
