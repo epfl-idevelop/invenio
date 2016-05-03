@@ -308,7 +308,7 @@ class Template(invenio.websearch_templates.Template):
 
         _ = gettext_set_language(ln)
         try:
-            f = FancyURLopener().open('http://actu.epfl.ch/webservice?channel=79&lang=%s&template=4' % ln)
+            f = FancyURLopener().open('https://actu.epfl.ch/webservice?channel=79&lang=%s&template=4' % ln)
             news_feed = f.read()
         except:
             news_feed = ''
