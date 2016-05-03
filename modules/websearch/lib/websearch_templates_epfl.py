@@ -327,14 +327,14 @@ class Template(invenio.websearch_templates.Template):
 %(searchfor)s
         <div class="collections">
           <div class="button showall">
-            <a href="http://infoscience.epfl.ch/collection/Infoscience/Research?ln=%(ln)s">
+            <a href="//infoscience.epfl.ch/collection/Infoscience/Research?ln=%(ln)s">
               <button class="icon"></button>
               <span class="label">%(research_label)s</span>
             </a>
           </div>
           <div class="clear"></div>
           <div class="button showall">
-            <a href="http://infoscience.epfl.ch/collection/Infoscience/Resource?ln=%(ln)s">
+            <a href="//infoscience.epfl.ch/collection/Infoscience/Resource?ln=%(ln)s">
               <button class="icon"></button>
               <span class="label">%(resource_label)s</span>
             </a>
