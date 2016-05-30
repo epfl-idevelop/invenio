@@ -224,11 +224,11 @@ class SimulatedModPythonRequest(object):
                         self.__write(chunk[:the_len])
                         break
         except IOError, err:
-            if "failed to write data" in str(err) or "client connection closed" in str(err):
-                ## Let's just log this exception without alerting the admin:
-                register_exception(req=self)
-            else:
+            # Infoscience modification : dont log IOError from connection closed,
+            # there is too much everyday (like one every second)
+            if not "failed to write data" in str(err) and not "client connection closed" in str(err):
                 raise
+
         return self.__bytes_sent
 
     def set_content_length(self, content_length):
