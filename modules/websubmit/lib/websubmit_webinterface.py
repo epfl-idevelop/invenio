@@ -182,6 +182,10 @@ class WebInterfaceFilesPages(WebInterfaceDirectory):
 
             if version != 'all':
                 # search this filename in the complete list of files
+                # Infoscience modification : dont generate an error if mutliple format
+                # for the same name
+                has_error = False
+
                 for doc in bibarchive.list_bibdocs():
                     if docname == doc.get_docname():
                         try:
@@ -216,7 +220,10 @@ class WebInterfaceFilesPages(WebInterfaceDirectory):
                                 warn = print_warning(_("The requested file is hidden and can not be accessed."))
 
                         except InvenioWebSubmitFileError, msg:
-                            register_exception(req=req, alert_admin=True)
+                            has_error = True
+
+                if has_error:
+                    register_exception(req=req, alert_admin=True)
 
             if docname and format and not warn:
                 req.status = apache.HTTP_NOT_FOUND
