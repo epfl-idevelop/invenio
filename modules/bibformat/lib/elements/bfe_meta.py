@@ -80,7 +80,7 @@ def format_element(bfo, name, tag_name='', tag = '', respect_file_visiblity=Fals
                 # no editor or director
                 authors_info = bfo.fields('700',escape=2)
                 for author_info in authors_info:
-                    if not author_info.has_key('e'):
+                    if author_info.has_key('a') and not author_info.has_key('e'):
                         values.append(author_info['a'])
             # doi                        
             elif marctag == '0247_a':
