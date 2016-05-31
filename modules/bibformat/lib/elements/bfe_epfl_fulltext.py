@@ -92,7 +92,12 @@ def get_files(bfo):
 
     """
     _ = gettext_set_language(bfo.lang)
-    bibarchive = BibRecDocs(bfo.recID)
+    try:
+        bibarchive = BibRecDocs(bfo.recID)
+    except ValueError:
+        # sometimes recID is no an integer...
+        # so don't print anything if this is the case
+        return ([], [], [])
     
     main_documents = []
     additional_documents = []

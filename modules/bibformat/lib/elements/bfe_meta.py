@@ -87,10 +87,7 @@ def format_element(bfo, name, tag_name='', tag = '', respect_file_visiblity=Fals
                 # dont show anything that is not an doi
                 doi_infos =  bfo.fields('0247_',escape=2)
                 for doi_info in doi_infos:
-                    if doi_info.has_key('2'):
-                        if doi_info['2'] == 'doi':
-                            values.append(doi_info['a'])
-                    else:
+                    if doi_info.has_key('a'):
                         values.append(doi_info['a'])
             ####
             else:
