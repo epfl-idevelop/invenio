@@ -139,10 +139,9 @@ class SimulatedModPythonRequest(object):
             try:
                 self.__write(self.__buffer)
             except IOError, err:
-                if "failed to write data" in str(err) or "client connection closed" in str(err):
-                    ## Let's just log this exception without alerting the admin:
-                    register_exception(req=self)
-                else:
+                # Infoscience modification : dont log IOError from connection closed,
+                # there is too much everyday (like one every second)
+                if not "failed to write data" in str(err) and not "client connection closed" in str(err):
                     raise
             self.__buffer = ''
 
