@@ -143,43 +143,8 @@ install-jquery-plugins:
 	@echo "***********************************************************"
 	mkdir -p ${prefix}/var/www/js && \
 	mkdir -p ${prefix}/var/www/img && \
-	(cd ${prefix}/var/www/js && \
-	wget http://jqueryjs.googlecode.com/files/jquery-1.3.1.min.js && \
-	mv jquery-1.3.1.min.js jquery.min.js && \
-	wget http://jquery-ui.googlecode.com/svn/tags/latest/ui/minified/jquery.effects.core.min.js && \
-	wget http://jquery-ui.googlecode.com/svn/tags/latest/ui/minified/jquery.effects.highlight.min.js && \
-	wget http://jquery-ui.googlecode.com/svn/tags/1.7.3/ui/minified/ui.slider.min.js && \
-	wget http://jquery-ui.googlecode.com/svn/tags/1.7.3/ui/minified/ui.sortable.min.js && \
-	wget http://www.appelsiini.net/download/jquery.jeditable.mini.js && \
-	wget https://raw.github.com/malsup/form/master/jquery.form.js --no-check-certificate && \
-	wget http://jquery-multifile-plugin.googlecode.com/svn/trunk/jquery.MultiFile.pack.js && \
-	wget https://raw.github.com/akaihola/jquery-autogrow/master/jquery.autogrow.js --no-check-certificate && \
-	wget -O jquery.tablesorter.zip http://invenio-software.org/download/jquery/jquery.tablesorter.20111208.zip && \
-	wget http://invenio-software.org/download/jquery/uploadify-v2.1.4.zip -O uploadify.zip && \
-	unzip jquery.tablesorter.zip -d tablesorter && \
-	rm jquery.tablesorter.zip && \
-	unzip -u uploadify.zip -d uploadify && \
-	mv uploadify/swfobject.js ./ && \
-	mv uploadify/cancel.png uploadify/uploadify.css uploadify/uploadify.allglyphs.swf uploadify/uploadify.fla uploadify/uploadify.swf ../img/ && \
-	mv uploadify/jquery.uploadify.v2.1.4.min.js ./jquery.uploadify.min.js && \
-	rm uploadify.zip && rm -r uploadify && \
-	wget --no-check-certificate https://github.com/douglascrockford/JSON-js/raw/master/json2.js && \
-	wget http://jquery-ui.googlecode.com/svn/tags/1.7.3/ui/minified/ui.datepicker.min.js && \
-	wget -O jquery.hotkeys.min.js http://js-hotkeys.googlecode.com/files/jquery.hotkeys-0.7.8-packed.js && \
-	wget http://invenio-software.org/download/jquery/jquery.treeview.zip && \
-	unzip jquery.treeview.zip -d jquery-treeview && \
-	rm jquery.treeview.zip && \
-	wget http://invenio-software.org/download/jquery/v1.5/js/jquery.ajaxPager.js && \
-	wget http://invenio-software.org/download/jquery/jquery-ui-1.7.3.custom.zip && \
-	unzip jquery-ui-1.7.3.custom.zip development-bundle/ui/ui.core.js && \
-	mv development-bundle/ui/ui.core.js ui.core.js && \
-	rm -rf development-bundle && \
-	rm jquery-ui-1.7.3.custom.zip && \
-	cd ${prefix}/var/www/img && \
-	wget -r -np -nH --cut-dirs=4 -A "png,css" -P jquery-ui/themes http://jquery-ui.googlecode.com/svn/tags/1.7.3/themes/base/ && \
-	wget http://jquery-ui.googlecode.com/svn/tags/1.7.3/themes/redmond/jquery-ui.css && \
-	wget http://jquery-ui.googlecode.com/svn/tags/1.7.3/demos/images/calendar.gif && \
-	wget -r -np -nH --cut-dirs=5 -A "png" http://jquery-ui.googlecode.com/svn/tags/1.7.3/themes/redmond/images/)
+	cp -R $(top_srcdir)/infoscience/var_www_js/* ${prefix}/var/www/js && \
+	cp -R $(top_srcdir)/infoscience/var_www_img/* ${prefix}/var/www/img
 	@echo "***********************************************************"
 	@echo "** The jQuery plugins were successfully installed.       **"
 	@echo "***********************************************************"
