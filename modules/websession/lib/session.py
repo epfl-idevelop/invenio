@@ -363,7 +363,10 @@ class InvenioSession(dict):
         """
         Perform the database session cleanup.
         """
-        def session_cleanup():
+        # Infoscience modification :
+        # add an unused parameter, as this is the signature of the caller :
+        # modules/webstyle/lib/webinterface_handler_wsgi.py ln 399
+        def session_cleanup(data=None):
             """
             Session cleanup procedure which to be executed at the end
             of the request handling.
