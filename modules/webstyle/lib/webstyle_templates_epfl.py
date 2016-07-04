@@ -639,7 +639,7 @@ def epfl_header(ln):
                   <h3><a href="http://working.epfl.ch/portail-collaborateurs">Portail Collaborateurs</a></h3>
                   <ul>
                     <li><a href="http://rh.epfl.ch">Ressources humaines</a></li>
-                    <li><a href="https://polylex.epfl.ch/page-26060-fr.html">Polylex: lois, directives</a></li>
+                    <li><a href="http://polylex.epfl.ch/page-26060-fr.html">Polylex: lois, directives</a></li>
                   </ul>
                 </li>
                 <li class="group-2-cols">
@@ -652,14 +652,14 @@ def epfl_header(ln):
                 <li class="group-2-cols last">
                   <h3><a href="http://medias.epfl.ch/fr">Portail Médias</a></h3>
                   <ul>
-                    <li><a href="http://actu.epfl.ch/search/mediacom/?keywords=&date_filter=all&projects=190&search=Rechercher">Communiqués de presse</a>, <a href="http://medias.epfl.ch/flash">Flash</a></li>
+                    <li><a href="http://actu.epfl.ch/search/mediacom/?keywords=&amp;date_filter=all&amp;projects=190&amp;search=Rechercher">Communiqués de presse</a>, <a href="http://medias.epfl.ch/flash">Flash</a></li>
                     <li><a href="http://mediatheque.epfl.ch/">Banque d'images</a></li>
                   </ul>
                 </li>
                 <li class="group-2-cols">
                   <h3><a href="http://teaching.epfl.ch/fr">Portail Enseignants</a></h3>
                   <ul>
-                    <li>Gestion des <a href="http://teaching.epfl.ch/page-53543-fr.html">cours</a> et des <a href="http://teaching.epfl.ch/page-16697-fr.html">étudiants</a></li>
+                    <li>Gestion des <a href="http://teaching.epfl.ch/cms/site/teaching/lang/fr/preparer-un-cours_1">cours</a> et des <a href="http://teaching.epfl.ch/mes-etudiants_1">étudiants</a></li>
                     <li><a href="http://gymnases.epfl.ch/page-92859-fr.html">Interface Gymnases</a></li>
                   </ul>
                 </li>
@@ -726,14 +726,15 @@ def epfl_header(ln):
                   <ul>
                     <li><a href="http://cdm.epfl.ch/page-116734-fr.html">Management de la Technologie</a></li>
                     <li><a href="http://cdm.epfl.ch/page-116778-fr.html">Technologie et politiques publiques</a></li>
-                    <li><a href="http://sfi.epfl.ch">Ingénierie financière</a>
+                    <li><a href="http://sfi.epfl.ch">Ingénierie financière</a></li>
                   </ul>
                 </li>
                 <li class="group-2-cols" style="clear:left;">
                   <h3><a href="http://cdh.epfl.ch/fr" class="cdh">Collège des Humanités <acronym title="Collège des Humanités">CDH</acronym></a></h3>
                   <ul>
                     <li><a href="http://cdh.epfl.ch/shs">Sciences humaines et sociales</a></li>
-                    <li><a href="http://cdh.epfl.ch/fr/area-and-cultural-studies">Area and Cultural Studies</a></li>
+                    <li><a href="http://iags.epfl.ch">Area and Global Studies</a></li>
+                    <li><a href="http://dhi.epfl.ch/home-fr">Digital Humanities</a></li>
                   </ul>
                 </li>
               </ul>
@@ -910,15 +911,15 @@ def epfl_header(ln):
                 <li class="group-2-cols last">
                   <h3><a href="http://medias.epfl.ch/media-and-communications">Mediacorner</a></h3>
                   <ul>
-                    <li><a href="http://actu.epfl.ch/search/mediacom/?keywords=&date_filter=all&projects=190&search=Rechercher">Press releases</a>, <a href="http://medias.epfl.ch/flash-newspaper">Flash</a></li>
+                    <li><a href="http://actu.epfl.ch/search/mediacom/?keywords=&amp;date_filter=all&amp;projects=190&amp;search=Rechercher">Press releases</a>, <a href="http://medias.epfl.ch/flash-newspaper">Flash</a></li>
                     <li><a href="http://mediatheque.epfl.ch/">Image library</a></li>
                   </ul>
                 </li>
                 <li class="group-2-cols">
                   <h3><a href="http://teaching.epfl.ch/en">Teaching portal</a></h3>
                   <ul>
-                    <li><a href="http://teaching.epfl.ch/my_courses">Courses management</a></li>
-                    <li><a href="http://teaching.epfl.ch/my-students">Students management</a></li>
+                    <li><a href="http://teaching.epfl.ch/cms/site/teaching/lang/en/preparer-un-cours_1">Courses management</a></li>
+                    <li><a href="http://teaching.epfl.ch/my-students_1">Students management</a></li>
                   </ul>
                 </li>
                 <li class="group-2-cols">
@@ -982,16 +983,17 @@ def epfl_header(ln):
                 <li class="group-2-cols last">
                   <h3><a href="http://cdm.epfl.ch/homepage" class="cdm">Management of Technology <acronym title="Collège du Management de la Technologie">CDM</acronym></a></h3>
                   <ul>
-                    <li><a href="http://cdm.epfl.ch/mtei">Management, Technology & Entrepreneurship</a></li>
+                    <li><a href="http://cdm.epfl.ch/mtei">Management, Technology &amp; Entrepreneurship</a></li>
                     <li><a href="http://cdm.epfl.ch/itpp">Technology and Public Policy</a></li>
-                    <li><a href="http://sfi.epfl.ch">Swiss Finance Institute</a>
+                    <li><a href="http://sfi.epfl.ch">Swiss Finance Institute</a></li>
                   </ul>
                 </li>
                 <li class="group-2-cols" style="clear:left">
                   <h3><a href="http://cdh.epfl.ch/en" class="cdh">College of Humanities <acronym title="Collège des Humanités">CDH</acronym></a></h3>
                   <ul>
                     <li><a href="http://cdh.epfl.ch/humanities-and-social-sciences">Human and Social Science</a></li>
-                    <li><a href="http://cdh.epfl.ch/cacs">Area and Cultural Studies</a></li>
+                    <li><a href="http://iags.epfl.ch">Area and Global Studies</a></li>
+                    <li><a href="http://dhi.epfl.ch/home">Digital Humanities</a></li>
                   </ul>
                 </li>
               </ul>
