@@ -54,6 +54,9 @@ def gettext_set_language(ln):
       Usage::
         _ = gettext_set_language(ln)
     """
+    if ln not in CFG_SITE_LANGS:
+        ln = CFG_SITE_LANG
+
     return _LANG_GT_D[ln].gettext
 
 def wash_language(ln):
