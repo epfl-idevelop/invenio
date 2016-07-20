@@ -119,8 +119,6 @@ from invenio.websearch_external_collections_config import CFG_HOSTED_COLLECTION_
 from invenio.websearch_external_collections_config import CFG_HOSTED_COLLECTION_TIMEOUT_POST_SEARCH
 from invenio.websearch_external_collections_config import CFG_EXTERNAL_COLLECTION_MAXRESULTS
 
-VIEWRESTRCOLL_ID = acc_get_action_id(VIEWRESTRCOLL)
-
 ## global vars:
 cfg_nb_browse_seen_records = 100 # limit of the number of records to check when browsing certain collection
 cfg_nicely_ordered_collection_list = 0 # do we propose collection list nicely ordered or alphabetical?
@@ -193,6 +191,7 @@ class RestrictedCollectionDataCacher(DataCacher):
         def cache_filler():
             ret = []
             try:
+                VIEWRESTRCOLL_ID = acc_get_action_id(VIEWRESTRCOLL)
                 res = run_sql("""SELECT DISTINCT ar.value
                     FROM accROLE_accACTION_accARGUMENT raa JOIN accARGUMENT ar ON raa.id_accARGUMENT = ar.id
                     WHERE ar.keyword = 'collection' AND raa.id_accACTION = %s""", (VIEWRESTRCOLL_ID,))
@@ -262,6 +261,7 @@ def get_restricted_collections_for_recid(recid):
     """
     Return the list of restricted collection names to which recid belongs.
     """
+    VIEWRESTRCOLL_ID = acc_get_action_id(VIEWRESTRCOLL)
     restricted_collections = run_sql("""SELECT c.name, c.reclist FROM accROLE_accACTION_accARGUMENT raa JOIN accARGUMENT ar ON raa.id_accARGUMENT = ar.id JOIN collection c ON ar.value=c.name WHERE ar.keyword = 'collection' AND raa.id_accACTION = %s""", (VIEWRESTRCOLL_ID,))
     return [row[0] for row in restricted_collections if recid in HitSet(row[1])]
 
