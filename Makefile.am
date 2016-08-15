@@ -216,7 +216,7 @@ install-pdfa-helper-files:
 	@echo "***********************************************************"
 	@echo "** Installing PDF/A helper files, please wait...         **"
 	@echo "***********************************************************"
-	wget 'http://invenio-software.org/download/invenio-demo-site-files/ISOCoatedsb.icc' -O ${prefix}/etc/websubmit/file_converter_templates/ISOCoatedsb.icc
+	cp $(top_srcdir)/infoscience/etc/websubmit/file_converter_templates/ISOCoatedsb.icc ${prefix}/etc/websubmit/file_converter_templates/ISOCoatedsb.icc
 	@echo "***********************************************************"
 	@echo "** The PDF/A helper files were successfully installed.   **"
 	@echo "***********************************************************"
