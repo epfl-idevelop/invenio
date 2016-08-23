@@ -231,7 +231,7 @@ install-django-tequila:
 	@echo "***********************************************************"
 	@echo "** Installing Django Tequila, please wait...             **"
 	@echo "***********************************************************"
-	pip install --upgrade django-tequila==2.1.1
+	pip install --upgrade django-tequila==2.1.5
 	@echo "***********************************************************"
 	@echo "** The Django Tequila has been successfully installed.   **"
 	@echo "***********************************************************"
