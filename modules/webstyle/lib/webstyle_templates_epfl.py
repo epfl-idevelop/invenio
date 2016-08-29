@@ -613,7 +613,7 @@ def epfl_header_version():
     global epfl_header_sig
 
     if not epfl_header_sig:
-        with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), 'header_sig.html'), 'r') as my_file:
+        with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), 'header.sig.html'), 'r') as my_file:
             epfl_header_sig = my_file.read().replace('\n', '')
 
     return epfl_header_sig
