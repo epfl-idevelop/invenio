@@ -70,7 +70,7 @@ class Template(webstyle_templates.Template):
       <p class="h1"><a href="/?ln=%(ln)s">Infoscience</a><!-- Publications <acronym title="École Polytechnique Fédérale de Lausanne" class="local-color-text">EPFL</acronym>--></p>
       %(message)s
 %(navigation)s
-""" % {'signature': epfl_header_version(),
+""" % {'signature': epfl_header_sig,
        'body_css_classes' : body_css_classes and ' class="%s"' % ' '.join(body_css_classes) or '',
        'ln' : ln,
        'sitename': CFG_SITE_NAME_INTL.get(ln, CFG_SITE_NAME),
@@ -79,7 +79,7 @@ class Template(webstyle_templates.Template):
        'rss': rss,
        'unAPIurl': '%s/unapi' % CFG_SITE_URL,
        'metaheaderadd': metaheaderadd,
-       'header': epfl_header(ln), 
+       'header': epfl_header_html_fr if ln == 'fr' else epfl_header_html_en,
        'title': saxutils.unescape(headertitle),
        'breadcrumbs': navtrailbox,
        'language': self.tmpl_language_selection_box(req, ln),
@@ -583,37 +583,13 @@ class Template(webstyle_templates.Template):
         return ''
 
 
-epfl_header_html_fr = ""
-epfl_header_html_en = ""
-epfl_header_sig = ""
+def epfl_header(template_file):
+    with open(os.path.join(os.path.dirname(os.path.realpath(__file__)),
+                           template_file),
+              'r') as my_file:
+        return my_file.read()
 
-def epfl_header(ln):
-    if ln == 'fr':
-        global epfl_header_html_fr
 
-        if not epfl_header_html_fr:
-            with open(os.path.join(os.path.dirname(os.path.realpath(__file__)),
-                                   'header-no-local-search.fr.html'),
-                      'r') as my_file:
-                epfl_header_html_fr = my_file.read().replace('\n', '')
-
-        return epfl_header_html_fr
-    else:
-        global epfl_header_html_en
-
-        if not epfl_header_html_en:
-            with open(os.path.join(os.path.dirname(os.path.realpath(__file__)),
-                                   'header-no-local-search.en.html'),
-                      'r') as my_file:
-                epfl_header_html_en = my_file.read().replace('\n', '')
-
-        return epfl_header_html_en
-
-def epfl_header_version():
-    global epfl_header_sig
-
-    if not epfl_header_sig:
-        with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), 'header.sig.html'), 'r') as my_file:
-            epfl_header_sig = my_file.read().replace('\n', '')
-
-    return epfl_header_sig
+epfl_header_html_fr = epfl_header('header-no-local-search.fr.html')
+epfl_header_html_en = epfl_header('header-no-local-search.en.html')
+epfl_header_sig = epfl_header('header.sig.html')

@@ -34,6 +34,9 @@ pylib_DATA = webdoc.py \
              webinterface_handler_config.py \
              httptest_webinterface.py \
              webstyle_templates_epfl.py \
+             header.sig.html \
+             header-no-local-search.en.html \
+             header-no-local-search.fr.html \
              ping_webinterface.py
 
 wsgiweb_DATA = invenio.wsgi
