@@ -25,12 +25,20 @@ def format(bfo, short="no", add_link_to_epo=False):
     url_to_espacenet = "http://worldwide.espacenet.com/searchResults?compact=false&PN=%s&ST=advanced&locale=en_EP&DB=EPODOC"
     patents = bfo.fields('013', escape=2)
 
+    tto_file_number = ""
+
+    for external_id in bfo.fields('035__a'):
+        if external_id and external_id.find('(TTO)') != -1:
+            tto_file_number = "%s" % external_id.replace(' (TTO)', '')
+
     if bfo.lang != 'en':
         patent_text = 'Numéro de brevet'
         patents_text = 'Numéros de brevet'
+        dossier_number_text = 'Numéro de dossier'
     else:
         patent_text = 'Patent number'
         patents_text = 'Patent numbers'
+        dossier_number_text = 'File number'
 
     template_output_patent_nr = '<li style="list-style-image:none;"><span class="field-label">%s: <ul style="font-weight:normal;margin-left:10px;">%s</ul></span></li>'
     
@@ -72,8 +80,15 @@ def format(bfo, short="no", add_link_to_epo=False):
             patent_title = patent_text
 
         output.append(template_output_patent_nr % (patent_title, "".join(output_patent_nr)))
-        
-    return outer_list % "".join(output)
+
+    output_to_return = outer_list % "".join(output)
+
+    if tto_file_number:
+        output_to_return += outer_list % '<li><span class="field-label">' \
+                            + dossier_number_text + ':</span>&nbsp;' +\
+                            tto_file_number + '</li>'
+
+    return output_to_return
     
 def escape_values(bfo):
     """
