@@ -34,11 +34,11 @@ def format(bfo, short="no", add_link_to_epo=False):
     if bfo.lang != 'en':
         patent_text = 'Numéro de brevet'
         patents_text = 'Numéros de brevet'
-        dossier_number_text = 'Numéro de dossier'
+        dossier_number_text = 'Numéro de dossier TTO'
     else:
         patent_text = 'Patent number'
         patents_text = 'Patent numbers'
-        dossier_number_text = 'File number'
+        dossier_number_text = 'TTO Reference number'
 
     template_output_patent_nr = '<li style="list-style-image:none;"><span class="field-label">%s: <ul style="font-weight:normal;margin-left:10px;">%s</ul></span></li>'
     
