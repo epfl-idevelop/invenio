@@ -169,7 +169,13 @@ class Template(invenio.websearch_templates.Template):
         """ Provide extra information in the header of /record pages """
         _ = gettext_set_language(ln)
         title = get_fieldvalues(recid, "245__a")
-        if title:
+        hidden = get_fieldvalues(recid, "980__c")
+        is_hidden = False
+        
+        if hidden and hidden[0] == 'HIDDEN':
+            is_hidden = True
+
+        if not is_hidden and title:
             title = cgi.escape(title[0])
         else:
             title = _("Record") + ' #%d' % recid
