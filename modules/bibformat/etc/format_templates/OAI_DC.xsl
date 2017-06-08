@@ -62,9 +62,7 @@ This stylesheet is provided only as an example of transformation.
     </xsl:for-each>
     
     <xsl:for-each select="datafield[@tag=024 and @ind1=7]">	
-      <xsl:if test="starts-with(subfield[@code='a'],'10.5075')">
         <dc:identifier><xsl:value-of select="subfield[@code='2']"/><xsl:text>:</xsl:text><xsl:value-of select="subfield[@code='a']"/></dc:identifier>
-      </xsl:if>
     </xsl:for-each>
     
     <xsl:choose>
