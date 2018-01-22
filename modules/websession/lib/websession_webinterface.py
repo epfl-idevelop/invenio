@@ -806,8 +806,14 @@ class WebInterfaceYourAccountPages(WebInterfaceDirectory):
                                                navmenuid='youraccount')
 
         if not args['key']:
-            redirect_url = CFG_SITE_SECURE_URL + '/youraccount/login%s' % make_canonical_urlargd({'ln' : args['ln'], 'referer' : args['referer']}, {})
-            
+            # default one
+            redirect_url = CFG_SITE_SECURE_URL + '/youraccount/login%s' % make_canonical_urlargd({'ln': args['ln'], 'referer': args['referer']}, {})
+            if args.get('referer'):
+                from urlparse import urlparse
+                parse_result = urlparse(args['referer'])
+                if parse_result.netloc:
+                    redirect_url = parse_result.scheme + '://' + parse_result.netloc + '/youraccount/login%s' % make_canonical_urlargd({'ln' : args['ln'], 'referer' : args['referer']}, {})
+
             tequila_client = TequilaClient(EPFLConfig(allow_guests=True,
                                                       redirect_to = redirect_url,
                                                       service = "Infoscience"))
